@@ -30,12 +30,12 @@ Language identification is the ability to identify in which language the user is
 Botpress NLU comes with the ability to identify the language in which the user is writing if it is one of the predefined languages. But keep in mind that the best practice for user experience is to confirm the language with the user at the start and then stick to the same language throughout the conversation
 
 ## Language Server
-The language server provides additional information about words, which allows your chatbot to understand words with similar meanings. It takes away the need for you to teach your chatbot about synonyms and colloquial language. By default, your Botpress server will query one of our language servers for that purpose. You can also choose to host your server if you would like to keep everything on your premises. Head over to the [Hosting](../infrastructure/hosting#running-your-language-server) page for more details.
+The language server provides additional information about words, which allows your chatbot to understand words with similar meanings. It takes away the need for you to teach your chatbot about synonyms and colloquial language. By default, your Botpress server will query one of our language servers for that purpose. You can also choose to host your server if you would like to keep everything on your premises. Head over to the Hosting page for more details.
 
 ## External NLU Providers
 Botpress NLU ships with a native NLU engine (Botpress Native NLU). The advantage of using Botpress NLU is that it is fast (both at training and evaluation time), secured (doesn't relay messages to external services), predictable (you can write unit tests, and the model resides on your computer or server), and free.
 
-If you want to use an external provider for some reason, you can do so by using [Hooks](code#hooks) and calling the external NLU provider via API. There's a detailed example [here](../nlu/3rd-party-NLU)
+If you want to use an external provider for some reason, you can do so by using Hooks and calling the external NLU provider via API. There's a detailed example.
 
 > **Note**: We have dropped support [(see why)](https://github.com/botpress/botpress/pull/1170) for two-way synchronization as there were too many issues in doing (and maintaining) that. You'll have to maintain this yourself if you go this way. We're open to contributions for both implementation and maintenance of 3rd party NLU integrations.
 

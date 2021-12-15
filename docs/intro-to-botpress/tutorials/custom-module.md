@@ -9,7 +9,7 @@ title: Custom Module
 To help you get started, two templates are available: [Module Templates](https://github.com/botpress/botpress/tree/master/examples/module-templates).
 
 1. Copy / Paste the template of your choice in `modules/`
-1. In your `botpress.config.json`, [enable the module](../main/module#enabling-or-disabling-modules).
+1. In your `botpress.config.json`, enable the module.
 
 ## Module Structure
 
@@ -125,8 +125,7 @@ export default entryPoint
 
 ### onServerStarted
 
-This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). You can [read more about Database access here](/docs/create-module#database)
-
+This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). You can read more about Database access here
 Example:
 
 ```js
@@ -496,7 +495,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
 
 ## Register Actions
 
-Modules can register new actions that will be available on the flow editor. Please check out the [Custom Code](../main/code) section for more information about Actions.
+Modules can register new actions that will be available on the flow editor. Please check out the Custom Code section for more information about Actions.
 Those actions must be deployed to the `data/global/actions` folder to be recognized by Botpress. Here is how to do that:
 
 1. Create a folder named `actions` in `src`

@@ -84,7 +84,7 @@ Here's an example of the structure of an incoming event processed by Botpress Na
 }
 ```
 
-You can use that metadata in your flows to create transitions when a specific intent is detected inside a particular flow. You can learn more about flows and transitions [here](../main/dialog). 
+You can use that metadata in your flows to create transitions when a specific intent is detected inside a particular flow. You can learn more about flows and transitions.
 
 ## Confidence and debugging
 
@@ -104,7 +104,7 @@ NLU Extraction
   bot_max_confidence: 100,
   is_confident_enough: true,
   language: 'en',
-  entities: []
+  entities: [ ]
 }
 ```
 ## Acting On An Intent
@@ -145,7 +145,7 @@ Testing the chatbot using our new QnA demonstrates how this method works. When a
 
 ### Method 3: Combining Switch Case and Slot Skill
 
-The Slot Skill can be used in collaboration with the "Switch Case Method" when intent has one or more slots. For this example, let us add a `destination` slot 'to the `book-flight` intent. You can learn more about adding slots in the [entities](entities) topic 
+The Slot Skill can be used in collaboration with the "Switch Case Method" when intent has one or more slots. For this example, let us add a `destination` slot 'to the `book-flight` intent. You can learn more about adding slots in the entities topic 
 
 After that, we will create a new Slot Skill and select the `destination` slot.
 

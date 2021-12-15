@@ -117,7 +117,7 @@ my-module/views/lite/index.jsx
 
 This change implied modifications to the packaging of modules. Please clear the `node_modules` folder of every module, then run `yarn build`
 
-For more information see: [Module Views](../advanced/custom-module#views)
+For more information see: Module Views
 
 ## Migration from 11.3 to 11.4
 
@@ -218,7 +218,7 @@ This guide will show you how to migrate your bot from Botpress X to Botpress Ser
 
 If your bot is using `bp.dialogEngine.registerActions`, this is no longer supported in the new version. Each registered actions must be in a separate `.js` file in the folder `data/global/actions`.
 
-The concept of custom logic in `index.js`, such as in `bp.hear`, has been changed. This custom logic was replaced with [hooks](../main/code#hooks). Hooks allow you to intercept events and tell Botpress how to handle them.
+The concept of custom logic in `index.js`, such as in `bp.hear`, has been changed. This custom logic was replaced with hooks. Hooks allow you to intercept events and tell Botpress how to handle them.
 
 Content types are handled similarly, but the UI and Renderers are now bundled in a single file.
 

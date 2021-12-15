@@ -50,5 +50,5 @@ That means that they want help! And Botpress is exactly what they need.
 
 This section includes all the basics that you need to get started with Botpress.
 
-- [How to install Botpress on your computer](installation/installation)
-- [How to upgrade your version to a newer one](update/update)
+- How to install Botpress on your computer
+- How to upgrade your version to a newer one

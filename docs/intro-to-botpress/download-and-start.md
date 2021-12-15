@@ -11,7 +11,7 @@ Before installing the software (and after being totally sold by our incredible p
 
 :::tip
 
-If you already have created an awesome chatbot, follow the instructions about how to [upgrade your version](intro-to-botpress/update/).
+If you already have created an awesome chatbot, follow the instructions about how to upgrade your version.
 
 :::
 

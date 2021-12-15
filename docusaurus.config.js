@@ -76,7 +76,7 @@ const config = {
             items: [
               {
                 label: 'Intro to Botpress',
-                to: '/docs/intro',
+                to: '/docs/intro-to-botpress/intro',
               },
             ],
           },
@@ -100,10 +100,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
