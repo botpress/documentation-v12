@@ -1,14 +1,12 @@
 ---
 id: dropdown
-sidebar_position: 1
+title: Dropdown
 ---
-
-# Dropdown
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

@@ -1,6 +1,6 @@
 ---
-id: use-tabs
-title: Use Tabs
+id: translation-centre
+title: Translation Centre
 ---
 
 ---------------

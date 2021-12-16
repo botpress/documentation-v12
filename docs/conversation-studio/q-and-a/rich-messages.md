@@ -1,9 +1,12 @@
 ---
 id: rich-messages
 title: Rich Messages
-sidebar_position: 1
 ---
 
-# Rich Messages
-
 ---------------
+
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::

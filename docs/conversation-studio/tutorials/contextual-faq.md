@@ -3,6 +3,8 @@ id: contextual-faq
 title: Contextual FAQ
 ---
 
+-----------------
+
 ## Create a context
 
 To create context, you have two options:

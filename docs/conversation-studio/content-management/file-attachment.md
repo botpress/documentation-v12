@@ -1,14 +1,12 @@
 ---
 id: file-attachment
-sidebar_position: 1
+title: File / Attachment
 ---
-
-# File / Attachment
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

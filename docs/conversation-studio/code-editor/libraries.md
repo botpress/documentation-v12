@@ -1,14 +1,12 @@
 ---
 id: libraries
-sidebar_position: 1
+title: Libraries
 ---
-
-# Libraries
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

@@ -1,14 +1,14 @@
 ---
 id: business-apps-intro
-sidebar_position: 1
+title: The Big Picture
 ---
 
 # The Big Picture
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

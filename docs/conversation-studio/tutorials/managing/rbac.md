@@ -3,9 +3,11 @@ id: rbac
 title: Role-Based Access Control
 ---
 
+---------------
+
 :::info
 
-Only available with Enterprise
+Enterprise Only
 
 :::
 

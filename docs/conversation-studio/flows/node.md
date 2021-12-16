@@ -1,14 +1,12 @@
 ---
 id: node
-sidebar_position: 1
+title: Skill - Node
 ---
-
-# Node
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

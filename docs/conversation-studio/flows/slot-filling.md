@@ -1,14 +1,12 @@
 ---
 id: slot-filling
-sidebar_position: 1
+title: Skill - Slot Filling
 ---
-
-# Slot Filling
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

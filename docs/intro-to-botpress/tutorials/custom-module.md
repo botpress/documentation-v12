@@ -2,7 +2,8 @@
 id: custom-module
 title: Custom Module
 ---
-# Custom Module
+
+--------------
 
 ## Module Templates
 

@@ -3,6 +3,8 @@ id: google-oauth2
 title: Setting up SSO with Google OAuth2
 ---
 
+---------------
+
 **Note**: This is a Botpress Pro feature
 
 ## Step 1: Create OAuth2 credentials

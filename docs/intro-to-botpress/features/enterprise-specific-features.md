@@ -1,9 +1,9 @@
 ---
 id: enterprise-specific-features
-sidebar_position: 3
+title: Enterprise Specific Features
 ---
 
-# Enterprise-Specific Features
+-------------------
 
 Feature | Description | Botpress Open Source | Botpress Enterprise 
 --- | --- | :---: | :---: 

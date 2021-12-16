@@ -3,6 +3,8 @@ id: inter-bot-communication
 title: Inter-bot Communication / Delegation
 ---
 
+-----------------
+
 Sometimes your chatbot needs to "delegate" questions or tasks to other bots. We call this concept "inter-bot" communication.
 
 The code in this sample is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/interbot) directory of our GitHub repository (update `workspaces.json` with the three chatbots if you copied them).

@@ -1,9 +1,9 @@
 ---
 id: overall-product-specifications
-sidebar_position: 3
+title: Overwall Product Specifications
 ---
 
-# Overall Product Specifications
+----------------
 
  Feature | Description | Botpress Open Source | Botpress Enterprise
 --- | --- | :---: | :---: 

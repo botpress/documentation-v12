@@ -3,6 +3,8 @@ id: ssotools
 title: Single Sign-On Methods
 ---
 
+------------------
+
 ## SSO with Google OAuth2
 
 ### Step 1: Create OAuth2 credentials

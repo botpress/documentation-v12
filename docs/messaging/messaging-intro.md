@@ -3,10 +3,10 @@ id: messaging-intro
 title: The Big Picture
 ---
 
----------------
+----------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

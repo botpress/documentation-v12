@@ -3,12 +3,11 @@ id: botpress-webchat
 title: Botpress Webchat
 ---
 
----------------
+----------------
 
-:::note NE PAS OUBLIER
+:::caution
 
-- Create custom message widgets
-- Flexibility for users
+Hi! Sorry, but this page is under construction!
 
 :::
 

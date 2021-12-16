@@ -5,11 +5,6 @@ title: Language Identification
 
 ---------------
 
----
-id: i18n
-title: Internationalization
----
-
 :::info
 
 Enterprise only

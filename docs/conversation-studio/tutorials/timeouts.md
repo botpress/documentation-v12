@@ -3,6 +3,8 @@ id: timeouts
 title: Timeouts
 ---
 
+-----------------
+
 Occasionally a user may leave a conversation with your bot part way through the interaction, leaving it in an unwanted state.
 
 This could lead to the bot trying to answer the wrong question when the user returns to the conversation at a later time, which is a bad user experience.

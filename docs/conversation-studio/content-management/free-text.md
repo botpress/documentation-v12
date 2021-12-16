@@ -1,14 +1,12 @@
 ---
 id: free-text
-sidebar_position: 1
+title: Free Text
 ---
-
-# Free Text
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

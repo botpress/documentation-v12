@@ -1,14 +1,12 @@
 ---
 id: bots
-sidebar_position: 1
+title: Bots
 ---
-
-# Bots
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

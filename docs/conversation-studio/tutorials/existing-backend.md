@@ -5,9 +5,9 @@ title: Connecting to an Existing Backend
 
 -----------------
 
-:::info DON'T FORGET
+:::info 
 
-This is only for enterprise license
+Enterprise Only
 
 :::
 

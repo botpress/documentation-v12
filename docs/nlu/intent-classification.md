@@ -3,6 +3,8 @@ id: intent-classification
 title: Intent Classification
 ---
 
+--------------
+
 Intent classification helps your chatbot recognize the meaning of a user's message. It is a better, more accurate way to understand what the user is trying to say than using keywords. This is possible because you can program your chatbot to extract this from a natural conversation.
 
 An intent is created with various utterances. These are the different ways of putting across a question or intention. For example, the following are different statements which someone can say to book a flight: 

@@ -3,6 +3,8 @@ id: performances
 title: Hardware & Performance
 ---
 
+-----------------
+
 ## Hardware Requirements
 
 - Hard Drive: Recommended 64 GB of free space or above.

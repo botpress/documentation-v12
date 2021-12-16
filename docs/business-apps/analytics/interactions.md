@@ -1,14 +1,12 @@
 ---
 id: interactions
-sidebar_position: 1
+title: Interactions
 ---
-
-# Interactions
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

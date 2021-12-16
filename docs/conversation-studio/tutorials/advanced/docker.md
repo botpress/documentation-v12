@@ -3,6 +3,8 @@ id: docker
 title: Deploying with Docker
 ---
 
+-----------------
+
 Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.
 
 > For an optimized Docker experience, download [Docker Desktop.](https://www.docker.com/products/docker-desktop)

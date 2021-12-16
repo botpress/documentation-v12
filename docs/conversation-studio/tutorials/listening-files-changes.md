@@ -3,6 +3,8 @@ id: listening-file-changes
 title: Listening File Changes
 ---
 
+-----------------
+
 You may find yourself writing custom logic when a Botpress file has changed. For example, you could listen for changes to the QnA files to automatically launch a translation worker to translate the QnA to multiple languages.
 
 The Botpress File System (Ghost) exposes a way to listen for file changes for that purpose. In this example, we will watch for NLU changes inside any bot.

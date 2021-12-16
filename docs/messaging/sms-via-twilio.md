@@ -3,10 +3,10 @@ id: sms-via-twilio
 title: SMS via Twilio
 ---
 
----------------
+----------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

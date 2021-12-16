@@ -1,14 +1,12 @@
 ---
 id: server-license
-sidebar_position: 1
+title: Server License
 ---
-
-# Server License
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

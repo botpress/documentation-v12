@@ -82,7 +82,7 @@ module.exports = {
         type: 'category',
         collapsible: true,
         label: 'Content Management',
-        items: ['conversation-studio/content-management/content-management-overview', 'conversation-studio/content-management/audio', 'conversation-studio/content-management/button', 'conversation-studio/content-management/card', 'conversation-studio/content-management/carousel-gallery', 'conversation-studio/content-management/dropdown', 'conversation-studio/content-management/file-attachment', 'conversation-studio/content-management/free-text', 'conversation-studio/content-management/image', 'conversation-studio/content-management/location', 'conversation-studio/content-management/quick-replies-single-choice', 'conversation-studio/content-management/translation-center', 'conversation-studio/content-management/video'],
+        items: ['conversation-studio/content-management/content-management-overview', 'conversation-studio/content-management/audio', 'conversation-studio/content-management/button', 'conversation-studio/content-management/card', 'conversation-studio/content-management/carousel-gallery', 'conversation-studio/content-management/dropdown', 'conversation-studio/content-management/file-attachment', 'conversation-studio/content-management/free-text', 'conversation-studio/content-management/image', 'conversation-studio/content-management/location', 'conversation-studio/content-management/quick-replies-single-choice', 'conversation-studio/content-management/translation-centre', 'conversation-studio/content-management/video'],
       },
       'conversation-studio/nlu-overview',
       {
@@ -102,6 +102,7 @@ module.exports = {
       'conversation-studio/hitl-next-overview',
       'conversation-studio/misunderstood-overview',
       'conversation-studio/testings',
+      'conversation-studio/config',
     ],
     },
     {
@@ -124,14 +125,12 @@ module.exports = {
         'conversation-studio/tutorials/advanced/cluster',
         'conversation-studio/tutorials/advanced/configuration',
         'conversation-studio/tutorials/advanced/database',
-        'conversation-studio/tutorials/advanced/databases',
         'conversation-studio/tutorials/advanced/deploying',
         'conversation-studio/tutorials/advanced/development-lifecycle',
         'conversation-studio/tutorials/advanced/docker',
         'conversation-studio/tutorials/advanced/heroku',
         'conversation-studio/tutorials/advanced/hosting',
         'conversation-studio/tutorials/advanced/performances',
-        'conversation-studio/tutorials/advanced/pipelines',
         'conversation-studio/tutorials/advanced/versions',
         {
           type: 'category',

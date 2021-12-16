@@ -1,8 +1,12 @@
 ---
 id: get-started-tutorial
 title: Get Started
-sidebar_position: 1
 ---
 
-# Get Started
+----------------
 
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::

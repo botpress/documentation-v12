@@ -1,14 +1,12 @@
 ---
 id: handling-and-understanding
-sidebar_position: 1
+title: Handling and Understanding
 ---
-
-# Handling and Understanding
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

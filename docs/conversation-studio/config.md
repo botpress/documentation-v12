@@ -1,11 +1,15 @@
 ---
 id: config
-sidebar_position: 1
+title: Config
 ---
 
 ---------------
 
-# Config
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
 
 NLU tracing & testing
 Bookmark states to test & set flow breakpoints

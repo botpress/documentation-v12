@@ -1,11 +1,15 @@
 ---
 id: carousel-gallery
-sidebar_position: 1
+title: Carousel / Gallery
 ---
 
-# Carousel/Gallery
-
 ---------------
+
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
 
 In this tutorial, you will learn how to use the Postback feature of the Carousel Content Type.
 

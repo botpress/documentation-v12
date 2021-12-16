@@ -1,14 +1,12 @@
 ---
 id: video
-sidebar_position: 1
+title: Video
 ---
-
-# Video
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

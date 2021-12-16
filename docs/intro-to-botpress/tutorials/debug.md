@@ -3,7 +3,7 @@ id: debug
 title: Debug
 ---
 
-# Debug
+----------------
 
 ## How To Use
 

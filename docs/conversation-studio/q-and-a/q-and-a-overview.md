@@ -5,6 +5,12 @@ title: Question & Answer - Overview
 
 -----------
 
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
+
 The QnA module is specifically designed to make handling frequently repeated questions as easy as possible. This module allows you to quickly add more responsiveness to your chatbot by enabling it to answer a user without creating an intent and a workflow. For your chatbot to understand a user's input, we need to add at least ten training phrases which are the different ways of asking the same question. To complete our QnA, we add at least one answer: plain text or any other content type. We can also redirect a user to a specific node and workflow as a response to the question. To achieve this, we first need to enable redirect.
 
 ## Create a context

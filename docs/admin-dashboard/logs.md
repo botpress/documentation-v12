@@ -1,14 +1,12 @@
 ---
 id: logs
-sidebar_position: 1
+title: Logs
 ---
-
-# Logs
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

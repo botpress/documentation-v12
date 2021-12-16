@@ -3,6 +3,8 @@ id: shortlinks
 title: Shortlinks
 ---
 
+-----------------
+
 You can natively create short links to your chatbot and get the following benefits:
 
 1. Short URLs (nobody likes extra long URLs)

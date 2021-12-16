@@ -1,14 +1,12 @@
 ---
 id: hooks
-sidebar_position: 1
+title: Hooks
 ---
-
-# Hooks
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

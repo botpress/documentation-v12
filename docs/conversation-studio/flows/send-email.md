@@ -1,11 +1,15 @@
 ---
 id: send-email
-sidebar_position: 1
+title: Skill - Send Email
 ---
 
-# Send Email
-
 ---------------
+
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
 
 ## Overview
 

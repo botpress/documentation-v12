@@ -1,14 +1,12 @@
 ---
 id: button
-sidebar_position: 1
+title: Button
 ---
-
-# Button
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

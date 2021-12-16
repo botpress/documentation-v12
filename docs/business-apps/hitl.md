@@ -3,6 +3,12 @@ id: hitl
 title: Human in the loop
 ---
 
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
+
 Botpress allows you to build a powerful tool for autonomous communication with your users. However, some use cases are hard to implement as a chatbot workflow or are not yet supported by your chatbot. 
 
 Botpress offers a human handoff system,  which transfers a conversation from your chatbot to an agent. The agent can view these conversations in the **HITL** module (short for Human-in-the-Loop). Human-in-the-Loop is currently supported on `channel-web` and `channel-messenger` only.

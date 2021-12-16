@@ -1,10 +1,7 @@
 ---
 id: call-api
-title: Call API (Converse)
-sidebar_position: 1
+title: Skill - Call API (Converse)
 ---
-
-# Call API (Converse)
 
 ---------------
 

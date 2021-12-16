@@ -3,6 +3,8 @@ id: azure-oauth2
 title: Setting up SSO with Azure AD OAuth2
 ---
 
+---------------
+
 **Note**: This is a Botpress Pro feature
 
 **Note**: Azure OAuth2 only works for version 12.17.2 and later

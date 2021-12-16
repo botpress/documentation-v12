@@ -1,14 +1,12 @@
 ---
 id: shortcuts
-sidebar_position: 1
+title: Shortcuts
 ---
-
-# Shortcuts
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

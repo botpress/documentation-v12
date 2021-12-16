@@ -1,14 +1,12 @@
 ---
 id: source-control
-sidebar_position: 1
+title: Source Control
 ---
-
-# Source Control
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

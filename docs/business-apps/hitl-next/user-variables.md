@@ -1,14 +1,12 @@
 ---
 id: user-variables
-sidebar_position: 1
+title: User Variables
 ---
-
-# Use Variables
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

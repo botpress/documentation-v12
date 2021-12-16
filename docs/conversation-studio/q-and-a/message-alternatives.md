@@ -1,9 +1,12 @@
 ---
 id: message-alternatives
 title: Alternative Messages
-sidebar_position: 1
 ---
 
-# Alternative Messages
-
 ---------------
+
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::

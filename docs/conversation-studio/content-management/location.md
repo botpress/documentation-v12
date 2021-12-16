@@ -1,14 +1,12 @@
 ---
 id: location
-sidebar_position: 1
+title: Location
 ---
-
-# Location
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

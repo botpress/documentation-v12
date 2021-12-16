@@ -1,14 +1,12 @@
 ---
 id: code-editor
-sidebar_position: 1
+title: Code Editor
 ---
-
-# Code Editor
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

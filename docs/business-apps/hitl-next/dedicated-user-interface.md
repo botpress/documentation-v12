@@ -1,14 +1,12 @@
 ---
 id: dedicated-user-interface
-sidebar_position: 1
+title: Dedicated User Interface
 ---
-
-# Dedicated User Interface
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

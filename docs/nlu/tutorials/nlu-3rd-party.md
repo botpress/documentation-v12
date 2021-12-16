@@ -3,6 +3,8 @@ id: nlu-3rd-party
 title: Using a 3rd party NLU
 ---
 
+--------------
+
 ## Overview
 Botpress native NLU runs on-premise and supports a finite set of languages. If you plan to develop chatbots in languages that Botpress does not support or if you want to use another NLU solution, then you'll need to set up a 3rd party NLU connector. To achieve this, we'll use the power of Botpress Hooks).
 

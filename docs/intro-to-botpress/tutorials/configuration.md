@@ -1,10 +1,9 @@
 ---
 id: configuration
 title: Configuration
-sidebar_position: 1
 ---
 
-# Configuration
+------------------
 
 Most of the configuration is done using `JSON` files. Configuration can also be set by using environment variables.
 

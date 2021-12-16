@@ -1,14 +1,12 @@
 ---
 id: latest-releases
-sidebar_position: 1
+title: Latest Releases
 ---
-
-# Latest Releases
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

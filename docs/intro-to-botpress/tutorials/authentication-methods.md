@@ -1,10 +1,9 @@
 ---
 id: authentication-methods
 title: Authentication Methods
-sidebar_position: 1
 ---
 
-# Authentication Methods
+---------------
 
 There's three different types of authentication:
 

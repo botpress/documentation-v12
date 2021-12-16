@@ -3,6 +3,8 @@ id: hosting
 title: Hosting NLU Servers
 ---
 
+-----------------
+
 Botpress communicates with two services to work correctly (i.e., Duckling and a Language Server). If your Botpress installation has **no internet** access, you'll have to host these services on-prem. When following the different hosting methods, look for a section on on-prem hosting for further details.
 
 ## Duckling

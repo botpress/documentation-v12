@@ -1,9 +1,9 @@
 ---
 id: features-within-the-solution
-sidebar_position: 3
+title: Features Within the Solution
 ---
 
-# Features within the Botpress Solution
+------------------
 
 Feature | Description | Botpress Open Source | Botpress Enterprise 
 --- | --- | :---: | :---: 

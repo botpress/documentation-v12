@@ -2,6 +2,9 @@
 id: aws
 title: Amazon Web Services
 ---
+
+----------------
+
 Amazon Web Services provides on-demand cloud computing platforms and APIs to individuals, companies, and governments on a metered pay-as-you-go basis.
  
 ## Quick Start with AWS

@@ -1,14 +1,12 @@
 ---
 id: module-configurations
-sidebar_position: 1
+title: Module Configurations
 ---
-
-# Module Configurations
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

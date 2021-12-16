@@ -1,14 +1,12 @@
 ---
 id: choice
-sidebar_position: 1
+title: Skill - Choice
 ---
-
-# Choice
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

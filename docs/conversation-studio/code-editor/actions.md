@@ -1,18 +1,15 @@
 ---
 id: actions
-sidebar_position: 1
+title: Actions
 ---
-
-# Actions
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::
-
 
 ## Learn More
 

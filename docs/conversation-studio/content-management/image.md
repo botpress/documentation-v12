@@ -1,14 +1,12 @@
 ---
 id: image
-sidebar_position: 1
+title: Image
 ---
-
-# Image
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

@@ -1,14 +1,12 @@
 ---
 id: quick-replies-single-choice
-sidebar_position: 1
+title: Quick Replies / Single Choice
 ---
-
-# Quick Replies / Single Choice
 
 ---------------
 
-:::note
+:::caution
 
-Hi
+Hi! Sorry, but this page is under construction!
 
 :::

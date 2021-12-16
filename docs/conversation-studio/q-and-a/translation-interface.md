@@ -1,9 +1,12 @@
 ---
 id: translation-interface
 title: Translation Interface
-sidebar_position: 1
 ---
 
-# Translation Interface
-
 ---------------
+
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::

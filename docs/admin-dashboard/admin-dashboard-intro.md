@@ -1,12 +1,16 @@
 ---
 id: admin-dashboard-intro
 title: The Big Picture
-sidebar_position: 1
 ---
 
-# The Big Picture
+----------------
 
----------------
+:::caution
+
+Hi! Sorry, but this page is under construction!
+
+:::
+
 
 The Admin Dashboard is where you can find all the information about ...
 
