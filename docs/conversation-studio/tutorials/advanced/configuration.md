@@ -271,8 +271,3 @@ http {
   }
 }
 ```
-
-## More Information
-
-- Check out the [database](../infrastructure/database) page for details about `DATABASE_URL`
-- Check out the [cluster](../infrastructure/cluster) page for details about `CLUSTER_ENABLED` and `REDIS_URL`
