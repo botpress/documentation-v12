@@ -11,7 +11,7 @@ Before installing the software (and after being totally sold by our incredible p
 
 :::tip
 
-If you already have created an awesome chatbot, follow the instructions about how to upgrade your version.
+If you already have created an awesome chatbot, follow the instructions about how to [upgrade](/docs/intro-to-botpress/update) your version.
 
 :::
 
@@ -19,14 +19,10 @@ If you already have created an awesome chatbot, follow the instructions about ho
 
 Make sure that your computer has at least:
 
-- Memory (RAM): Recommended 4 GB or above.
-- Hard Drive: Recommended 64 GB of free space or above.
+- Memory (RAM): 4 GB or above.
+- Hard Drive: 64 GB of free space or above.
 - A 64 bits architecture
-- The right to read/write to the Botpress directory and subdirectories.
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
+- Permission to read and write in the directory and subdirectories.
 
 #### Latest Version
 
@@ -34,15 +30,20 @@ You want the latest version. Download it on Mac, Windows, or Linux on the offici
 
 #### Older Versions
 
-You can also [download older versions](https://s3.amazonaws.com/botpress-binaries/index.html). This page displays a list where you have to choose between different versions and operating systems. Choose wisely!
+You can also choose between different [older versions](https://s3.amazonaws.com/botpress-binaries/index.html) and operating systems.
 
-:::note
+:::tip
 
-We don't recommended you to use an older version if you can use the latest one.
+Always use the latest version if you can.
 
 :::
 
 ## Start Botpress
+
+You can choose to start Botpress by the binary or the source code:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="binary" label="Binary">
