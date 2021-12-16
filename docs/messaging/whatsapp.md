@@ -7,7 +7,7 @@ title: Whatsapp Via Sunshine Conversations, Vonage, or Twilio
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::
 

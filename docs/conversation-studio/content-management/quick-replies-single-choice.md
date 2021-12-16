@@ -7,6 +7,6 @@ title: Quick Replies / Single Choice
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::

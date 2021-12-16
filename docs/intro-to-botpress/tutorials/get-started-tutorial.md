@@ -7,6 +7,6 @@ title: Get Started
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::

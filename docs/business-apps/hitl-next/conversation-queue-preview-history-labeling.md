@@ -7,6 +7,6 @@ title: Conversation Queue, Preview, History, and Labeling
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::

@@ -93,6 +93,8 @@ module.exports = {
       },
       'conversation-studio/libraries',
       'conversation-studio/analytics-overview',
+      'conversation-studio/bot-improvement',
+      'conversation-studio/broadcast',
       {
         type: 'category',
         collapsible: true,

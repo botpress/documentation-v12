@@ -7,7 +7,7 @@ title: Languages
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::
 

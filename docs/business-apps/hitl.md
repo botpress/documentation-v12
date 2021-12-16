@@ -5,7 +5,7 @@ title: Human in the loop
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::
 

@@ -7,6 +7,6 @@ title: Free Text
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::

@@ -7,6 +7,6 @@ title: Server License
 
 :::caution
 
-Hi! Sorry, but this page is under construction!
+Sorry, but this page is under construction!
 
 :::

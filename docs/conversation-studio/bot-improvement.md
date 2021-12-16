@@ -1,6 +1,6 @@
 ---
-id: translation-centre
-title: Translation Centre
+id: bot-improvement
+title: Bot Improvement (Beta)
 ---
 
 ---------------
