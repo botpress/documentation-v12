@@ -29,9 +29,7 @@ For more security, the password is auto-generated as a random (salt) password. T
 
 :::
 
-#### Configuration
-
-You can add the following code block in your `botpress.config.json` file (and modify it however you need):
+Add the following code block in your `botpress.config.json` file (and modify it however you need):
 
 ```js
 {
@@ -48,8 +46,6 @@ You can add the following code block in your `botpress.config.json` file (and mo
 }
 ```
 
-#### Additional Security
-
 There are additional options that can be configured when using this authentication strategy. Please refer to the [configuration file for more information](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L350) :
 
 - `maxLoginAttempt`: Max number of tries allowed before locking out the user
@@ -58,11 +54,12 @@ There are additional options that can be configured when using this authenticati
 - `passwordMinLength`: Minimum length for the user's password
 - `requireComplexPassword`: Requires at least 1 character of 3 categories of characters
 
-#### Forgot your password?
-
+:::note 
 Only the first user is allowed to register a new account. If you forgot your password and can't access your account, you will need to clear the list of users, then you will be able to re-create your account.
 
 You can clear the list of users by emptying (or deleting) the table `strategy_default` (if you are using the default strategy)
+
+:::
 
 ### OAuth2
 

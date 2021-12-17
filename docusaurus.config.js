@@ -116,4 +116,11 @@ const config = {
     }),
 };
 
+module.exports = {
+  themeConfig: {
+    metadata: [{name: 'botpress, chatbot', content: 'documentation, docs'}],
+    // This would become <meta name="keywords" content="cooking, blog"> in the generated HTML
+  },
+};
+
 module.exports = config;
