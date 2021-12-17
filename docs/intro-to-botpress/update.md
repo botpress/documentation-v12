@@ -5,7 +5,11 @@ title: Update Botpress
 
 ---------------
 
-Please find the Changelog [here](https://github.com/botpress/botpress/releases) for complete details of Botpress Framework changes by release.
+:::note
+
+You can get more details of the Botpress Framework changes in the [Changelog](https://github.com/botpress/botpress/releases).
+
+:::
 
 ## Migration to Versions 12.X
 
@@ -23,7 +27,7 @@ Botpress 12 comes with an "auto-migration" feature that runs migrations for the 
 
 :::caution
 
-Please backup your `/data` folder before making any changes
+Create a backup of your `/data` folder before making any changes.
 
 :::
 
@@ -36,7 +40,7 @@ Please backup your `/data` folder before making any changes
 
 :::caution
 
-Please backup your database before making any changes
+Create a backup of your `/data` folder before making any changes.
 
 :::
 

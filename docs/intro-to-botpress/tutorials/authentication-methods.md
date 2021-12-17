@@ -5,68 +5,33 @@ title: Authentication Methods
 
 ---------------
 
-There's three different types of authentication:
+:::caution
 
-1. **Collaborators**: These users are able to access the Admin UI and will have access to manage and edit bots based on their roles.
-2. **Chat Users**: These users are only able to speak with bots, and they can see the list of bots if they log on the Admin UI
-3. **External User**: This method of authentication expects that you handle user authentication yourself and provide a JWT token to identify the user.
+Enterprise only
 
-## Authentication Overview
+:::
 
-There are 4 different type of authentication strategies currently supported: Basic, SAML, OAuth2 and LDAP. You can also implement them multiple times (for example, you could have two different OAuth2 configurations for different workspaces).
+A standard authentication (called basic) method is delivered with the software, but you might want to modify it. You have 4 different types of authentication methods that you can configure for different workspaces: Basic, SAML, OAuth2, and LDAP. There are 3 different types of authenticated users:
 
-No matter what authentication strategy is used, they are all stored in the database. When you add a new strategy in the `botpress.config.json` file, upon server restart a new table called `strategy_STRATEGYID` will be created.
+- **Collaborators**: Can access the Admin Dashboard, manage and edit bots base on their roles.
+- **Chat Users**: Can communicate with bots and see the bots list in the Admin Dashboard. 
+- **External User**: User authentication self-handled with a JWT token identifying the user.
 
-When you give access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
-
-If you have more than one authentication strategy, a menu will be displayed to pick a strategy. You can skip the menu and bookmark a specific strategy by changing the page URL: `/admin/login/STRATEGYID`.
-
-Moreover, you can access a specific workspace by using `/admin/login?workspaceId=WORKSPACEID`
-
-You can find the definition for the various authentication strategies [here](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L326).
-
-### Storage of the user token
-
-By default, tokens which identifies the user on the admin panel and on the studio are stored in the local storage. It does the job, but for additional security, we recommend enabling the storage of tokens in cookies.
-
-However, enabling this feature requires an additional configuration to work properly. The CORS parameter of the HTTP Server must be configured to the external URL of your server:
-
-```js
-httpServer: {
-  cors: {
-      enabled: true,
-      origin: "http://localhost:3001", // change to your hostname
-      credentials: true
-      // You can add additional parameters, you can read more about them here:
-      // https://expressjs.com/en/resources/middleware/cors.html
-    },
-}
-```
-
-To enable this feature, set `jwtToken.useCookieStorage` to `true` in the `botpress.config.json` file.
-
-It is possible to fine-tune the settings for the cookie with `jwtToken.cookieOptions`. Please refer to the options of the Cookies module here: https://github.com/pillarjs/cookies#readme
-
-```js
-jwtToken: {
-  useCookieStorage: true,
-  cookieOptions: {
-    secure: true // send only over HTTPS
-  }
-}
-```
+## Authentication Methods
 
 ### Basic
 
-Basic Authentication allows a user to log in with a simple username / password. The password is salted for added security.
+The basic authentication allows a user to log in with a simple username and its password. Remember that super admins are able to reset any passwords when using this strategy.
 
-To create more accounts, visit the `Collaborators` tab on the Admin UI. Choose the role and enter the E-mail of your collaborator, then you will receive a random password. The user will need to pick a password after the first login.
+:::note
 
-Super Admins are able to reset the password of any user using the basic authentication.
+For more security, the password is auto-generated as a random (salt) password. The user has to choose another password at their first login.
 
-#### Configuration Example
+:::
 
-In your `botpress.config.json` file:
+#### Configuration
+
+You can add the following code block in your `botpress.config.json` file (and modify it however you need):
 
 ```js
 {
@@ -293,3 +258,45 @@ window.botpressWebChat.configure({ externalAuthToken: 'my.jwt.token' })
 ### How to use the authenticated payload
 
 When a user is authenticated, the JWT token is automatically decoded. If the token is valid, all the data it contains will be available through the `event.credentials` property. This can be accessed inside Hooks and while using Actions.
+
+
+After adding a new authentication strategy in the ` botpress.config.json` file, and restarting Botpress, a new `strategy_STRATEGYID` table is created.
+
+When you give access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
+
+If you have more than one authentication strategy, a menu will be displayed to pick a strategy. You can skip the menu and bookmark a specific strategy by changing the page URL: `/admin/login/STRATEGYID`.
+
+Moreover, you can access a specific workspace by using `/admin/login?workspaceId=WORKSPACEID`
+
+You can find the definition for the various authentication strategies [here](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L326).
+
+### Storage of the user token
+
+By default, tokens which identifies the user on the admin panel and on the studio are stored in the local storage. It does the job, but for additional security, we recommend enabling the storage of tokens in cookies.
+
+However, enabling this feature requires an additional configuration to work properly. The CORS parameter of the HTTP Server must be configured to the external URL of your server:
+
+```js
+httpServer: {
+  cors: {
+      enabled: true,
+      origin: "http://localhost:3001", // change to your hostname
+      credentials: true
+      // You can add additional parameters, you can read more about them here:
+      // https://expressjs.com/en/resources/middleware/cors.html
+    },
+}
+```
+
+To enable this feature, set `jwtToken.useCookieStorage` to `true` in the `botpress.config.json` file.
+
+It is possible to fine-tune the settings for the cookie with `jwtToken.cookieOptions`. Please refer to the options of the Cookies module here: https://github.com/pillarjs/cookies#readme
+
+```js
+jwtToken: {
+  useCookieStorage: true,
+  cookieOptions: {
+    secure: true // send only over HTTPS
+  }
+}
+```

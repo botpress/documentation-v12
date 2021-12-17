@@ -125,7 +125,6 @@ module.exports = {
         'conversation-studio/tutorials/advanced/aws',
         'conversation-studio/tutorials/advanced/digital-ocean',
         'conversation-studio/tutorials/advanced/cluster',
-        'conversation-studio/tutorials/advanced/configuration',
         'conversation-studio/tutorials/advanced/database',
         'conversation-studio/tutorials/advanced/deploying',
         'conversation-studio/tutorials/advanced/development-lifecycle',
