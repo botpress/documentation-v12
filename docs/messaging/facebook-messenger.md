@@ -109,7 +109,9 @@ Your `bot.config.json` should look like this :
 }
 ```
 
-> **Important:** One bot is connected to **one** facebook page.
+:::caution
+One bot is connected to **one** facebook page.
+:::
 
 ### Facebook Webhook
 
@@ -120,7 +122,9 @@ Messenger will use a webhook that you'll need to register to communicate with yo
 3. Paste your `verifyToken` (the random string you generated) in the Verify Token field.
 4. Make sure you enable `messages` and `messaging_postbacks` in Subscription Fields.
 
-> **⭐ Note**: When you set up your webhook, Messenger requires a **secured public** address. To test on localhost, we recommend using services like [pagekite](https://pagekite.net/), [ngrok](https://ngrok.com) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.
+:::note
+When you set up your webhook, Messenger requires a **secured public** address. To test on localhost, we recommend using services like [pagekite](https://pagekite.net/), [ngrok](https://ngrok.com) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.
+:::
 
 ### Greeting Text
 
@@ -148,7 +152,9 @@ The persistent menu allows you to have an always-on user interface element insid
 
 Read more about persistent menu [here](https://developers.facebook.com/docs/messenger-platform/send-messages/persistent-menu).
 
-> The persistent menu is cached locally on the user's client, with updates fetched periodically. If you change the persistent menu, it can take some time for the menu to update. You can force a refresh by deleting the conversation and starting a new one.
+:::note
+The persistent menu is cached locally on the user's client, with updates fetched periodically. If you change the persistent menu, it can take some time for the menu to update. You can force a refresh by deleting the conversation and starting a new one.
+:::
 
 **Persistent Menu object example**:
 

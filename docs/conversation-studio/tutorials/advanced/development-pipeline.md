@@ -76,7 +76,9 @@ You can also head to the versioning tab of your Botpress admin panel at https://
 
 Notice that without any changes, you will see a **You're all set!** message.
 
-> **Note:** The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::note
+The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::
 
 Please note that `targetDir` and `sourceDir` uses relative paths:
 

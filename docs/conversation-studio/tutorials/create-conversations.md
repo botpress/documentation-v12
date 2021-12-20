@@ -25,11 +25,12 @@ A flow always starts at the `startNode` of its `*.flow.json` file, with the _Mai
 
 The Dialog Engine is event-based and is non-blocking by default, which means that a flow will execute all it can manage until it needs to wait.
 
-> **Note:** There are currently two reasons for a flow to "wait":
->
-> - A node is marked as waiting for user input
-> - A node couldn't match a condition to transition to another node
-> - A node has no transition instruction.
+:::note
+There are currently two reasons for a flow to "wait":
+- A node is marked as waiting for user input
+- A node couldn't match a condition to transition to another node
+- A node has no transition instruction.
+:::
 
 Once the first node is processed, the Dialog Engine will proceed to the next node in the flow until it reaches the very end. Flows are pretty straightforward. Nodes also have a [lifecycle](#node-lifecycle) of their own. It is the nodes that do the heavy lifting in a flow. The flow only orchestrates them.
 
@@ -64,11 +65,12 @@ When this property is left unused, the node is non-blocking (black), which means
 
 You can define an onReceive instruction that will **always** be executed before every node's onRecieve.
 
-> **👓 Examples:** Flow-wide On Receive
->
-> - Audit Trail: Record specific logs of messages received in the scope of this particular flow
-> - Authentication Gate: Run some authentication
-> - Sentiment Analysis: Making sure the sentiment of the conversation is staying healthy
+:::tip Examples
+Flow-wide On Receive
+- Audit Trail: Record specific logs of messages received in the scope of this particular flow
+- Authentication Gate: Run some authentication
+- Sentiment Analysis: Making sure the sentiment of the conversation is staying healthy
+:::
 
 To define new _Flow-wide On Receive Actions_, navigate to the relevant flow, then double click anywhere on the checkered background to show the _Flow Properties Pop up_. You can also click on the links in the top left corner of the flow editor. Under the _On Receive_ section, click the _Add Action_ button to add a new action.
 
@@ -77,8 +79,10 @@ To define new _Flow-wide On Receive Actions_, navigate to the relevant flow, the
 **onNext** (also called **Transitions**) is precisely the same thing as _Flow-wide Transitions_ except that the conditions are only evaluated
  after `onReceive` or `onEnter` have been executed.
 
-> **Special cases**: If no condition is defined, the default behavior is that the conversation ends.
-> If there are conditions defined but none match, nothing happens, i.e., the current node stays active, and it will flow when a condition is matched. By default, the `onNext` will only be retried after `onReceive` is re-invoked.
+:::caution Special Cases
+- If no condition is defined, the default behavior is that the conversation ends.
+- If there are conditions defined but none match, nothing happens, i.e., the current node stays active, and it will flow when a condition is matched. By default, the `onNext` will only be retried after `onReceive` is re-invoked.
+:::
 
 **Destination**: A Transition always has a target that we call a Destination. It can be:
 
@@ -92,11 +96,12 @@ To define new _Flow-wide On Receive Actions_, navigate to the relevant flow, the
 
 A Flow-wide onNext instruction allows you to override node transitions when the condition is successful.
 
-> **👓 Examples:** Flow-wide onNext
->
-> - Authentication Gate: Re-route the user to the login flow if they are not authenticated.
-> - Sentiment Analysis: Re-route the user to the human fallback node if the conversation is degrading
-> - Matching flow-wide intents such as "`cancel`" etc...
+:::tip Examples
+Flow-wide onNext
+- Authentication Gate: Re-route the user to the login flow if they are not authenticated.
+- Sentiment Analysis: Re-route the user to the human fallback node if the conversation is degrading
+- Matching flow-wide intents such as "`cancel`" etc.
+:::
 
 ## State
 
@@ -104,7 +109,9 @@ Each conversation has a **State** associated with it. The state is created when 
 
 A state is created just before the "_entry_" node is entered.
 
-> **Note:** The state is global to the conversation, so if the conversation spans multiple flows, **they will all share the same state**.
+:::note
+The state is global to the conversation, so if the conversation spans multiple flows, **they will all share the same state**.
+:::
 
 ## Session Timeout
 The Dialog Engine will wait for the input of a user. After a while, if the user does not respond, the session will **Timeout**.
@@ -122,7 +129,9 @@ Very similar to the Timeout Flow, the Timeout Node should be called `timeout` an
 
 Another option that requires some coding is to add the property `timeoutNode` to your `*.flow.json` file and assign it to the name of the node that should handle the timeout. Again, it can be any node; it doesn't need to be called a particular way.
 
-> ⚠ **Important:** Once the Dialog Engine has processed the timeout, it will **delete** the session.
+:::caution
+Once the Dialog Engine has processed the timeout, it will **delete** the session.
+:::
 
 ## Actions
 
@@ -131,7 +140,9 @@ An **Action** is JavaScript code that is executed in a Node.js VM. It can be any
 - **Script**: A user-defined Action that is used to run custom code.
 - **Output**: An output Action that is used to make a chatbot output something.
 
-> To learn more on Actions, please refer to the Custom Code section.
+:::note
+To learn more on Actions, please refer to the Custom Code section.
+:::
 
 ## Skills
 
@@ -159,4 +170,6 @@ Skills are stored as flows under the `data/bots/your-bot/flows/skills` folder. S
 
 Once a skill node has been generated, you may click on that node and click "Edit" on the right panel to edit that node, which will update the generated flow automatically behind the scenes. 
 
-> While you can rename your skill to any name you want, it is considered best practice to append the skill type to the node name, for example, `choice-choose-topping`.
+:::note
+While you can rename your skill to any name you want, it is considered best practice to append the skill type to the node name, for example, `choice-choose-topping`.
+:::

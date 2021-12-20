@@ -73,6 +73,7 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
   }
 ```
 
-> Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
-
-> If your email is protected with 2FA it might not work.
+:::note Notes
+- Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+- If your email is protected with 2FA it might not work.
+:::

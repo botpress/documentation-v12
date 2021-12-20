@@ -92,7 +92,9 @@ You can use that metadata in your flows to create transitions when a specific in
 
 To enable debugging of the NLU module, ensure that `debugModeEnabled` is set to `true` in your `data/global/config/nlu.json` file.
 
-> **Tip**: In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
+:::tip
+In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
+:::
 
 ### Example of Debugging Message
 
@@ -143,7 +145,9 @@ Is there a flight from Boston to Los Angeles
 
 Testing the chatbot using our new QnA demonstrates how this method works. When a QnA is detected with a high confidence threshold, it's elected, and the user is redirected to the node specified in the QnA.
 
-> This method is not considered best practice, but it does the job for quick demonstrations. However, we recommend using the first method if you have basic intents without any slots.
+:::note
+This method is not considered best practice, but it does the job for quick demonstrations. However, we recommend using the first method if you have basic intents without any slots.
+:::
 
 ### Method 3: Combining Switch Case and Slot Skill
 
@@ -157,4 +161,6 @@ The flow now looks like this:
 
 When we test the conversation, we can see that the bot will confirm the flight booking destination.
 
-> **Note**: The Slot Skill uses implicit intent matching in the background. So it's not required to have a transition to a Slot Skill. 
+:::note
+The Slot Skill uses implicit intent matching in the background. So it's not required to have a transition to a Slot Skill.
+:::

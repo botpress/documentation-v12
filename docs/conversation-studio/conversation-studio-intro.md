@@ -53,7 +53,9 @@ return myMethod()
 /** } */
 ```
 
-> These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
+:::note
+These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
+:::
 
 ## Actions
 Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to do many things:
@@ -366,7 +368,9 @@ Here is an example of a configuration using a mail server:
 }
 ```
 
-> Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+:::info
+Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+:::
 
 #### Creating Your Skill
 From the Flow Editor view, click on Insert Skill > Send Email. The following interface allows you to insert the information you would fill in using any standard email service.

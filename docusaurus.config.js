@@ -123,10 +123,4 @@ module.exports = {
   },
 };
 
-const customTypes = {
-  [string: keyword]: {
-    keyword: Example,
-  } | Example,
-}
-
 module.exports = config;

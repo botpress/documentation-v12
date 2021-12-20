@@ -15,8 +15,6 @@ You may wish to make your bot act proactively on your website in response to som
 
 First you need to open the webchat (either manually or programmatically) and then send an event from the webpage.
 
-> 📖 How do I open the webchat? Please refer to the channel-web section.
-
 ```js
 window.botpressWebChat.sendEvent({
   type: 'proactive-trigger',
@@ -42,7 +40,9 @@ if (event.type === 'proactive-trigger') {
 }
 ```
 
-> **Tip**: Use `event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)` to tell the dialog engine to skip the event processing. This is useful when your event is not a user message.
+:::tip
+Use `event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)` to tell the dialog engine to skip the event processing. This is useful when your event is not a user message.
+:::
 
 ## Webchat Events
 

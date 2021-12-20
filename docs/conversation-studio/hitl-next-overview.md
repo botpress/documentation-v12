@@ -69,7 +69,9 @@ To pick a handoff and start conversing with the end-user, an agent first needs t
 
 Once online, an agent can click on any handoff item and click on the `assign to me` button top right corner of the conversation section. When a conversation is transferred to an agent, your chatbot will automatically send an **assignation message** to the user. This message is customizable, see [configuration](#advanced-features-and-customization) section.
 
-> There is no limit on how many handoffs an agent can handle at once. A good practice would be to limit to 3.
+:::note
+There is no limit on how many handoffs an agent can handle at once. A good practice would be to limit to 3.
+:::
 
 Once the discussion with the user is over, an agent can hand back the control to the Chatbot by simply clicking the `resolve` button.
 

@@ -48,7 +48,9 @@ By default, Botpress configures the Language Server to get `100` dimensions for 
 3. Once the files are downloaded, place them somewhere on your server filesystem and take note of the path.
 4. Add the `--offline` and the `--dim <number>` arguments to your command when starting the language server. i.e. `./bp lang --offline --dim <number> --langDir <some_path>`. Ensure that the dimension argument matches the dimensions of the models you have downloaded, e.g., `bp.en.300.bin` (Please note that you have to run this command in a directory that contains a functional copy of the Botpress binary).
 
-> **Note**: `300` is the number of dimensions the model has. More dimensions mean the model size is bigger. You can choose a lighter model if your server specs are limited, but keep in mind that you need to change the `--dim` parameter when you start the Language Server (e.g. `./bp lang --dim <number>`).
+:::note
+`300` is the number of dimensions the model has. More dimensions mean the model size is bigger. You can choose a lighter model if your server specs are limited, but keep in mind that you need to change the `--dim` parameter when you start the Language Server (e.g. `./bp lang --dim <number>`).
+:::
 
 | Abbreviation | Language   |
 | ------------ | ---------- |
@@ -74,4 +76,6 @@ The language server is embedded in Botpress and can be started using the command
 4. Install the desired languages your server should support
 5. Restart the language server with parameters `./bp lang --readOnly`.
 
-> ReadOnly prevents anyone from adding or removing languages and can only be used to fetch embeddings. There are additional parameters that can be configured (for example, to require authentication); you can see them by typing `./bp lang help`.
+:::note
+ReadOnly prevents anyone from adding or removing languages and can only be used to fetch embeddings. There are additional parameters that can be configured (for example, to require authentication); you can see them by typing `./bp lang help`.
+:::

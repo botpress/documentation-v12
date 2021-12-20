@@ -20,7 +20,9 @@ Once you have this module installed, you will be able to:
 3. As an agent, you will be able to continue the conversation via the admin panel.
 4. Resume conversation with the bot.
 
-> A new, more feature-rich version of HITL is in beta. You can try it today. See docs [here](#hitl-next-beta)
+:::note
+A new, more feature-rich version of HITL is in beta. You can try it today. See docs [here](#hitl-next-beta)
+:::
 
 ## Pausing Conversation
 
@@ -56,7 +58,8 @@ bp.notifications.create(botId, { message, level: 'info', url: '/modules/hitl' })
 
 The agent can then navigate to the appropriate conversation and take over the conversation from the bot. 
 
-> Note that in the latest versions, the notification bell is absent from the UI, so you will need to make a component to get the info from the notifications table or use a sendEmail action after pausing the conversation to alert agents.
+:::
+In the latest versions, the notification bell is absent from the UI, so you will need to make a component to get the info from the notifications table or use a sendEmail action after pausing the conversation to alert agents.
 
 ## Resuming the Conversation
 

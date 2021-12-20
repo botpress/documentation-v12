@@ -114,4 +114,4 @@ You can now continue to next [section](#setting-up-ms-teams-channel-from-an-alre
 
 4. Set the value of the endpoint that was displayed in the logs. If it is missing, it should looks like that:
 
-> `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/teams`
+`<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/teams`

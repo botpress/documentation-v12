@@ -45,7 +45,9 @@ By the way, {{temp.delegation.0.botId}} is telling you:
 > {{{temp.delegation.0.answer}}}
 ```
 
-> **Tip:** The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
+:::tip
+The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
+:::
 
 ### Conclusion
 

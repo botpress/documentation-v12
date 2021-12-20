@@ -113,7 +113,9 @@ In a production environment, you may want to persist additional logs such as ful
 DEBUG=bp:audit:* ./bp -p 2>> ./botpress.log
 ```
 
-> **Tip**: You can combine this with a log rotation tool such as [newsyslog](https://www.real-world-systems.com/docs/newsyslog.1.html) or [logrotate](https://linux.die.net/man/8/logrotate).
+:::tip
+You can combine this with a log rotation tool such as [newsyslog](https://www.real-world-systems.com/docs/newsyslog.1.html) or [logrotate](https://linux.die.net/man/8/logrotate).
+:::
 
 ### Enable or Disable Modules
 
@@ -182,7 +184,9 @@ Botpress supports `.env` files, so you don't have to set them every time you sta
 
 It is also possible to use environment variables to override module configuration. The pattern is `BP_MODULE_%MODULE_NAME%_%OPTION_PATH%`, all in upper case. For example, to define the `languageSources` option of the module `nlu`, you would use `BP_MODULE_NLU_LANGUAGESOURCES`. 
 
-> **Tip**: You can list the available environment variables for each module by enabling the `DEBUG=bp:configuration:modules:*` flag.
+:::tip
+You can list the available environment variables for each module by enabling the `DEBUG=bp:configuration:modules:*` flag.
+:::
 
 #### Security
 

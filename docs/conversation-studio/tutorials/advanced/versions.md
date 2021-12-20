@@ -20,7 +20,9 @@ Notice that without any changes, you will see a **You're all set!** message.
 
 ## CLI Commands
 
-> **Note:** The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::note
+The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::
 
 Please note that `targetDir` and `sourceDir` uses relative paths:
 

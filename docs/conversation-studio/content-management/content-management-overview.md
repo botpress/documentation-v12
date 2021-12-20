@@ -11,7 +11,9 @@ Botpress includes its own **Content Management System** (or **CMS**) to manage a
 
 A **Content Types** defines the structure of what the chatbot sends. It also dictates how your chatbot should render the content. It can be as straightforward or as complex as you want. For instance, a Content-Type could be a simple text or an image, or a carousel. 
 
-> **🌟 Tip**: As a general rule, the more domain-specific the Content Types are, the easier it is to manage the chatbot for non-technical people.
+:::tip
+As a general rule, the more domain-specific the Content Types are, the easier it is to manage the chatbot for non-technical people.
+:::
 
 Content Types are particular to the chatbots with which they are associated. Here are some typical examples:
 
@@ -44,7 +46,9 @@ Here's a Content Element example:
 
 All Content Elements of the same Content Type are stored within a single `.json` file under the `data/bots/{your-bot}/content-elements/` directory.
 
-> **Tip**: Remember that a Content Type tells **how** content gets rendered and a Content Element tells **what** to render.
+:::tip
+Remember that a Content Type tells **how** content gets rendered and a Content Element tells **what** to render.
+:::
 
 ## Adding Content
 You can add and edit content in two ways:

@@ -54,7 +54,9 @@ The user said: `Let's go for five miles run.`
 }
 ```
 
-> **Note**: In some cases, you will find additional structured information in the extras object
+:::note
+In some cases, you will find additional structured information in the extras object.
+:::
 
 ## System Entities
 
@@ -90,7 +92,9 @@ Please check the Deployment section for instructions on hosting your Duckling se
 }
 ```
 
-> **Note**: Confidence will always be one due to the rule-based implementation of Duckling
+:::note
+Confidence will always be one due to the rule-based implementation of Duckling.
+:::
 
 ## Custom Entities
 Botpress provides two types of custom entities: [pattern](#pattern-extraction) and [list](#list-extraction) entities. To define a custom entity, go to the **Entity section** of the NLU Module interface accessible from the Botpress studio sidebar. From there, you can define your custom entities which will be available for any input message treated by your chatbot. Go ahead and click on **create new entity**

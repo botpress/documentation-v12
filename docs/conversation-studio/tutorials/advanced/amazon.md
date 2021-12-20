@@ -139,7 +139,9 @@ Dokku automatically sets the `DATABASE_URL` environment variable.
 ### Example
 `channel-web.infoPage.description` --> `BP_MODULE_CHANNEL_WEB_INFOPAGE_DESCRIPTION`
 
-> **Deprecation warning**: `BP_%MODULENAME%_%config%` is deprecated and was removed in Botpress 12.
+:::danger Deprecated Warning 
+`BP_%MODULENAME%_%config%` is deprecated and was removed in Botpress 12.
+:::
 
 ## NGINX_Config
 

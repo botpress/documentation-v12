@@ -138,7 +138,9 @@ To define your pipeline, open the `workspaces.json` file and edit the pipeline p
 
 This simple configuration will activate the pipeline feature.
 
-> **Note**: Botpress allows pipelines of maximum 4 stages, more than this will result in a suboptimal usage of Botpress.
+:::note
+Botpress allows pipelines of maximum 4 stages, more than this will result in a suboptimal usage of Botpress.
+:::
 
 ### Graphical Interface
 

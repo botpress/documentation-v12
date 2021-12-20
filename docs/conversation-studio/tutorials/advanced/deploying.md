@@ -32,7 +32,9 @@ If you bumped into some errors during the execution of the `yarn build` command,
 1. Run this command with the copied commit hash: `git reset <copied hash>`.
 1. Run `yarn build` again. 
 
-> If you are in a hurry and cannot wait for a fix release, [clone the commit](https://coderwall.com/p/xyuoza/git-cloning-specific-commits) **(do not modify files one by one)**. 
+:::note
+If you are in a hurry and cannot wait for a fix release, [clone the commit](https://coderwall.com/p/xyuoza/git-cloning-specific-commits) **(do not modify files one by one)**.
+:::
 
 ## Ubuntu Systems 
 You might run into issues while trying to build and start botpress via yarn on Rasberry Pi OS x64 or other Ubuntu Systems. Its ARM Architecture means none of the pre-built binaries will work. On trying to run the command `yarn start`, you might run into an error like the one below:

@@ -178,7 +178,9 @@ Next, navigate to "Certificates & secrets" and create a new client secret, copy 
 ### Step 5: Enable the Strategy in Botpress
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
-> Please make sure that the `externalAuth` object has `enabled` set to `true`:
+:::note
+Please make sure that the `externalAuth` object has `enabled` set to `true`.
+:::
 
 ### Step 6: Configure Callback URL in Azure
 In your application in the Azure Active Directory portal, navigate to the "Authentication" page and add a platform. **Select "Web" for the platform type** and set your callback url with the one you configured in the _botpress.config.json_ file. **For the token type, select "ID tokens".**

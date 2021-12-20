@@ -15,7 +15,9 @@ Sorry, but this page is under construction!
 
 Embedding a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and embed it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
 
-> Remember to replace `<your-url-here>` with the URL of your bot!
+:::tip
+Remember to replace `<your-url-here>` with the URL of your bot!
+:::
 
 ```html
 <script src="<your-url-here>/assets/modules/channel-web/inject.js"></script>
@@ -238,7 +240,9 @@ A couple of properties are passed down to your custom component. These can be us
 | incomingEventId | The ID of the incoming event which was processed                               |
 | store           | Grants access to the MOBX store of Channel Web (more on that below)            |
 
-> isLastGroup and isLastOfGroup can be combined to let your component know if the current message is the last one the user is seeing. This can be used, for example, to display feedback buttons, a login form, or anything else, that will disappear when the user continues the discussion.
+:::note
+isLastGroup and isLastOfGroup can be combined to let your component know if the current message is the last one the user is seeing. This can be used, for example, to display feedback buttons, a login form, or anything else, that will disappear when the user continues the discussion.
+:::
 
 ### The Store
 
