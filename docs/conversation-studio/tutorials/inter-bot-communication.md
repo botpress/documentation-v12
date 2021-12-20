@@ -11,7 +11,7 @@ The code in this sample is available in the [examples](https://github.com/botpre
 
 ### Structure
 
-### Step 1 – Creating the chatbots
+### Step 1 – Creating the Chatbots
 You will need to create three chatbots: one "master" chatbot (the one that will delegate questions to other bots) and two "slave" chatbots (the ones who get asked questions by the master).
 
 Head to the admin interface and create three chatbots with the names, `master`, `sub1`, and `sub2`, respectively, all based on the "empty bot" template.
@@ -24,7 +24,7 @@ For example, `sub1` could answer questions about Human Resources, while `sub2` c
 
 At this point, you should have three bots. Master doesn't do anything, while sub1 and sub2 can answer HR and IT Operations questions respectively when you talk to them individually.
 
-### Step 2 – Delegation Action (master bot)
+### Step 2 – Delegation Action (Master Bot)
 
 To make the Master chatbot ask the questions to the slave bots, we will create an action called `delegate_to_bots` inside the `master` bot.
 

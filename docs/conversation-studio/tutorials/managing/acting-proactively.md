@@ -11,7 +11,7 @@ You may wish to make your bot act proactively on your website in response to som
 
 ## Requirements
 
-### Send an event from the webpage
+### Send an Event From the Webpage
 
 First you need to open the webchat (either manually or programmatically) and then send an event from the webpage.
 
@@ -29,7 +29,7 @@ window.botpressWebChat.sendEvent({
 
 The property `type: 'proactive-trigger'` is used to identify the event so we can catch it and act on it later on.
 
-### Catch the event in a hook
+### Catch the Event in a Hook
 
 This event will be dispatched to the bot so you need to add a handler for it. If this event is not handled, it will be interpreted as a user message.
 
@@ -44,7 +44,7 @@ if (event.type === 'proactive-trigger') {
 
 > **Tip**: Use `event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)` to tell the dialog engine to skip the event processing. This is useful when your event is not a user message.
 
-## Webchat events
+## Webchat Events
 
 There's currently 4 events that can be caught in your page :
 
@@ -55,11 +55,11 @@ There's currently 4 events that can be caught in your page :
 | `webchatClosed` | Triggered when the webchat close button is clicked                            |
 | `webchatReady`  | Triggered when the webchat is ready to accept events, like proactive triggers |
 
-## Common use cases
+## Common Use Cases
 
 Here are some examples of how can you use webchat events in your page.
 
-### Send message when the webchat is loaded
+### Send Message When the Webchat is Loaded
 
 This will send an event when the webchat is loaded and ready to be opened.
 
@@ -97,7 +97,7 @@ Use this code in your `index.html`:
 </html>
 ```
 
-### Send message when opening webchat
+### Send Message When Opening Webchat
 
 This will send an event when the webchat button bubble is clicked
 
@@ -135,7 +135,7 @@ Use this code in your `index.html`:
 </html>
 ```
 
-### Send custom content on proactive event
+### Send Custom Content on Proactive Event
 
 You can intercept a proactive trigger to send custom content. This could be used to send reminders, display a welcome message or ask for feedback.
 
@@ -164,7 +164,7 @@ if (event.type === 'proactive-trigger') {
 
 Here we're using the [replyToEvent](https://botpress.com/reference/modules/_botpress_sdk_.events.html#replytoevent) function from the SDK to reply to the current event and [renderElement](https://botpress.com/reference/modules/_botpress_sdk_.cms.html#renderelement) to render our custom content.
 
-### Send proactive only to new users
+### Send Proactive Only to New Users
 
 When you want to respond only to new users, you have to check if their session is new. We can do that by looking at the session's last messages.
 

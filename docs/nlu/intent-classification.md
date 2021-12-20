@@ -25,7 +25,7 @@ By adding these different ways of saying the same thing, the chatbot can train o
 Intents should be used in instances when information needs to be extracted from the user input. They are also handy when a workflow needs to start.
 
 
-## Adding an intent
+## Adding an Intent
 To create a new intent, navigate to the NLU module, then click "**Create new intent**". Please give it a friendly name, then hit OK. You should now add "utterances" of that intent – that is, add as many ways of expressing that intent as possible. Intent detection works best when you add between ten and twenty utterances.
 
 **Punctuation** is ignored in general for text classification, except for hyphens. Punctuation is taken into account for entities and slots only.
@@ -40,7 +40,7 @@ To create a new intent, navigate to the NLU module, then click "**Create new int
 |  Hi! What can you do?                   |   hi what can you do                    |
 |  Do you have any Chicago-based offices? |   do you have any chicago-based offices |
 
-## Responding to an intent
+## Responding to an Intent
 
 You may detect and reply to intents by looking up the `event.nlu.intent.name` variable in your hooks, flow transitions, or actions.
 
@@ -88,13 +88,13 @@ Here's an example of the structure of an incoming event processed by Botpress Na
 
 You can use that metadata in your flows to create transitions when a specific intent is detected inside a particular flow. You can learn more about flows and transitions.
 
-## Confidence and debugging
+## Confidence and Debugging
 
 To enable debugging of the NLU module, ensure that `debugModeEnabled` is set to `true` in your `data/global/config/nlu.json` file.
 
 > **Tip**: In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
 
-### Example of debugging message
+### Example of Debugging Message
 
 NLU Extraction
 

@@ -23,12 +23,12 @@ To test on localhost, you can also use services like [pagekite](https://pagekite
 
 ## Setup
 
-### Create your bot
+### Create Your Bot
 
 First, you need a bot in Botpress. Take note of your bot's ID
 
-### Connecting your bot to Slack
-
+### Connecting Your Bot to Slack
+xs
 1. Go to your [apps page](https://api.slack.com/apps)
 
 2. Click on `Create new app`, select `From scratch` then give it a name. Remember your App's name, you'll need it in a few minutes

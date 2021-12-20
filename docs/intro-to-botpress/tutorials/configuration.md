@@ -19,7 +19,7 @@ To get more information about each individual options, check out the [comments o
 
 By default, Botpress will start an HTTP server on localhost, listening to port 3000. If the configured port is already in use, it will pick the next available one. You can change these by editing `httpServer.host` and `httpServer.port`.
 
-#### Exposing your bot on the internet
+#### Exposing Your Bot on the Internet
 
 When you are ready to expose your bot externally, you will need to change some of the server settings. The server doesn't support HTTPS connections, so you will need to set up a reverse proxy in front of it (for example: NGINX). In the main [repo](https://github.com/botpress/botpress), Botpress have created an example with a HTTPS with [docker-compose](https://github.com/botpress/botpress/blob/master/examples/docker-compose/docker-compose-community-nginx-https.yaml). You can start this example in your server (where botpress will run).
 
@@ -33,7 +33,7 @@ This means that your server will still listen for connections on port 3000, but 
 
 At this point, Botpress doesn't know how to access the bot from the web. You will need to edit the configuration of `httpServer.externalUrl`. Set the configuration variable to the complete host name, for example `https://bot.botpress.com`
 
-#### Changing the base URL of your bot
+#### Changing the Base URL of Your Bot
 
 By default, Botpress is accessible at the root of your domain (ex: https://bot.botpress.com/). It is possible to change that so you can serve it from a different URL, for example `https://bot.botpress.com/botpress/somepath/`. All you need to do is set the External URL, either in environment variable (`EXTERNAL_URL`), or via the `botpress.config.json` file.
 
@@ -83,7 +83,7 @@ You can configure the level of verbosity using an environment variable (`VERBOSI
 
 \* Stack traces are additional information used by developers to identify the source of an error. They are useful when developing, but in production they can hide important log messages.
 
-#### How to save logs on the file system
+#### How to Save Logs on the File System
 
 It is also possible to send log output to a file in a specific folder. Check below for the required configuration
 
@@ -115,7 +115,7 @@ DEBUG=bp:audit:* ./bp -p 2>> ./botpress.log
 
 > **Tip**: You can combine this with a log rotation tool such as [newsyslog](https://www.real-world-systems.com/docs/newsyslog.1.html) or [logrotate](https://linux.die.net/man/8/logrotate).
 
-### Enable or disable modules
+### Enable or Disable Modules
 
 When you start Botpress for the first time, the most popular modules included with the binary will be added to your `botpress.config.json` file. If you want to disable or enable modules, you may either do so in the admin page, or edit the `modules` property in `botpress.config.json`.
 

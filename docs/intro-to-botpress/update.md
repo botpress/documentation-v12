@@ -17,7 +17,7 @@ You can get more details of the Botpress Framework changes in the [Changelog](ht
 
 Botpress 12 comes with an "auto-migration" feature that runs migrations for the database and Botpress config files. No database or file manipulation is required when upgrading from now on.
 
-### Database changes
+### Database Changes
 
 - Users from `workspaces.json` are now in the `workspace_user` table
 - User credentials are stored in the database alongside their auth strategy
@@ -56,7 +56,7 @@ To start the latest version of Botpress on a new database, you will need to pull
 5. Set the environment variable DATABASE_URL to the new database.
 6. Start Botpress. The filesystem will sync to the database automatically.
 
-### Custom assets
+### Custom Assets
 
 For both database systems, if you have any custom assets, do these extra steps:
 
@@ -65,7 +65,7 @@ For both database systems, if you have any custom assets, do these extra steps:
 3. Restart Botpress.
 
 
-## Migration from 11.7 to 11.8
+## Migration From 11.7 to 11.8
 
 ### Channel-Web Refactor
 
@@ -101,9 +101,9 @@ computePreviewText: formData => formData.text && 'Text: ' + formData.text
   },
 ```
 
-## Migration from 11.5 to 11.6
+## Migration From 11.5 to 11.6
 
-### Custom Modules (target: developers)
+### Custom Modules (Target: Developers)
 
 There was a breaking change in how modules handle the views. Previously, the main view was `web.bundle.js`, and you could define more views in the `liteViews` of the `package.json` file. This confused the Botpress core engine because the user's browser can load only one of those views at a time.
 
@@ -123,18 +123,18 @@ This change implied modifications to the packaging of modules. Please clear the 
 
 For more information see: Module Views
 
-## Migration from 11.3 to 11.4
+## Migration From 11.3 to 11.4
 
-### Teams removed
+### Teams Removed
 
 Teams have been removed in 11.4 in favor of the **Workspace**.
 Botpress Workspace is specified by `workspaces.json` and is used to associate bots, users, and roles.
 
-### Bots table removed
+### Bots Table Removed
 
 **Bots** should be listed by their IDs in `workspaces.json` under `bots`.
 
-### Users table removed
+### Users Table Removed
 
 **Users** should be listed by their email in `workspaces.json` under `users`, with all user data is stored in the workspace. This data includes email, hashed password, password salt, last login, role, creation date.
 
@@ -142,7 +142,7 @@ Botpress Workspace is specified by `workspaces.json` and is used to associate bo
 
 User ID has been replaced by user email.
 
-### Roles table removed
+### Roles Table Removed
 
 `workspaces.json` should define ** Roles** under `roles`. Each user has a _role_ property that should match the ID of their corresponding role.
 
@@ -207,11 +207,11 @@ Below is an example of a `workspaces.json`:
 ]
 ```
 
-## Migration from 10.x to 11.x
+## Migration From 10.x to 11.x
 
 This guide will show you how to migrate your bot from Botpress X to Botpress Server.
 
-### Bot content
+### Bot Content
 
 1. Launch the new Botpress server
 1. Create a bot with any name. Your bot files will be in `data/bots/bot-name/`
@@ -226,7 +226,7 @@ The concept of custom logic in `index.js`, such as in `bp.hear`, has been change
 
 Content types are handled similarly, but the UI and Renderers are now bundled in a single file.
 
-### Event parameters
+### Event Parameters
 
 One notable change is the standardization of event parameters. The term `platform` was replaced with `channel`. We now refer to a user/group with `target`, and all other parameters related to the type of the event is stored in `payload`. When you send a message to a user, the payload is given to the content renderer, which returns the channel-specific payload.
 

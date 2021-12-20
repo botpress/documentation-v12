@@ -67,12 +67,12 @@ The amend button lets you assign the misunderstood phrase to either an **Intent*
 ## NLU Dataset Guideline
 
 ### General Guidelines
-#### Number of utterances
+#### Number of Utterances
 The NLU engine uses Utterances to train your chatbot. Generally speaking, the more utterances, the better because AI models perform better predictions when they have a vast training body. The recommendation is:
 - Per Intent: 10 to 20, plus 5 to 10 for every slot
 - Per QNA: 10 to 20
 
-#### Avoid duplication
+#### Avoid Duplication
 Duplication when creating NLU datasets will result in redundant/useless data which the engine does not process. Below are forms of repetition you should always avoid.
 
 **Within the same Intent/QNA** and **Across Intents/QNAs**
@@ -90,7 +90,7 @@ Example: “Show bookmark” and “I want to see my bookmarks”
 When you try to add a variation, it is essential to add a different phrase instead of just adding a pronoun.
 Example: “Show favorites” and “Show my favorites”
 
-#### Avoid spelling and grammar mistakes
+#### Avoid Spelling and Grammar Mistakes
 The NLU engine performs spellcheck on _the phrase written by a user during a conversation, not on your training dataset_. For matches to be close, your spelling and grammar should be impeccable. Take time to run spellcheck on your NLU training dataset.
 
 #### Mix Utterances
@@ -116,9 +116,9 @@ Example:
       View all reminders              
       Where can I find reminders
 
-#### Stick to one concept per Intent/QNA 
+#### Stick to One Concept per Intent/QNA 
 
-### When to use an Intent vs. QNA
+### When to Use an Intent vs. QNA
 
 #### Intent
 When extracting information from the user input (e.g., dates and times), use an intent.

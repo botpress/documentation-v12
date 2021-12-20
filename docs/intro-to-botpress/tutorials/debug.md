@@ -29,7 +29,7 @@ You can add `DEBUG` to your `.env` file located in your root folder to set defau
 DEBUG=bp:dialog:*,bp:nlu:intents:*
 ```
 
-## Available namespaces 🔬
+## Available Namespaces
 
 :::note
 

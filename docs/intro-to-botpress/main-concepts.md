@@ -27,7 +27,7 @@ While you can use Botpress to develop rule-based or AI-based chatbots, you will 
 
 :::
 
-## Anatomy of a chatbot
+## Anatomy of a Chatbot
 
 A chatbot is quite simple:
 

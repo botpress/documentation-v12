@@ -54,7 +54,7 @@ What are `onEnter` instructions? Understand how the node Lifecycle works.
 
 :::
 
-### Add a text content element
+### Add a Text Content Element
 
 Create another `onEnter` instruction to make your bot say something. Once the first instruction executes, the response is stored in the session variable.
 
@@ -67,8 +67,3 @@ What is templating? Take a look at the [Mustache demo](https://mustache.github.i
 :::
 
 Once everything completes, this is what your node should look like:
-
-## Try it out!
-
-The next time you chat with the bot, it will reply with the description of the Botpress repository:
-

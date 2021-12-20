@@ -15,7 +15,7 @@ title: Using the UiPath integration for Botpress
 
 You must enable the `uipath` module to get started. See here to learn how to enable Botpress modules.
 
-## Starting UiPath jobs from Botpress
+## Starting UiPath Jobs From Botpress
 
 You can start UiPath jobs from Botpress by leveraging the Botpress SDK and the `Axios library.
 
@@ -165,7 +165,7 @@ async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { 
 }
 ```
 
-## Sending chat messages from UiPath to Botpress
+## Sending Chat Messages From UiPath to Botpress
 
 Using the Botpress component for UiPath, you can send back messages from your UiPath workflows to Botpress, enabling you to design UiPath workflows that report back to chat users on the progress of a UiPath Job.
 

@@ -13,7 +13,7 @@ Sorry, but this page is under construction!
 :::
 
 
-## How it works
+## How it Works
 
 The Botpress NLU module will process every incoming messages and will perform Intent Classification, Language Identification, Entity Extraction and Slot Tagging. The structured data that these tasks provide is added to the message metadata directly (under `event.nlu`), ready to be consumed by the other modules and components.
 
@@ -31,7 +31,7 @@ Intent classification helps you detect the intent of the users. It is a better a
 |   _"My flight is delayed, help!"_   | faq_flight_delayed |    0.82    |
 |    _"Can I bring a pet aboard?"_    |      faq_pet       |    0.85    |
 
-### Adding an intent
+### Adding an Intent
 
 To create a new intent, navigate to the NLU module then click "**Create new intent**". Give it a friendly name, then hit OK. You should now add "utterances" of that intent – that is, add as many ways of expressing that intent as possible.
 
@@ -45,7 +45,7 @@ To create a new intent, navigate to the NLU module then click "**Create new inte
 # provide as many as you can
 ```
 
-### Responding to an intent
+### Responding to an Intent
 
 You may detect and reply to intents by looking up the `event.nlu.intent.name` variable in your hooks, flow transitions or actions.
 
@@ -95,13 +95,13 @@ You can use that metadata in your flows to create transitions when a specific in
 ##### Example
 
 
-### Confidence and debugging
+### Confidence and Debugging
 
 To enable debugging of the NLU module, make sure that `debugModeEnabled` is set to `true` in your `data/global/config/nlu.json` file.
 
 > **Tip**: In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
 
-##### Example of debugging message
+##### Example of Debugging Message
 
 NLU Extraction
 
@@ -123,11 +123,11 @@ Entity Extraction helps you extract and normalize known entities from phrases.
 
 Attached to NLU extraction, you will find an entities property which is an array of System and Custom entities.
 
-#### Using entities
+#### Using eEntities
 
 You may access and use data by looking up the `event.nlu.entities` variable in your hooks, flow transitions or actions.
 
-##### Example of extracted entity:
+##### Example of Extracted Entity:
 
 User said : `Let's go for a five miles run`
 
@@ -172,7 +172,7 @@ User said : `Let's go for a five miles run`
 
 ### System Entities
 
-#### Duckling extraction
+#### Duckling Extraction
 
 Botpress Native NLU offers a handful of system entity extraction thanks to [Facebook/Duckling](https://github.com/facebook/duckling) for known entity extraction like Time, Ordinals, Date, etc. For a complete list of system entities, please head to [Duckling documentation](https://github.com/facebook/duckling).
 
@@ -206,7 +206,7 @@ For instructions on how to host your own Duckling server, please check the Deplo
 
 **Note**: Confidence will always be 1 due to the rule based implementation of Duckling
 
-#### Placeholder extraction (experimental)
+#### Placeholder Extraction (experimental)
 
 Botpress Native NLU also ships a system entity of type `any` which is essentially a placeholder. This feature is working but requires a lot of training data. Before identifying slots [see slots docs](#slots) as entity type `any`, try to use custom entities.
 
@@ -222,7 +222,7 @@ Communication between users and bots are stored in the database, which means tha
 
 When checked, the information will still be displayed in the chat window, but the sensitive information will be replaced by `*****` before being stored. The original value is still available from `event.nlu.entities`
 
-#### Pattern extraction
+#### Pattern Extraction
 
 Once you've created a pattern entity, Botpress Native NLU will perform a regex extraction on each incoming message and add it to `event.nlu.entities`.
 
@@ -255,7 +255,7 @@ Extraction will go like:
 }
 ```
 
-#### List extraction
+#### List Extraction
 
 List extraction will behave in a similar way. The major addition is that for your entity definition, you'll be able to add different **occurrences** of your entity with corresponding synonyms.
 

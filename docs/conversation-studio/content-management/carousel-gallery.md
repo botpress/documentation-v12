@@ -17,7 +17,7 @@ The Postback feature of the Carousel allows you to **send custom data** to the B
 
 Using a hook, you can make your Botpress server **act upon the received data**.
 
-### Our bot
+### Our Bot
 
 In this example, we will send a custom payload using the Postback feature. When our chat user clicks on a button in the Carousel, we will send a payload with a city code (`mtl` or `nyc`).
 
@@ -25,7 +25,7 @@ We will then create a hook that will save this city code in the memory. The bot 
 
 As you can see, the bot wil first display a Carousel, then flow to a different node based on the value of `temp.cityClicked`. The current transitions do not work yet, let's see the hook.
 
-### Implementing the hook
+### Implementing the Hook
 
 From the Code Editor, create a new hook. This hook will be of **category** "After Incoming Middleware". You can pick any name for you hook.
 Paste the following snippet inside your hook file:
@@ -67,7 +67,7 @@ function hook(bp: typeof sdk, event: sdk.IO.IncomingEvent) {
 
 Save the hook and open the emulator.
 
-### Testing your bot
+### Testing Your Bot
 
 Summon the bot by sending a quick hello message. The bot will display the carousel.
 Click on a button of the carousel. The bot's response will vary based on the button that was clicked:

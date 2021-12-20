@@ -14,11 +14,11 @@ Modules are a powerful way to extend the default functionalities of Botpress. Th
 
 Example of Module Views for Analytics, NLU and QNA:
 
-## List of existing modules
+## List of Existing Modules
 
 Check out our [existing modules](https://github.com/botpress/botpress/tree/master/modules) to get a better idea of what's possible.
 
-## Enabling or disabling modules
+## Enabling or Disabling Modules
 
 Modules are already bundled with the server binary for the moment. They are bundled in zip files in the folder `modules`. It is possible to enable or disable them by opening the file `data/global/botpress.config.json` in a text editor and setting the value to `true` or `false`
 

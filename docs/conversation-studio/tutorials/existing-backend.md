@@ -24,7 +24,7 @@ The content will be available under `event.credentials` when processing the even
 
 You can either define the token when the chat is initialized: `window.botpressWebChat.init({ externalAuthToken: 'userToken' })` or you can configure it while the conversation is ongoing: `window.botpressWebChat.configure({ externalAuthToken: 'userToken' })`.
 
-## Persisting the user's profile
+## Persisting the User's Profile
 
 Once Botpress authenticates a user, you may want to extract some information from the credentials to save them in the `user` state, like the First name, Last name, etc. All you need to do is set up a hook listening for a specific type of event, for example, `update_profile`. Then, select the required fields.
 

@@ -16,7 +16,7 @@ Enterprise Only
 By default, Botpress ships with three roles in addition to the administrator (developer, content editor, and agent), but you can change those and create new ones.
 
 
-## Assigning a role to a collaborator
+## Assigning a Role to a Collaborator
 
 You can easily give a collaborator access to your chatbot and assign a role by navigating to the  **Collaborator** tab from the Administration dashboard, navigate to the "Collaborators" tab. Once there, click the **Add collaborator** and specify the collaborator and their email address.
 
@@ -24,7 +24,7 @@ After adding a role, Botpress will automatically generate a once-off password fo
 
 You can also change a collaborator's role by clicking the **Action** button next to the user whose role you wish to change. In addition to the changing roles, the menu allows you to change the password, remove a user from the workspace (Botpress retains the email and password, enabling you to add the user back), or delete the user. 
 
-## Adding a new role
+## Adding a New Role
 
 In the `<data>/global/workspaces.json` file, you'll find the `roles` property, which is an array of all the roles you can assign to the collaborators on your workspace. You can add, remove and edit roles by modifying this array directly.
 

@@ -22,7 +22,7 @@ Once you have this module installed, you will be able to:
 
 > A new, more feature-rich version of HITL is in beta. You can try it today. See docs [here](#hitl-next-beta)
 
-## Pausing conversation
+## Pausing Conversation
 
 There are several ways you can pause the conversation:
 
@@ -44,7 +44,7 @@ For example:
 POST http://localhost:3000/api/v1/bots/welcome-bot/mod/hitl/sessions/13/pause
 ```
 
-## Alerting agents
+## Alerting Agents
 
 There are a number of ways to alert your agents of a paused conversation, an email, a call to an external API or, as in the example below, via a notification in the admin-panel:
 
@@ -58,7 +58,7 @@ The agent can then navigate to the appropriate conversation and take over the co
 
 > Note that in the latest versions, the notification bell is absent from the UI, so you will need to make a component to get the info from the notifications table or use a sendEmail action after pausing the conversation to alert agents.
 
-## Resuming the conversation
+## Resuming the Conversation
 
 Once the agent has finished assisting the user, they can unpause the conversation, which hands it back to the chatbots control.
 

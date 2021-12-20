@@ -33,14 +33,14 @@ Currently, only WhatsApp is supported on this channel.
 
 ### Steps
 
-#### Get your API credentials
+#### Get your API Credentials
 
 1. Go to your [Account Settings](https://dashboard.nexmo.com/settings)
 2. Scroll down and copy your API key, API secret and Signature secret from the LIVE credentials section
 3. Go to your applications and select your newly created application (https://dashboard.nexmo.com/applications/)
 4. Copy the Application ID
 
-#### Configure your bot
+#### Configure Your Bot
 
 1. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.vonage` section write this configuration :
 

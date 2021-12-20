@@ -17,13 +17,13 @@ title: Twilio
 
 ### Steps
 
-#### Get your API credentials
+#### Get your API Credentials
 
 1. Go to you twilio console dashboard
 2. Go to the settings tab
 3. Scroll down and copy your Account SID and Auth Token from the LIVE credentials section
 
-#### Configure your bot
+#### Configure Your Bot
 
 1. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.twilio` section write this configuration :
 
@@ -52,7 +52,7 @@ title: Twilio
 2. Restart Botpress
 3. You should see your webhook endpoint in the console on startup
 
-#### Configure webhook
+#### Configure Webhook
 
 1. Go to the phone numbers section -> manage -> active numbers
 2. Click on your registered phone number. If you don't have one, click on buy a new number

@@ -7,7 +7,7 @@ title: Single Sign-On Methods
 
 ## SSO with Google OAuth2
 
-### Step 1: Create OAuth2 credentials
+### Step 1: Create OAuth2 Credentials
 
 Go to your [Google Cloud dashboard](https://console.cloud.google.com/), create a project if you have not already done so, and navigate to "APIs & Services" from the sidebar. 
 
@@ -50,7 +50,7 @@ Navigate to the Botpress code editor by going into any of your bots and add a ne
 }
 ```
 
-### Step 4: Enable the strategy in Botpress
+### Step 4: Enable the Strategy in Botpress
 
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
@@ -71,7 +71,7 @@ Also make sure that the `externalAuth` object has `enabled` set to `true`:
 	"HS256"
 	],
 ```
-### Step 5: Restart the Botpress server
+### Step 5: Restart the Botpress Server
 
 A red cogwheel should appear in the bottom right of the Botpress UI. Click it to restart the server.
 
@@ -86,7 +86,7 @@ Go on GitHub's [OAuth application registration page](https://github.com/settings
 You may choose any url safe name as your strategy name.
 
 
-### Step 2: Create credentials
+### Step 2: Create Credentials
 
 Once on your created application's configuration page, copy the "Client ID", click on "generate a new client secret," and copy the generated value as well for the next step.
 
@@ -113,7 +113,7 @@ Navigate to the code editor by going into any of your bots and add a new entry w
 ```
 
 
-### Step 4: Enable the strategy in Botpress
+### Step 4: Enable the Strategy in Botpress
 
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
@@ -134,17 +134,17 @@ Also make sure that the `externalAuth` object has `enabled` set to `true`:
 	"HS256"
 	],
 ```
-### Step 5: Restart the Botpress server
+### Step 5: Restart the Botpress Server
 
 A red cogwheel should appear in the bottom right of the Botpress UI; click it to restart the server.
 
 ## Azure OAuth2
 **Note**: Azure OAuth2 only works for version 12.17.2 and later
 
-### Step 1: Create a tenant
+### Step 1: Create a Tenant
 Navigate to Azure Active Directory Page in your Azure Portal and create a new tenant
 
-### Step 2: Register an application
+### Step 2: Register an Application
 On the page of your newly created tenant, navigate to "App registrations".
 
 
@@ -172,15 +172,15 @@ In your Botpress instance, navigate to the code editor and add a new entry withi
 }
 ```
 
-### Step 4: Create a client secret
+### Step 4: Create a Client Secret
 Next, navigate to "Certificates & secrets" and create a new client secret, copy its value and paste in the `clientSecret` field of your created strategy in the _botpress.config.json_ file
 
-### Step 5: Enable the strategy in Botpress
+### Step 5: Enable the Strategy in Botpress
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
 > Please make sure that the `externalAuth` object has `enabled` set to `true`:
 
-### Step 6: Configure callback URL in Azure
+### Step 6: Configure Callback URL in Azure
 In your application in the Azure Active Directory portal, navigate to the "Authentication" page and add a platform. **Select "Web" for the platform type** and set your callback url with the one you configured in the _botpress.config.json_ file. **For the token type, select "ID tokens".**
 
 ### Step 7: Restart the Botpress server

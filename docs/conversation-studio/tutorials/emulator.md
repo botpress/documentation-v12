@@ -14,7 +14,7 @@ To open the Emulator, you can:
 
 You can close the Emulator by pressing <kbd>ESC</kbd> or by clicking again on the emulator icon.
 
-## Resending the same messages
+## Resending the Same Messages
 
 Using <kbd>↑</kbd> or <kbd>↓</kbd> on your keyboard in the text input will allow you to navigate and re-send previously sent messages quickly. The last 20 messages sent to this bot are persisted in your browser storage.
 

@@ -7,7 +7,7 @@ title: Setting up SSO with Google OAuth2
 
 **Note**: This is a Botpress Pro feature
 
-## Step 1: Create OAuth2 credentials
+## Step 1: Create OAuth2 Credentials
 
 Go to your [Google Cloud dashboard](https://console.cloud.google.com/), create a project if you have not already done so and navigate to "APIs & Services" from the sidebar. Once there go to the "Credentials" section and click "Create Credentials". Choose the "OAuth client ID" option.
 
@@ -44,12 +44,12 @@ In your Botpress instance navigate to the code editor by going into any of your 
 }
 ```
 
-## Step 4: Enable the strategy in Botpress
+## Step 4: Enable the Strategy in Botpress
 
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
 Also make sure that the `externalAuth` object has `enabled` set to `true`:
 
-## Step 7: Restart the Botpress server
+## Step 7: Restart the Botpress Server
 
 A green cogwheel should appear in the bottom right of the Botpress UI, click it to restart the server.

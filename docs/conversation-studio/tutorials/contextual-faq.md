@@ -5,7 +5,7 @@ title: Contextual FAQ
 
 -----------------
 
-## Create a context
+## Create a Context
 
 To create context, you have two options:
 
@@ -21,7 +21,7 @@ Then append the name of your new contexts to `qnaCategories` like so:
 }
 ```
 
-### From version 12.8 onwards
+### From Version 12.8 Onwards
 
 Contexts listed in the dropdown menu are sourced from all your existing content (questions & NLU intents). The `qna.json` configuration file is no longer used to provide a list of contexts. To create a new context, open or add a Q&A, input the context in the **Contexts** field, then select **+ Create context**:
 
@@ -31,7 +31,7 @@ When you create a new context this way, you need to save your changes for the co
 
 Once you have created your contexts, you can create your QNAs and assign a context to them. From the `category` menu, choose one of your contexts:
 
-## Add contexts to your flow
+## Add Contexts to Your Flow
 
 The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 actions (i.e. `appendContext`, `resetContext` and `removeContext`). You will find these actions under the NLU category in your actions list.
 

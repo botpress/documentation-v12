@@ -9,7 +9,7 @@ Docker is a set of platform-as-a-service products that use OS-level virtualizati
 
 > For an optimized Docker experience, download [Docker Desktop.](https://www.docker.com/products/docker-desktop)
 
-## Latest tags
+## Latest Tags
 
 The latest tags are updated every time a new release is created. Each release has a tag associated with it. We are recommending to use fix tag for production.
 

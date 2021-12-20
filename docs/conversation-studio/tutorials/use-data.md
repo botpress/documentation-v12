@@ -52,7 +52,7 @@ There are four different kinds of memories in Botpress; the difference between t
 
 Most of the time, you will rely on the `user` and `temp` type of memory. The temp memory is only alive for the duration of a flow.
 
-## Setting and accessing variables
+## Setting and Accessing Variables
 
 Variables can be set up or declared using the Set Variable action (see Dialog Memory section below) or code. When using the Set Variable action dialog, the variable is set up and assigned a value.
 
@@ -148,7 +148,7 @@ As you can see, it's straightforward to use!
 
 The `bot` memory is the same value for all users of the chatbot. Think of it as a global variable but scoped to this chatbot only.
 
-## How to change what's in the memory?
+## How to Change What's in the Memory?
 
 There are two different ways to edit these four different types of data. The most straightforward way is to use the action `base.setVariable`. You only have to specify the type of memory, the variable's name, and what value your chatbot should set it to.
 

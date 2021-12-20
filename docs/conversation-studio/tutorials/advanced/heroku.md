@@ -14,7 +14,7 @@ Heroku is a platform as a service (PaaS) that enables developers to build, run, 
 - Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - Type `heroku login` in your terminal to log in to Heroku.
 
-## Preparing the Docker image
+## Preparing the Docker Image
 
 To create a new chatbot from scratch, create a file named `Dockerfile` in any directory (Make sure your Dockerfile is really called Dockerfile, not “Dockerfile.txt”). Write this snippet in the file (and replace \$VERSION with the latest one in [hub.docker.com](https://hub.docker.com/r/botpress/server/tags/))
 
@@ -43,7 +43,7 @@ heroku container:push web --app $APP_NAME
 heroku container:release web --app $APP_NAME
 ```
 
-## Deploying with existing data
+## Deploying with Existing Data
 
 If you have already built a chatbot and want to host it on Heroku, add your `data` folder in the same folder as the `Dockerfile`. The structure should look like this:
 
@@ -64,7 +64,7 @@ WORKDIR /botpress
 CMD ["./bp"]
 ```
 
-## Using Postgres as the database
+## Using Postgres as the Database
 
 By default, Botpress uses SQLite as a database for persistence, and that doesn't work well on Heroku because it has ephemeral storage, which means data will get lost frequently. The best is to switch the database to Postgres (please make sure you are using Postgres 9.5 or higher):
 

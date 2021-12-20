@@ -40,7 +40,7 @@ slots : {
 
 Slot filling is the process of gathering information required by an intent. This information is defined as _slots_ as we mentioned in the above section.  It handles input validation and the chatbot's reply when the input is invalid. Botpress has an in-built skill to handle the slot filling process.
 
-### Creating a slot skill
+### Creating a Slot Skill
 We will use the slots which we defined earlier in this tutorial.
 
 1. In the Flow Editor view, click on Insert skill > Slot.
@@ -56,7 +56,7 @@ There are two types of validations:
 1. **Input validation**: The first validation is based on entity extraction. If the provided information doesn't match the entity of the slot, the chatbot will notify the user. This will not apply when the slot has the type `@system.any`. In this case, the chatbot will ultimately provide the complete user phrase when it fails to match a slot confidently.
 2. **Custom Input Validation**: you can use an action to add custom validation, e.g., regex, type validation (number, string). The action should set the variable `temp.valid` to either true or false based on the validation result.
 
-### Max retry attempts
+### Max Retry Attempts
 
 How many times the chatbot should try to get the correct answer. `On not found` outcome will be triggered when the maximum is reached.
 

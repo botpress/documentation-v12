@@ -13,7 +13,7 @@ Ever wanted to authenticate a user against a 3rd party authentication system to 
 
 The code for this example is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/chat-3rd-party-OAuth) directory of our GitHub repository.
 
-## Register the module
+## Register the Module
 
 Botpress modules provide a simple yet powerful way extend your bot capabilities without altering the core features. If we think about our use case here, the only thing that our module has to do is to offer an api so we can perform the steps to authenticate the user to Twitter. No UI, no middlewares, only an api and some configs is required. First of create an `src` directory with 2 sub dirs `backend` and `views`. Then, go ahead and write a simple module entry point (backend/index.ts).
 
@@ -51,7 +51,7 @@ Now that we have the shell of our module setup, we need to activate it in our `b
 }
 ```
 
-## Module implementation
+## Module Implementation
 
 Now that we have a working module let's get into the implementation. For simplycity we will use Passport.js along with a Twitter Strategy to implement the OAuth flow. Go ahead an install those deps. Once that done, we will need to add our Twitter App api keys so that our bot can properly authenticate the user to Twitter. We acheive this by creating a module config file for each bot. Config here is pretty simple, obviously you can customize it for your needs. Add the following file in the config directory of desired bots:
 

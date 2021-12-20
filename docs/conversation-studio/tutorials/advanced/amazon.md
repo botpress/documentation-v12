@@ -25,7 +25,7 @@ unzip botpress-$VERSION-linux-x64.zip
 ```
 After following the steps above, an instance of Botpress will be available locally on port 3000.
 
-### Setting up NGINX
+### Setting Up NGINX
 
 In general, NGINX is open-source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. On our Botpress Server installation, NGINX will allow us to reach two goals: serve as a reverse proxy and handle caching of assets. 
 
@@ -38,7 +38,7 @@ sudo mkdir /tmp/nginx_cache
 
 Configure NGINX to work with Botpress by editing the file `/etc/nginx/sites-available/default`. Please use our [suggested configuration](#NGINX_Config).
 
-### Securing your bot (HTTPS)
+### Securing Your Bot (HTTPS)
 
 To secure your installation, we will use Let's encrypt:
 
@@ -50,7 +50,7 @@ sudo apt-get install python-certbot-nginx
 sudo certbot --nginx
 ```
 
-### Monitoring and resilience
+### Monitoring and Resilience
 
 If you want to add resilience so that Botpress automatically reboots after shut down due to an issue, we recommend using PM2.
 
@@ -60,10 +60,10 @@ sudo npm install -g pm2
 sudo pm2 startup
 ```
 
-## Amazon Web Services using Dokku
+## Amazon Web Services Using Dokku
 Dokku is like a mini heroku on-prem. Once set up on your host, it's straightforward to push deployments via a simple git push.
 
-### Creating your EC2 instance
+### Creating Your EC2 Instance
 1. Open the EC2 Dashboard and click on `Instances`. Press the `Launch Instance` button
 2. At the `Choose AMI` step, we recommend using Ubuntu Server 18.04 LTS. We also support Centos 7.5, Debian 8.11, Red-hat 7.5, Ubuntu 16.04
 3. Click on the tab named `6. Configure Security Group`
@@ -119,7 +119,7 @@ git commit -m first
 git push dokku master
 ```
 
-### Adding a POSTGRES database
+### Adding a POSTGRES Database
 Now your chatbot is running on the host, but it is still using the SQLite database. Fortunately, Dokku has an open-source plugin that makes it very easy to set up the required database.
 
 ```bash

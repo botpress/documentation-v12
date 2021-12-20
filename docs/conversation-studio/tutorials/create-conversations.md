@@ -141,11 +141,11 @@ Skills are higher-level abstractions on top of flows that serve as dynamic flow 
 
 They can be seen as reusable components between multiple flows or even multiple chatbots.
 
-### Installing skills
+### Installing Skills
 
 A module must expose every skill. Modules can host any number of skills. All you need to do is install the required module, and you will have access to its skills.
 
-### Using skills
+### Using Skills
 
 Skills are meant to be used by the Botpress Flows GUI. After installing a skill module, navigate to a flow in the Graphical Flows Editor, then locate the "Insert Skill" toolbar to the left of the flow builder interface.
 
@@ -155,7 +155,7 @@ After filling in the form, you'll be able to click anywhere in the flow to inser
 
 Skills are stored as flows under the `data/bots/your-bot/flows/skills` folder. Skill nodes in the Studio Interface have the name of the skill appended to the node name, making them easily identifiable.
 
-### Editing skills
+### Editing Skills
 
 Once a skill node has been generated, you may click on that node and click "Edit" on the right panel to edit that node, which will update the generated flow automatically behind the scenes. 
 

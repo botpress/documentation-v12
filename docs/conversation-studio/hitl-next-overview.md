@@ -46,13 +46,13 @@ The UI Studio interface has three main sections:
 - **Conversation**: This shows conversations between the chatbot and user. The agent can chat with a user once the conversation is assigned.
 - **Contact Details**: Where an agent sees user profile, agent notes, and tags.
 
-## Adding agents
+## Adding Agents
 
 Revamped HITL allows multiple agents to collaborate on the platform. As a Botpress workspace administrator, you can invite agents the same way you would invite administrators or developers to your workspace. To do so, head to the `Collaborators` tab in your Botpress administration console, click add collaborator.
 
 A dialog window will show up. Fill in your agent email and select `Agent` as role. Follow the instructions and send your agents the authentication information.
 
-### Agent profile
+### Agent Profile
 
 For an agent's name and avatar to display to users, they can configure their profile by clicking the avatar icon on the top right corner of the administration interface and then selecting the `update profile` option. The following form dialog will show up.
 
@@ -63,7 +63,7 @@ The module ships with a `Handoff` [action](https://botpress.com/docs/main/code#a
 Every time that node is triggered, the Handoffs section will show a new pending handoff in the list. On selecting by clicking a user, you will be able to see a preview of the conversation. On the user side, your chatbot automatically sends a **transfer message**. This message is customizable, see [configuration](#advanced-features-and-customization) section.
 
 
-### Handoff assignation and resolution
+### Handoff Assignation and Resolution
 
 To pick a handoff and start conversing with the end-user, an agent first needs to set himself/herself `online` in the top right corner of the Agent Interface. This simple feature allows agents or coordinators to oversee conversations while offline. It is also handy when your team implements any auto-assignation rule.
 
@@ -73,17 +73,17 @@ Once online, an agent can click on any handoff item and click on the `assign to 
 
 Once the discussion with the user is over, an agent can hand back the control to the Chatbot by simply clicking the `resolve` button.
 
-### User profile
+### User Profile
 
 When a handoff item is selected, user variables are displayed in the user profile section. You can set user variables in any workflow using the built-in `SetVariable` action with the `user` scope. For more details, head to the [variables docs](https://botpress.com/do/docs/conversation-studio/tutorials/use-data#variables).
 
 The displayed user name is a user variable. Set `fullName` as a user variable for it to show up in the user profile.
 
-### Agent notes
+### Agent Notes
 
 A simple but powerful tool for collaboration over time, notes are associated with underlying conversations and not with the handoff item itself, making them persist from one handoff to another. In other words, with time, a user can have different handoff sessions with various agents, and agents can leave notes so future agents can see the additional context.
 
-## Advanced features and customization
+## Advanced Features and Customization
 
 Here are the most commonly used module configurations. You can check out the [module configuration file](https://github.com/botpress/botpress/blob/master/modules/hitlnext/src/config.ts) for all options.
 
@@ -114,7 +114,7 @@ Below is the raw configuration file available on path `...\data\global\config\hi
 }
 ```
 
-### Transfer and assignation messages
+### Transfer and Assignation Messages
 
 To change **Transfer message** (default being `You are being transferred to an agent`) and add a German translation for your German-speaking users, change the `transferMessage` json object to the desired translations.
 
@@ -129,7 +129,7 @@ These changes will be applied when you either disable your chatbot and re-enable
 
 The same technique applies to **Assignation Message**, but you have access to the `agentName` variable, which corresponds to the agent's full name, but its use is optional.
 
-### Message templates
+### Message Templates
 
 If your team of agents often uses the same set of answers, the `autoComplete` configuration can store these pre-written messages to take care of this task for you. They are a handy shortcut for agents, and you can add as many as you want. Here is how they show up in the Agent Interface :
 

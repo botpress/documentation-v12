@@ -15,7 +15,7 @@ Sorry, but this page is under construction!
 
 The email skill provides a quick way to send emails from within a Botpress workflow.
 
-## Creating your skill
+## Creating Your Skill
 
 From the Flow Editor view, click on Insert Skill > Send Email. The following interface allows you to insert the information you would fill in when using any standard email service.
 **From, To, CC & BCC** These fields are filled with email addresses. The _From_ field will be the sender's email address that the recipient will see when receiving an email from your chatbot. It can be configured to any valid email address.

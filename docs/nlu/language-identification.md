@@ -11,22 +11,22 @@ Enterprise only
 
 :::
 
-## Add a language
+## Add a Language
 
 In the Admin section > Your bots > Configs you will find a section for **Supported Languages** as in the screenshot below:
 
 
-## Switch language
+## Switch Language
 
 Go back to Studio and switch language.
 
 You'll see a "missing translation" notification on your content.
 
-## Translate your content
+## Translate Your Content
 
 Edit the content and add a translation
 
-## Change the language
+## Change the Language
 
 Botpress uses the browser language to detect the user language. The detected language is stored in the `language` field of the user attributes. Thus, it is possible to change the language of a user by modifying this field.
 

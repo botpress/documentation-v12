@@ -9,11 +9,11 @@ title: Setting up SSO with Azure AD OAuth2
 
 **Note**: Azure OAuth2 only works for version 12.17.2 and later
 
-## Step 1: Create a tenant
+## Step 1: Create a Tenant
 
 Navigate to Azure Active Directory Page in your Azure Portal and create a new tenant
 
-## Step 2: Register an application
+## Step 2: Register an Application
 
 In the page of your newly created tenant navigate to "App registrations".
 
@@ -42,20 +42,20 @@ In your Botpress instance navigate to the code editor by going into any of your 
 }
 ```
 
-## Step 4: Create a client secret
+## Step 4: Create a Client Secret
 
 Next navigate to "Certificates & secrets" and create a new client secret, copy its value and paste in the `clientSecret` field of your created strategy in the _botpress.config.json_ file
 
-## Step 5: Enable the strategy in Botpress
+## Step 5: Enable the Strategy in Botpress
 
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
 Also make sure that the `externalAuth` object has `enabled` set to `true`:
 
-## Step 6: Configure callback URL in Azure
+## Step 6: Configure Callback URL in Azure
 
 In your application in the Azure Active Directory portal, navigate to the "Authentication" page and add a platform. **Select "Web" for the platform type** and set your callback url with the one you configured in the _botpress.config.json_ file. **For the token type select "ID tokens".**
 
-## Step 7: Restart the Botpress server
+## Step 7: Restart the Botpress Server
 
 A green cogwheel should appear in the bottom right of the Botpress UI, click it to restart the server.
