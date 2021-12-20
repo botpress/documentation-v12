@@ -62,7 +62,9 @@ These are phrases that you may want to investigate further before deciding how y
 #### Amend
 The amend button lets you assign the misunderstood phrase to either an **Intent** or a **QnA**. There is a search capability for both of these. If you make a mistake when assigning, you can always use the undo button and assign again.
 
-> Currently, you cannot create a new QnA or a new intent from the Misunderstood module. Therefore, when the need arises, go to the module interface for either _QnA_ or _Natural Language Understanding_ and create then return to the Misunderstood module and classify.
+:::note
+Currently, you cannot create a new QnA or a new intent from the Misunderstood module. Therefore, when the need arises, go to the module interface for either _QnA_ or _Natural Language Understanding_ and create then return to the Misunderstood module and classify.
+:::
 
 ## NLU Dataset Guideline
 

@@ -17,7 +17,7 @@ The Dialog Engine uses [Flows](#flows) representing a chatbot's overall conversa
 
 A workflow allows you to break down a complex chatbot into multiple smaller flows. Breaking down the chatbot into multiple flows makes it easier to maintain, and you can re-use these flows when building other workflows or even other chatbots.
 
-Let's look at our Botpress support bot **Blitz**. We can add three flows to handle _issues, tickets_, and _troubleshooting
+Let's look at our Botpress support bot **Blitz**. We can add three flows to handle _issues, tickets_, and _troubleshooting_.
 
 ### Flow Lifecycle
 
