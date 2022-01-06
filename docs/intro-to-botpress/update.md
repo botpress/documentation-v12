@@ -6,9 +6,7 @@ title: Update Botpress
 ---------------
 
 :::note
-
 You can get more details of the Botpress Framework changes in the [Changelog](https://github.com/botpress/botpress/releases).
-
 :::
 
 ## Migration to Versions 12.X
@@ -26,9 +24,7 @@ Botpress 12 comes with an "auto-migration" feature that runs migrations for the 
 ### SQLite
 
 :::caution
-
 Create a backup of your `/data` folder before making any changes.
-
 :::
 
 1. Download and extract the new version of Botpress
@@ -39,9 +35,7 @@ Create a backup of your `/data` folder before making any changes.
 ### PostgreSQL
 
 :::caution
-
 Create a backup of your `/data` folder before making any changes.
-
 :::
 
 1. Download and extract the new version of Botpress

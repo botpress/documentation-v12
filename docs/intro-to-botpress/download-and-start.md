@@ -1,6 +1,6 @@
 ---
 id: download-and-start
-title: Set Botpress Up
+title: Get Started
 ---
 
 ---------------
@@ -10,9 +10,7 @@ title: Set Botpress Up
 Before installing the software (and after being totally sold by our incredible product), you have to download it. There are several versions of Botpress. You can download the one you prefer.
 
 :::tip
-
 If you already have created an awesome chatbot, follow the instructions about how to [upgrade](/docs/intro-to-botpress/update) your version.
-
 :::
 
 ### Requirements
@@ -33,9 +31,7 @@ You want the latest version. Download it on Mac, Windows, or Linux on the offici
 You can also choose between different [older versions](https://s3.amazonaws.com/botpress-binaries/index.html) and operating systems.
 
 :::tip
-
 Always use the latest version if you can.
-
 :::
 
 ## Start Botpress
