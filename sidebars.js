@@ -20,7 +20,6 @@ module.exports = {
     items: [
       'intro-to-botpress/intro',
       'intro-to-botpress/requirements',
-      'intro-to-botpress/main-concepts',
       'intro-to-botpress/download-and-start',
       'intro-to-botpress/update',
       {
