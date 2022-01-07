@@ -152,7 +152,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -165,6 +165,28 @@ module.exports = {
   themeConfig: {
     metadata: [{name: 'botpress, chatbot', content: 'documentation, docs'}],
     // This would become <meta name="keywords" content="cooking, blog"> in the generated HTML
+  },
+};
+
+module.exports = {
+  themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+      switchConfig: {
+        darkIcon: '\u{1F319}',
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        lightIcon: '\u{1F602}',
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      },
+    },
   },
 };
 
