@@ -6,9 +6,7 @@ title: Botpress Webchat
 ----------------
 
 :::caution
-
 Sorry, but this page is under construction!
-
 :::
 
 ## Embedding

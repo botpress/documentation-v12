@@ -6,9 +6,7 @@ title: Skill - Send Email
 ---------------
 
 :::caution
-
 Sorry, but this page is under construction!
-
 :::
 
 ### Email Skill

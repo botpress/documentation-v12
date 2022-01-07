@@ -6,9 +6,7 @@ title: Actions
 ---------------
 
 :::caution
-
 Sorry, but this page is under construction!
-
 :::
 
 There are two ways of quickly adding custom code to enrich your chatbot's experience: **Actions** and **Hooks**.

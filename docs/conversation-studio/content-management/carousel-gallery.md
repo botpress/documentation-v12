@@ -6,9 +6,7 @@ title: Carousel / Gallery
 ---------------
 
 :::caution
-
 Sorry, but this page is under construction!
-
 :::
 
 In this tutorial, you will learn how to use the Postback feature of the Carousel Content Type.

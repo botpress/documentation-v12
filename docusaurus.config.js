@@ -56,7 +56,7 @@ const config = {
             position: 'left',
             label: 'The Basics',
           },
-          {label: 'Admin Dashboard', position: 'left', href: '/docs/admin/admin-intro'},
+          {label: 'Admin', position: 'left', href: '/docs/admin/admin-intro'},
           {label: 'Conversation Studio', position: 'left', href: '/docs/conversation-studio/conversation-studio-intro'},
           {label: 'Messaging', position: 'left', href: '/docs/messaging/messaging-intro'},
           {label: 'NLU', position: 'left', href: '/docs/nlu/nlu-intro'},
