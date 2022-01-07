@@ -1,5 +1,5 @@
 ---
-id: admin-dashboard-intro
+id: admin-intro
 title: The Big Picture
 ---
 
