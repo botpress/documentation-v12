@@ -5,6 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
   --ifm-color-primary: #3276ea;
   --ifm-color-primary-dark: #1865e7;
@@ -80,14 +81,6 @@
   color: #F5F6F8;
 }
 
-.navbar__title {
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 1.70rem;
-}
-
 html[data-theme='dark'] {
   --ifm-color-scheme: dark;
   --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
@@ -154,9 +147,7 @@ html[data-theme='dark'] {
   margin-top: 0;
   margin-bottom: 8px;
   text-transform: uppercase;
-  color: #1A1E22;
 }
-
 
 .button {
   background-color: var(--ifm-button-background-color);
@@ -199,24 +190,19 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-footer-title-color: var(--ifm-color-white);
 }
 
-.menu__link--active {
-  background: #e3edfc;
-}
-
-.menu__link--active:not(.menu__link--sublist) {
-  background: #e3edfc;
-}
-
-.menuLinkText_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebarItem-styles-module {
-  background: #CAD7F5;
-  cursor: initial;
-}
-
 .navbar__link--active {
   background: #e3edfc;
   color: #3276ea;
   border: 1px solid #e3edfc;
   border-radius: 10px;
+}
+
+.navbar__title {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.70rem;
 }
 
 .alert {

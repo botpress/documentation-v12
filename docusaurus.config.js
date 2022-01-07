@@ -56,11 +56,36 @@ const config = {
             position: 'left',
             label: 'The Basics',
           },
-          {label: 'Admin', position: 'left', href: '/docs/admin/admin-intro'},
-          {label: 'Conversation Studio', position: 'left', href: '/docs/conversation-studio/conversation-studio-intro'},
-          {label: 'Messaging', position: 'left', href: '/docs/messaging/messaging-intro'},
-          {label: 'NLU', position: 'left', href: '/docs/nlu/nlu-intro'},
-          {label: 'Business Apps', position: 'left', href: '/docs/business-apps/business-apps-intro'},
+          {
+            type: 'doc',
+            docId: 'admin/admin-intro',
+            position: 'left',
+            label: 'Admin',
+          },
+          {
+            type: 'doc',
+            docId: 'conversation-studio/conversation-studio-intro',
+            position: 'left',
+            label: 'Conversation Studio',
+          },
+          {
+            type: 'doc',
+            docId: 'messaging/messaging-intro',
+            position: 'left',
+            label: 'Messaging',
+          },
+          {
+            type: 'doc',
+            docId: 'nlu/nlu-intro',
+            position: 'left',
+            label: 'NLU',
+          },
+          {
+            type: 'doc',
+            docId: 'business-apps/business-apps-intro',
+            position: 'left',
+            label: 'Business Apps'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -75,8 +100,28 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Intro to Botpress',
+                label: 'The Basics',
                 to: '/docs/intro-to-botpress/intro',
+              },
+              {
+                label: 'Admin',
+                to: '/docs/admin/admin-intro',
+              },
+              {
+                label: 'Conversation Studio',
+                to: '/docs/conversation-studio/conversation-studio-intro',
+              },
+              {
+                label: 'Messaging',
+                to: '/docs/messaging/messaging-intro',
+              },
+              {
+                label: 'NLU',
+                to: '/docs/nlu/nlu-intro',
+              },
+              {
+                label: 'Business Apps',
+                to: '/docs/business-apps/business-apps-intro',
               },
             ],
           },
