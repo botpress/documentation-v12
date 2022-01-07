@@ -7,9 +7,11 @@ title: Debug
 
 ## How To Use
 
-Botpress uses the [debug](https://www.npmjs.com/package/debug) package to log information about dialogs, hooks, middleware, nlu and others.
+Botpress uses the [debug](https://www.npmjs.com/package/debug) package to log information about dialogs, hooks, middleware, NLU, and others.
 
-To see all the logs, set `DEBUG=bp:* yarn start` if you're in development or `DEBUG=bp:* ./bp` if you're executing the binary.
+To see all the logs, set:
+- In source code: `DEBUG=bp:* yarn start`
+- In the binary: `DEBUG=bp:* ./bp`
 
 You can set multiple namespaces by separating them by a comma:
 
@@ -32,9 +34,7 @@ DEBUG=bp:dialog:*,bp:nlu:intents:*
 ## Available Namespaces
 
 :::note
-
 This feature is experimental and is subject to change
-
 :::
 
 Go to `<your_url>/admin/debug` to see a complete list of the available namespaces. The **super-admin role is required** to access this page.
