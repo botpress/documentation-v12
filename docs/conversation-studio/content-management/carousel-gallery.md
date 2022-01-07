@@ -9,8 +9,6 @@ title: Carousel / Gallery
 Sorry, but this page is under construction!
 :::
 
-In this tutorial, you will learn how to use the Postback feature of the Carousel Content Type.
-
 The Postback feature of the Carousel allows you to **send custom data** to the Botpress server when the user **clicks on button** in the Carousel.
 
 Using a hook, you can make your Botpress server **act upon the received data**.

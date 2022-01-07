@@ -21,7 +21,7 @@ The Botpress NLU module will process every incoming messages and will perform In
 
 Intent classification helps you detect the intent of the users. It is a better and more accurate way to understand what the user is trying to say than using keywords.
 
-##### Examples
+**Examples**
 
 |              User said              |       Intent       | Confidence |
 | :---------------------------------: | :----------------: | :--------: |
@@ -33,7 +33,7 @@ Intent classification helps you detect the intent of the users. It is a better a
 
 To create a new intent, navigate to the NLU module then click "**Create new intent**". Give it a friendly name, then hit OK. You should now add "utterances" of that intent – that is, add as many ways of expressing that intent as possible.
 
-##### Flight Booking Example
+#### Flight Booking Example
 
 ```yaml
 - book flight
@@ -90,9 +90,6 @@ Here's an example of the structure of an incoming event processed by Botpress Na
 
 You can use that metadata in your flows to create transitions when a specific intent is understood inside a specific flow. You can learn more about flows and transitions.
 
-##### Example
-
-
 ### Confidence and Debugging
 
 To enable debugging of the NLU module, make sure that `debugModeEnabled` is set to `true` in your `data/global/config/nlu.json` file.
@@ -101,7 +98,7 @@ To enable debugging of the NLU module, make sure that `debugModeEnabled` is set 
 In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
 :::
 
-##### Example of Debugging Message
+#### Example of Debugging Message
 
 NLU Extraction
 
@@ -123,11 +120,11 @@ Entity Extraction helps you extract and normalize known entities from phrases.
 
 Attached to NLU extraction, you will find an entities property which is an array of System and Custom entities.
 
-#### Using eEntities
+### Using Entities
 
 You may access and use data by looking up the `event.nlu.entities` variable in your hooks, flow transitions or actions.
 
-##### Example of Extracted Entity:
+### Example of Extracted Entity:
 
 User said : `Let's go for a five miles run`
 
@@ -226,10 +223,9 @@ When checked, the information will still be displayed in the chat window, but th
 
 Once you've created a pattern entity, Botpress Native NLU will perform a regex extraction on each incoming message and add it to `event.nlu.entities`.
 
-##### Example :
+**Example**
 
 Given a Pattern Entity definition with `[A-Z]{3}-[0-9]{4}-[A-Z]{3}` as pattern:
-
 
 Extraction will go like:
 

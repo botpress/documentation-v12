@@ -9,39 +9,6 @@ title: Skill - Send Email
 Sorry, but this page is under construction!
 :::
 
-### Email Skill
-
-The email skill provides a quick way to send emails from within a Botpress workflow.
-
-#### Configuring Email Skill
-To send an email using the email skill, you need to configure your chatbot with a transport connection string. Set the configuration string in the directory `...data/global/config/basic-skills.json`. For more information on the mail transporters available and how to configure them, please visit the [Nodemailer documentation](https://nodemailer.com/smtp/#examples)
-
-Here is an example of a configuration using a mail server:
-
-```json
-{
-  "$schema": "../../assets/modules/basic-skills/config.schema.json",
-  "defaultContentElement": "builtin_single-choice",
-  "defaultContentRenderer": "#builtin_single-choice",
-  "defaultMaxAttempts": 3,
-  "disableIntegrityCheck": true,
-  "matchNumbers": true,
-  "matchNLU": true,
-  "transportConnectionString": {
-    "host": "192.168.100.200",
-    "port": "25",
-    "secure": false,
-    "tls": {
-      "rejectUnauthorized": false
-    }
-  }
-}
-```
-
-:::info
-Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
-:::
-
 ## Overview
 
 The email skill provides a quick way to send emails from within a Botpress workflow.
@@ -53,12 +20,6 @@ From the Flow Editor view, click on Insert Skill > Send Email. The following int
 **Email Content** Again, this field will load from a content element. Unlike the subject field, you can use markdown, which Botpress will render correctly to the receiver. You can also include HTML to enhance the formatting of your email body further.
 
 It is worthy to note that Botpress supports templating in all fields of your email skill, allowing access to variables stored in Memory. All `bot`, `user`, `session`, `temp`, and `event` are accessible via templating. To access these variables, reference the memory location.
-
-#### Creating Your Skill
-From the Flow Editor view, click on Insert Skill > Send Email. The following interface allows you to insert the information you would fill in using any standard email service.
-**From, To, CC & BCC** These fields are filled with email addresses. The _From_ field will be the sender's email address that the recipient will see when receiving an email from your chatbot. You can configure it to any valid email address. 
-**Subject** This field contains the subject of the email. You will need to create a content element that will load as the subject line. Please note that it will render as plain text even if you use markdown in the subject line.
-**Email Content** Again; this field will load from a content element. Unlike the subject field, you can use markdown, which Botpress will render correctly to the receiver. You can also include HTML to enhance the formatting of your email body further.
 
 It is worthy to note that Botpress supports templating in all fields of your email skill, allowing access to variables stored in [Memory](/docs/conversation-studio/tutorials/use-data). All `bot`, `user`, `session`, `temp`, and `event` are accessible via templating. To access these variables, reference the memory location.
 

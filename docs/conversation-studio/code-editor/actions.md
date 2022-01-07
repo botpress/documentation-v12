@@ -9,53 +9,6 @@ title: Actions
 Sorry, but this page is under construction!
 :::
 
-There are two ways of quickly adding custom code to enrich your chatbot's experience: **Actions** and **Hooks**.
-
-Both are executed in a virtual machine to prevent server crashes in case there is a scripting error. Your scripts may require any module loaded by Botpress by default (for example, lodash, axios, moment, nanoid, and [much more](https://github.com/botpress/botpress/blob/master/package.json)).
-
-You can also use one of the pre-loaded **Skills** to perform tasks that require more complexity than can be added in a normal node.Botpress comes with skills to send emails, call an API, extract entities and give predefined answers.
-
-If you want to include other dependencies not already included, there are two possible ways. You can add the `node_modules` folder containing your dependency in the same folder as your Action.
-
-To help you visualize how it works, check the snippet below. We've commented out a "hidden" portion of the code since all you need to include in your `.js` files is your actual code.
-
-```js
-/** const virtual_machine = async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) { */
-
-//The content of your .js file starts here. Example:
-const _ = require('lodash')
-if (event.type === 'text') {
-  const text = _.get(event, 'text')
-  console.log(text)
-  //...
-}
-//End of your file
-
-/** } */
-```
-
-It is also possible to wrap your code with an async method:
-
-```js
-/** const virtual_machine = async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) { */
-
-//The content of your .js file starts here. Example:
-const myMethod = async () => {
-  await axios.get('...')
-  console.log('Hello!')
-}
-
-return myMethod()
-//End of your file
-
-/** } */
-```
-
-:::note
-These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
-:::
-
-## Actions
 Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to do many things:
 
 - Alter the state of the conversation
@@ -74,7 +27,7 @@ Since they are JavaScript functions, they can do pretty much anything. When the 
 
 Check out the page Bot Memory and Data Retention for more details about these objects' lifetime.
 
-### Example of an Action
+**Example of an Action**
 
 Here are some possible ways to use these variables
 
@@ -215,5 +168,50 @@ Botpress comes pre-packed with a translation engine that helps developers design
 Botpress will ignore files starting with a dot (`.`). This way, you can disable a hook or Action by merely prefixing the file's name with a dot.
 
 ## Learn More
+
+
+Your scripts may require any module loaded by Botpress by default to improve your chatbot experience (for example, lodash, axios, moment, nanoid, and [much more](https://github.com/botpress/botpress/blob/master/package.json)).
+
+You can also use one of the pre-loaded **Skills** to perform tasks that require more complexity than can be added in a normal node. Botpress comes with skills to send emails, call an API, extract entities and give predefined answers.
+
+If you want to include other dependencies not already included, there are two possible ways. You can add the `node_modules` folder containing your dependency in the same folder as your Action.
+
+To help you visualize how it works, check the snippet below. We've commented out a "hidden" portion of the code since all you need to include in your `.js` files is your actual code.
+
+```js
+/** const virtual_machine = async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) { */
+
+//The content of your .js file starts here. Example:
+const _ = require('lodash')
+if (event.type === 'text') {
+  const text = _.get(event, 'text')
+  console.log(text)
+  //...
+}
+//End of your file
+
+/** } */
+```
+
+It is also possible to wrap your code with an async method:
+
+```js
+/** const virtual_machine = async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) { */
+
+//The content of your .js file starts here. Example:
+const myMethod = async () => {
+  await axios.get('...')
+  console.log('Hello!')
+}
+
+return myMethod()
+//End of your file
+
+/** } */
+```
+
+:::note
+These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
+:::
 
 See [Call API in action](/docs/conversation-studio/tutorials/external-api)
