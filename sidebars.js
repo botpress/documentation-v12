@@ -42,18 +42,18 @@ module.exports = {
       ],
     },
   ],
-  adminDashboardSidebar: [
+  adminSidebar: [
     {
     type: 'category',
     collapsible: false,
-    label: 'Admin Dashboard Tabs',
-    items: ['admin-dashboard/admin-dashboard-intro', 'admin-dashboard/bots', 'admin-dashboard/logs', 'admin-dashboard/code-editor', 'admin-dashboard/source-control', 'admin-dashboard/server-license', 'admin-dashboard/languages', 'admin-dashboard/modules', 'admin-dashboard/production-checklist', 'admin-dashboard/monitoring', 'admin-dashboard/alerting', 'admin-dashboard/latest-releases'],
+    label: 'Admin',
+    items: ['admin/admin-intro', 'admin/bots', 'admin/logs', 'admin/code-editor', 'admin/source-control', 'admin/server-license', 'admin/languages', 'admin/modules', 'admin/production-checklist', 'admin/monitoring', 'admin/alerting', 'admin/latest-releases'],
     },
     {
     type: 'category',
     collapsible: true,
     label: 'Tutorials',
-    items: ['admin-dashboard/tutorials/use-tabs'],
+    items: ['admin/tutorials/use-tabs'],
     },
   ],
   conversationStudioSidebar: [
