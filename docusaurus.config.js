@@ -190,4 +190,49 @@ module.exports = {
   },
 };
 
+module.exports = {
+  themeConfig: {
+    navbar: {
+      items: [
+        {
+          type: 'docsVersion',
+          position: 'right',
+          to: '/path',
+          label: 'label',
+        },
+      ],
+    },
+  },
+};
+
+module.exports = {
+  themeConfig: {
+    navbar: {
+      items: [
+        {
+          type: 'search',
+          position: 'right',
+        },
+      ],
+    },
+  },
+};
+
+module.exports = {
+  themeConfig: {
+    navbar: {
+      hideOnScroll: true,
+    },
+  },
+};
+
+module.exports = {
+  themeConfig: {
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 10,
+    },
+  },
+};
+
 module.exports = config;
