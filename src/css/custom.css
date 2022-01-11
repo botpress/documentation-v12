@@ -16,7 +16,6 @@
   --ifm-color-primary-lightest: #7faaf2;
   --ifm-code-font-size: 95%;
   --ifm-background-color: #F5F6F8;
-  --ifm-heading-color: #3276ea;
   --ifm-hover-overlay: #CAD7F5;
   --ifm-color-white: #F5F6F8;
   --ifm-color-black: #1A1E22;
@@ -127,6 +126,7 @@ html[data-theme='dark'] {
 .markdown h1:first-child {
   --ifm-h1-font-size: 2.5rem;
   margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );
+  color: #3276ea
 }
 
 
@@ -144,19 +144,20 @@ html[data-theme='dark'] {
   color: #5990ee;
 }
 
-.markdown > h3 {
+.markdown > h4 {
   --ifm-h3-font-size: 1.25rem;
   margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
   color: #4c87ed  ;
 }
 
-.admonition h5 {
-  color: #1A1E22;
-  margin-top: 0;
-  margin-bottom: 8px;
-  text-transform: uppercase;
+.markdown > h5 {
+  --ifm-h3-font-size: 1.25rem;
+  margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+  margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
+  color: #7faaf2  ;
 }
+
 
 .button {
   background-color: var(--ifm-button-background-color);
