@@ -2,21 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-const SpecsCard = () => (
-  <SingleBlock layout="threeColumn">
-    {[
-      {
-        content: 'List of all features and specifications',
-        title: '<a href="/docs/features">🔢 Features</a>'
-      }
-    ]}
-  </SingleBlock>
-)
-
 const FeatureList = [
   {
     title: 'Easy to Use',
-    href: '/docs/intro-to-botpress/intro',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
