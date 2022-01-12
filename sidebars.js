@@ -139,7 +139,6 @@ module.exports = {
       collapsible: false,
       label: 'Messaging',
       items: [
-        'messaging/messaging-intro',
         'messaging/botpress-webchat',
         'messaging/facebook-messenger',
         'messaging/http-api',
@@ -175,7 +174,6 @@ module.exports = {
       collapsible: false,
       label: 'Business Apps',
       items: [
-        'business-apps/business-apps-intro',
         {
           type: 'category',
           collapsible: true,

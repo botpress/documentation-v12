@@ -70,7 +70,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'messaging/messaging-intro',
+            docId: 'messaging/botpress-webchat',
             position: 'left',
             label: 'Messaging',
           },

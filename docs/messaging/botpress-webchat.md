@@ -9,9 +9,7 @@ title: Botpress Webchat
 Sorry, but this page is under construction!
 :::
 
-## Embedding
-
-Embedding a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and embed it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
+Integrating a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and integrate it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
 
 :::tip
 Remember to replace `<your-url-here>` with the URL of your bot!
@@ -33,7 +31,7 @@ That's it! Once you add these changes and save them to your website, the bot wil
 
 There is an example in the default botpress installation at `http://localhost:3000/assets/modules/channel-web/examples/embedded-webchat.html`
 
-### Additional Options
+**Additional Options:**
 
 | Property | Description                                                              |
 | -------- | ------------------------------------------------------------------------ |
@@ -85,7 +83,7 @@ The following function hides the chat window when you click the `hide-bp` elemen
 ```
 
 ### Changing Website Button
-Most developers change the default webchat button which comes pre-packed in Botpress. This is the button that appears on your website (in the bottom right corner) when you embed your chatbot onto your website. This common styling change is usually applied to adopt a button which fits into the website theme. If you would like to change the default Botpress button, pass the `hideWidget` key to your `init` function. By so doing, the default chat button will not show up on your website.
+Most developers change the default webchat button which comes pre-packed in Botpress. This is the button that appears on your website (in the bottom right corner) when you integrate your chatbot onto your website. This common styling change is usually applied to adopt a button which fits into the website theme. If you would like to change the default Botpress button, pass the `hideWidget` key to your `init` function. By so doing, the default chat button will not show up on your website.
 
 ```html
 <script>
@@ -347,7 +345,7 @@ const payload = {
 ## Customizing Web Chat Style
 The Botpress webchat interface which is displayed on your website is fully customisable. You can change any of the styling using CSS. This can be done in two steps. Firstly create your own cascading style sheet and name it anything you want. Thereafter paste your stylesheet in the `<botpress_dir>/data/assets/modules/channel-web` folder.
 
-Secondly, you need to reference your new style sheet to your embedded cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. Let us go through these steps in more detail.
+Secondly, you need to reference your new style sheet to your integrated cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. Let us go through these steps in more detail.
 
 ### Step 1: Styling (CSS)
 
