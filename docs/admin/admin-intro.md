@@ -43,7 +43,7 @@ The **Logs** page displays the triggered events in a time range, which are are s
 
 ## Code Editor
 
-The **Code Editor** page allows you to create and edit actions, hooks, libraries, configurations, and module configurations without leaving botpress studio.
+The **Code Editor** page allows you to create and edit actions, hooks, libraries, configurations, and module configurations without leaving the Botpress Admin.
 
 ## Source Control
 
