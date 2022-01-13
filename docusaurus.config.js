@@ -82,7 +82,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'business-apps/business-apps-intro',
+            docId: 'business-apps/analytics/engagement',
             position: 'left',
             label: 'Business Apps'
           },
@@ -121,7 +121,7 @@ const config = {
               },
               {
                 label: 'Business Apps',
-                to: '/docs/business-apps/business-apps-intro',
+                to: '/docs/business-apps/analytics/engagement',
               },
             ],
           },
