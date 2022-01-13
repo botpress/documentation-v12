@@ -20,6 +20,8 @@ The Conversation Studio allows you to:
 - manage everything related to your conversational design;
 - and so much more.
 
+![conversation-studio-intro](conversation-studio-intro.png)
+
 ## Flows
 
 The **Flows** page helps you create a conversational flow with a user-friendly interface.
