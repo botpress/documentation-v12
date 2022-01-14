@@ -165,6 +165,12 @@ module.exports = {
         'nlu/language-identification',
         'nlu/slot-tagging',
         'nlu/spell-checking',
+        {
+          type: 'category',
+          collapsible: true,
+          label: 'Tutorials',
+          items: ['nlu/tutorials/create-intents', 'nlu/tutorials/improving-nlu', 'nlu/tutorials/nlu-3rd-party'],
+        },
       ],
     },
   ],

@@ -5,7 +5,17 @@ title: Entity Extraction
 
 ---------------
 
-Entities are parts of a user phrase representing concepts such as color, date, time, or weight. So, in other words, entities are parameters to the intent. Thus, the `book-flight` intent may have an entity `destination` that specifies the city to be visited. Entity extraction helps you extract and normalize desired entities if they are present in a user phrase or message to the chatbot.
+Entities are intent parameters. They represent a concept such as a colour, a date, a time, or a weight. Entity extraction helps you extract and normalize desired entities if they are present in a user phrase or message to the chatbot. 
+
+:::note
+The following example comes from the [Intent Classification](/docs/nlu/intent-classification) page.
+:::
+
+**Example:**
+The `place-order` intent may have entities:
+- `caffeine` that specifies if the coffee is caffeinated or decaffeinated.
+- `size` for a single or a double shot.
+- ` 
 
 Attached to NLU extraction, you will find an entities property which is an array of [System](#system-entities) and [Custom](#custom-entities) entities.
 
