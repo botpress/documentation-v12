@@ -7,7 +7,7 @@ title: Development Lifecycle
 
 ## Git Syncing – Source Control Management
 
-A best practice is to keep track of changes to your chatbot using your preferred [Source Control Management Tool (SCM)](https://www.softwaretestinghelp.com/version-control-software/) and always deploy the master branch in production. Once deployed, you can regularly [pull](versions#pull) changes and update them to your SCM or revert to them when the need arises. Doing so helps you harness your SCM power for branches, merging conflicting files, reviewing changes, and creating revisions.
+A best practice is to keep track of changes to your chatbot using your preferred [Source Control Management Tool (SCM)](https://www.softwaretestinghelp.com/version-control-software/) and always deploy the master branch in production. Once deployed, you can regularly pull changes and update them to your SCM or revert to them when the need arises. Doing so helps you harness your SCM power for branches, merging conflicting files, reviewing changes, and creating revisions.
 
 Suppose you have a more complex deployment pipeline with one or multiple staging environments with pending changes on each environment. In that case, you can easily track and work on them using development pipelines.
 
@@ -62,7 +62,7 @@ Then merge the staging changes into the prod changes:
 
 This will create a merge conflict; use your preferred merge tool to review the changes and resolve the conflicts. Once done, you can publish your branch and create a pull request (if your hosted git allows it), and merge it to master.
 
-Once your master branch is up-to-date, you'll be able to [push](versions#push) the changes to production with:
+Once your master branch is up-to-date, you'll be able to push the changes to production with:
 
 `./bp push --url {PROD_SERVER_URL} --authToken {YOUR_AUTH_TOKEN} --targetDir {TARGET_DIRECTORY}`
 

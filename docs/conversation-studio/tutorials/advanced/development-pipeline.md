@@ -13,7 +13,7 @@ Suppose you have a more complex deployment pipeline with one or multiple staging
 
 ### Setting up Botpress Git Syncing (with GitHub)
 
-1. [Download Botpress](https://botpress.com/download)
+1. [Download Botpress](https://botpress.com/download).
 2. Open your terminal and ```cd [PATH]/botpress-[VERSION]```
 3. Set up GitHub remote tracking
 ```
@@ -62,7 +62,7 @@ Then merge the staging changes into the prod changes:
 
 This will create a merge conflict; use your preferred merge tool to review the changes and resolve the conflicts. Once done, you can publish your branch and create a pull request (if your hosted git allows it), and merge it to master.
 
-Once your master branch is up-to-date, you'll be able to [push](versions#push) the changes to production with:
+Once your master branch is up-to-date, you'll be able to push the changes to production with:
 
 `./bp push --url {PROD_SERVER_URL} --authToken {YOUR_AUTH_TOKEN} --targetDir {TARGET_DIRECTORY}`
 

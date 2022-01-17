@@ -9,8 +9,7 @@ Although a typical pipeline would have three stages (e.g., _Development_, _Stagi
 
 ## Prerequisite
 
-Pipelines are a Botpress Enterprise feature, so make sure you're running the enterprise edition with a valid license key. If you don't have a license key or don't know how to activate it, please follow [this guide](/docs/pro/licensing).
-
+Pipelines are a Botpress Enterprise feature, so make sure you're running the enterprise edition with a valid license key. If you don't have a license key or don't know how to activate it, please follow [this guide](/docs/admin/server-license).
 ## Concepts
 
 ### Stage
@@ -103,7 +102,7 @@ curl -X POST http://your.botpress.deployment/api/v1/admin/bots/{_YOUR_BOT_ID_}/s
 
 ### Available Hooks
 
-Hooks are vital components to customize the pipeline feature to your needs fully. If you don't know about hooks, read [the docs](../main/code#hooks) right away.
+Hooks are vital components to customize the pipeline feature to your needs fully. If you don't know about hooks, read [the docs](/docs/conversation-studio/code-editor/hooks) right away.
 So far, we haven't customized anything on the pipeline feature, and we didn't use or even see the `stage_request` property in the chatbot configs. If we want to check if the user has the right to change the stage of the bot, then rename it, give it a custom id and lock it,  we would use the `on_stage_request` hook.
 
 The hook will be called with the following arguments: **bp** (botpress sdk), **bot** (content of bot.config.json) , **users** (users in the workspace), **pipeline** (your pipeline definition), **hookResult** (object with a `actions` property).
