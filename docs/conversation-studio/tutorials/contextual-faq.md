@@ -5,8 +5,6 @@ title: Contextual FAQ
 
 -----------------
 
-## Create a Context
-
 To create context, you have two options:
 
 - Create context specific to a bot, create or edit this file `data/bots/<your_bot>/config/qna.json`.

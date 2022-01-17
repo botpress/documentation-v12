@@ -5,12 +5,6 @@ title: Hooks
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
-## Hooks
-
 Hooks are a handy way to execute javascript code (similar to that of actions) when specific events occur.
 
 They are defined globally as javascript files in the folder `data/global/hooks/${hookName}`. You can add as many files as you'd like in this folder; they will be processed sequentially, in alphabetical order.

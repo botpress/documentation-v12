@@ -5,10 +5,6 @@ title: Languages
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 Normally, you only have one language for your chatbot. However, you can add other languages by translating your content. 
 
 :::note

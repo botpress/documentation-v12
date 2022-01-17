@@ -5,10 +5,8 @@ title: Authentication Methods
 
 ---------------
 
-:::caution
-
+:::info
 Enterprise only
-
 :::
 
 A standard authentication (called basic) method is delivered with the software, but you might want to modify it. You have 4 different types of authentication methods that you can configure for different workspaces: Basic, SAML, OAuth2, and LDAP. There are 3 different types of authenticated users:

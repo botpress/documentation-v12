@@ -5,7 +5,9 @@ title: Setting up SSO with GitHub OAuth2
 
 ------------------
 
-**Note**: This is a Botpress Pro feature
+:::info
+Enterprise only
+:::
 
 ## Step 1: Create OAuth2 App
 

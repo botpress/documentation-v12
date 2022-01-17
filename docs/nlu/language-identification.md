@@ -6,9 +6,7 @@ title: Language Identification
 ---------------
 
 :::info
-
 Enterprise only
-
 :::
 
 ## Add a Language

@@ -6,9 +6,7 @@ title: Connecting to an Existing Backend
 -----------------
 
 :::info 
-
 Enterprise Only
-
 :::
 
 Botpress makes it easy to transmit data securely between your backend and your chatbot using JWT. Store any data you'd like in the token and pass it to the web chat using the `externalAuthToken` configuration option.

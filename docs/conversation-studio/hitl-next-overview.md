@@ -5,10 +5,6 @@ title: HITL Next - Overview
 
 ----------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 This revamped HITL works on **all existing and future channels**. It supports all features of its predecessor and a few more :
 
 - Multi-agents ( _enterprise edition only_ )

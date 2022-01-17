@@ -3,9 +3,7 @@ id: create-conversations
 title: Create Conversations
 ---
 
-# Create Conversations
-
----------------
+--------------------
 
 Botpress uses what we call the **Dialog Engine** to handle conversations. The Dialog Engine is responsible for every interaction with a chatbot. It handles the user input and the chatbot response. But between the two, a whole lot is happening.
 

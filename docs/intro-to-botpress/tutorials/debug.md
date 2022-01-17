@@ -5,8 +5,6 @@ title: Debug
 
 ----------------
 
-## How To Use
-
 Botpress uses the [debug](https://www.npmjs.com/package/debug) package to log information about dialogs, hooks, middleware, NLU, and others.
 
 To see all the logs, set:

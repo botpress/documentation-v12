@@ -5,8 +5,6 @@ title: Supported databases
 
 -----------------
 
-## Introduction
-
 By default, Botpress uses SQLite as its database. However, we recommend that you switch to PostgreSQL as early as you can in your chatbot development cycle because it is highly fault tolerant, stable, scalable and secure.
 
 ## How to Switch From SQLite to PostgresSQL

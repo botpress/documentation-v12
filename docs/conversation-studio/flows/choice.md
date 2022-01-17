@@ -5,10 +5,6 @@ title: Skill - Choice
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 This skill is a spin-off from the realization that most chatbot conversations will eventually have a question with hardcoded choices as answers. Although a content element lets the user select buttons to pick a response, the choice skill adds a few more caveats to that content element, which we will explore here.
 
 

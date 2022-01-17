@@ -5,10 +5,6 @@ title: Actions
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to do many things:
 
 - Alter the state of the conversation

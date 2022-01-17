@@ -5,10 +5,6 @@ title: The Big Picture
 
 ----------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 :::note
 Selecting a bot brings you to the Conversation Studio.
 :::

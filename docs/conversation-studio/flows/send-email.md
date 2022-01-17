@@ -5,12 +5,6 @@ title: Skill - Send Email
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
-## Overview
-
 The email skill provides a quick way to send emails from within a Botpress workflow.
 
 ## Creating Your Skill

@@ -5,10 +5,6 @@ title: Botpress Webchat
 
 ----------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 Integrating a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and integrate it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
 
 :::tip

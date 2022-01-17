@@ -5,8 +5,6 @@ title: Clustering
 
 -----------------
 
-## Cluster Overview
-
 ## Requirements
 
 - Redis Server v5+

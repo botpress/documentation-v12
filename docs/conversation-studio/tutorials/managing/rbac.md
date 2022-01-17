@@ -6,9 +6,7 @@ title: Role-Based Access Control
 ---------------
 
 :::info
-
 Enterprise Only
-
 :::
 
 **RBAC** (Role-Based Access Control) allows you to control what collaborators can access.
