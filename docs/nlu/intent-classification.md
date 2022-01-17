@@ -5,18 +5,18 @@ title: Intent Classification
 
 --------------
 
-Recognizing the meaning of user messages is essential. But, not only recognizing, classifying them accurately is also important. To do so, you can program your chatbot to extract information from a natural conversation (a conversation with a human).
+Recognizing the meaning of user messages is essential. Not only identifying them but accurately classifying them is also critical. To do so, you can program your chatbot to extract information from a natural conversation (a conversation with a human).
 
-An intent is created with various utterances. Utterances represent the different statements your user can use for the same intent.
+When you create an intent, you also create various utterances. Utterances represent the different statements your user can use for the same intention.
 
 **Example - Ordering a coffee:**
 
  - I want coffee
- - I'd like some coffee please
+ - I'd like some coffee, please
  - Do you have a decaf espresso?
- - Hi I'd like to order a latte please. Normal, single shot.
+ - Hi. I'd like to order a latte, please. Normal, single shot.
 
-This is where it gets interesting. By adding these different utterances, the chatbot can train on an intent instead of specific words. The user statements is compared and matched with the most appropriate intent, with the highest confidence percentage.
+You can add these different utterances to train your chatbot to answer an intent instead of a specific word. The user statements are compared and matched with the most appropriate intent, with the highest confidence percentage.
 
 |                     User Message                  |   Intent Matched   | Confidence |
 | :-----------------------------------------------: | :----------------: | :--------: |
@@ -42,10 +42,10 @@ Don't forget that:
 
 **Examples:**
 
-|  User message                                                |  Is converted to                                           |
-|  :---------------------------------------------------------: | :--------------------------------------------------------: |
-|  Hi! Could you please give me a single shot coffee? Thanks!  |   hi could you please give me a single shot coffee thanks  |
-|  Do you have any cappuccino available?                       |   do you have any cappuccino available                     |
+|  User message                                                   |  Is converted to                                                 |
+|  :------------------------------------------------------------: | :--------------------------------------------------------------: |
+|  Hi! Could you please give me a single shot of coffee? Thanks!  |   hi could you please give me a single shot of coffee thanks     |
+|  Do you have any cappuccino available?                          |   do you have any cappuccino available                           |
 
 ## Responding to an Intent
 

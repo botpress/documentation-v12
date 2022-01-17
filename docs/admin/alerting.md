@@ -9,7 +9,7 @@ The alerting service will trigger an alarm when your configured threshold are ex
 
 ### Prerequisite
 
-- Botpress Pro must be enabled with a valid license key
+- You must enable Botpress Pro with a valid license key
 - Redis Server must be running (minimum: version 2.8)
 - Monitoring must be enabled
 

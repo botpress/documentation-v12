@@ -9,14 +9,14 @@ title: The Big Picture
 Sorry, but this page is under construction!
 :::
 
-The first time you open Botpress, it might be overwhelming. There are so many things, everywhere. Don't worry, we'll go through every tabs that you can find on the left sidebar to help you.
+The first time you open Botpress, it might be overwhelming. There are so many things everywhere. Don't worry we will go through every tab that you can find on the left sidebar to help you.
 
 ![Admin](admin.png)
 
 ## Bots
 
 :::note
-This is the landing page where you go back every time you click the Botpress logo at the top-left of the page.
+This page is the landing page where you go back every time you click the Botpress logo at the top-left of the page.
 :::
 
 The **Bots** page displays a list of all the bots you created. You can configure them without going further in the Admin.
@@ -59,7 +59,7 @@ The **Languages** page lists every default language that are supported by Botpre
 
 ## Modules
 
-The **Modules** page lists every module you can use. There are 3 sections: **Stable modules**, **Experimental modules**, and **Compressed modules**. You can choose wheter to display the module in your Admin or Conversation Studio.
+The **Modules** page lists every module you can use. There are 3 sections: **Stable modules**, **Experimental modules**, and **Compressed modules**. You can choose wether to display the module in your Admin or Conversation Studio.
 
 ## Production Checklist
 

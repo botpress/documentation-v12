@@ -19,6 +19,8 @@
   --ifm-hover-overlay: #CAD7F5;
   --ifm-color-white: #F5F6F8;
   --ifm-color-black: #1A1E22;
+  --ifm-font-family: "Roobert-Regular";
+  --ifm-font-family-monospace: "Roobert-Regular";
   --ifm-font-family-base: "Roobert-Regular";
   --collapse-button-bg-color-dark: #2e333a;
 }
