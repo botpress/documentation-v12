@@ -87,6 +87,12 @@ const config = {
             label: 'Business Apps'
           },
           {
+            type: 'doc',
+            docId: 'glossary',
+            position: 'right',
+            label: 'Glossary',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',

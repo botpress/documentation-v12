@@ -5,9 +5,7 @@ title: Carousel / Gallery
 
 ---------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
+A carousel is an array of cards. This collection of cards can either be presented as a horizontally scrolling slide or a vertical message stack, depending on the channel.
 
 The Postback feature of the Carousel allows you to **send custom data** to the Botpress server when the user **clicks on button** in the Carousel.
 
