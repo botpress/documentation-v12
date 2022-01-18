@@ -12,10 +12,10 @@ The following example comes from the [Intent Classification](/docs/nlu/intent-cl
 :::
 
 **Example:**
-The `place-order` intent may have entities:
+The `place-order` intent contains the following entities:
 - `caffeine` that specifies if the coffee is caffeinated or decaffeinated.
 - `size` for a single or a double shot.
-- ` 
+- `drink` that specifies the kind of drink asked.
 
 Attached to NLU extraction, you will find an entities property which is an array of [System](#system-entities) and [Custom](#custom-entities) entities.
 
