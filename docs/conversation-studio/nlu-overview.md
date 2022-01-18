@@ -208,7 +208,7 @@ As of today we provide 2 types of custom entities: pattern and list entities. To
 
 ### Sensitive Information
 
-Communication between users and bots are stored in the database, which means that sometimes personal information (eg: credit card) may be persisted as well. To avoid that problem, it is possible to tell Botpress that certain entities are not to be persisted. When creating or editing an Entity, there is a small checkbox located in the upper right corner labeled `sensitive`.
+Communication between users and bots are stored in the database, which means that sometimes personal information (eg: credit card) may be persisted as well. To avoid that problem, you can tell Botpress that certain entities are not to be persisted. When creating or editing an Entity, there is a small checkbox located in the upper right corner labeled `sensitive`.
 
 When checked, the information will still be displayed in the chat window, but the sensitive information will be replaced by `*****` before being stored. The original value is still available from `event.nlu.entities`
 

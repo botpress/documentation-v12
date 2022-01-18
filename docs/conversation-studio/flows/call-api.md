@@ -137,7 +137,7 @@ To call the Converse API on the /secured path, you will need to include a Conten
 Where {token} is the JWT token provided by Botpress as described above.
 
 #### Request URL
-When calling the debug API, it is possible to get the following options in addition to the standard response.
+When calling the debug API, you can get the following options in addition to the standard response.
 
 - **nlu**: The output of Botpress NLU
 - **state**: The state object of the user conversation

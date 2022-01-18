@@ -5,10 +5,6 @@ title: The Big Picture
 
 ----------------
 
-:::caution
-Sorry, but this page is under construction!
-:::
-
 The first time you open Botpress, it might be overwhelming. There are so many things everywhere. Don't worry we will go through every tab that you can find on the left sidebar to help you.
 
 ![Admin](admin.png)

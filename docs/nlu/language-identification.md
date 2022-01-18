@@ -26,7 +26,7 @@ Edit the content and add a translation
 
 ## Change the Language
 
-Botpress uses the browser language to detect the user language. The detected language is stored in the `language` field of the user attributes. Thus, it is possible to change the language of a user by modifying this field.
+Botpress uses the browser language to detect the user language. The detected language is stored in the `language` field of the user attributes. Thus, you can change the language of a user by modifying this field.
 
 See [updateAttributes](https://botpress.com/reference/modules/_botpress_sdk_.users.html#updateattributes)
 
