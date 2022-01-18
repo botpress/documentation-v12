@@ -14,6 +14,8 @@ The Conversation Studio allows you to:
 - refine the natural language understanding;
 - edit the conversational flow after testing it;
 - manage everything related to your conversational design;
+- train a NLU model;
+- test and debug your chatbot;
 - and so much more.
 
 ![conversation-studio-intro](conversation-studio-intro.png)

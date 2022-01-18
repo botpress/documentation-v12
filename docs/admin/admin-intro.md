@@ -13,6 +13,16 @@ The first time you open Botpress, it might be overwhelming. There are so many th
 
 ![Admin](admin.png)
 
+The Admin is where you manage and configure everything related to your Botpress Server installation. It is the one-stop-shop for all functionalities that affect all the chatbots on a Botpress Server instance.
+
+**Features:**
+- Creating new chatbots.
+- Managing your Botpress Enterprise license and sync with version control.
+- Updating your profile and your Botpress Account.
+- Unpacking and activating modules.
+
+To open the Admin Dashboard, visit [`http://localhost:3000`](http://localhost:3000) (or the 3001, 3002, 3003...) in your favourite web browser. After that, register the main admin account to start using Botpress.
+
 ## Bots
 
 :::note

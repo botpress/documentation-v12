@@ -54,7 +54,7 @@ const config = {
             type: 'doc',
             docId: 'intro-to-botpress/intro',
             position: 'left',
-            label: 'The Basics',
+            label: 'Overview',
           },
           {
             type: 'doc',
