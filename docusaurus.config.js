@@ -93,7 +93,12 @@ const config = {
             label: 'Glossary',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://botpress.com/reference/',
+            label: 'SDK',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/botpress/documentation.git',
             label: 'GitHub',
             position: 'right',
           },
