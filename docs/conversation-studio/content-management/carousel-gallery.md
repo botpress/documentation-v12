@@ -5,25 +5,29 @@ title: Carousel / Gallery
 
 ---------------
 
-A carousel is an array of cards. This collection of cards can either be presented as a horizontally scrolling slide or a vertical message stack, depending on the channel.
+A carousel is an array of cards, that can be presented horizontally or vertically.
 
-The Postback feature of the Carousel allows you to **send custom data** to the Botpress server when the user **clicks on button** in the Carousel.
+The carousel has the Postback feature, which allows you to send custom data to the Botpress server when the user clicks a button in the carousel. Using a hook, you can make your Botpress server act upon the received data.
 
-Using a hook, you can make your Botpress server **act upon the received data**.
+## Example
 
-### Our Bot
+When our chat user clicks on a button in the carousel, we send a payload with a city code (`mtl` or `nyc`).
 
-In this example, we will send a custom payload using the Postback feature. When our chat user clicks on a button in the Carousel, we will send a payload with a city code (`mtl` or `nyc`).
+Then, we create a hook that saves this city code in the memory. The bot then flows to a particular node, depending on the value in memory.
 
-We will then create a hook that will save this city code in the memory. The bot will then flow to a particular node, depending on the value in memory.
+As you can see, the bot first displays a carousel, then a different node based on the value of `temp.cityClicked`. The current transitions do not work yet, let's see the hook.
 
-As you can see, the bot wil first display a Carousel, then flow to a different node based on the value of `temp.cityClicked`. The current transitions do not work yet, let's see the hook.
+## Implementing the Hook
 
-### Implementing the Hook
-
-From the Code Editor, create a new hook. This hook will be of **category** "After Incoming Middleware". You can pick any name for you hook.
-Paste the following snippet inside your hook file:
-
+1. Access the Conversation Studio of the selected bot.
+2. Click the **Code Editor** tab.
+3. Next to the Hooks tab, click the + button.
+4. In the dropdown menu, hover over **Event Hooks**, then click **After Incoming Middleware**.
+5. Type the name of your hook.
+:::note
+Don't forget to add `,js` after the name you typed.
+:::
+6. Paste the following snippet inside your hook file:
 ```javascript
 function hook(bp: typeof sdk, event: sdk.IO.IncomingEvent) {
   /** Your code starts below */
@@ -58,10 +62,4 @@ function hook(bp: typeof sdk, event: sdk.IO.IncomingEvent) {
   /** Your code ends here */
 }
 ```
-
-Save the hook and open the emulator.
-
-### Testing Your Bot
-
-Summon the bot by sending a quick hello message. The bot will display the carousel.
-Click on a button of the carousel. The bot's response will vary based on the button that was clicked:
+7. Save by clicking the little disk at the bottom left.

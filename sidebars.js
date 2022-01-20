@@ -158,7 +158,6 @@ module.exports = {
       collapsible: false,
       label: 'NLU',
       items: [
-        'nlu/nlu-intro',
         'nlu/intent-classification',
         'nlu/entity-extraction',
         'nlu/language-identification',

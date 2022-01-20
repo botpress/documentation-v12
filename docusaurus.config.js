@@ -76,7 +76,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'nlu/nlu-intro',
+            docId: 'nlu/intent-classification',
             position: 'left',
             label: 'NLU',
           },
