@@ -109,7 +109,7 @@ module.exports = {
         'conversation-studio/tutorials/shortlinks',
         'conversation-studio/tutorials/listening-file-changes',
         'conversation-studio/tutorials/inter-bot-communication',
-        'conversation-studio/tutorials/jump-to',x
+        'conversation-studio/tutorials/jump-to',
         {
           type: 'category',
           collapsible: true,
