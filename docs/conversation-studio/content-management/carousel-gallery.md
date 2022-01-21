@@ -21,7 +21,7 @@ As you can see, the bot first displays a carousel, then a different node based o
 
 1. Access the Conversation Studio of the selected bot.
 2. Click the **Code Editor** tab.
-3. Next to the Hooks tab, click the + button.
+3. Next to the **Hooks** tab, click the + button.
 4. In the dropdown menu, hover over **Event Hooks**, then click **After Incoming Middleware**.
 5. Type the name of your hook.
 :::note

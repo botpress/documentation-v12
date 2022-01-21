@@ -189,7 +189,7 @@ Whenever a user logs in using SAML or LDAP, their details are updated in his Bot
 
 ## User Authentication
 
-When using External Authentication, you can authenticate a user, and validate their identity each time he sends a message to the bot. You can use this in Actions, Hooks, and for Transitions on the Flow Editor.
+When using External Authentication, you can authenticate a user, and validate their identity each time he sends a message to the bot. You can use this in actions, hooks, and for transitions on the **Flow Editor**.
 
 :::note
 
@@ -272,7 +272,7 @@ window.botpressWebChat.configure({ externalAuthToken: 'my.jwt.token' })
 
 ## How to Use The Authenticated Payload
 
-When a user is authenticated, the JWT token is automatically decoded. If the token is valid, all the data is available through the `event.credentials` property. You can access it with Hooks, or while using Actions.
+When a user is authenticated, the JWT token is automatically decoded. If the token is valid, all the data is available through the `event.credentials` property. You can access it with hooks, or while using actions.
 
 After adding a new authentication strategy, and restarting Botpress, a new `strategy_STRATEGYID` table is created. When you give access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
 
