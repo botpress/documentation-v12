@@ -42,7 +42,7 @@ By default, your Botpress server queries one of our language servers, but you ca
 
 ## External NLU Providers
 
-If you want to use an external provider for some reason, you can do so by using Hooks and calling the external NLU provider via API.
+If you want to use an external provider for some reason, you can do so by using hooks and calling the external NLU provider via API.
 
 :::note
 We don't support two-way synchronization [(see why)](https://github.com/botpress/botpress/pull/1170). You'll have to maintain this yourself.

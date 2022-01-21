@@ -5,13 +5,13 @@ title: Calling an API in an Action
 
 --------------
 
-A popular use-case for Actions is to call an API, get some data and use it in your flow. That's what we're going to demonstrate here.
+A popular use-case for actions is to call an API, get some data and use it in your flow. That's what we're going to demonstrate here.
 
 In this tutorial, we're going to fetch the list of Botpress repositories on Github and display the description of the first one. We will show you how to call an API, save the response and use the answer in a content element through templating.
 
 ### The Action
 
-We will use `axios` as an HTTP client because it's already a Botpress dependency. See our Custom Code section to learn more about how dependencies work in Actions.
+We will use `axios` as an HTTP client because it's already a Botpress dependency. See our Custom Code section to learn more about how dependencies work in actions.
 
 Start by creating a new javascript file in `/data/global/actions/callApi.js`. Then copy the following code:
 
