@@ -62,7 +62,7 @@ import TabItem from '@theme/TabItem';
 </ul>
 
 <strong>Version Update:</strong>
-<p>When migrating to latest release, old chatbots get exported into the new version. Hooks/actions/bots should continue working.</p>
+<p>When migrating to latest release, old chatbots get exported into the new version. Hooks, actions, and bots should continue working.</p>
   </TabItem>
   <TabItem value="source-code" label="Source Code" default>
 <strong>Steps:</strong>

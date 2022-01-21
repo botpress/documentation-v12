@@ -5,39 +5,41 @@ title: Use your Data
 
 -----------------
 
-In a conversation, you may want to ask questions to the user and remember his answers to use later. You may also want to access the values of system parameters, such as the values of the slots that your chatbot just extracted.
+In a conversation, you may want to ask questions to the user and remember his answers to use them later. You may also want to access the values of system parameters, such as the values of the slots that your chatbot just extracted.
 
 ## System Parameters
 
 When a user talks to a chatbot, Botpress tracks all variables and parameters associated with that chatbot as the chatbot transitions from one state to another. If you run the debugger, you will see the tree of all the system parameters that it tracks. Just click the debugger button (circled in red below) and it will open in the bottom panel by default.
 
-You can access these system parameters from the flow builder and within your code (including in Actions). To do so, all you need to do to reference a parameter by prefixing the path shown in the emulator with “event.”.
+![How to Access Debugger](/assets/access-debugger.png)
 
-For example, the path shown in the debugger to the language parameter is nlu.language. You can reference that parameter by adding “event.” to the path shown in the debugger, i.e. event.nlu.language.
+You can access these system parameters from the flow builder and within your code (including in actions). To do so, all you need to do to reference a parameter by prefixing the path shown in the emulator with “event.”.
 
+For example, the path shown in the debugger to the language parameter is nlu.language. You can reference that parameter by adding “event.” to the path shown in the debugger, e.g., `event.nlu.language`.
+
+![NLU Language Emulator](/assets/nlu-emulator.png)
 
 In the Flow Editor, you can access system parameters by bracketing them with two sets of curly brackets. For example, in a message, you could say:
 
 :::note
-
-The user input language is {{event.nlu.language}}.
-
+The user input language is `{{event.nlu.language}}`.
 :::
 
 You can also set variables to be the value of a system parameter as follows:
 
-For raw expressions or code (such as in Actions), you don't need the curly brackets. Here is an example of a raw expression in a transition:
+![NLU Language Set Variable](/assets/nlu-variable.png)
 
-In the same way, as described above, it would be possible to access the values of extracted slots by copying the path from the emulator and prefixing it with "event." i.e. {{state.session.slots.food.value}} in the flow builder and state.session.slots.food.value in code. "food" is a slot that was set up intent by the chatbot builder.
+For raw expressions or code (such as in actions), you don't need the curly brackets. Here is an example of a raw expression in a transition:
 
-As is possible in Javascript, it is also possible to access the parameters with the following syntax:
+![NLU Language Raw Expression](/assets/nlu-raw-expression.png)
 
-{{state.session.slots["food"].value}}
+In the same way, as described above, it's possible to access the values of extracted slots by copying the path from the emulator and prefixing it with `event.` (e.g., `{{state.session.slots.food.value}}`) in the flow builder and `state.session.slots.food.value` in code. `food` is a slot that was set up intent by the chatbot builder.
 
-System Parameters that do not appear in the emulator that may be useful to chatbot builders are:
+![Slot Extraction Emulator](/assets/slot-extraction-emulator.png)
 
-event.payload.text - this returns the text just input by the user
+As is possible in JavaScript, it is also possible to access the parameters with the following syntax:
 
+`{{state.session.slots["food"].value}}`
 
 ## Variables
 
@@ -54,35 +56,31 @@ Most of the time, you will rely on the `user` and `temp` type of memory. The tem
 
 ## Setting and Accessing Variables
 
-Variables can be set up or declared using the Set Variable action (see Dialog Memory section below) or code. When using the Set Variable action dialog, the variable is set up and assigned a value.
+Variables can be set up or declared using the **Set Variable** action (see the [Dialog Memory](#dialog-memory) section below) or code. When using the **Set Variable** action dialog, the variable is set up and assigned a value.
 
-In code, the variable is declared simply by using it. For example, if you type
+:::note
+In code, the variable is declared simply by using it.
+:::
 
-**temp.user_name = "John"**
+As with system parameters (see [System Parameters](#system-parameter) section), variables can be accessed in the flow builder and the **Set Variable** dialog by bracketing the variables with double curly brackets (such as `{{temp.user_name}}`). 
 
-In code, the variable temp.user_name will be created and set to "John".
-
-As with system parameters (see System Parameters section), variables can be accessed in the flow builder and the Set Variable dialog by bracketing the variables with double curly brackets as follows:
-
-{{temp.user_name}}
-
-[User Name Message]
-
+:::note
 In code or raw expressions, the reference to the variable would not need the double curly brackets.
+:::
 
 For example, your chatbot would reference the variable as:
 
-temp.user_name
-
-[User Name Code]
+`temp.user_name`
 
 ## Dialog Memory
 
-The Dialog Memory is how your chatbot will remember things in the context of a conversation. The way you can store and retrieve data is by using Actions inside the flows. There are four types of memory available: **user**, **session**, **temp** and **bot**. The value of type in the Set Variable user interface must be set to one of these four types.
+The Dialog Memory is how your chatbot remembers things in the context of a conversation. The way you can store and retrieve data is by using actions inside the flows. There are four types of memory available: **user**, **session**, **temp** and **bot**. The value of type in the Set Variable user interface must be set to one of these four types.
 
 You can consume a memory action just like any other action from the Botpress Flow Editor.
 
-##### Memory Action Example
+**Example:**
+
+![Flow Memory Action](/assets/flow-memory-action.png)
 
 ### User Memory
 

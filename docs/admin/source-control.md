@@ -32,7 +32,7 @@ git push -u origin main
 
 ### Syncing Changes Between Environments
 
-We will use Git to sync changes between 2 environments and promote an environment (i.e., promote staging to production).
+We will use Git to sync changes between 2 environments and promote an environment (e.g.,, promote staging to production).
 
 Let's assume that given a pipeline with three environments, **development**, **staging**, and **production**, there are some changes both on production and staging, and you want to promote staging to production. What we want to do is the following:
 

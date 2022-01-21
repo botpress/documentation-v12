@@ -6,7 +6,7 @@ title: Using a 3rd party NLU
 --------------
 
 ## Overview
-Botpress native NLU runs on-premise and supports a finite set of languages. If you plan to develop chatbots in languages that Botpress does not support or if you want to use another NLU solution, then you'll need to set up a 3rd party NLU connector. To achieve this, we'll use the power of Botpress Hooks).
+Botpress native NLU runs on-premise and supports a finite set of languages. If you plan to develop chatbots in languages that Botpress does not support or if you want to use another NLU solution, then you'll need to set up a 3rd party NLU connector. To achieve this, we'll use the power of Botpress hooks).
 
 ### Define Languages
 One use-case for a 3rd party NLU is to support more languages in addition to those handled by Botpress Native NLU. For Botpress to keep working correctly with an additional language (defining intents & content), you'll have to tell Botpress the new languages you want to support. To do so, open `botpress.config.json` and set the `additionalLanguages` property. Let's say we want to support **Swedish** and **Norwegian**, the configuration would look like the following:
@@ -48,7 +48,7 @@ async function sync(bp: typeof sdk, botId: string) {
 return sync(sdk, botId)
 ```
 
-`onFileChanged` is called with the file name containing changes when a file is either created, edited or deleted. What we want to do now is to check if the change is relevant (i.e change in intents/entities) and sync the data to your custom NLU. Our hook will now look like this:
+`onFileChanged` is called with the file name containing changes when a file is either created, edited or deleted. What we want to do now is to check if the change is relevant (e.g., change in intents/entities) and sync the data to your custom NLU. Our hook will now look like this:
 
 ```js
 const axios = require('axios')

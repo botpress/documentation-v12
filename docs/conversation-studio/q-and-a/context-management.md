@@ -42,7 +42,7 @@ Contexts listed in the dropdown menu are sourced from all your existing content 
 
 ## Add contexts to your flow
 
-The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 built-in actions (i.e. `appendContext`, `resetContext` and `removeContext`), under the NLU category in your actions list.
+The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 built-in actions (e.g., `appendContext`, `resetContext` and `removeContext`), under the NLU category in your actions list.
 
 ### Append Context
 

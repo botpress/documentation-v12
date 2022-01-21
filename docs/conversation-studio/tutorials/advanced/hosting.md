@@ -5,7 +5,7 @@ title: Hosting NLU Servers
 
 -----------------
 
-Botpress communicates with two services to work correctly (i.e., Duckling and a Language Server). If your Botpress installation has **no internet** access, you'll have to host these services on-prem. When following the different hosting methods, look for a section on on-prem hosting for further details.
+Botpress communicates with two services to work correctly (e.g.,, Duckling and a Language Server). If your Botpress installation has **no internet** access, you'll have to host these services on-prem. When following the different hosting methods, look for a section on on-prem hosting for further details.
 
 ## Duckling
 We use Duckling to extract system entities (time, email, currency, etc.). This service is very light and requires minimal resources.
@@ -46,7 +46,7 @@ By default, Botpress configures the Language Server to get `100` dimensions for 
 1. Open this metadata file: https://botpress-public.nyc3.digitaloceanspaces.com/embeddings/index.json
 2. Download the `bpe` and `embeddings` files corresponding to your languages. For instance, for french, download the `bp.fr.bpe.model` file located under `remoteUrl` and the `bp.fr.300.bin` also located under `remoteUrl`.
 3. Once the files are downloaded, place them somewhere on your server filesystem and take note of the path.
-4. Add the `--offline` and the `--dim <number>` arguments to your command when starting the language server. i.e. `./bp lang --offline --dim <number> --langDir <some_path>`. Ensure that the dimension argument matches the dimensions of the models you have downloaded, e.g., `bp.en.300.bin` (Please note that you have to run this command in a directory that contains a functional copy of the Botpress binary).
+4. Add the `--offline` and the `--dim <number>` arguments to your command when starting the language server. e.g., `./bp lang --offline --dim <number> --langDir <some_path>`. Ensure that the dimension argument matches the dimensions of the models you have downloaded, e.g., `bp.en.300.bin` (Please note that you have to run this command in a directory that contains a functional copy of the Botpress binary).
 
 :::note
 `300` is the number of dimensions the model has. More dimensions mean the model size is bigger. You can choose a lighter model if your server specs are limited, but keep in mind that you need to change the `--dim` parameter when you start the Language Server (e.g. `./bp lang --dim <number>`).

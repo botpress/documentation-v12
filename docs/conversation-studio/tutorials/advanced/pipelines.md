@@ -27,7 +27,7 @@ As mentioned earlier, a Pipeline is simply a list of stages a chatbot needs to (
 Properties are self-explanatory except for action, which is defined. In a pipeline definition, the order of stages follows the order in the array `(1st stage === index 0).`
 
 ### Stage Actions
-A stage action defines how the pipeline system behaves when a chatbot is ready for promotion from one stage to another. Two actions are currently available `promote_move`, which moves the chatbot from current to next stage, and `promote_copy` creates an exact copy of the chatbot before being promoted to the next stage. The latter is useful when you want to keep the work in progress (i.e., Dev stage) version of your chatbot and send versions along the pipeline.
+A stage action defines how the pipeline system behaves when a chatbot is ready for promotion from one stage to another. Two actions are currently available `promote_move`, which moves the chatbot from current to next stage, and `promote_copy` creates an exact copy of the chatbot before being promoted to the next stage. The latter is useful when you want to keep the work in progress (e.g.,, Dev stage) version of your chatbot and send versions along the pipeline.
 
 ### Chatbot Pipeline Status
 

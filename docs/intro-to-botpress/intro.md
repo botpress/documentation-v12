@@ -20,16 +20,6 @@ At its core, Botpress is a tool to simplify building chatbots for developers. Th
 - An SDK and [Code Editor](/docs/conversation-studio/code-editor/actions) to extend the capabilities;
 - Post-deployment tools like [analytics](/docs/conversation-studio/analytics-overview) dashboards, [human handoff](/docs/conversation-studio/hitl-next-overview), and more...
 
-## Why Botpress (VS Our Competition)?
-
-Botpress has many advantages over other platforms and frameworks:
-
-- It is cloud-agnostic; therefore, you can run it on the cloud platform or the on-premise infrastructure of your choice, giving you complete control over your data privacy.
-- The core of Botpress is an open-source chatbot software with thousands of GitHub contributors and stargazers, and a thriving community forum.
-- The platform offers a solid developer experience by being remarkably flexible, easy to use, and fast. We support multiple languages, including French, Arabic, Spanish, and over 100 more languages.
-- No vendor lock-in.
-- Most importantly, our platform has proven to deliver a better conversational experience to end-users.
-
 ## With Botpress, You Can...
 
 **Automate Workflows**: Do you want to automate your chatbot? Gather the potential user information you need. And... there you go!

@@ -31,7 +31,7 @@ Once you have created your contexts, you can create your QNAs and assign a conte
 
 ## Add Contexts to Your Flow
 
-The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 actions (i.e. `appendContext`, `resetContext` and `removeContext`). You will find these actions under the NLU category in your actions list.
+The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 actions (e.g., `appendContext`, `resetContext` and `removeContext`). You will find these actions under the NLU category in your actions list.
 
 ### Append Context
 
