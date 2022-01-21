@@ -15,7 +15,7 @@ At its core, Botpress is a tool to simplify building chatbots for developers. Th
 
 - Built-in [Natural Language Processing](/docs/nlu/nlu-intro) tasks such as [intent classification](/docs/nlu/intent-classification), [spell checking](/docs/nlu/spell-checking), [entity extraction](/docs/nlu/entity-extraction), and [slot tagging](/docs/nlu/slot-tagging), and many others;
 - A visual [Conversation Studio](/docs/conversation-studio/conversation-studio-intro) to design multi-turn conversations and workflows;
-- An [emulator](/docs/conversation-studio/tutorials/emulator) & a [debugger](/docs/intro-to-botpress/tutorials/debug) to simulate conversations and debug your chatbot;
+- An [emulator](/docs/conversation-studio/tutorials/emulator) & a [debugger](/docs/overview/tutorials/debug) to simulate conversations and debug your chatbot;
 - Support for popular messaging channels like [Slack](/docs/messaging/slack), [Telegram](/docs/messaging/telegram), [Microsoft Teams](/docs/messaging/microsoft-teams), [Facebook Messenger](/docs/messaging/facebook-messenger), and an [embeddable web chat](/docs/messaging/botpress-webchat);
 - An SDK and [Code Editor](/docs/conversation-studio/code-editor/actions) to extend the capabilities;
 - Post-deployment tools like [analytics](/docs/conversation-studio/analytics-overview) dashboards, [human handoff](/docs/conversation-studio/hitl-next-overview), and more...
@@ -40,7 +40,7 @@ That means that they want help! And Botpress is precisely what they need.
 
 This section includes all the information you need to get started with Botpress.
 
-- [The hardware and software requirements to use Botpress](/docs/intro-to-botpress/requirements)
-- [How to install Botpress on your computer](/docs/intro-to-botpress/download-and-start)
-- [How to upgrade your version to a newer one](/docs/intro-to-botpress/update)
-- [All the features included in Botpress](/docs/intro-to-botpress/features)
+- [The hardware and software requirements to use Botpress](/docs/overview/requirements)
+- [How to install Botpress on your computer](/docs/overview/download-and-start)
+- [How to upgrade your version to a newer one](/docs/overview/update)
+- [All the features included in Botpress](/docs/overview/features)

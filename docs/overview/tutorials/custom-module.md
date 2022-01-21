@@ -65,7 +65,7 @@ Once your module is ready to be deployed, from your module's directory, run `yar
 
 ### Overriding Webpack Options
 
-It is possible to override webpack parameters by adding a "webpack" property to the `package.json` file of your module. When you override a property, you also remove the default settings that we've set, so we recommend adding them back when overriding. For example, if you'd like to add an additional external file:
+It is possible to override webpack parameters by adding a "webpack" property to the `package.json` file of your module. When you override a property, you also remove the default settings that we've set, so we recommend adding them back when overriding. For example, if you want to add an additional external file:
 
 ```js
 "webpack": {

@@ -5,7 +5,7 @@ title: Server License
 
 ---------------
 
-The server license tab is meant to be used when you want to have a enterprise environment. This enables a lot of new [options and features(/docs/intro-to-botpress/features/enterprise-specific-features)]. Don't forget that you also have all the other features of the free edition.
+The server license tab is meant to be used when you want to have a enterprise environment. This enables a lot of new [options and features(/docs/overview/features/enterprise-specific-features)]. Don't forget that you also have all the other features of the free edition.
 
 ## Obtain a License
 

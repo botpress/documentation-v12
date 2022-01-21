@@ -52,7 +52,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro-to-botpress/intro',
+            docId: 'overview/intro',
             position: 'left',
             label: 'Overview',
           },
@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'The Basics',
-                to: '/docs/intro-to-botpress/intro',
+                to: '/docs/overview/intro',
               },
               {
                 label: 'Admin',

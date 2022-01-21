@@ -85,7 +85,7 @@ sudo DOKKU_TAG=v0.12.13 bash bootstrap.sh
 
 Once you complete setup, open your web browser to your server's IP address and follow the instructions to configure your public key. Dokku will use the public key when you push content to deploy your bot.
 
-Then, on your Dokku host, type this command to create a new app. We are using `botpress-server` in this guide, but it could be anything you'd like.
+Then, on your Dokku host, type this command to create a new app. We are using `botpress-server` in this guide, but it could be anything you want.
 
 ```bash
 dokku apps:create botpress-server

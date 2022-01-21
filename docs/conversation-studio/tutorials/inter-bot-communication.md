@@ -9,14 +9,17 @@ Sometimes your chatbot needs to "delegate" questions or tasks to other bots. We 
 
 The code in this sample is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/interbot) directory of our GitHub repository (update `workspaces.json` with the three chatbots if you copied them).
 
-### Structure
+![Example](/assets/tutorials_interbot-example.png)
+
+## Structure
 
 ### Step 1 – Creating the Chatbots
+
 You will need to create three chatbots: one "master" chatbot (the one that will delegate questions to other bots) and two "slave" chatbots (the ones who get asked questions by the master).
 
-Head to the admin interface and create three chatbots with the names, `master`, `sub1`, and `sub2`, respectively, all based on the "empty bot" template.
+Head to the admin interface and create three chatbots with the names `master`, `sub1`, and `sub2`, respectively, all based on the "empty bot" template.
 
-- Leave the `master` chatbot empty for now.
+- Leave the `primary` chatbot empty for now.
 - In the `sub1` bot, create some QnA entries related to the same domain (pick the default `global` category/context).
 - In the `sub2` bot, do the same thing you did with `sub1`, but for another domain.
 
@@ -34,6 +37,8 @@ Next, create a flow that makes use of that action. For the sake of simplicity, t
 
 In the `main.flow.json` flow of your master bot, recreate the structure below.
 
+![Flow](/assets/tutorials_interbot-flow.png)
+
 The content of the text element is the following:
 
 ```
@@ -48,7 +53,3 @@ By the way, {{temp.delegation.0.botId}} is telling you:
 :::tip
 The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
 :::
-
-### Conclusion
-
-That's it! You now have the basic structure in place to allow inter-bot collaboration.

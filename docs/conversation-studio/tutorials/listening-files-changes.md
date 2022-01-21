@@ -5,13 +5,11 @@ title: Listening File Changes
 
 -----------------
 
-You may find yourself writing custom logic when a Botpress file has changed. For example, you could listen for changes to the QnA files to automatically launch a translation worker to translate the QnA to multiple languages.
+You may find yourself writing custom logic when a Botpress file has changed. For example, you could listen for changes to the Q&A files to automatically launch a translation worker.
 
-The Botpress File System (Ghost) exposes a way to listen for file changes for that purpose. In this example, we will watch for NLU changes inside any bot.
+The Botpress File System (Ghost) exposes a way to listen for file changes for that purpose. In this example, you will watch for NLU changes inside any bot.
 
-### Example
-
-Let's create a Hook inside the `<data_dir>/global/hooks/after_bot_mount` called `listen_nlu.js` and put the following code inside it:
+Let's create a hook inside the `<data_dir>/global/hooks/after_bot_mount` called `listen_nlu.js` and put the following code inside it:
 
 ```js
 const listener = bp.ghost.forBot(botId).onFileChanged(file => {

@@ -1,6 +1,6 @@
 ---
 id: ui-path
-title: Using the UiPath integration for Botpress
+title: Using the UiPath Integration for Botpress
 ---
 
 ----------------
@@ -13,17 +13,22 @@ title: Using the UiPath integration for Botpress
 
 ## Installation
 
-You must enable the `uipath` module to get started. See here to learn how to enable Botpress modules.
+You must enable the **UiPath** module to get started.
+
+:::note
+To install modules, check [this documentation](/docs/overview/tutorials/configuration#enable-or-disable-modules).
+:::
 
 ## Starting UiPath Jobs From Botpress
 
-You can start UiPath jobs from Botpress by leveraging the Botpress SDK and the `Axios library.
+You can start UiPath jobs from Botpress by leveraging the Botpress SDK and the `axios` library:
 
-Starting a UiPath job is done in 3 steps:
-
-1. Generate an access token to call UiPath
-2. Generate a Botpress Token that UiPath will send back to Botpress. This Token is necessary to authenticate calls to send messages back into Botpress.
-3. Start a UiPath Job
+1. Generate an access token to call UiPath.
+2. Generate a Botpress Token that UiPath will send back to Botpress. 
+:::note
+This Token is necessary to authenticate calls to send messages back into Botpress.
+:::
+3. Start a UiPath Job.
 
 Here is an example of starting a UiPath job using a Botpress Action:
 
@@ -167,11 +172,11 @@ async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { 
 
 ## Sending Chat Messages From UiPath to Botpress
 
-Using the Botpress component for UiPath, you can send back messages from your UiPath workflows to Botpress, enabling you to design UiPath workflows that report back to chat users on the progress of a UiPath Job.
+Using the Botpress component for UiPath, you can send back messages from your UiPath workflows to Botpress, which allows you to design UiPath workflows that report back to chat users on the progress of a UiPath Job.
 
 ### Installation
 
-From the UiPath Go marketplace, download the Botpress component. Install this component to your UiPath Studio.
+From the UiPath Go marketplace, download and install the Botpress component.
 
 ### Usage
 
@@ -179,11 +184,11 @@ The Botpress UiPath component contains the `Callback` UiPath Activity. The `Call
 
 #### Configuring the Callback Activity
 
-You  can configure the following properties for the `Callback` Activity:
+You can configure the following properties for the `Callback` Activity:
 
-- (REQUIRED) `ExternalURL`: The external URL for your Botpress instance. Examples: `"https://botpress.yourdomain.com"`, `"http://192.168.1.8:3000"`
-- (REQUIRED) `Message`: An object representing the message you are sending back to your Botpress instance. Example: `New With {Key .type = "text", Key .text = "Hello, this is a response from UiPath!"}`
-- (REQUIRED) `BotId`: The ID for your Botpress chatbot will handle the message. Examples: `"mybot"`, `"hrbot"`
-- (REQUIRED) `BotpressToken`: The Botpress Token is required to send back a message to your Botpress instance
-- (REQUIRED) `Channel`: The channel on which your bot will send back the message. Examples: `"web"`, `"messenger"`
-- (REQUIRED) `Target`: The user ID to which UiPath will send the message. Example: `"Sth3X70cccOkbm-ziPwc"`
+- (REQUIRED) `ExternalURL`: the external URL for your Botpress instance. **Examples:** `"https://botpress.yourdomain.com"`, `"http://192.168.1.8:3000"`.
+- (REQUIRED) `Message`: an object representing the message you are sending back to your Botpress instance. **Example:** `New With {Key .type = "text", Key .text = "Hello, this is a response from UiPath!"}`.
+- (REQUIRED) `BotId`: the ID for your Botpress chatbot will handle the message. **Examples:** `"mybot"`, `"hrbot"`.
+- (REQUIRED) `BotpressToken`: the Botpress Token is required to send back a message to your Botpress instance
+- (REQUIRED) `Channel`: the channel on which your bot will send back the message. **Examples:** `"web"`, `"messenger"`.
+- (REQUIRED) `Target`: the user ID to which UiPath will send the message. **Example:** `"Sth3X70cccOkbm-ziPwc"`.

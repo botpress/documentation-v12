@@ -18,10 +18,10 @@ module.exports = {
     collapsible: false,
     label: 'Intro to Botpress',
     items: [
-      'intro-to-botpress/intro',
-      'intro-to-botpress/requirements',
-      'intro-to-botpress/download-and-start',
-      'intro-to-botpress/features',
+      'overview/intro',
+      'overview/requirements',
+      'overview/download-and-start',
+      'overview/features',
     ],
     },
     {
@@ -29,8 +29,8 @@ module.exports = {
       collapsible: true,
       label: 'Upgrade',
       items: [
-        'intro-to-botpress/upgrade/from-10-to-11',
-        'intro-to-botpress/upgrade/to-versions-12',
+        'overview/upgrade/from-10-to-11',
+        'overview/upgrade/to-versions-12',
         ],
       },
     {
@@ -38,10 +38,10 @@ module.exports = {
     collapsible: true,
     label: 'Tutorials',
     items: [
-      'intro-to-botpress/tutorials/authentication-methods',
-      'intro-to-botpress/tutorials/configuration',
-      'intro-to-botpress/tutorials/create-modules',
-      'intro-to-botpress/tutorials/debug',
+      'overview/tutorials/authentication-methods',
+      'overview/tutorials/configuration',
+      'overview/tutorials/create-modules',
+      'overview/tutorials/debug',
       ],
     },
   ],
@@ -109,8 +109,7 @@ module.exports = {
         'conversation-studio/tutorials/shortlinks',
         'conversation-studio/tutorials/listening-file-changes',
         'conversation-studio/tutorials/inter-bot-communication',
-        'conversation-studio/tutorials/jump-to',
-        'conversation-studio/tutorials/contextual-faq',
+        'conversation-studio/tutorials/jump-to',x
         {
           type: 'category',
           collapsible: true,

@@ -17,16 +17,16 @@ title: Deploying a cluster on Digital Ocean
 
 2. Create a droplet (_Ubuntu 20.04_) for your [Redis instance](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04)
 
-   - Update the `bind` settings so your BP nodes can reach it
+   - Update the `bind` settings so your Botpress nodes can reach it
    - Secure it with a strong password
 
 3. Create a droplet (_Ubuntu 20.04_) for your [Postgres instance](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
 
    - Define a password for your Postgres user
-   - Make it accessible by each BP nodes
+   - Make it accessible by each Botpress nodes
    - Create a new database
 
-4. Create a droplet (_Ubuntu Docker 18.06_) for each BP node you want to use. We will use the first one to configure our cluster's database and licensing.
+4. Create a droplet (_Ubuntu Docker 18.06_) for each Botpress node you want to use. We will use the first one to configure our cluster's database and licensing.
 
 5. Create a `server.yml` file and upload it on the first droplet. This file identifies which Docker image we will use and sets the required environment variables.
 

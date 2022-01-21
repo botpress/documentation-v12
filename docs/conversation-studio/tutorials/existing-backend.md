@@ -9,14 +9,14 @@ title: Connecting to an Existing Backend
 Enterprise Only
 :::
 
-Botpress makes it easy to transmit data securely between your backend and your chatbot using JWT. Store any data you'd like in the token and pass it to the web chat using the `externalAuthToken` configuration option.
+Botpress makes it easy to transmit data securely between your backend and your chatbot using JWT. Store any data you want in the token and pass it to the web chat using the `externalAuthToken` configuration option.
 
-The content will be available under `event.credentials` when processing the event if the token is valid. If there is no token or if it is invalid, `credentials` will stay undefined.
+The content will be available under `event.credentials` when processing the event, if the token is valid. If there is no token or if it's invalid, `credentials` will stay undefined.
 
 ## Enabling
 
-1. Configure `pro.externalAuth` in the file `botpress.config.json.`
-2. Create a file named `key.pub` in the folder `data/global` containing the public key
+1. Configure `pro.externalAuth` in the file `botpress.config.json`.
+2. Create a file named `key.pub` in the folder `data/global` containing the public key.
 
 ## Usage
 
@@ -24,9 +24,9 @@ You can either define the token when the chat is initialized: `window.botpressWe
 
 ## Persisting the User's Profile
 
-Once Botpress authenticates a user, you may want to extract some information from the credentials to save them in the `user` state, like the First name, Last name, etc. All you need to do is set up a hook listening for a specific type of event, for example, `update_profile`. Then, select the required fields.
+Once Botpress authenticates a user, you may want to extract some information from the credentials to save them in the `user` state, such as the first name, the last name, etc. All you need to do is set up a hook listening for a specific type of event, for example, `update_profile`. Then, select the required fields.
 
-Example of a hook listening for an event:
+**Example:**
 
 ```js
 if (event.type === 'update_profile') {
@@ -47,10 +47,10 @@ if (event.type === 'update_profile') {
 }
 ```
 
-Then send a custom event : `window.botpressWebChat.sendEvent({ type: 'update_profile' })`
+Then send a custom event: `window.botpressWebChat.sendEvent({ type: 'update_profile' })`.
 
 ## Custom User ID
 
 Users get a new unique User ID each time they use a different device. To offer a consistent user experience across other devices, you may want to provide your customer with the same Botpress User ID to ensure past conversations and user data are available.
 
-The `window.botpressWebChat` methods `init` and `configure` both accept the `userId` parameter. It will override the randomly generated one. Since the User ID allows BP to recognize the user and continue a conversation, these should not be guessable and need to be unique for each user.
+The `window.botpressWebChat` methods `init` and `configure` accept the `userId` parameter. It overrides the randomly generated one. Since the User ID allows Botpress to recognize the user and continue a conversation, these should not be guessable and need to be unique for each user.

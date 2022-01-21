@@ -10,7 +10,7 @@ title: Get Started
 Before installing the software (and after being totally sold by our incredible product), you have to download it. There are several versions of Botpress. You can download the one you prefer.
 
 :::tip
-If you already have created a fantastic chatbot, follow the instructions about how to [upgrade](/docs/intro-to-botpress/update) your version.
+If you already have created a fantastic chatbot, follow the instructions about how to [upgrade](/docs/overview/update) your version.
 :::
 
 ### Requirements

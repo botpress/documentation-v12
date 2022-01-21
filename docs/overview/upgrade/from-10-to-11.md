@@ -13,7 +13,7 @@ This guide shows you how to migrate your bot(s) from Botpress 10.x to Botpress 1
 
 ## Bot Content
 
-1. [Launch the new Botpress server](/docs/intro-to-botpress/download-and-start#start-botpress).
+1. [Launch the new Botpress server](/docs/overview/download-and-start#start-botpress).
 1. Create a bot with any name. Your bot files will be in `data/bots/bot-name/`.
 1. Copy and paste the content of:
     - `generated/content` in `data/bots/bot-name/content-elements`
