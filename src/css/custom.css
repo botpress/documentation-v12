@@ -74,7 +74,7 @@
 
 @font-face {
   font-family: "Roobert-Regular";
-  src: url("/static/Roobert-Regular.otf") format("otf");
+  src: url('/static/Roobert-Regular.otf');
   font-weight: 400;
   font-style: normal;
 }

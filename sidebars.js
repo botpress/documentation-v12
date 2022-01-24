@@ -114,7 +114,7 @@ module.exports = {
           type: 'category',
           collapsible: true,
           label: 'Managing Botpress',
-          items: ['conversation-studio/tutorials/managing/acting-proactively', 'conversation-studio/tutorials/managing/rbac', 'conversation-studio/tutorials/managing/ssotools', 'conversation-studio/tutorials/managing/azure-oauth2', 'conversation-studio/tutorials/managing/github-oauth2', 'conversation-studio/tutorials/managing/google-oauth2', 'conversation-studio/tutorials/managing/chat-3rd-party-OAuth'],
+          items: ['conversation-studio/tutorials/managing/acting-proactively', 'conversation-studio/tutorials/managing/rbac', 'conversation-studio/tutorials/managing/azure-oauth2', 'conversation-studio/tutorials/managing/github-oauth2', 'conversation-studio/tutorials/managing/google-oauth2', 'conversation-studio/tutorials/managing/chat-3rd-party-OAuth'],
         },
         {
           type: 'category',

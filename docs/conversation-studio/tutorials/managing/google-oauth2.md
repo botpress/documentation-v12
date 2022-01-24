@@ -11,21 +11,33 @@ Enterprise only
 
 ## Step 1: Create OAuth2 Credentials
 
-Go to your [Google Cloud dashboard](https://console.cloud.google.com/), create a project if you have not already done so and navigate to "APIs & Services" from the sidebar. Once there go to the "Credentials" section and click "Create Credentials". Choose the "OAuth client ID" option.
+1. Go to your [Google Cloud dashboard](https://console.cloud.google.com/).
+1. Create a project.
+1. Navigate to **APIs & Services** from the sidebar.
+1. Access the **Credentials** section.
+1. Click **Create Credentials**. 
+1. Choose the **OAuth client ID** option.
 
 ## Step 2: Configure OAuth2 on Google Cloud
 
-Once on the client configuration page choose "Web application" for the "Application type", give the application any name you want and under "Authorized redirect URIs" and the following entry:
+1. On the client configuration page, choose **Web application** for the **Application type**.
+1. Name it.
+1. Under **Authorized redirect URIs**, add the following entry:
 
 `https://<Your external Botpress HTTPS URL>/api/v1/auth/login-callback/oauth2/<Your strategy name>`
 
-You may choose any url safe name as your strategy name
+:::note
+You may choose any URL safe name as your strategy name.
+:::
 
-A popup with your client ID and client secret will show up, keep them for the next step
+A popup with your client ID and client secret will show up, keep them for the next step.
 
 ## Step 3: Configure Botpress
 
-In your Botpress instance navigate to the code editor by going into any of your bots and add a new entry within `authStrategies` in the _botpress.config.json_ file, you may name the strategy whatever you want (keep the name URL safe) and fill in the entry in the following way:
+1. In your Botpress instance navigate to the **Code Editor**.
+1. Add a new entry within `authStrategies` in the `botpress.config.json` file.
+1. You may name the strategy whatever you want (keep the name URL safe).
+1. Fill in the entry in the following way:
 
 ```json
 "<your strategy name>": {
@@ -48,10 +60,28 @@ In your Botpress instance navigate to the code editor by going into any of your 
 
 ## Step 4: Enable the Strategy in Botpress
 
-Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
+Under the **Pro** settings in the `botpress.config.json` file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
 Also make sure that the `externalAuth` object has `enabled` set to `true`:
 
-## Step 7: Restart the Botpress Server
+```json
+"pro": {
+	"collaboratorsAuthStrategies": [
+	"default",
+	"<Your strategy name>"
+	],
+```
+
+Also make sure that the `externalAuth` object has `enabled` set to `true`:
+
+```json
+"externalAuth": {
+	"enabled": true,
+	"algorithms": [
+	"HS256"
+	],
+```
+
+## Step 5: Restart the Botpress Server
 
 A green cogwheel should appear in the bottom right of the Botpress UI, click it to restart the server.
