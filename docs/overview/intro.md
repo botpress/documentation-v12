@@ -42,5 +42,5 @@ This section includes all the information you need to get started with Botpress.
 
 - [The hardware and software requirements to use Botpress](/docs/overview/requirements)
 - [How to install Botpress on your computer](/docs/overview/download-and-start)
-- [How to upgrade your version to a newer one](/docs/overview/update)
+- [How to upgrade your version to a newer one](/docs/overview/upgrade/from-11-to-12)
 - [All the features included in Botpress](/docs/overview/features)

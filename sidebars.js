@@ -30,7 +30,7 @@ module.exports = {
       label: 'Upgrade',
       items: [
         'overview/upgrade/from-10-to-11',
-        'overview/upgrade/to-versions-12',
+        'overview/upgrade/from-11-to-12',
         ],
       },
     {
