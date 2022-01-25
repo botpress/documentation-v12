@@ -19,7 +19,7 @@ If you want your bot to understand a question and provide an answer automaticall
 - predictable (unit tests, and the model resides on your computer or server);
 - free!
 
-![nlu-overview](nlu-overview.png)
+![nlu-overview](/assets/nlu-overview.png)
 
 ## Intent Classification
 
