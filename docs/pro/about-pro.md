@@ -3,6 +3,8 @@ id: about-pro
 title: About
 ---
 
+--------------------
+
 ## Activation
 
 To enable Botpress Enterprise features simply set `pro.enabled` to `true` in your `botpress.config.json` file

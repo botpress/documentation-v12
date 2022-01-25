@@ -3,6 +3,8 @@ id: channels
 title: Messaging Channels
 ---
 
+-------------
+
 ## Channels
 
 For the channels documentation, please refer to [this page](../channels/web).

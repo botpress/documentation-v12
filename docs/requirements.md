@@ -3,6 +3,8 @@ id: requirements
 title: Hardware and Software Requirements
 ---
 
+------------------------
+
 You want to use Botpress to create the best chatbot ever? Then, take a look at the list below to know what the minimum (and sometimes maximum) hardware and software specification you need.
 
 ## Supported Browsers

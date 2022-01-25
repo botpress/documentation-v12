@@ -3,6 +3,8 @@ id: user-auth
 title: User Authentication
 --- 
 
+--------------------
+
 Let's authenticate a user against a 3rd party authentication system to act on its behalf, just like you would do in a mobile/web app. To achieve this, we will build a simple module that authenticates a user to Twitter. After authentication, it will save the user's credentials to their attributes to query the user's Twitter account later.
 
 ## Prerequisite 

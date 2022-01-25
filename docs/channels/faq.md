@@ -3,6 +3,8 @@ id: faq
 title: FAQ
 ---
 
+--------------------
+
 ## How can I test a channel locally?
 
 Some channels (e.g. Messenger) require to have a public secure url. When testing on locally, we recommend using services like [pagekite](https://pagekite.net/), [ngrok](https://ngrok.com) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.

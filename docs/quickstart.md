@@ -3,6 +3,8 @@ id: quickstart
 title: Quick Start
 ---
 
+------------------------
+
 A Botpress Server installation has two main interfaces: the **Admin Dashboard** and the **Conversation Studio**. Let's take a look at these two interfaces in detail.
 
 ## Admin Dashboard

@@ -3,6 +3,7 @@ id: ssotools
 title: Single Sign-On Methods
 ---
 
+--------------------
 
 ![This feature is available to Botpress Enterprise license holders.](/assets/botpress-enterprise-feature.png)
 ## SSO with Google OAuth2

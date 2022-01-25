@@ -3,6 +3,8 @@ id: improvement
 title: Improving Your NLU
 ---
 
+--------------------
+
 ## Bot Improvement Module
 Botpress provides a way for you to check if your QnA module's AI is performing well. You can do this by using the Bot Improvement module. This module lets the chatbot user rate responses from the chatbot using a simple thumbs-up/thumbs-down scale. These appear as two icons at the bottom left of the message bubble containing an answer from the QnA Module.
 

@@ -3,6 +3,8 @@ id: configuration
 title: Configuration
 ---
 
+--------------------
+
 Botpress uses `JSON` files for most configurations. Environment variables can also set configuration. In this topic, you will learn about Botpress global configuration, individual chatbot configuration, module configuration, and environment variables.
 
 ## Botpress Global Config

@@ -43,7 +43,6 @@ module.exports = {
         'main/qna-module',
         'main/code',
         'main/module',
-        'main/nlu',
         'main/broadcast',
         'main/glossary',
         ],

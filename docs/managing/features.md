@@ -3,14 +3,17 @@ id: features
 title: Useful Features
 ---
 
+--------------------
+
 ## Shortlinks
 
-In Botpress, you can natively create short links to your chatbot and get the following benefits:
+You can natively create short links to your chatbot and get the following benefits:
 
-1. Short URLs - no one likes a long URL
-2. Flexibility - it allows you to change any of the parameters without affecting the URL
+- Short URLs: nobody likes extra long URLs;
+- Flexibility: change the parameters without impacting the URL.
 
 ### Implementation
+
 In the example below, our new shortlink `/s/fs-wc` will redirect a user to `/lite/botId?m=platform-webchat&v=fullscreen` (the standard webchat interface). You can specify additional parameters in the options object.
 
 Create a bot-scoped `after_bot_mount` hook with the following code:
@@ -27,22 +30,22 @@ bp.http.createShortLink('fs-wc', `${process.EXTERNAL_URL}/lite/${botId}/`, {
 })
 ```
 ### Resources
+
 See the views' [Config](https://github.com/botpress/botpress/blob/master/modules/channel-web/src/views/lite/typings.d.ts#L130) object for all available options.
 
-It is recommended to also create a hook `after_bot_unmount`, to remove the shortlink when the chatbot is disabled; here is the corresponding example:
+It is recommended to also create a hook `after_bot_unmount` to remove the shortlink when the chatbot is disabled. Here is the corresponding example:
 
 ```js
 bp.http.deleteShortLink('fs-wc')
 ```
+
 ## Listening For File Changes
 
-You may find yourself writing custom logic when a Botpress file has changed. For example, you could listen for changes to the QnA files to automatically launch a translation worker to translate the QnA to multiple languages.
+You may find yourself writing custom logic when a Botpress file has changed. For example, you could listen for changes to the Q&A files to automatically launch a translation worker.
 
-The Botpress File System (Ghost) exposes a way to listen for file changes for that purpose. In this example, we will watch for NLU changes inside any bot.
+The Botpress File System (Ghost) exposes a way to listen for file changes for that purpose. In this example, you will watch for NLU changes inside any bot.
 
-### Example
-
-Let's create a Hook inside the `<data_dir>/global/hooks/after_bot_mount` called `listen_nlu.js` and put the following code inside it:
+Let's create a hook inside the `<data_dir>/global/hooks/after_bot_mount` called `listen_nlu.js` and put the following code inside it:
 
 ```js
 const listener = bp.ghost.forBot(botId).onFileChanged(file => {
@@ -68,16 +71,15 @@ The code in this sample is available in the [examples](https://github.com/botpre
 
 ![Example](/assets/tutorials_interbot-example.png)
 
-### Structure
+## Structure
 
-![Diagram](/assets/tutorials_interbot-diagram.png)
+### Step 1 – Creating the Chatbots
 
-### Step 1 – Creating the chatbots
 You will need to create three chatbots: one "master" chatbot (the one that will delegate questions to other bots) and two "slave" chatbots (the ones who get asked questions by the master).
 
-Head to the admin interface and create three chatbots with the names, `master`, `sub1`, and `sub2`, respectively, all based on the "empty bot" template.
+Head to the admin interface and create three chatbots with the names `master`, `sub1`, and `sub2`, respectively, all based on the "empty bot" template.
 
-- Leave the `master` chatbot empty for now.
+- Leave the `primary` chatbot empty for now.
 - In the `sub1` bot, create some QnA entries related to the same domain (pick the default `global` category/context).
 - In the `sub2` bot, do the same thing you did with `sub1`, but for another domain.
 
@@ -85,7 +87,7 @@ For example, `sub1` could answer questions about Human Resources, while `sub2` c
 
 At this point, you should have three bots. Master doesn't do anything, while sub1 and sub2 can answer HR and IT Operations questions respectively when you talk to them individually.
 
-### Step 2 – Delegation Action (master bot)
+### Step 2 – Delegation Action (Master Bot)
 
 To make the Master chatbot ask the questions to the slave bots, we will create an action called `delegate_to_bots` inside the `master` bot.
 
@@ -111,7 +113,3 @@ By the way, {{temp.delegation.0.botId}} is telling you:
 :::tip
 The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
 :::
-
-### Conclusion
-
-That's it! You now have the basic structure in place to allow inter-bot collaboration.

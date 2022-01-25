@@ -2,6 +2,9 @@
 id: content-type-action
 title: How to create content type in an action
 ---
+
+--------------------
+
 # Content type
 
 Content types are the primary way to display content in the chat. Probably you have already discovered the limitation of the content type flow element. In this advanced guide, I will create a content type component in action. This method of creating component is really helpful to create a dynamic response in your chatbot. For each content type, I will write an example and give some use cases.

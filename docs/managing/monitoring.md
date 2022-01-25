@@ -2,6 +2,9 @@
 id: monitoring
 title: Monitoring & Alerting
 ---
+
+--------------------
+
 ![This feature is available to Botpress Enterprise license holders.](/assets/botpress-enterprise-feature.png)
 ## Server Monitoring
 Monitoring is an essential part of any software deployment. Botpress includes, out of the box, a simple but intuitive dashboard

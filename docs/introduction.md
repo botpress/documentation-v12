@@ -3,39 +3,44 @@ id: introduction
 title: About Botpress
 ---
 
-## What is Botpress
+------------------------
 
-:::note
+## What Is Botpress?
+
+:::info Quick Definition
 Botpress is an open-source platform for developers to build high-quality digital assistants.
 :::
 
-We make building chatbots much easier for developers. We have put together the boilerplate code and infrastructure you need to get a chatbot up and running. We propose you a complete dev-friendly platform that ships with all the tools you need to build, deploy and manage production-grade chatbots in record time. The platform includes:
-- Built-in **Natural Language Processing** tasks such as intent recognition, spell checking, entity extraction, and slot tagging (and many others)
-- A **visual conversation studio** to design multi-turn conversations and workflows.
-- An **emulator & a debugger** to simulate conversations and debug your chatbot
-- Support for **popular messaging channels** like Slack, Telegram, MS Teams, Facebook Messenger, and an embeddable web chat.
-- An **SDK and code editor** to extend the capabilities
-- **Post-deployment tools** like analytics dashboards, human handoff
-And more… (Complete Features Overview)[botpress.com/features/overview]
+At its core, Botpress is a tool to simplify building chatbots for developers. The platform puts together the boilerplate code and infrastructure you need to get a chatbot up and running and gives a complete dev-friendly platform that ships with all the tools you need to build, deploy, and manage production-grade chatbots in record time. The platform includes:
 
-## Why Botpress
-Botpress has many advantages over other platforms and frameworks:
-- It is **cloud-agnostic**, therefore you can run it on the cloud platform or the on-premise infrastructure of your choice, giving you **full control over your data privacy.**
-- The core of the Botpress platform is **open-source** with thousands of GitHub contributors and stargazers, and a thriving community forum.
-- The platform offers a **great developer experience** by being remarkably flexible, easy to use, and fast.
-Support for **multiple languages**, including French, Arabic, Spanish, and 100 more
-- **No vendor lock-in**
+- Built-in [Natural Language Processing](/docs/nlu/nlu-intro) tasks such as [intent classification](/docs/nlu/intent-classification), [spell checking](/docs/nlu/spell-checking), [entity extraction](/docs/nlu/entity-extraction), and [slot tagging](/docs/nlu/slot-tagging), and many others;
+- A visual [Conversation Studio](/docs/conversation-studio/conversation-studio-intro) to design multi-turn conversations and workflows;
+- An [emulator](/docs/conversation-studio/tutorials/emulator) & a [debugger](/docs/overview/tutorials/debug) to simulate conversations and debug your chatbot;
+- Support for popular messaging channels like [Slack](/docs/messaging/slack), [Telegram](/docs/messaging/telegram), [Microsoft Teams](/docs/messaging/microsoft-teams), [Facebook Messenger](/docs/messaging/facebook-messenger), and an [embeddable web chat](/docs/messaging/botpress-webchat);
+- An SDK and [Code Editor](/docs/conversation-studio/code-editor/actions) to extend the capabilities;
+- Post-deployment tools like [analytics](/docs/conversation-studio/analytics-overview) dashboards, [human handoff](/docs/conversation-studio/hitl-next-overview), and more...
 
-Most importantly, our platform has proven to deliver a better conversational experience to end-users. 
+## With Botpress, You Can...
 
-## With Botpress You Can
-**Automate Workflows**: This is a real customer story; you can automate the workflow of applying for a Mortgage by gathering the information you need from potential customers through a chat on your website.
+**Automate Workflows**: Do you want to automate your chatbot? Gather the potential user information you need. And... there you go!
 
-**Support your customer 24/7**: If someone is not behind your Facebook Messenger, your customer is most likely not gonna get the answer they need and he might go to a different business. A chatbot can answer your customer’s questions even when you are asleep.
+**Support your customer 24/7**: You know how it works. If there's nobody when your user needs help, they will find a new place to do (almost) the same. Having a chatbot that answers your user's questions while you're asleep... What a dream!
 
-**Allow employees to self-serve**: The classic example is resetting a password. Some people are required to ask a system administrator or an IT person to reset their password when they get logged out of their email. The truth is they could just ask in Slack for a password reset and it could take care of itself.
+**Allow employees to self-serve**: Self-serve is something people _want_. Let's look at a classic example: resetting your password. Sometimes, you have to ask your system administrator or any IT person reachable (and maybe this person is sleeping too) because you have been logged out of your email. The truth is you could just ask in Slack for a password reset and do it yourself.
 
-**Create a conversational interface for an application**: Some applications are better delivered with a GUI, but in other cases, a conversational interface is simply a better option. It’s just really natural for someone to ask in plain English rather than browsing an interface. ‘’Hey, I am looking for a training plan for my next marathon’’
+**Create a conversational interface for an application**: Some applications are better delivered with a GUI, but in other cases, a conversational interface is simply a better option. It’s just natural for someone to ask in plain English rather than browsing an interface. For example, they ask:
 
-## Who else uses Botpress?
-Botpress has been deployed in production thousands of times across 4 continents. A wide range of companies, including digital agencies, Fortune 500 organizations, governments, and startups are building digital assistants with Botpress Platform.
+:::note Example
+Hey, I am looking for [insert what they want here].
+:::
+
+That means that they want help! And Botpress is precisely what they need.
+
+## Learn More
+
+This section includes all the information you need to get started with Botpress.
+
+- [The hardware and software requirements to use Botpress](/docs/overview/requirements)
+- [How to install Botpress on your computer](/docs/overview/download-and-start)
+- [How to upgrade your version to a newer one](/docs/overview/upgrade/from-11-to-12)
+- [All the features included in Botpress](/docs/overview/features)

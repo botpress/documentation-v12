@@ -3,6 +3,8 @@ id: digital-ocean
 title: Deploying a cluster on Digital Ocean
 ---
 
+--------------------
+
 ## Prerequisite
 - Create a domain name dedicated to your Botpress Cluster, and generate a certificate. If you don't have a certificate, you can [follow these instructions to generate one quickly using Let's Encrypt.](https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-1804)
 

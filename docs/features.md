@@ -3,6 +3,8 @@ id: features
 title: Botpress Features
 ---
 
+--------------------
+
 ## Overall Product Specifications
 
  Feature | Description | Botpress Open Source | Botpress Enterprise

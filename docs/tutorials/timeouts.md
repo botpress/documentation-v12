@@ -19,11 +19,11 @@ dialogs: {
 This means that if you started a conversation and then didn't respond for 2 minutes, the bot would set your session as expired.
 When you then resume the conversation, the bot will start from the beginning.
 
-## Receiving an event when a user timeout
+## Receiving an Event When a User Timeout
 
-There is a [hook](../main/code#hooks) that is called before the user's session timeouts.
+There is a hook that is called before the user's session timeouts.
 
-## Performing actions on timeout
+## Performing Actions on Timeout
 
 When a user's conversation session expires, you are able to trigger an action by specifying the node's name or by having a dedicated timeout flow.
 

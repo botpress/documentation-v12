@@ -3,13 +3,15 @@ id: installation
 title: Installation
 ---
 
+------------------------
+
 Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch.
 
 ## Download
 
 The latest stable binaries are available for download [**here**](https://botpress.com/download). Alternatively, you may find all the versions and nightly builds in our public [**S3 Bucket**](https://s3.amazonaws.com/botpress-binaries/index.html).
 
-## Installation
+## Install
 
 To install Botpress, unzip the file you download somewhere on your computer. Make sure that your computer has at least:
 

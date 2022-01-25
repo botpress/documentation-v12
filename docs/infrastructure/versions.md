@@ -3,6 +3,8 @@ id: versions
 title: Version Control
 ---
 
+--------------------
+
 ## Overview
 
 Once your bot is deployed, the good part is that you (and non-technical team members) **can still make changes to your bots from Botpress Studio**. This is one major advantage of using Botpress. This is made possible by our built-in versioning system.

@@ -3,6 +3,8 @@ id: cluster
 title: Clustering
 ---
 
+--------------------
+
 ## Cluster Overview
 
 ![High-Level Diagram](/assets/bp-cluster.png)

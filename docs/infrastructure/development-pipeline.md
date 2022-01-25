@@ -3,6 +3,8 @@ id: development-pipeline
 title: Development Lifecycle
 ---
 
+--------------------
+
 ## Git Syncing – Source Control Management
 
 A best practice is to keep track of changes to your chatbot using your preferred [Source Control Management Tool (SCM)](https://www.softwaretestinghelp.com/version-control-software/) and always deploy the master branch in production. Once deployed, you can regularly [pull](versions#pull) changes and update them to your SCM or revert to them when the need arises. Doing so helps you harness your SCM power for branches, merging conflicting files, reviewing changes, and creating revisions.

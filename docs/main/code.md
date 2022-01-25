@@ -3,6 +3,8 @@ id: code
 title: Built-In Functionalities
 ---
 
+--------------------
+
 There are two ways of quickly adding custom code to enrich your chatbot's experience: **Actions** and **Hooks**.
 
 Both are executed in a virtual machine to prevent server crashes in case there is a scripting error. Your scripts may require any module loaded by Botpress by default (for example, lodash, axios, moment, nanoid, and [much more](https://github.com/botpress/botpress/blob/master/package.json)).
@@ -49,28 +51,29 @@ return myMethod()
 These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
 :::
 
+## Disabling Hooks & Actions
+
+Botpress will ignore files starting with a dot (`.`). This way, you can disable a hook or Action by merely prefixing the file's name with a dot.
+
 ## Actions
-Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to do many things:
 
-- Alter the state of the conversation
-- Send customized messages to the conversation
-- Execute arbitrary code like calling an API or storing data in the database
+Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to:
 
-Since they are JavaScript functions, they can do pretty much anything. When the Dialog Manager (DM) invokes an Action, it gets access to the following arguments:
+- Alter the state of the conversation;
+- Send customized messages to the conversation;
+- Execute arbitrary code like calling an API or storing data in the database.
 
-- `user`: All attributes of a user.
-- `session`: Variables kept for the session's duration.
-- `temp`: Variables that are alive only for the course of the flow.
-- `bot`: Object containing global variables for this bot (same for all users)
-- `event`: The original (latest) event received from the user in the conversation.
-- `args`: The arguments passed to this Action from the Visual Flow Builder.
-- `process`: sandboxed VM containing some of the env-variables (starting with `EXPOSED_`)
+Since they are JavaScript functions, they can do pretty much anything and have the following properties:
 
-Check out the page [Bot Memory and Data Retention](memory) for more details about these objects' lifetime.
+- `user`: all user attributes.
+- `session`: variables kept only for the session.
+- `temp`: variables kept only for the flow.
+- `bot`: object containing global variables for this bot (same for all users).
+- `event`: original (latest) event received from the user.
+- `args`: arguments passed to this action from the **Flow** editor.
+- `process`: sandboxed VM containing some of the env-variables (starting with `EXPOSED_`).
 
-### Example of an Action
-
-Here are some possible ways to use these variables
+**Example:**
 
 ```js
 /** const virtual_machine = async function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) { */
@@ -85,20 +88,29 @@ session.store = [{ id: 1, id: 2, id: 3 }]
 /** } */
 ```
 
-### Registering new actions
-The only way to register new actions is to add your javascript code in a `.js` file and put them in the folder `data/global/actions`. There is no way to add new ones during runtime programmatically. You can also write actions directly in the Botpress Studio GUI by navigating to the code editor and using an Action Template.
+## Registering New Actions
 
-We use JavaDoc comments to display meaningful information (name, description, arguments, default values) on the dialog flow editor. It is possible to keep an action hidden in the flow editor by adding the flag `@hidden true` in the JavaDoc.
+There is two ways to register new actions:
 
-### Built-In Actions
-Botpress comes with a built-in set of Actions. For learning purposes, we will examine the most straightforward Action called Wait. It allows the developer to pause the bot before running the next instruction. For example, when the bot presents a long text message, the developer may use the `wait` action to simulate natural typing.
+- You can add your JavaScript code in a `.js` file and put it in the folder `data/global/actions`. 
+:::note
+There is no way to add new ones during runtime programmatically.
+::: 
 
-#### Wait Action
--  **Action Title** Wait/Delay
--  **Category** Utility
--  **Author** Botpress, Inc.
--  **Parameters** data_type:number name:delay (default = 1000) - The number of milliseconds to wait
+- You can also write actions directly in the Conversation Studio GUI by navigating to the code editor and using an **Action Template**.
 
+We use JavaDoc comments to display meaningful information (such as name, description, arguments, default values) on the dialog flow editor. It is possible to keep an action hidden in the flow editor by adding the flag `@hidden true` in the JavaDoc.
+
+## Built-In Actions
+
+### Wait Action
+
+-  **Action Title:** Wait/Delay
+-  **Category:** Utility
+-  **Author:** Botpress, Inc.
+-  **Parameters:** `data_type:number name:delay` (default = 1000) - The number of milliseconds to wait
+
+**Example:**
 ```
 const wait = async delay => {
   return new Promise(resolve => setTimeout(() => resolve(), delay))
@@ -106,142 +118,165 @@ const wait = async delay => {
 
 return wait(args.delay || 1000)
 ```
-As you can see, the Action is just a simple asynchronous arrow function that takes the number of milliseconds to `delay` as a parameter. When building an action, you can (and indeed should) specify the action type, its category, the author, and parameters.
 
-#### Append Context
--  **Action Title** Append Context
--  **Category** NLU
--  **Author** Botpress, Inc.
--  **1st Parameter** data_type:string name:contexts - Comma-separated list of contexts
--  **2nd Parameter** data_type:string name:[ttl=1] - Time-To-Live of the context in number of dialog turns. Put `0` to disable expiry.
-This Action adds context(s) to the list of contexts used by the NLU Engine for subsequent messages for that chat session.
+:::note
+As you can see, the action is just a simple asynchronous arrow function that takes the number of milliseconds to `delay` as a parameter. When building an action, you should specify the action type, its category, the author, and its parameters.
+:::
 
-The TTL (Time-To-Live) is the time during which contexts are valid before automatic removal. For example, the default value of `1` will listen for that context only once (the next time the user speaks).
- 
- If a context were already present in the list, the higher TTL would win.
- To override a specific context, use the `removeContext` action before this Action.
+### Append Context
+
+-  **Action Title:** Append Context
+-  **Category:** NLU
+-  **Author:** Botpress, Inc.
+-  **1st Parameter:** `data_type:string name:contexts` - Comma-separated list of contexts
+-  **2nd Parameter:** `data_type:string name:[ttl=1]` - Time-To-Live of the context in number of dialog turns. Put `0` to disable expiry.
+
+This action adds context(s) to the list of contexts used by the NLU Engine for subsequent messages for that chat session.
+
+:::note Notes
+- If a context were already present in the list, the higher TTL would win.
+- To override a specific context, use the `removeContext` action before this action.
+:::
  
 This method is contextual to the current user chat session. You can specify more than one context by separating them with a comma.
 
-#### Remove Context
--  **Action Title** Remove Context
--  **Category** NLU
--  **Author** Botpress, Inc.
--  **Parameter** data_type:string name:contexts - Comma-separated list of contexts
+### Remove Context
 
-Use this Action to remove the provided context(s) from the list of contexts used by the NLU Engine for the subsequent messages for that chat session.
+-  **Action Title:** Remove Context
+-  **Category:** NLU
+-  **Author:** Botpress, Inc.
+-  **Parameter:** `data_type:string name:contexts` - Comma-separated list of contexts
+
+Use this action to remove the provided context(s) from the list of contexts used by the NLU Engine for the subsequent messages for that chat session.
 
 This method is contextual to the current user chat session. You can specify more than one context by separating them with a comma.
 
-#### Reset Context
--  **Action Title** Reset Context
--  **Category** NLU
--  **Author** Botpress, Inc.
--  **Parameter** none
+### Reset Context
 
- It resets the NLU context to the default scope. This method is contextual to the current user and current chat session.
+-  **Action Title:** Reset Context
+-  **Category:** NLU
+-  **Author:** Botpress, Inc.
+-  **Parameter:** none
 
-#### Send Feedback
--  **Action Title** Send Feedback
--  **Category** NDU66
--  **Author** Botpress, Inc.
--  **Parameter**  data_type:number name:value - The feedback value. Use 1 for positive feedback, -1 for negative feedback
+ It resets the NLU context to the default scope. 
+ 
+ This method is contextual to the current user and current chat session.
 
-Provides feedback (1 for positive or -1 for negative feedback) at the end of a goal (a workflow that the user has completed)
+### Send Feedback
 
-#### Get Global Variable
--  **Action Title** Get global variable
--  **Category** Storage
--  **Author** Botpress, Inc.
--  **1st Parameter** data_type:string name:name - The name of the variable
--  **2nd Parameter** data_type:string name:output - The state variable to ouput to
+-  **Action Title:** Send Feedback
+-  **Category:** NDU66
+-  **Author:** Botpress, Inc.
+-  **Parameter:**  `data_type:number name:value` - The feedback value. Use `1` for positive feedback, `-1` for negative feedback
 
-This Action retrieves a variable that was stored globally using a storage key. Botpress uses a `key: value` storage system to allow complex object storage definitions.
+Provides feedback (`1` for positive or `-1` for negative feedback) at the end of a goal (a workflow that the user has completed).
 
-#### Reset Global Variable
--  **Action Title** Reset Global Variable
--  **Category** Storage
--  **Author** Botpress, Inc.
--  **Parameter** data_type:string name:name - The name of the variable to be reset
+### Get Global Variable
 
-Use this Action to reset a variable with global scope.
+-  **Action Title:** Get global variable
+-  **Category:** Storage
+-  **Author:** Botpress, Inc.
+-  **1st Parameter:** `data_type:string name:name` - The name of the variable
+-  **2nd Parameter:** `data_type:string name:output` - The state variable to ouput to
 
-#### Set Global Variable
--  **Action Title** Set global variable
--  **Category** Storage
--  **Author** Botpress, Inc.
--  **1st Parameter** data_type:string name:name - The name of the variable
--  **2nd Parameter** data_type:any name:value - Set the value of the variable
--  **3rd Parameter** data_type:string name:[expiry=never] - Set the expiry of the data, can be "never" or a short string like "6 hours"
--  **4th Parameter** data_type:string name:output - The state variable to output to.
+This action retrieves a variable that was stored globally using a storage key. Botpress uses a `key: value` storage system to allow complex object storage definitions.
 
-This Action allows you to set a variable globally, with optional expiry.
+### Reset Global Variable
 
-#### Set Variable
--  **Action Title** Set Variable
--  **Category** Storage
--  **Author** Botpress, Inc.
--  **1st Parameter** data_type:string name:type - Pick between: user, session, temp, bot
--  **2nd Parameter** data_type:string name:name - The name of the variable
--  **3rd Parameter** data_type:any name:value - Set the value of the variable. Type 'null' or leave empty to erase it.
+-  **Action Title:** Reset Global Variable
+-  **Category:** Storage
+-  **Author:** Botpress, Inc.
+-  **Parameter:** `data_type:string name:name` - The name of the variable to be reset
+
+Use this action to reset a variable with global scope.
+
+### Set Global Variable
+
+-  **Action Title:** Set global variable
+-  **Category:** Storage
+-  **Author:** Botpress, Inc.
+-  **1st Parameter:** `data_type:string name:name` - The name of the variable
+-  **2nd Parameter:** `data_type:any name:value` - Set the value of the variable
+-  **3rd Parameter:** `data_type:string name:[expiry=never]` - Set the expiry of the data, can be `never` or a short string like `6 hours`
+-  **4th Parameter:** `data_type:string name:output` - The state variable to output to.
+
+This action allows you to set a variable globally, with optional expiry.
+
+### Set Variable
+
+-  **Action Title:** Set Variable
+-  **Category:** Storage
+-  **Author:** Botpress, Inc.
+-  **1st Parameter:** `data_type:string name:type` - Pick between: user, session, temp, bot
+-  **2nd Parameter:**` data_type:string name:name` - The name of the variable
+-  **3rd Parameter:** `data_type:any name:value` - Set the value of the variable. Type `null` or leave empty to erase it.
 
 You can use this Action to store data to desired storage based on the time to live expectation.
 
-#### Reset Session
--  **Action Title** Reset Session
--  **Category** Storage
--  **Author** Botpress, Inc.
--  **Parameter** none
+### Reset Session
 
-This Action resets the user session and clears information stored in `temp` and `session` storage for the user. This action doesn't remove NLU Contexts and Last Messages history.
+-  **Action Title:** Reset Session
+-  **Category:** Storage
+-  **Author:** Botpress, Inc.
+-  **Parameter:** none
 
-#### Switch Language
--  **Action Title** Switch Language
--  **Category** Language
--  **Author** Botpress, Inc.
--  **Parameter** data_type:string name:lang - The language code, e.g. "en"
+This action resets the user session and clears information stored in `temp` and `session` storage for the user. This action doesn't remove NLU Contexts and Last Messages history.
 
-Valid for Enterprise License holders with multilingual bots, this Action lets you change the bot's language for the current user.
+### Switch Language
+
+-  **Action Title:** Switch Language
+-  **Category:** Language
+-  **Author:** Botpress, Inc.
+-  **Parameter:** `data_type:string name:lang` - The language code, e.g. `en`
+
+Valid for Enterprise License holders with multilingual bots, this action lets you change the bot's language for the current user.
 
 Botpress comes pre-packed with a translation engine that helps developers design a bot in one language while catering to users of all supported and configured languages.
 
-## Hooks
+Hooks are a handy way to execute JavaScript code (similar to that of actions) when specific events occur.
 
-Hooks are a handy way to execute javascript code (similar to that of actions) when specific events occur.
-
-They are defined globally as javascript files in the folder `data/global/hooks/${hookName}`. You can add as many files as you'd like in this folder; they will be processed sequentially, in alphabetical order.
+They are defined globally as JavaScript files in the folder `data/global/hooks/${hookName}`. You can add as many files as you want in this folder; they will be processed sequentially, in alphabetical order.
 
 :::note
-Subfolders are allowed but ignored in the ordering. If you have 02_hook.js and 03/01_hook.js, the order will be 01_hook.js, then 02_hook.js.
+Subfolders are allowed but ignored in the ordering.
 :::
 
-Hooks have access to the (Botpress SDK) [https://botpress.com/reference/](https://botpress.com/reference/).
+Hooks have access to the [Botpress SDK](https://botpress.com/reference/).
 
-### Types of Hooks
-Hooks are differentiated using the point in the event engine when they are executed.  The following are instances where you can inject hooks into your code.
+## Disabling Hooks
 
-#### After Server Starts
+Botpress will ignore files starting with a dot (`.`). This way, you can disable a hook or action by prefixing the file's name with a dot.
+
+## Types of Hooks
+
+Hooks are differentiated using the point in the event engine when they are executed. The following are instances where you can inject hooks into your code.
+
+### After Server Starts
+
 This event is called once all modules and bots are loaded and the bot is ready to accept incoming connections.
 
 Location: `data/global/hooks/after_server_start`
 
 Parameters: `bp`
 
-#### After Bot Mount
+### After Bot Mount
+
 This event is called every time a bot is mounted, be it when the server starts up or when adding new bots at runtime.
 
 Location: `data/global/hooks/after_bot_mount`
 
 Parameters: `bp`, `botId`
 
-#### After Bot Unmount
+### After Bot Unmount
+
 Every time a bot is unmounted, Botpress calls this event to clean up after deleting a bot.
 
 Location: `data/global/hooks/after_bot_unmount`
 
 Parameters: `bp`, `botId`
 
-#### Before Incoming Middleware
+### Before Incoming Middleware
+
 Botpress calls this hook after receiving an event but before processing any middleware. It is possible to change event properties.
 
 Location: `data/global/hooks/before_incoming_middleware`
@@ -256,7 +291,8 @@ if (event.type === 'quick_reply') {
 }
 ```
 
-#### After Incoming Middleware
+### After Incoming Middleware
+
 This hook is called right after all incoming middlewares processed the event but before the Dialog Engine starts processing it. You can access all the required data (including NLU intent) for special processing and decide what happens to the event.
 
 Location: `data/global/hooks/after_incoming_middleware`
@@ -264,6 +300,7 @@ Location: `data/global/hooks/after_incoming_middleware`
 Parameters: `bp`, `event`
 
 A typical operation here is to tell Botpress to ignore the event and not process it (e.g., not sending it to the dialog engine).
+
 Here is an example:
 
 ```js
@@ -274,7 +311,8 @@ if (messageTypesToDiscard.includes(event.type)) {
 }
 ```
 
-#### Before Outgoing Middleware
+### Before Outgoing Middleware
+
 The Dialogue Manager calls this hook before the bot's reply is sent to the user.
 
 Location: `data/global/hooks/before_outgoing_middleware`
@@ -283,7 +321,8 @@ Parameters: `bp`, `event`
 
 Here you can save the bot's complete response.
 
-#### Before Session Timeout
+### Before Session Timeout
+
 This hook is called right before a user timeouts on a node.
 
 Location: `data/global/hooks/before_session_timeout`
@@ -291,13 +330,15 @@ Location: `data/global/hooks/before_session_timeout`
 Parameters: `bp`, `event`
 
 ### Before Conversation End
-This hook is called right before a conversation ends
+
+This hook is called right before a conversation ends.
 
 Location: `data/global/hooks/before_conversation_end`
 
 Parameters: `bp`, `event`
 
-#### Before Suggestions Election
+### Before Suggestions Election
+
 This hook is called after the Decision Engine Ranking but before the Suggestion Election. Doing so allows you to override the Decision Engine's ranking by directly altering the `event.suggestions` array.
 
 Location: `data/global/hooks/before_suggestions_election`
@@ -305,9 +346,6 @@ Location: `data/global/hooks/before_suggestions_election`
 Parameters: `bp`, `event`, `suggestions`, `sessionId`
 
 A typical operation here is to add a new (elected) suggestion when there is no elected winner.
-
-## Disabling Hooks & Actions
-Botpress will ignore files starting with a dot (`.`). This way, you can disable a hook or Action by merely prefixing the file's name with a dot.
 
 ## Built-in Skills
 

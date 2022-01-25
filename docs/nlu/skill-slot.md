@@ -3,6 +3,8 @@ id: skill-slot
 title: Slots
 ---
 
+--------------------
+
 Slots are a significant concept in Botpress NLU. You can think of them as necessary **parameters** to complete the action associated with an intent.
 
 ## Slot Tagging

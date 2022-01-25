@@ -3,6 +3,8 @@ id: carousel-postback
 title: Using Carousel Postback
 ---
 
+------------------------
+
 In this tutorial, you will learn how to use the Postback feature of the Carousel [Content Type](../main/content#content-type).
 
 The Postback feature of the Carousel allows you to **send custom data** to the Botpress server when the user **clicks on button** in the Carousel.

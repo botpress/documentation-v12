@@ -3,6 +3,8 @@ id: vonage
 title: Vonage
 ---
 
+--------------------
+
 :::note
 Currently, only WhatsApp is supported on this channel.
 :::

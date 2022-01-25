@@ -3,6 +3,8 @@ id: shortlinks
 title: Shortlinks
 ---
 
+------------------------
+
 In Botpress you can natively create shortlinks to your bot.
 
 This has a number of advantages:

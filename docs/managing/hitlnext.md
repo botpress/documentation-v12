@@ -3,7 +3,9 @@ id: hitlnext
 title: HITL Next
 ---
 
-This revamped HITL works on **all existing and future channels**. It supports all features of its predecessor and a few more:
+--------------------
+
+This revamped HITL works on **all existing and future channels**. It supports all features of its predecessor and a few more :
 
 - Multi-agents ( _enterprise edition only_ )
 - Human handoff from any workflow
@@ -15,63 +17,75 @@ This revamped HITL works on **all existing and future channels**. It supports al
 - Basic queuing and assignent system
 - Basic labeling
 
-However, unlike its predecessor, this module only allows you to view conversations that have been paused by Botpress during a workflow using an action. As such, an agent cannot monitor conversations currently in progress between the chatbot and a user.
+However, unlike its predecessor, this module only allows you to view conversations that have been paused by Botpress during a workflow using an action. As such, an agent cannot monitor live conversations between the chatbot and a user.
 
 ## Requirements
 
-This module uses the `channel-web` to display conversations, so make sure it's enabled. Moreover, a multi-agent setup needs an enterprise license.
+This module uses the `channel-web` to display conversations, so make sure it's enabled.
+
+:::info
+A multi-agent setup needs an enterprise license.
+:::
 
 ## Setup
 
-Turn on HITL-next on the module management page of your Botpress admin.
+Turn on HITL-next on the module management page of your Botpress Admin.
 ![Enable Module](/assets/enable-module.png)
 
-You can also enable the module directly in your `botpress.config.json` file as shown [here](https://botpress.com/docs/main/module#enabling-or-disabling-modules)
+You can also enable the module directly in your `botpress.config.json` file as shown [here](https://botpress.com/docs/main/module#enabling-or-disabling-modules).
 
 ## Agent Interface
 
-The UI Studio interface has three main sections:
+The Studio interface has three main sections:
 
-- **Handoffs** : A list of all conversation handoffs created by users by triggering the handoff action.
-- **Conversation**: This shows conversations between the chatbot and user. The agent can chat with a user once the conversation is assigned.
-- **Contact Details**: Where an agent sees user profile, agent notes, and tags.
+- **Handoffs:** a list of all conversation handoffs created by users by triggering the handoff action.
+- **Conversation:** conversations between the chatbot and user. The agent can chat with a user once the conversation is assigned.
+- **Contact Details:** where an agent sees user profile, agent notes, and tags.
 
 ![Agent Interface](/assets/agent-interface.png)
 
-## Adding agents
+## Adding Agents
 
-Revamped HITL allows multiple agents to collaborate on the platform. As a Botpress workspace administrator, you can invite agents the same way you would invite administrators or developers to your workspace. To do so, head to the `Collaborators` tab in your Botpress administration console, click add collaborator.
+Revamped HITL allows multiple agents to collaborate on the platform. As a Botpress workspace administrator, you can invite agents the same way you would invite administrators or developers to your workspace. 
+
+1. In your Botpress Admin, click the **Collaborators** tab.
+1. Click **Add Collaborator**.
+  1. Fill in your agent email.
+  1. Choose an **Authentication Strategy** in the dropdown menu, if needed.
+  1. Select **Agent** as their role.
+1. Click **Create Account** or **Add to Workspace**. 
 
 ![Collaborators](/assets/collaborators.png)
-
-A dialog window will show up. Fill in your agent email and select `Agent` as role. Follow the instructions and send your agents the authentication information.
-
 ![Agent Collaborator](/assets/agent-collaborator.png)
 
-### Agent profile
+## Agent Profile
 
-For an agent's name and avatar to display to users, they can configure their profile by clicking the avatar icon on the top right corner of the administration interface and then selecting the `update profile` option. The following form dialog will show up.
+For an agent's name and avatar to display to users, they can configure their profile as follows:
+1. In the Admin, click the avatar icon at the top right corner.
+1. Select the **Update Profile** option. Then, fill in the boxes:
+  1. **First Name**
+  1. **Last Name**
+  1. **Profile Picture**.
 
 ![Agent profile](/assets/agent-profile.png)
 
 ## Handoffs
 
-The module ships with a `Handoff` [action](https://botpress.com/docs/main/code#actions) that you can use wherever you want in your workflows. To add such an action, select a node in a workflow, and hit the + below `on enter`, then choose the `handoff` action.
+The module ships with a `Handoff` [action](https://botpress.com/docs/main/code#actions) that you can use wherever you want in your workflows. To add such an action, select a node in a workflow, and hit the **+** below **on enter**, then choose the **handoff** action.
 
 ![Handoff Action](/assets/handoff-action.png)
 
-Every time that node is triggered, the Handoffs section will show a new pending handoff in the list. On selecting by clicking a user, you will be able to see a preview of the conversation. On the user side, your chatbot automatically sends a **transfer message**. This message is customizable, see [configuration](#advanced-features-and-customization) section.
-
+Every time that node is triggered, the **Handoffs** section shows a new pending handoff in the list. By clicking a user, you can see a preview of the conversation. On the user side, your chatbot automatically sends a transfer message. This message is [customizable](#advanced-features-and-customization).
 
 ![Tranfer Message](/assets/transfer-message.png)
 
-### Handoff assignation and resolution
+### Handoff Assignation and Resolution
 
-To pick a handoff and start conversing with the end-user, an agent first needs to set himself/herself `online` in the top right corner of the Agent Interface. This simple feature allows agents or coordinators to oversee conversations while offline. It is also handy when your team implements any auto-assignation rule.
+To pick a handoff and start conversing with the end-user, an agent first needs to set theirselves *Oonline** at the top right corner of the Agent Interface. This simple feature allows agents or coordinators to oversee conversations while offline. It is also handy when your team implements any auto-assignation rule.
 
 ![Online](/assets/online.gif)
 
-Once online, an agent can click on any handoff item and click on the `assign to me` button top right corner of the conversation section. When a conversation is transferred to an agent, your chatbot will automatically send an **assignation message** to the user. This message is customizable, see [configuration](#advanced-features-and-customization) section.
+Once online, an agent can click on any handoff item and click on the **Assign to Me** button top right corner of the conversation section. When a conversation is transferred to an agent, your chatbot will automatically send a message to the user. This message is [customizable](#advanced-features-and-customization).
 
 ![Assign Message](/assets/assign-message.png)
 
@@ -79,31 +93,31 @@ Once online, an agent can click on any handoff item and click on the `assign to 
 There is no limit on how many handoffs an agent can handle at once. A good practice would be to limit to 3.
 :::
 
-Once the discussion with the user is over, an agent can hand back the control to the Chatbot by simply clicking the `resolve` button.
+Once the discussion with the user is over, an agent can hand back the control to the Chatbot by simply clicking the **Resolve** button.
 
-### User profile
+### User Profile
 
-When a handoff item is selected, user variables are displayed in the user profile section. You can set user variables in any workflow using the built-in `SetVariable` action with the `user` scope. For more details, head to the [variables docs](https://botpress.com/docs/main/memory#variables).
+When a handoff item is selected, user variables are displayed in the user profile section. You can set user variables in any workflow using the built-in `SetVariable` action with the `user` scope. For more details, head to the [variables docs](https://botpress.com/do/docs/conversation-studio/tutorials/use-data#variables).
 
 The displayed user name is a user variable. Set `fullName` as a user variable for it to show up in the user profile.
 
 ![User profile](/assets/user-profile.png)
 
-### Agent notes
+### Agent Notes
 
-A simple but powerful tool for collaboration over time, notes are associated with underlying conversations and not with the handoff item itself, making them persist from one handoff to another. In other words, with time, a user can have different handoff sessions with various agents, and agents can leave notes so future agents can see the additional context.
+A simple but powerful tool for collaboration over time, notes are associated with underlying conversations and not with the handoff item itself, making them persist from one handoff to another.
 
 ![Agent Notes](/assets/comments.png)
 
-## Advanced features and customization
+## Advanced Features and Customization
 
 Here are the most commonly used module configurations. You can check out the [module configuration file](https://github.com/botpress/botpress/blob/master/modules/hitlnext/src/config.ts) for all options.
 
-To set any of those configurations, you'll first need to open up the `hitlnext.json` in the code editor section of your Botpress Studio.
+To set any of those configurations, you'll first need to open up the `hitlnext.json` in the **Code Editor** section of your Conversation Studio.
 
 ![Module Configuration](/assets/hitl-config.png)
 
-Below is the raw configuration file available on path `...\data\global\config\hitlnext.json`
+Below is the raw configuration file available on path `...\data\global\config\hitlnext.json`:
 
 ```json
 {
@@ -128,24 +142,28 @@ Below is the raw configuration file available on path `...\data\global\config\hi
 }
 ```
 
-### Transfer and assignation messages
+### Transfer and Assignation Messages
 
-To change **Transfer message** (default being `You are being transferred to an agent`) and add a German translation for your German-speaking users, change the `transferMessage` json object to the desired translations.
+To change **Transfer message** (default being `You are being transferred to an agent.`), change the `transferMessage` json object. You can also translate the message as follows:
 
 ```json
 "transferMessage": {
-  "en": "I'm tranfering you to our support team",
-  "de": "Ich schicke dich zur Unterstützung"
+  "en": "I'm tranfering you to our support team.",
+  "de": "Ich schicke dich zur Unterstützung."
 }
 ```
 
+:::note
 These changes will be applied when you either disable your chatbot and re-enable it or restart your Botpress server.
+:::
 
-The same technique applies to **Assignation Message**, but you have access to the `agentName` variable, which corresponds to the agent's full name, but its use is optional.
+The same technique applies to **Assignation Message**. Note that you can optionnally use the `agentName` variable.
 
-### Message templates
+### Message Templates
 
-If your team of agents often uses the same set of answers, the `autoComplete` configuration can store these pre-written messages to take care of this task for you. They are a handy shortcut for agents, and you can add as many as you want. Here is how they show up in the Agent Interface :
+If your team of agents often uses the same set of answers, the `autoComplete` configuration can store pre-written messages. They are a handy shortcut for agents, and you can add as many as you want. 
+
+Here is how they show up in the Agent Interface:
 
 ![Shortcuts](/assets/shortcuts.png)
 
@@ -173,11 +191,15 @@ Before adding a message template, choose a `trigger` character that will open up
 
 ### Handoff Labels
 
-Handoff labels are useful for agents to categorize handoffs before resolution so that in future handoffs, agents can quickly understand the last conversation with an agent. Labels are also useful when analyzing resolved handoffs, either for quality assurance or for reporting. You can add as many as you want, but a good practice is to start with a small number of labels and add new ones when necessary. Here is how they show up in the agent interface:
+Handoff labels are useful for agents to categorize handoffs before resolution so that in future handoffs, agents can quickly understand the last conversation with an agent. Labels are also useful when analyzing resolved handoffs, either for quality assurance or for reporting. 
 
 ![Labels](/assets/labels.png)
 
-The three labels here are set in a simply json array as follows:
+:::info
+You can add as many as you want, but a good practice is to start with a small number of labels and add new ones when necessary. 
+:::
+
+**Example:**
 
 ```bash
 "tags": ["shipping", "warranty","complaints"]

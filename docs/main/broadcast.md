@@ -3,6 +3,8 @@ id: broadcast
 title: Sending Messages in Bulk
 ---
 
+---------------------
+
 Automating bulk messaging is a widespread use case when communicating with a big audience. You may want to notify **all** chatbot users of an upcoming event. Sending a message from the HITL interface of your Botpress installation will likely be a lengthy, error-prone process. To help you out, we have created a broadcast module that takes care of this process. Let's take a closer look at this module.
 
 ![Broadcasting Module Interface](/assets/broadcast.png)

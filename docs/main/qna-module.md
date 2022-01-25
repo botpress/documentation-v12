@@ -3,18 +3,32 @@ id: qna-module
 title: Answering F.A.Q's
 ---
 
-The QnA module is specifically designed to make handling frequently repeated questions as easy as possible. This module allows you to quickly add more responsiveness to your chatbot by enabling it to answer a user without creating an intent and a workflow. For your chatbot to understand a user's input, we need to add at least ten training phrases which are the different ways of asking the same question. To complete our QnA, we add at least one answer: plain text or any other content type. We can also redirect a user to a specific node and workflow as a response to the question. To achieve this, we first need to enable redirect.
+--------------------
+
+The QnA module is specifically designed to simplify how to handle frequently asked questions. It adds more responsivness to your chatbot. You need to add at least ten different training phrases. Th, you add at least one answer: plain text or any other content type. 
+
+:::note
+You can also redirect a user to a specific node and workflow as a response to the question.
+:::
 
 ![Adding a QnA](/assets/qna-overview.png)
 
-## Create a context
+## Create a Context
 
-To create context, you have two options:
+1. Access your Conversation Studio.
+1. Click the Q&A tab.
+1. Click the + button at the top right of the page. 
+:::note
+It creates a new Q&A.
+:::
+1. Under **Contexts**, type the context you want to add.
 
-- Create context-specific to a chatbot, create or edit this file `data/bots/<your_bot>/config/qna.json`.
-- Create context-specific to all chatbots, create or edit this file `data/global/config/qna.json`.
-
-Then append the name of your new contexts to `qnaCategories` as follows:
+:::tip
+You can alternatively create a context as follows:
+1. Create a context specific to:
+  - one chatbot, create or edit this file `data/bots/<your_bot>/config/qna.json`.
+  - all chatbots, create or edit this file `data/global/config/qna.json`.
+2. Append the name of your new contexts to `qnaCategories` as follows:
 
 ```json
 {
@@ -22,12 +36,13 @@ Then append the name of your new contexts to `qnaCategories` as follows:
   "qnaCategories": "global,monkeys,giraffes"
 }
 ```
+:::
 
-Contexts listed in the dropdown menu are sourced from all your existing content (questions & NLU intents). The `qna.json` configuration file is no longer used to provide a list of contexts. To create a new context, open or add a Q&A, input the context in the **Contexts** field, then select **+ Create context**:
+:::note
+Contexts listed in the dropdown menu are sourced from all your existing content (questions & NLU intents). The `qna.json` configuration file is no longer used to provide a list of contexts.
+:::
 
 ![New Context](/assets/faq-qna-new-context.png)
-
-When you create a new context this way, you need to save your changes for the context to be persisted. 
 
 ## Add a QNA
 
@@ -35,13 +50,13 @@ Once you have created your contexts, you can create your QNAs and assign a conte
 
 ![QnA Category](/assets/faq-qna-category.png)
 
-## Add contexts to your flow
+# Add Contexts to your Flow
 
-The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 actions (i.e. `appendContext`, `resetContext` and `removeContext`). You will find these actions under the NLU category in your actions list.
+The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 built-in actions (e.g., `appendContext`, `resetContext` and `removeContext`), under the NLU category in your actions list.
 
 ### Append Context
 
-To set a context, let's use the `appendContext` action and add our new context in the `contexts` field. You can use comma-separated values to pass multiple contexts.
+To set a context, use the `appendContext` action and add your new context in the `contexts` field. You can use comma-separated values to pass multiple contexts.
 
 ![Actions](/assets/faq-append-context.png)
 
@@ -49,4 +64,8 @@ To set a context, let's use the `appendContext` action and add our new context i
 
 The TTL or Time-To-Live field is used to set a maximum number of interactions for this context to exists within a conversation.
 
-Take `Welcome Bot` for instance. Its contexts have a TTL of `10`. This means that someone can ask up to 10 questions about animals before the context is ignored. After the TTL expires, the chatbot will fall back to the `global` context.
+:::note Example
+Take `Welcome Bot` for instance. Its contexts have a TTL of `10`. 
+
+This means that someone can ask up to 10 questions about animals before the context is ignored. After the TTL expires, the chatbot will fall back to the `global` context.
+:::

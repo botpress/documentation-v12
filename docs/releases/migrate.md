@@ -3,6 +3,8 @@ id: migrate
 title: Migration & Updates
 ---
 
+--------------------
+
 ## Changelog and Release Notes
 
 Please find the Changelog [here](https://github.com/botpress/botpress/releases) for complete details of Botpress Framework changes by release.

@@ -3,6 +3,8 @@ id: custom-module
 title: Custom Module
 ---
 
+--------------------
+
 ## Module Templates
 
 To help you get started, two templates are available: [Module Templates](https://github.com/botpress/botpress/tree/master/examples/module-templates).

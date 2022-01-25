@@ -2,6 +2,9 @@
 id: deploying
 title: Building From Source
 ---
+
+--------------------
+
 Botpress has added flexibility for developers who want access to the core codebase. You can clone Botpress from the source repository on Github, allowing you to test code, modules, and components more dynamically. 
 
 ## Compiling From Source

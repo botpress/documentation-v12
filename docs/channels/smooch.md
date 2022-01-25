@@ -3,6 +3,8 @@ id: smooch
 title: Smooch (Sunshine Conversations)
 ---
 
+--------------------
+
 ## Requirements
 
 - An HTTPS Endpoint to your chatbot:

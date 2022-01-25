@@ -2,6 +2,9 @@
 id: authentication
 title: Authentication Methods
 ---
+
+--------------------
+
 :::info
 Enterprise only.
 :::

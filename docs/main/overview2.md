@@ -3,6 +3,8 @@ id: overview2
 title: Main Concepts
 ---
 
+--------------------
+
 ## Chatbot Types
 A chatbot is a computer program that uses conversations as its user interface (Conversational User Interface or CUI in short). There are two types of chatbots, namely, **Rule-Based Chatbots** and **A.I. Based Chatbots**. Let's explore them in more detail.
 

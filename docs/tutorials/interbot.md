@@ -3,6 +3,8 @@ id: interbot
 title: Inter-bot Communication / Delegation
 ---
 
+------------------------
+
 ## Overview
 
 In this tutorial, you will learn how a chatbot could "delegate" questions or tasks to other bots. We call this concept "inter-bot" communication.

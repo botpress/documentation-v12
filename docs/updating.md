@@ -3,6 +3,8 @@ id: updating
 title: Updating to New Releases
 ---
 
+------------------------
+
 Download the latest Botpress version [here](https://botpress.com/download).
 
 ## Version 12

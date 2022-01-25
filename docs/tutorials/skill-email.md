@@ -3,28 +3,44 @@ id: skill-email
 title: How to use Email Skill
 ---
 
-## Overview
+------------------------
 
 The email skill provides a quick way to send emails from within a Botpress workflow.
 
-## Creating your skill
+## Creating Your Skill
 
-From the Flow Editor view, click on Insert Skill > Send Email. The following interface allows you to insert the information you would fill in when using any standard email service.
-**From, To, CC & BCC** These fields are filled with email addresses. The _From_ field will be the sender's email address that the recipient will see when receiving an email from your chatbot. It can be configured to any valid email address.
-**Subject** This field contains the subject of the email. You will need to create a content element that will load as the subject line. Please note that even if you use markdown in the subject line, it will render as plain text.
-**Email Content** Again, this field will load from a content element. Unlike the subject field, you can use markdown, which Botpress will render correctly to the receiver. You can also include HTML to enhance the formatting of your email body further.
+1. From the Flow Editor view, click **Insert Skill**.
+1. Select **Send Email**. 
 
-It is worthy to note that Botpress supports templating in all fields of your email skill, allowing access to variables stored in [Memory](../main/memory). All `bot`, `user`, `session`, `temp`, and `event` are accessible via templating. To access these variables, reference the memory location.
+The following interface allows you to insert the information you would fill in when using any standard email service:
+
+- **From, To, CC & BCC:** These fields are filled with email addresses. 
+  - _From_: sender's email address
+  - _To_: recipient's email
+  - _CC_ (_carbon copy_): visible email addresses who receives a copy
+  - _BCC_ (_blind carbon copy_): invisible email addresses who receives a copy
+
+- **Subject:** subject of the email, a content element as the subject line.
+
+:::note
+Even if you use markdown in the subject line, it will render as plain text.
+:::
+
+- **Email Content:** content element, a message to be sent. 
+
+:::note
+Unlike the subject field, you can use markdown, which Botpress will render correctly to the receiver. You can also include HTML to enhance the formatting of your email body further.
+:::
+
+Botpress supports templating in all fields of your email skill, allowing access to variables stored in Memory. All `bot`, `user`, `session`, `temp`, and `event` are accessible via templating.
 
 ## Configuring Email Skill
 
-To send an email using the email skill, you need to configure your chatbot with a transport connection string. Set the configuration string in the directory `...data/global/config/basic-skills.json`. For more information on the mail transporters available and how to configure them, please visit the [Nodemailer documentation](https://nodemailer.com/smtp/#examples)
+To send an email using the email skill, you need to configure your chatbot with a transport connection string. Set the configuration string in the directory `...data/global/config/basic-skills.json`. For more information on the mail transporters available and how to configure them, please visit the [Nodemailer documentation](https://nodemailer.com/smtp/#examples).
 
-You can edit those variable in botpress from the code editor.
+You can edit those variable in Botpress from the **Code Editor**.
 
-![connection_string](/assets/transportConnectionString.png)
-
-Here is an example of a configuration using a mail server:
+**Example:**
 
 ```json
 {
@@ -48,13 +64,13 @@ Here is an example of a configuration using a mail server:
 
 The `transportConnectionString` could be an object or a string.
 
-**String**
+- **String**
 
 ```
 smtps://example@gmail.com:superPassword@smtp.gmail.com
 ```
 
-**Object Format**
+- **Object Format**
 
 ```
   "transportConnectionString": {
@@ -68,6 +84,6 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
 ```
 
 :::note Notes
-- Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
-- If your email is protected with 2FA it might not work.
-:::0
+- Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend a fall-back strategy if this happens using the `on failure` transition.
+- If your email is protected with 2FA, it might not work.
+:::

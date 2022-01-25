@@ -3,15 +3,27 @@ id: entity-extraction
 title: Entity Extraction
 ---
 
-Entities are parts of a user phrase representing concepts such as color, date, time, or weight. So, in other words, entities are parameters to the intent. Thus, the `book-flight` intent may have an entity `destination` that specifies the city to be visited. Entity extraction helps you extract and normalize desired entities if they are present in a user phrase or message to the chatbot.
+--------------------
+
+Entities are intent parameters. They represent a concept such as a colour, a date, a time, or a weight. Entity extraction helps you extract and normalize desired entities if they are present in a user phrase or message to the chatbot. 
+
+:::note
+The following example comes from the [Intent Classification](/docs/nlu/intent-classification) page.
+:::
+
+**Example:**
+The `place-order` intent contains the following entities:
+- `caffeine` that specifies if the coffee is caffeinated or decaffeinated.
+- `size` for a single or a double shot.
+- `drink` that specifies the kind of drink asked.
 
 Attached to NLU extraction, you will find an entities property which is an array of [System](#system-entities) and [Custom](#custom-entities) entities.
 
-## Using entities
+## Using Entities
 
 You may access and use entity data by looking up the `event.nlu.entities` variable in your hooks, flow transitions, or actions.
 
-### Example of extracted entity:
+### Example of Extracted Entity:
 
 The user said: `Let's go for five miles run.`
 
@@ -53,18 +65,18 @@ The user said: `Let's go for five miles run.`
 ```
 
 :::note
-In some cases, you will find additional structured information in the extras object
+In some cases, you will find additional structured information in the extras object.
 :::
 
 ## System Entities
 
-### Duckling extraction
+### Duckling Extraction
 
 Botpress Native NLU offers a handful of system entity extraction thanks to [Facebook/Duckling](https://github.com/facebook/duckling). This engine allows you to extract known entities like Time, Ordinals, Date, and so on. For a complete list of system entities, please head to [Duckling documentation](https://github.com/facebook/duckling).
 
  By default, Botpress uses an instance of Duckling hosted on our remote servers. If you don't want your data to be sent to our servers, you can either disable this feature by setting `ducklingEnabled` to `false` or host your duckling server and change the `ducklingURL` in the `data/global/config/nlu.json` config file.
 
-Please check the [Deployment](../infrastructure/hosting) section for instructions on hosting your Duckling server.
+Please check the Deployment section for instructions on hosting your Duckling server.
 
 #### Example
 
@@ -91,22 +103,18 @@ Please check the [Deployment](../infrastructure/hosting) section for instruction
 ```
 
 :::note
-Confidence will always be one due to the rule-based implementation of Duckling
+Confidence will always be one due to the rule-based implementation of Duckling.
 :::
 
 ## Custom Entities
 Botpress provides two types of custom entities: [pattern](#pattern-extraction) and [list](#list-extraction) entities. To define a custom entity, go to the **Entity section** of the NLU Module interface accessible from the Botpress studio sidebar. From there, you can define your custom entities which will be available for any input message treated by your chatbot. Go ahead and click on **create new entity**
 
-![Creating a new entity](/assets/nlu-create-entity.png)
-
-### Pattern extraction
+### Pattern Extraction
 Pattern or Regular Expression Extraction allows you to extract information presented in a format that can be described using Regular Expression (RegEx). Once you've created a pattern entity, Botpress Native NLU will perform a regex extraction on each incoming message and add it to `event.nlu.entities`.
 
 #### Example :
 
 Given a Pattern Entity definition with `[A-Z]{3}-[0-9]{4}-[A-Z]{3}` as pattern:
-
-![create slot](/assets/nlu-pattern-entity.png)
 
 Extraction will go like this:
 
@@ -132,13 +140,11 @@ Extraction will go like this:
 }
 ```
 
-### List extraction
+### List Extraction
 
 List extraction behaves similarly to pattern extraction. However, you'll be able to add different **occurrences** of your entity with corresponding synonyms.
 
 Let's take **Airport Codes** as an example:
-
-![create slot](/assets/nlu-list-entity.png)
 
 Extraction will go like this:
 
@@ -185,7 +191,7 @@ Extraction will go like this:
 ]
 ```
 
-## Placeholder extraction
+## Placeholder Extraction
 Botpress Native NLU also has a system entity of type `any`, which is essentially a placeholder. For this feature to work optimally, a lot of training data is required. Before identifying slots [see slots docs](#slots) as entity type `any`, try to use custom entities.
 
 An example of a placeholder entity would be: Please tell **Sarah** that **she's late**
