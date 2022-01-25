@@ -24,15 +24,17 @@ In Botpress, each different chatbot belongs to a workspace. When you start Botpr
 
 Let's create a new chatbot with the **Create bot> New Bot** button.
 
-![Create Bot](assets/workspace_bot.png)
+![Create Bot](/assets/workspace_bot.png)
 
 All you have to do is pick a name for your chatbot (a unique `Bot ID` will be generated for you), then select a chatbot template.
 
-> The **Bot ID** can't be changed in the future, so it's crucial to pick a meaningful name. Also, bear in mind that this ID will be visible to the users of your chatbot.
+:::note
+The **Bot ID** can't be changed in the future, so it's crucial to pick a meaningful name. Also, bear in mind that this ID will be visible to the users of your chatbot.
+:::
 
 You may start from scratch with the "Empty Bot," or you can use one of the available templates for a quick demonstration of various features.
 
-![Create Bot](assets/create-bot.png)
+![Create Bot](/assets/create-bot.png)
 
 Once created, click on the chatbot's name to open the Studio interface and edit your chatbot.
 
@@ -45,7 +47,7 @@ The studio is the main interface you'll use to build and edit your chatbot. From
 - Manage content
 - Test and debug your chatbot
 
-![Botpress Studio](assets/studio.png)
+![Botpress Studio](/assets/studio.png)
 
 You will notice on the left menu there are a couple of sections available. Some of these are built inside Botpress (like _Content_ and _Flows_), while others are there because of modules installed. 
 
@@ -59,17 +61,17 @@ The chat emulator represents what your visitors will face when they speak with y
 - Reset Conversation: Brings you back at the beginning of the conversation flow, but keeps the variables previously stored.
 - Create New Conversation: Brings you back at the beginning of the conversation flow and clean the variables stored.
 
-![Toolbar Chat](assets/studio-toolbar.png)
+![Toolbar Chat](/assets/studio-toolbar.png)
 
 *In the order presented: Debug, Reset, Download, Conversations, Close emulator.*
 
 Open the chat window and say, "_Hello_." If you selected the **Welcome Bot** template, it should greet you with something like "_Hi, I'm Welcome Bot! My task is to help you understand how Botpress works._".
 
-![Hello from the chatbot](assets/flow_page.png)
+![Hello from the chatbot](/assets/flow_page.png)
 
 You can get additional information from the emulator's debugger by selecting the debug button. This panel is specifically designed for you, as the chatbot developer, to understand why you get a specific answer. Note that it is only available for authenticated users. It includes all sorts of useful information: the dialog engine's elected suggestion, nodes flowed through, and natural language intents or questions. You can also view the raw JSON event that contains all details if you need further data.
 
-![Emulator Hello](assets/debugger.png)
+![Emulator Hello](/assets/debugger.png)
 
 ### Question and Answer
 
@@ -87,7 +89,7 @@ The Q&A module will automatically retrain the NLU model in the background and te
 
 #### Q&A Example
 
-![A new Q&A](assets/newqna.png)
+![A new Q&A](/assets/newqna.png)
 
 ## Share your chatbot
 

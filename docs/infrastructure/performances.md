@@ -11,7 +11,7 @@ title: Hardware & Performance
 ## Benchmark Tool
 
 Run Botpress with the `bench` command from the command line. You can run this on the Pro binary downloaded from the website. Make sure to adjust the `--url` and `--botId` to match your botpress server url and your bot's ID. For more information on options, you can set for your test, run `./bp bench --help`
-![Performances Benchmark Tool](assets/performances-benchmark.png)
+![Performances Benchmark Tool](/assets/performances-benchmark.png)
 
 ### Example
 Below is an example of the output from a benchmark test run on a new install of Botpress on localhost.

@@ -13,7 +13,7 @@ Go on GitHub's [OAuth application registration page](https://github.com/settings
 
 You may choose any url safe name as your strategy name
 
-![Credentials creation](assets/oauth/gith_1_create_app.png)
+![Credentials creation](/assets/gith_1_create_app.png)
 
 ## Step 2: Create credentials
 
@@ -46,11 +46,11 @@ In your Botpress instance navigate to the code editor by going into any of your 
 
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
-![Enable strategy](assets/oauth/az_5_enable_strategy.png)
+![Enable strategy](/assets/az_5_enable_strategy.png)
 
 Also make sure that the `externalAuth` object has `enabled` set to `true`:
 
-![Enable external auth](assets/oauth/az_5_enable_external_auth.png)
+![Enable external auth](/assets/az_5_enable_external_auth.png)
 
 ## Step 7: Restart the Botpress server
 

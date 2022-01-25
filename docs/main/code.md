@@ -45,7 +45,9 @@ return myMethod()
 /** } */
 ```
 
-> These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
+:::note
+These scripts have hot reloading enabled, which means that changes are picked up on the following function call whenever you edit it, making development a lot faster.
+:::
 
 ## Actions
 Actions are server-side functions executed by the chatbot as part of a conversational flow. Actions have the power to do many things:
@@ -59,7 +61,7 @@ Since they are JavaScript functions, they can do pretty much anything. When the 
 - `user`: All attributes of a user.
 - `session`: Variables kept for the session's duration.
 - `temp`: Variables that are alive only for the course of the flow.
-- 'bot`: Object containing global variables for this bot (same for all users)
+- `bot`: Object containing global variables for this bot (same for all users)
 - `event`: The original (latest) event received from the user in the conversation.
 - `args`: The arguments passed to this Action from the Visual Flow Builder.
 - `process`: sandboxed VM containing some of the env-variables (starting with `EXPOSED_`)
@@ -90,7 +92,6 @@ We use JavaDoc comments to display meaningful information (name, description, ar
 
 ### Built-In Actions
 Botpress comes with a built-in set of Actions. For learning purposes, we will examine the most straightforward Action called Wait. It allows the developer to pause the bot before running the next instruction. For example, when the bot presents a long text message, the developer may use the `wait` action to simulate natural typing.
-![Example of an Action](../assets/action-example.png)
 
 #### Wait Action
 -  **Action Title** Wait/Delay
@@ -210,7 +211,9 @@ Hooks are a handy way to execute javascript code (similar to that of actions) wh
 
 They are defined globally as javascript files in the folder `data/global/hooks/${hookName}`. You can add as many files as you'd like in this folder; they will be processed sequentially, in alphabetical order.
 
-> Note: subfolders are allowed but ignored in the ordering. If you have 02_hook.js and 03/01_hook.js, the order will be 01_hook.js, then 02_hook.js.
+:::note
+Subfolders are allowed but ignored in the ordering. If you have 02_hook.js and 03/01_hook.js, the order will be 01_hook.js, then 02_hook.js.
+:::
 
 Hooks have access to the (Botpress SDK) [https://botpress.com/reference/](https://botpress.com/reference/).
 
@@ -313,23 +316,23 @@ Botpress comes preloaded with some rudimentary skills. Let us look at these; we 
 ### Choice Skill
 This skill is a spin-off from the realization that most chatbot conversations will eventually have a question with hardcoded choices as answers. Although a content element lets the user select buttons to pick a response, the choice skill adds a few more caveats to that content element, which we will explore here.
 
-![Single Choice Content Element](../assets/single-choice.png)
+![Single Choice Content Element](/assets/single-choice.png)
 
 In addition to just letting you click a button and you are on your way, the choice skill adds a few checks and transitions to the process.
 
 First of all, where freely typed responses are not disabled, the choice skill allows you to add answers which the user might type directly. In this way, the chatbot can understand and classify other responses besides the button click, adding a good measure of flexibility.
 
-![Choice Skill Overview](../assets/choice-skill-entry.png)
+![Choice Skill Overview](/assets/choice-skill-entry.png)
 
 The choice skill also allows you to let the user have another go at answering the question asked. In instances where the user might fail to perceive that a button response is required, the chatbot prompts the user to choose from the supplied choices. It is also crucial in cases where the chatbot developer does not pre-empt the freely typed responses. 
 
 If the chatbot doesn't understand a user's answer, it will react by guiding the user on how to respond to the question before asking the question again. 
 
-![Choice Skill Advanced](../assets/choice-skill-tries.png)
+![Choice Skill Advanced](/assets/choice-skill-tries.png)
 
 The choice skill also offers an option to transition to a different node when the user repeatedly fails to answer a question.
 
-![Choice Skill Flow GUI](../assets/choice-skill-transitions.png)
+![Choice Skill Flow GUI](/assets/choice-skill-transitions.png)
 
 ### Email Skill
 
@@ -360,7 +363,9 @@ Here is an example of a configuration using a mail server:
 }
 ```
 
-> Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+:::note
+Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+:::
 
 #### Creating your skill
 From the Flow Editor view, click on Insert Skill > Send Email. The following interface allows you to insert the information you would fill in using any standard email service.
@@ -371,4 +376,4 @@ From the Flow Editor view, click on Insert Skill > Send Email. The following int
 It is worthy to note that Botpress supports templating in all fields of your email skill, allowing access to variables stored in [Memory](../main/memory). All `bot`, `user`, `session`, `temp`, and `event` are accessible via templating. To access these variables, reference the memory location.
 
 ### Other Skills
-Two other skills, namely, the [Call API]() and the [Slot Skill]() are available in Botpress. You can look up these skills and use them in your chatbot.
+Two other skills, namely, the `Call API` and the `Slot Skill` are available in Botpress. You can look up these skills and use them in your chatbot.

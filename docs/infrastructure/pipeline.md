@@ -1,5 +1,5 @@
 ---
-id: pipelines
+id: pipeline
 title: Bot Pipelines
 ---
 
@@ -7,7 +7,7 @@ title: Bot Pipelines
 
 **Bot Pipelines** (not to be confused with Development Pipelines) are built on top of the multi-bot capability of Botpress. They allow teams to work on chatbots with multiple **stages** just like they work on software products. Different versions of a chatbot can run and co-exist on various stages. In software development, each team has its way of working with pipelines and reacting to events. Botpress pipelines let you do the same.
 
-![Pipeline](assets/dev-pipeline.png)
+![Pipeline](/assets/dev-pipeline.png)
 
 Although a typical pipeline would have three stages (e.g., _Development_, _Staging_ and _Production_) where a chatbot goes through all of them, Botpress lets you define your stages and customize how they interact.
 
@@ -95,18 +95,20 @@ To define your pipeline, open the `workspaces.json` file and edit the pipeline p
 
 This simple configuration will activate the pipeline feature.
 
-> **Note**: Botpress allows pipelines with a maximum of four stages. More than this will result in suboptimal performance of Botpress.
+:::note
+Botpress allows pipelines with a maximum of four stages. More than this will result in suboptimal performance of Botpress.
+:::
 
 ### Graphical Interface
 
 After defining your pipeline, restart your server and open your admin panel and create a bot. You should then see a pipeline like the following :
 
-![Pipeline](assets/pipeline.png)
+![Pipeline](/assets/pipeline.png)
 Go ahead and pick the `promote to next stage` action. You'll see a **copy** of the chatbot appear in the Staging environment. (`promote_copy` in the stage definition)
-![Pipeline Promote](assets/pipeline_promote.png)
-![Pipeline Promote copy](assets/pipeline_promoted_copy.png)
+![Pipeline Promote](/assets/pipeline_promote.png)
+![Pipeline Promote copy](/assets/pipeline_promoted_copy.png)
 This time, pick the same action on the Staging bot. You'll notice the chatbot will **move** to Production. (`promote_move` in the stage definition)
-![Pipeline Promote move](assets/pipeline_promoted_move.png)
+![Pipeline Promote move](/assets/pipeline_promoted_move.png)
 
 Want to lock a chatbot in a particular stage or change its name along the pipeline? You can do so using [available hooks](#available-hooks)
 

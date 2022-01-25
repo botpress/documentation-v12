@@ -4,18 +4,18 @@ title: Single Sign-On Methods
 ---
 
 
-![This feature is available to Botpress Enterprise license holders.](../assets/botpress-enterprise-feature.png)
+![This feature is available to Botpress Enterprise license holders.](/assets/botpress-enterprise-feature.png)
 ## SSO with Google OAuth2
 
 ### Step 1: Create OAuth2 credentials
 
 Go to your [Google Cloud dashboard](https://console.cloud.google.com/), create a project if you have not already done so, and navigate to "APIs & Services" from the sidebar. 
 
-![Create Project](../assets/oauth/goog_1a_create_oauth2_creds.png)
+![Create Project](/assets/goog_1a_create_oauth2_creds.png)
 
 Once there, go to the "Credentials" section and click "Create Credentials". Choose the "OAuth client ID" option.
 
-![Credentials creation](../assets/oauth/goog_1b_create_oauth2_creds.png)
+![Credentials creation](/assets/goog_1b_create_oauth2_creds.png)
 
 You will be asked to create a consent screen. Here you choose how you want to configure and register your app, including your target users. You can only associate one app with your project.
 
@@ -25,10 +25,10 @@ Once on the client configuration page, choose "Web application" for the "Applica
 
 `https://<Your external Botpress HTTPS URL>/api/v1/auth/login-callback/oauth2/<Your strategy name>`
 
-![Credentials creation](../assets/sso-google.png)
+![Credentials creation](/assets/sso-google.png)
 You may choose any url safe name as your strategy name.
 
-![Configure client](../assets/oauth/goog_2_configure_client.png)
+![Configure client](/assets/goog_2_configure_client.png)
 
 A popup with your client ID and client secret will show up. Keep them for the next step.
 
@@ -90,7 +90,7 @@ Go on GitHub's [OAuth application registration page](https://github.com/settings
 
 You may choose any url safe name as your strategy name.
 
-![Credentials creation](../assets/oauth/gith_1_create_app.png)
+![Credentials creation](/assets/gith_1_create_app.png)
 
 ### Step 2: Create credentials
 
@@ -153,11 +153,11 @@ Navigate to Azure Active Directory Page in your Azure Portal and create a new te
 ### Step 2: Register an application
 On the page of your newly created tenant, navigate to "App registrations".
 
-![App Registrations](../assets/oauth/az_2_register_app.png)
+![App Registrations](/assets/az_2_register_app.png)
 
 Create a new application and choose the appropriate configuration for your use case in "Supported account types". Single and multi-tenant options are supported; keep the "Redirect URI" blank for now.
 
-![App Creation](../assets/oauth/az_2.1_app_creation.png)
+![App Creation](/assets/az_2.1_app_creation.png)
 
 ### Step 3: Configure Botpress
 In your Botpress instance, navigate to the code editor and add a new entry within `authStrategies` in the _botpress.config.json_ file. you may name the strategy whatever you want (keep the name URL safe) and fill in the entry in the following way:
@@ -184,21 +184,23 @@ In your Botpress instance, navigate to the code editor and add a new entry withi
 ### Step 4: Create a client secret
 Next, navigate to "Certificates & secrets" and create a new client secret, copy its value and paste in the `clientSecret` field of your created strategy in the _botpress.config.json_ file
 
-![Secret creation](../assets/oauth/az_4_create_secret.png)
+![Secret creation](/assets/az_4_create_secret.png)
 
 ### Step 5: Enable the strategy in Botpress
 Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
 
-![Enable strategy](../assets/oauth/az_5_enable_strategy.png)
+![Enable strategy](/assets/az_5_enable_strategy.png)
 
-> Please make sure that the `externalAuth` object has `enabled` set to `true`:
+:::note
+Please make sure that the `externalAuth` object has `enabled` set to `true`:
+:::
 
-![Enable external auth](../assets/oauth/az_5_enable_external_auth.png)
+![Enable external auth](/assets/az_5_enable_external_auth.png)
 
 ### Step 6: Configure callback URL in Azure
 In your application in the Azure Active Directory portal, navigate to the "Authentication" page and add a platform. **Select "Web" for the platform type** and set your callback url with the one you configured in the _botpress.config.json_ file. **For the token type, select "ID tokens".**
 
-![Configure callback in Azure](../assets/oauth/az_6_configure_callback.png)
+![Configure callback in Azure](/assets/az_6_configure_callback.png)
 
 ### Step 7: Restart the Botpress server
 A green cogwheel should appear in the bottom right of the Botpress UI; click it to restart the server.

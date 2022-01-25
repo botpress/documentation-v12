@@ -35,16 +35,20 @@ const callApi = async () => {
 return callApi()
 ```
 
-> 📖 What is the `session` variable? Learn how to use [Memory](../main/memory) to store data.
+:::info
+What is the `session` variable? Learn how to use [Memory](../main/memory) to store data.
+:::
 
 
 ### Using the Action
 
 Add an `onEnter` action instruction in your node and select the `callApi` action from the list:
 
-![Action](../assets/tutorial-call-api-action.png)
+![Action](/assets/tutorial-call-api-action.png)
 
-> 📖 What are `onEnter` instructions? Understand how the node [Lifecycle](../main/dialog#nodes) works.
+:::info
+What are `onEnter` instructions? Understand how the node [Lifecycle](../main/dialog#nodes) works.
+:::
 
 ### Add a text content element
 
@@ -52,16 +56,18 @@ Create another `onEnter` instruction to make your bot say something. Once the fi
 
 Here we use templating to get the description of the first repository from the list:
 
-![Content](../assets/tutorial-call-api-element.png)
+![Content](/assets/tutorial-call-api-element.png)
 
-> 📖 What is templating? Take a look at the [Mustache demo](https://mustache.github.io#demo) to understand how templating works in Botpress.
+:::info
+What is templating? Take a look at the [Mustache demo](https://mustache.github.io#demo) to understand how templating works in Botpress.
+:::
 
 Once everything completes, this is what your node should look like:
 
-![Node Properties](../assets/tutorial-call-api-node-properties.png)
+![Node Properties](/assets/tutorial-call-api-node-properties.png)
 
 ## Try it out!
 
 The next time you chat with the bot, it will reply with the description of the Botpress repository:
 
-![Chat](../assets/tutorial-call-api-chat.png)
+![Chat](/assets/tutorial-call-api-chat.png)

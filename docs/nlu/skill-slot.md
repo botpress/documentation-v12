@@ -1,5 +1,5 @@
 ---
-id: slots
+id: skill-slot
 title: Slots
 ---
 
@@ -11,11 +11,11 @@ Botpress Native NLU will tag each _word_ (token) of user input. Words separated 
 ### Defining Slots
 To define a slot for a particular intent, open the **Intent section** of the Natural Language Understanding Module in your Botpress Studio sidebar. From there, select the intent you want to add slots to, then you'll be able to define your slots. Go ahead and click on **create a slot**
 
-![create slot](../assets/nlu-create-slot.png)
+![create slot](/assets/nlu-create-slot.png)
 
 Let's use a `book_flight` intent. To book a flight, we'll define two slots: `departure` and `destination`, both associated with the `Airport Codes` custom list entity. Once that is done, we need to identify every airport slot.
 
-![tag slots](../assets/nlu-tag-slot.png)
+![tag slots](/assets/nlu-tag-slot.png)
 
 ### Example
 
@@ -51,7 +51,7 @@ We will use the slots which we defined earlier in this tutorial.
 4. Choose the content that your chatbot will ask. It should be a question about the information you seek, e.g., "From where are you departing?", "Where do you want to go?" etc.
 5. Choose the content for your chatbot reply when the input is invalid. It should guide the user towards a valid answer.
 
-![Skill Slot Overview](../assets/slot-skill-overview.png)
+![Skill Slot Overview](/assets/slot-skill-overview.png)
 
 ### Validation Types
 
@@ -72,28 +72,28 @@ Three outcomes are possible:
 2. **`On not found`** - The slot has not been extracted. This will also happen when the maximum number of retries is reached or when custom validation fails.
 3. **`On already extracted`** - The slot has previously been extracted. One use-case for that would be to ask the user if the previous information is still relevant or if he would like to overwrite it.
 
-![Slot skill outcomes](../assets/slot-skill-outcomes.png)
+![Slot skill outcomes](/assets/slot-skill-outcomes.png)
 
 ## Chaining Multiple Slots
 
 You can chain multiple skills to fill all the slots for a given intent. Chaining skills is handy when all the slots in a given intent are mandatory for a data set to be complete. In the flight booking example, we need the _departure city_, _destination city_, and _time of departure_ to check if a flight is available. Since these fields are mandatory, this is a good use case for skill chaining.
 
-![Skill Slot Flow](../assets/slot-skill-flow.png)
+![Skill Slot Flow](/assets/slot-skill-flow.png)
 
 This flow will result in a conversation like the one below. Notice that in the first phrase, "I want to book a flight to NYC", the intent "book-flight" is matched, and NYC has been extracted as the _to_ slot. Then, the chatbot tries to fill the remaining slots _from_ and _when_.
 
-![Skill Slot Convo](../assets/slot-skill-convo.png)
+![Skill Slot Convo](/assets/slot-skill-convo.png)
 
 ## Guidelines When Adding Slots
 - Mix the positions of the slots in the utterances
 Example:
 
-![Mix Slots](../assets/slots-mix.png)
+![Mix Slots](/assets/slots-mix.png)
 
 - Avoid duplication when using slots
 Example - to avoid:
 
-![Duplicated Slots](../assets/slot-mix.png)
+![Duplicated Slots](/assets/slot-mix.png)
 
 - Limit the number of slots used for a given Intent
 Suggestion: maximum of 3
@@ -101,7 +101,7 @@ Suggestion: maximum of 3
 - Try mixing utterances with the slots to be: filled, partially filled, or empty
 Example:
 
-![Filling Slots](../assets/slots-fill-mix.png)
+![Filling Slots](/assets/slots-fill-mix.png)
 
 - Examples in utterances should match the defined entity
 Example: 

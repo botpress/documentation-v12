@@ -100,13 +100,15 @@ In a production environment, you can persist additional logs such as a full audi
 DEBUG=bp:audit:* ./bp -p 2>> ./botpress.log
 ```
 
-> **Tip**: You can combine this with a log rotation tool such as [newsyslog](https://www.real-world-systems.com/docs/newsyslog.1.html) or [logrotate](https://linux.die.net/man/8/logrotate).
+:::tip
+You can combine this with a log rotation tool such as [newsyslog](https://www.real-world-systems.com/docs/newsyslog.1.html) or [logrotate](https://linux.die.net/man/8/logrotate).
+:::
 
 ## Enable/Disable modules
 
 When you start Botpress for the first time, it will add the most popular modules included with the binary to your `botpress.config.json` file. If you want to disable or enable modules, you may either do so on the admin page or edit the `modules` property in `botpress.config.json`.
 
-![Admin Modules Page](assets/admin_modules.png)
+![Admin Modules Page](/assets/admin_modules.png)
 
 Should you choose the latter, note that the special string `MODULE_ROOT` is replaced when your configuration file is read. It represents the modules folder's location on your hard drive; therefore, you shouldn't have to change it.
 
@@ -173,7 +175,9 @@ Botpress supports `.env` files, so you don't have to set environment variables e
 
 It is also possible to use environment variables to override module configuration. The pattern is `BP_MODULE_%MODULE_NAME%_%OPTION_PATH%`, all in the upper case. For example, to define the `languageSources` option of the module `nlu`, you would use `BP_MODULE_NLU_LANGUAGESOURCES`.
 
-> **Tip**: You can list the available environment variables for each module by enabling the `DEBUG=bp:configuration:modules:*` flag.
+:::note
+You can list the available environment variables for each module by enabling the `DEBUG=bp:configuration:modules:*` flag.
+:::
 
 ### Security
 

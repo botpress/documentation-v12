@@ -99,7 +99,7 @@ $ ./bp
 
 You may also start Botpress Server using the Command Line Interface (CLI). To see all the commands available, run `./bp --help`.
 
-![CLI Start](assets/cli-help.png)
+![CLI Start](/assets/cli-help.png)
 
 ## Learn More
 

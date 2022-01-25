@@ -1,5 +1,5 @@
 ---
-id: content type-action
+id: content-type-action
 title: How to create content type in an action
 ---
 # Content type
@@ -10,12 +10,11 @@ Content types are the primary way to display content in the chat. Probably you h
 
 All the following example can be copy&paste in an action. You can find action in a chatbot and select the editor-tabs.
 
-![Action image](../assets/advanced/action.jpg)
 ### Audio
 
 The audio component can stream audio that end with `.mp3`. It could be used to stream music from Spotify or youtube. This component could also stream audio file that you have store on your server.
 
-![Music image](../assets/advanced/music.jpg)
+![Music image](/assets/music.jpg)
 
 
 **`Example`**
@@ -63,7 +62,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 A card is a single element of a carousel. It can be view as one card in a deck of cards. The carousel is the whole deck of card.
 
-![Card image](../assets/advanced/card.jpg)
+![Card image](/assets/card.jpg)
 
 **`Example`**
 
@@ -112,7 +111,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 A carousel is a series of cards. This component can be useful in e-commerce chatbot or display a menu of a restaurant. The image element can be a url or a [Data URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
 
-![Carousel Image](../assets/advanced/carousel.jpg)
+![Carousel Image](/assets/carousel.jpg)
 
 **`Example`**
 ```
@@ -178,7 +177,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 A dropdown is a single choice from multiple choice. It's a good element if you want one specific choice from a list.
 
 
-![Dropdown image](../assets/advanced/dropdown.jpg)
+![Dropdown image](/assets/dropdown.jpg)
 
 **`Example`**
 
@@ -235,7 +234,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 You can display image. You can pass URL image of using a [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
 
-![Image of the content type image](../assets/advanced/image.jpg)
+![Image of the content type image](/assets/image.jpg)
 
 **`Example`**
 
@@ -328,7 +327,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 Botpress can display pdf file. Currently, we are only supporting pdf.
 
-![Image of file](../assets/advanced/file.jpg)
+![Image of file](/assets/file.jpg)
 
 **`Example`**
 ```
@@ -376,7 +375,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 This component carries a message, usually a question, and suggests choices to the user to fulfill the message. The user can only pick one option, and on selecting the preference, you can instruct your chatbot to get a custom value.
 
-![single-choice image](../assets/advanced/single-choice.jpg)
+![single-choice image](/assets/single-choice.jpg)
 
 **`Example`**
 
@@ -436,7 +435,7 @@ The text content type denotes a regular text message with optional typing indica
 
 You can write HTML in the text content on the web channel, and your chatbot will render it correctly. This opens up the possibility of including iFrames and constructing miniature web pages (commonly known as web views) in your content without creating custom components.
 
-![image text](../assets/advanced/text.jpg)
+![image text](/assets/text.jpg)
 
 
 **`Example`**
@@ -480,7 +479,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 You can either upload a video or link to a video file that will be fetched when the content element is invoked.
 
-![image text](../assets/advanced/video.jpg)
+![image text](/assets/video.jpg)
 
 **`Example`**
 

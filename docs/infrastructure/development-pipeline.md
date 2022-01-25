@@ -1,5 +1,5 @@
 ---
-id: development-lifecycle
+id: development-pipeline
 title: Development Lifecycle
 ---
 
@@ -72,11 +72,13 @@ To address this issue, we added commands to the cli. In production, your changes
 
 You can also head to the versioning tab of your Botpress admin panel at https://your.bp.ai/admin/server/version, and Botpress will accurately format the command for you (including your token) for any changes that have been made. Just paste it to your shell, and Botpress will extract the changes in the provided target directory. A successful output should look like the following:
 
-![versioning pull](assets/versioning-pull.png)
+![versioning pull](/assets/versioning-pull.png)
 
 Notice that without any changes, you will see a **You're all set!** message.
 
-> **Note:** The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::note
+The `BPFS_STORAGE` environment variable must be set to `database` to enable **pushing** to this node.
+:::
 
 Please note that `targetDir` and `sourceDir` uses relative paths:
 

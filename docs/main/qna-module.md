@@ -5,7 +5,7 @@ title: Answering F.A.Q's
 
 The QnA module is specifically designed to make handling frequently repeated questions as easy as possible. This module allows you to quickly add more responsiveness to your chatbot by enabling it to answer a user without creating an intent and a workflow. For your chatbot to understand a user's input, we need to add at least ten training phrases which are the different ways of asking the same question. To complete our QnA, we add at least one answer: plain text or any other content type. We can also redirect a user to a specific node and workflow as a response to the question. To achieve this, we first need to enable redirect.
 
-![Adding a QnA](../assets/qna-overview.png)
+![Adding a QnA](/assets/qna-overview.png)
 
 ## Create a context
 
@@ -25,7 +25,7 @@ Then append the name of your new contexts to `qnaCategories` as follows:
 
 Contexts listed in the dropdown menu are sourced from all your existing content (questions & NLU intents). The `qna.json` configuration file is no longer used to provide a list of contexts. To create a new context, open or add a Q&A, input the context in the **Contexts** field, then select **+ Create context**:
 
-![New Context](../assets/faq-qna-new-context.png)
+![New Context](/assets/faq-qna-new-context.png)
 
 When you create a new context this way, you need to save your changes for the context to be persisted. 
 
@@ -33,7 +33,7 @@ When you create a new context this way, you need to save your changes for the co
 
 Once you have created your contexts, you can create your QNAs and assign a context to them. From the `category` menu, choose one of your contexts:
 
-![QnA Category](../assets/faq-qna-category.png)
+![QnA Category](/assets/faq-qna-category.png)
 
 ## Add contexts to your flow
 
@@ -43,7 +43,7 @@ The final step is to set the desired context at the appropriate time in your flo
 
 To set a context, let's use the `appendContext` action and add our new context in the `contexts` field. You can use comma-separated values to pass multiple contexts.
 
-![Actions](../assets/faq-append-context.png)
+![Actions](/assets/faq-append-context.png)
 
 ### TTL
 

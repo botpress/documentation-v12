@@ -10,7 +10,7 @@ To open the Emulator, you can:
 - Press <kbd>e</kbd> anywhere in the application
 - Click the Emulator icon in the status bar
 
-![Emulator Window](../assets/emulator_icons.png)
+![Emulator Window](/assets/emulator_icons.png)
 
 You can close the Emulator by pressing <kbd>ESC</kbd> or by clicking again on the emulator icon.
 
@@ -22,9 +22,9 @@ Using <kbd>↑</kbd> or <kbd>↓</kbd> on your keyboard in the text input will a
 
 The payload inspector lets you see and understand what the bot understood and why it took the decision he chose. Inside the emulator, you will see the metadata about [NLU](nlu), the conversation [State](dialog), and the raw responses.
 
-![Emulator Window](../assets/emulator_win_inspector.png)
+![Emulator Window](/assets/emulator_win_inspector.png)
 
-![Emulator Window](../assets/emulator_win_raw_json.png)
+![Emulator Window](/assets/emulator_win_raw_json.png)
 
 ## Sessions
 
@@ -50,4 +50,4 @@ Botpress comes with a pre-built test website that offers an example of customizi
 
 This example is also practical when you want others to test your chatbot. You can expose this website to the public internet then share the link.
 
-![Test Website](../assets/test_website.png)
+![Test Website](/assets/test_website.png)

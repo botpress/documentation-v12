@@ -9,11 +9,11 @@ In this tutorial, you will learn how a chatbot could "delegate" questions or tas
 
 The code for this example is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/interbot) directory of our GitHub repository (update `workspaces.json` with the three bots if you copied them).
 
-![Example](assets/tutorials_interbot-example.png)
+![Example](/assets/tutorials_interbot-example.png)
 
 ## Structure
 
-![Diagram](assets/tutorials_interbot-diagram.png)
+![Diagram](/assets/tutorials_interbot-diagram.png)
 
 ## Step 1 – Creating the bots
 
@@ -39,7 +39,7 @@ Next, you will need to create a flow that make use of that action. For the sake 
 
 In the `main.flow.json` flow of your master bot, recreate the structure below.
 
-![Flow](assets/tutorials_interbot-flow.png)
+![Flow](/assets/tutorials_interbot-flow.png)
 
 The content of the text element is the following:
 
@@ -52,7 +52,9 @@ By the way, {{temp.delegation.0.botId}} is telling you:
 > {{{temp.delegation.0.answer}}}
 ```
 
-> **Tip:** The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
+:::tip
+The reason we use triple mustaches (`{{{ ... }}}`) is to prevent Botpress from escaping the special characters found in the variables.
+:::
 
 ## Conclusion
 

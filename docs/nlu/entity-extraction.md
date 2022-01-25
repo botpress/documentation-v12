@@ -52,7 +52,9 @@ The user said: `Let's go for five miles run.`
 }
 ```
 
-> **Note**: In some cases, you will find additional structured information in the extras object
+:::note
+In some cases, you will find additional structured information in the extras object
+:::
 
 ## System Entities
 
@@ -88,12 +90,14 @@ Please check the [Deployment](../infrastructure/hosting) section for instruction
 }
 ```
 
-> **Note**: Confidence will always be one due to the rule-based implementation of Duckling
+:::note
+Confidence will always be one due to the rule-based implementation of Duckling
+:::
 
 ## Custom Entities
 Botpress provides two types of custom entities: [pattern](#pattern-extraction) and [list](#list-extraction) entities. To define a custom entity, go to the **Entity section** of the NLU Module interface accessible from the Botpress studio sidebar. From there, you can define your custom entities which will be available for any input message treated by your chatbot. Go ahead and click on **create new entity**
 
-![Creating a new entity](../assets/nlu-create-entity.png)
+![Creating a new entity](/assets/nlu-create-entity.png)
 
 ### Pattern extraction
 Pattern or Regular Expression Extraction allows you to extract information presented in a format that can be described using Regular Expression (RegEx). Once you've created a pattern entity, Botpress Native NLU will perform a regex extraction on each incoming message and add it to `event.nlu.entities`.
@@ -102,7 +106,7 @@ Pattern or Regular Expression Extraction allows you to extract information prese
 
 Given a Pattern Entity definition with `[A-Z]{3}-[0-9]{4}-[A-Z]{3}` as pattern:
 
-![create slot](../assets/nlu-pattern-entity.png)
+![create slot](/assets/nlu-pattern-entity.png)
 
 Extraction will go like this:
 
@@ -134,7 +138,7 @@ List extraction behaves similarly to pattern extraction. However, you'll be able
 
 Let's take **Airport Codes** as an example:
 
-![create slot](../assets/nlu-list-entity.png)
+![create slot](/assets/nlu-list-entity.png)
 
 Extraction will go like this:
 

@@ -9,7 +9,9 @@ Download the latest Botpress version [here](https://botpress.com/download).
 
 ### SQLite
 
-> ⚠️ Please backup your `/data` folder before making any changes
+:::caution
+Please backup your `/data` folder before making any changes.
+:::
 
 1. Download and extract the new version of Botpress
 2. Copy the content of your previous `/data` folder
@@ -18,7 +20,9 @@ Download the latest Botpress version [here](https://botpress.com/download).
 
 ### PostgreSQL
 
-> ⚠️ Please backup your database before making any changes
+:::caution
+Please backup your database before making any changes.
+:::
 
 1. Download and extract the new version of Botpress
 2. Start Botpress with `--auto-migrate` on the command line, or AUTO_MIGRATE=true environment variable.

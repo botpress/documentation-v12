@@ -17,7 +17,9 @@ To connect to Microsoft Teams, an HTTPS endpoint is required. This is set in the
 - Using Nginx and Let's Encrypt. This tutorial is based on the Linux Ubuntu 16.04 Operating System. [**Tutorial**](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 - Use Serveo to create an HTTPS tunnel to your machine. [**Tutorial**](https://medium.com/automationmaster/how-to-forward-my-local-port-to-public-using-serveo-4979f352a3bf)
 
-> **⭐ Note**: To test on localhost, you can also use services like [pagekite](https://pagekite.net/) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.
+:::note
+To test on localhost, you can also use services like [pagekite](https://pagekite.net/) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.
+:::
 
 ### Before getting started...
 
@@ -107,5 +109,4 @@ You can now continue to next [section](#setting-up-ms-teams-channel-from-an-alre
 3. Click on the `Settings` tab, then scroll down to `Messaging endpoint`.
 
 4. Set the value of the endpoint that was displayed in the logs. If it is missing, it should looks like that:
-
-> `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/teams`
+`<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/teams`

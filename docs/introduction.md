@@ -5,7 +5,9 @@ title: About Botpress
 
 ## What is Botpress
 
-> Botpress is an open-source platform for developers to build high-quality digital assistants.
+:::note
+Botpress is an open-source platform for developers to build high-quality digital assistants.
+:::
 
 We make building chatbots much easier for developers. We have put together the boilerplate code and infrastructure you need to get a chatbot up and running. We propose you a complete dev-friendly platform that ships with all the tools you need to build, deploy and manage production-grade chatbots in record time. The platform includes:
 - Built-in **Natural Language Processing** tasks such as intent recognition, spell checking, entity extraction, and slot tagging (and many others)

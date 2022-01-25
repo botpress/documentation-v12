@@ -6,12 +6,12 @@ title: Improving Your NLU
 ## Bot Improvement Module
 Botpress provides a way for you to check if your QnA module's AI is performing well. You can do this by using the Bot Improvement module. This module lets the chatbot user rate responses from the chatbot using a simple thumbs-up/thumbs-down scale. These appear as two icons at the bottom left of the message bubble containing an answer from the QnA Module.
 
-![Thumb Icons](../assets/b-i-chat.png)
+![Thumb Icons](/assets/b-i-chat.png)
 
 ### Module Interface
 The bot improvement interface contains all the QnA items, which the user rated with a thumbs-down. These appear in the `Feedback Items` section. For context, a preview of the conversation is displayed when you select a feedback item.
 
-![Graphical User Interface](../assets/b-i-interface.png)
+![Graphical User Interface](/assets/b-i-interface.png)
 ### Pending
 These are negative feedback items that an assigned collaborator has not yet inspected. Each feedback item has the following information attached.
 
@@ -34,7 +34,7 @@ Botpress ships with a **Misunderstood** module that helps you deal with user que
 This module will allow you to:
 1. View all phrases from the user which your chatbot didn't understand.
 2. Assign them to a QnA or workflow.
-![The Misunderstood Interface](../assets/misundertood-interface.png)
+![The Misunderstood Interface](/assets/misundertood-interface.png)
 ### Requirements
 Activate the module in `.../data/global/botpress.config.json` or from the admin interface.
 
@@ -54,7 +54,7 @@ This tab is a replica of the Misunderstood tab. The only difference is that this
 ### Rectifying Misunderstood / Thumbs Down
 The Misunderstood module provides tools to help you train your chatbot to understand questions flagged as unknown. You can do this in the _New Misunderstood_ pane, which is in the middle of the interface. In addition, there are three buttons labeled **Ignore**, **Skip**, and **Ammend**.
 
-![The Misunderstood Interface](../assets/mis-interface-new-item.png)
+![The Misunderstood Interface](/assets/mis-interface-new-item.png)
 
 #### Ignore
 If you choose this option, a misunderstood phrase will be ignored, which is helpful for keywords that have been captured in the misunderstood module or for users who enter profane language or gibberish.
@@ -65,9 +65,11 @@ These are phrases that you may want to investigate further before deciding how y
 #### Amend
 The amend button lets you assign the misunderstood phrase to either an **Intent** or a **QnA**. There is a search capability for both of these. If you make a mistake when assigning, you can always use the undo button and assign again.
 
-![The Misunderstood Interface](../assets/mis-solve-ammend.png)
+![The Misunderstood Interface](/assets/mis-solve-ammend.png)
 
-> Currently, you cannot create a new QnA or a new intent from the Misunderstood module. Therefore, when the need arises, go to the module interface for either _QnA_ or _Natural Language Understanding_ and create then return to the Misunderstood module and classify.
+:::note
+Currently, you cannot create a new QnA or a new intent from the Misunderstood module. Therefore, when the need arises, go to the module interface for either _QnA_ or _Natural Language Understanding_ and create then return to the Misunderstood module and classify.
+:::
 
 ## NLU Dataset Guideline
 

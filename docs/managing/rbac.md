@@ -3,25 +3,25 @@ id: rbac
 title: Role-Based Access Control
 ---
 
-![This feature is available with Botpress Enterprise license.](../assets/botpress-enterprise-feature.png)
+![This feature is available with Botpress Enterprise license.](/assets/botpress-enterprise-feature.png)
 
 **RBAC** (Role-Based Access Control) allows you to control what collaborators can access.
 
 By default, Botpress ships with three roles in addition to the administrator (developer, content editor, and agent), but you can change those and create new ones.
 
-![Extra Roles](../assets/rbac-roles.png)
-![Add Colloborators](../assets/roles.png)
+![Extra Roles](/assets/rbac-roles.png)
+![Add Colloborators](/assets/roles.png)
 
 ## Assigning a role to a collaborator
 
 You can easily give a collaborator access to your chatbot and assign a role by navigating to the  **Collaborator** tab from the Administration dashboard, navigate to the "Collaborators" tab. Once there, click the **Add collaborator** and specify the collaborator and their email address.
-![RBAC](../assets/add-role.png)
+![RBAC](/assets/add-role.png)
 
 After adding a role, Botpress will automatically generate a once-off password for the newly created user account. 
-![RBAC](../assets/rbac-success.png)
+![RBAC](/assets/rbac-success.png)
 
 You can also change a collaborator's role by clicking the **Action** button next to the user whose role you wish to change. In addition to the changing roles, the menu allows you to change the password, remove a user from the workspace (Botpress retains the email and password, enabling you to add the user back), or delete the user. 
-![RBAC](../assets/change-role.png)
+![RBAC](/assets/change-role.png)
 
 ## Adding a new role
 

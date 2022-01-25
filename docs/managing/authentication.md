@@ -2,7 +2,10 @@
 id: authentication
 title: Authentication Methods
 ---
-![This feature is available to Botpress Enterprise license holders.](assets/botpress-enterprise-feature.png)
+:::info
+Enterprise only.
+:::
+
 There are three different types of authentication:
 
 1. **Collaborators**: Access the Admin Studio UI to manage and edit chatbots based on their roles.
@@ -11,7 +14,7 @@ There are three different types of authentication:
 
 ## Authentication Overview
 Four authentication strategies are available, namely, Basic, SAML, OAuth2, and LDAP. You can implement these multiple times (for example, you could have two different OAuth2 configurations for different workspaces).
-![Authentication Methods](assets/auth-methods.png)
+![Authentication Methods](/assets/auth-methods.png)
 Regardless of which authentication strategy you use, they are all stored in the database. When you add a new strategy in the `botpress.config.json` and restart your application, Botpress will create a new table called `strategy_STRATEGYID`.
 
 Each time you grant access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
@@ -29,7 +32,7 @@ Basic Authentication allows a user to log in with a simple username/password. Th
 To create more accounts, visit the `Collaborators` tab on the Admin UI. Choose the role and enter the email of your collaborator, then you will receive a random password. The user will change this password after the first login.
 
 Super Admins can reset the password of any user from the Action menu in the collaborators' interface.
-![RBAC](assets/password-change.png)
+![RBAC](/assets/password-change.png)
 
 ### Configuration Example
 
@@ -122,7 +125,7 @@ There are two possible behaviors. You can either:
 - A SAML IdP (Identity Provider)
 
 ### Quick Start
-Let's use SAML to authenticate a user. We will use [jumpcloud](), a popular authentication provider. Head over to the User Authentication menu and select SSO. Select a SAML Identification provider from the ones available on the list or create a new one. For this tutorial, we used Google. Enter the required information, supplying your domain name at all positions marked **YOURDOMAIN**
+Let's use SAML to authenticate a user. We will use `jumpcloud`, a popular authentication provider. Head over to the User Authentication menu and select SSO. Select a SAML Identification provider from the ones available on the list or create a new one. For this tutorial, we used Google. Enter the required information, supplying your domain name at all positions marked **YOURDOMAIN**
 
 After creating your application, you will get the option to download your certificate. Your entry point url will appear next to your application labeled as IdP URL.
 

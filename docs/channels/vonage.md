@@ -3,7 +3,9 @@ id: vonage
 title: Vonage
 ---
 
-> **⭐ Note**: Currently, only WhatsApp is supported on this channel.
+:::note
+Currently, only WhatsApp is supported on this channel.
+:::
 
 ### Prerequisite
 

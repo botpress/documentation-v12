@@ -507,7 +507,9 @@ They are then accessible by the name `$MY_MODULE/$MY_ACTION` in any node or skil
 
 If your action requires external dependencies, you must add them on your module's `package.json` as dependencies. When the VM is initialized, we redirect `require` requests to the node_modules of its parent module.
 
-> Many dependencies are already included with Botpress and do not need to be added to your package (ex: lodash, axios, etc... )
+:::note
+Many dependencies are already included with Botpress and do not need to be added to your package (ex: lodash, axios, etc.).
+:::
 
 ## module-builder Docker image
 

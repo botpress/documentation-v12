@@ -7,7 +7,9 @@ title: Website Embedding
 
 Embedding a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and embed it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
 
-> Remember to replace `<your-url-here>` with the URL of your bot!
+:::note
+Remember to replace `<your-url-here>` with the URL of your bot!
+:::
 
 ```html
 <script src="<your-url-here>/assets/modules/channel-web/inject.js"></script>
@@ -35,7 +37,7 @@ There is an example in the default botpress installation at `http://localhost:30
 
 The information page displays information like the website URL, a phone number, an e-mail contact address, and links to terms of services and privacy policies. You can also include a cover picture and an avatar for your bot.
 
-![Bot Info Page](../assets/webchat-bot-info.png)
+![Bot Info Page](/assets/webchat-bot-info.png)
 
 How to set up the information page:
 
@@ -46,7 +48,9 @@ How to set up the information page:
 
 You will see the page when starting a new conversation. The page is always accessible by clicking on the information icon in the top right corner of the chat window.
 
-> **\*\*** We edited the `global` configuration file for the sake of simplicity. To enable the bot information page on a single bot, visit that bot's studio UI and select **config** (the last icon on the left-side menu with a cog).
+:::note
+We edited the `global` configuration file for the sake of simplicity. To enable the bot information page on a single bot, visit that bot's studio UI and select **config** (the last icon on the left-side menu with a cog).
+:::
 
 ## Events Available
 
@@ -232,7 +236,9 @@ A couple of properties are passed down to your custom component. These can be us
 | incomingEventId | The ID of the incoming event which was processed                               |
 | store           | Grants access to the MOBX store of Channel Web (more on that below)            |
 
-> isLastGroup and isLastOfGroup can be combined to let your component know if the current message is the last one the user is seeing. This can be used, for example, to display feedback buttons, a login form, or anything else, that will disappear when the user continues the discussion.
+:::note
+`isLastGroup` and `isLastOfGroup` can be combined to let your component know if the current message is the last one the user is seeing. This can be used, for example, to display feedback buttons, a login form, or anything else, that will disappear when the user continues the discussion.
+:::
 
 ### The Store
 
@@ -459,4 +465,4 @@ Feel free to change the webchat config there; the critical line to keep is the `
 ### Result
 
 Restart Botpress Server, and now your chatbot's default webchat will use your custom CSS theme! Here's our example:
-![WebChat Customization](../assets/webchat-customization.png)
+![WebChat Customization](/assets/webchat-customization.png)

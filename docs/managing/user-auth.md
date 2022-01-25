@@ -5,11 +5,11 @@ title: User Authentication
 
 Let's authenticate a user against a 3rd party authentication system to act on its behalf, just like you would do in a mobile/web app. To achieve this, we will build a simple module that authenticates a user to Twitter. After authentication, it will save the user's credentials to their attributes to query the user's Twitter account later.
 
-> **Prerequisites:** 
-> Knowledge on how to [create a custom botpress module](../advanced/custom-module).
-> Basic knowledge of the [botpress sdk](https://botpress.com/reference/) as well as prior experience with `botpress.config.json`. 
-> A [Twitter app](https://developer.twitter.com/en/docs/basics/getting-started).
-> Experience with [Passport.js](http://www.passportjs.org/docs/).
+## Prerequisite 
+- Knowledge on how to [create a custom botpress module](../advanced/custom-module).
+- Basic knowledge of the [botpress sdk](https://botpress.com/reference/) as well as prior experience with `botpress.config.json`. 
+- A [Twitter app](https://developer.twitter.com/en/docs/basics/getting-started).
+- Experience with [Passport.js](http://www.passportjs.org/docs/).
 
 The code for this example is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/chat-3rd-party-OAuth) directory of our GitHub repository.
 
@@ -141,7 +141,9 @@ router.get('/auth', async (req: ReqWithSession, res) => {
 Notice that we pass `channel` & `userId` as query parameters to set them in the user's session. Botpress will use these parameters to find the user when Twitter calls our callback route.
 Your chatbot can now use the read Twitter Authentication properties in the users' attributes. Depending on your business logic, when you need to authenticate a user to Twitter, you only have to check if the user's attributes contain the `twitter` property. If the user has not yet set this property, suggest to your user to authenticate to Twitter. You could achieve this by displaying a built-in card element with an `OpenUrl` action. Set your authentication route as the url value : `http://yourbot.host/api/v1/bots/${botId}/mod/twitter-auth/aut
 
-> **Pro tip:** Define a [shortlink](/docs/tutorials/shortlinks) for your auth chatbot module route to make it easy to use in your flow or content.
+:::tip
+Define a [shortlink](/docs/tutorials/shortlinks) for your auth chatbot module route to make it easy to use in your flow or content.
+:::
 
 ### Recap
 - We built a simple module with no interface from scratch that allows a Twitter OAuth flow in a chat session. 

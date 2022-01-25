@@ -22,7 +22,7 @@ To send an email using the email skill, you need to configure your chatbot with 
 
 You can edit those variable in botpress from the code editor.
 
-![connection_string](../assets/tutorials/transportConnectionString.png)
+![connection_string](/assets/transportConnectionString.png)
 
 Here is an example of a configuration using a mail server:
 
@@ -67,6 +67,7 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
   }
 ```
 
-> Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
-
-> If your email is protected with 2FA it might not work.
+:::note Notes
+- Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend that you put in place a fall-back strategy if this happens using the `on failure` transition.
+- If your email is protected with 2FA it might not work.
+:::0

@@ -29,10 +29,12 @@ DEBUG=bp:dialog:*,bp:nlu:intents:*
 
 ## Available namespaces 🔬
 
-> This feature is experimental and is subject to change
+:::note
+This feature is experimental and is subject to change
+:::
 
 Go to `<your_url>/admin/debug` to see a complete list of the available namespaces. The **super-admin role is required** to access this page.
 
 You can also enable or disable them from this screen:
 
-![Debugging](assets/debugging.png)
+![Debugging](/assets/debugging.png)

@@ -52,45 +52,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'overview/intro',
+            docId: 'releases/migrate772',
             position: 'left',
             label: 'Overview',
           },
           {
             type: 'doc',
-            docId: 'admin/admin-intro',
+            docId: 'features',
             position: 'left',
-            label: 'Admin',
-          },
-          {
-            type: 'doc',
-            docId: 'conversation-studio/conversation-studio-intro',
-            position: 'left',
-            label: 'Conversation Studio',
-          },
-          {
-            type: 'doc',
-            docId: 'messaging/botpress-webchat',
-            position: 'left',
-            label: 'Messaging',
-          },
-          {
-            type: 'doc',
-            docId: 'nlu/intent-classification',
-            position: 'left',
-            label: 'NLU',
-          },
-          {
-            type: 'doc',
-            docId: 'business-apps/analytics/engagement',
-            position: 'left',
-            label: 'Business Apps'
-          },
-          {
-            type: 'doc',
-            docId: 'glossary',
-            position: 'right',
-            label: 'Glossary',
+            label: 'Features',
           },
           {
             href: 'https://botpress.com/reference/',

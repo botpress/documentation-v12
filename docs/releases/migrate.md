@@ -18,7 +18,10 @@ Botpress 12 comes with an "auto-migration" feature that runs migrations for the 
 - Events are stored in the `events` table
 
 ### SQLite
-> ⚠️ Please backup your `/data` folder before making any changes
+
+:::caution
+Please backup your `/data` folder before making any changes.
+:::
 
 1. Download and extract the new version of Botpress
 2. Copy the content of your previous `/data` folder
@@ -27,7 +30,9 @@ Botpress 12 comes with an "auto-migration" feature that runs migrations for the 
 
 ### PostgreSQL
 
-> ⚠️ Please backup your database before making any changes
+:::caution
+Please backup your database before making any changes.
+::::
 
 1. Download and extract the new version of Botpress
 2. Start Botpress with `--auto-migrate` on the command line or AUTO_MIGRATE=true environment variable.
@@ -133,7 +138,9 @@ User ID has been replaced by user email.
 
 **Rules** should be defined under `roles` / `rules` and respect the same format as before e.g. `[{"res":"*","op":"+r+w"}, {"res":"admin.*","op":"+r-w"}]`
 
-> Botpress doesn't currently support multiple workspaces. They _might_ be added in a future version.
+:::note
+Botpress doesn't currently support multiple workspaces. They _might_ be added in a future version.
+:::
 
 ### Example
 

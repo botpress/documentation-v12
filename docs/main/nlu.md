@@ -7,7 +7,9 @@ title: NLU
 
 The Botpress NLU module will process every incoming messages and will perform Intent Classification, Language Identification, Entity Extraction and Slot Tagging. The structured data that these tasks provide is added to the message metadata directly (under `event.nlu`), ready to be consumed by the other modules and components.
 
-> **QnA**: A simple use-case for bots is to understand a question and to provide an answer automatically. Doing that manually for all the questions and answers using the NLU module and the flow editor would be a tedious task, which is why we recommend using the QnA module for that instead.
+:::note Q&A
+A simple use-case for bots is to understand a question and to provide an answer automatically. Doing that manually for all the questions and answers using the NLU module and the flow editor would be a tedious task, which is why we recommend using the QnA module for that instead.
+:::
 
 ## Intent Classification
 
@@ -84,13 +86,15 @@ You can use that metadata in your flows to create transitions when a specific in
 
 ##### Example
 
-![Flow NLU Transition](../assets/flow-nlu-transition.jpg)
+![Flow NLU Transition](/assets/flow-nlu-transition.jpg)
 
 ### Confidence and debugging
 
 To enable debugging of the NLU module, make sure that `debugModeEnabled` is set to `true` in your `data/global/config/nlu.json` file.
 
-> **Tip**: In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
+:::tip
+In production, you can also use the `BP_NLU_DEBUGMODEENABLED` environment variable instead of modifying the configuration directly.
+:::
 
 ##### Example of debugging message
 
@@ -207,7 +211,7 @@ An example of placeholder entity would be : Please tell **Sarah** that **she's l
 
 As of today we provide 2 types of custom entities: [pattern](#pattern-extraction) and [list](#list-extraction) entities. To define a custom entity, head to the **Entity section** of the Understanding Module in your botpress studio side bar. From there you'll be able to define your custom entities that will be available for any input message treated by your chatbot. Go ahead and click on **create new entity**
 
-![Creating A Custom Entity](../assets/nlu-create-entity.png)
+![Creating A Custom Entity](/assets/nlu-create-entity.png)
 
 ### Sensitive Information
 
@@ -223,7 +227,7 @@ Once you've created a pattern entity, Botpress Native NLU will perform a regex e
 
 Given a Pattern Entity definition with `[A-Z]{3}-[0-9]{4}-[A-Z]{3}` as pattern:
 
-![Pattern Entity](../assets/nlu-pattern-entity.png)
+![Pattern Entity](/assets/nlu-pattern-entity.png)
 
 Extraction will go like:
 
@@ -255,7 +259,7 @@ List extraction will behave in a similar way. The major addition is that for you
 
 Let's take **Airport Codes** as an example:
 
-![List Entity](../assets/nlu-list-entity.png)
+![List Entity](/assets/nlu-list-entity.png)
 
 Extraction will go like:
 
@@ -312,11 +316,11 @@ Botpress Native NLU will tag each _words_ (tokens) of user input. If it's correc
 
 To define a slot for a particular intent, head to the **Intent section** of the Understanding Module in your Botpress Studio side bar. From there select the intent you want to add slots to, then you'll be able to define your slots. Go ahead and click on **create a slot**
 
-![Create Slot](../assets/nlu-create-slot.png)
+![Create Slot](/assets/nlu-create-slot.png)
 
 Let's use a `find_flight` intent. In order to book a flight, we'll define 2 slots: `airport_from` and `airport_to` both associated with the `Airport Codes` custom list entity. Once that is done, we need to identify every airport slots.
 
-![Tag Slots](../assets/nlu-tag-slot.png)
+![Tag Slots](/assets/nlu-tag-slot.png)
 
 #### Example
 
@@ -353,7 +357,9 @@ Botpress NLU ships with a native NLU engine (Botpress Native NLU). The advantage
 
 If for some reason you want to use an external provider, you can do so by using [Hooks](code#hooks) and calling the external NLU provider via API. There's a detailed example [here](../tutorials/3rd-party-NLU)
 
-> **Note**: We have dropped support [(see why)](https://github.com/botpress/botpress/pull/1170) for two-way synchronization as there were too many issues in doing (and maintaining) that. You'll have to maintain this yourself if you go this way. We're open to contributions for both implementation and maintenance of 3rd party NLU integrations.
+:::note
+We have dropped support [(see why)](https://github.com/botpress/botpress/pull/1170) for two-way synchronization as there were too many issues in doing (and maintaining) that. You'll have to maintain this yourself if you go this way. We're open to contributions for both implementation and maintenance of 3rd party NLU integrations.
+:::
 
 ##### Features by Providers
 

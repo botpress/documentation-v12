@@ -24,7 +24,7 @@ A chatbot is quite simple:
 1. It receives messages from Messaging **channels**.
 2. It **processes** these messages to understand, translate, or escalate underlying information.
 3. It **decides** how to respond to the user
-![High-Level Diagram](../assets/hld.png)
+![High-Level Diagram](/assets/hld.png)
 The red dots are the developer extension points. These indicate where a chatbot developer can inject code to customize their chatbot.
 
 ### Channels
@@ -39,7 +39,9 @@ Think of a channel in the context of communication. Using this definition, we ca
  - Sunshine Conversations
  - Vonage
 
-> In Botpress, channels are installed and configured individually and locally, giving you complete control over the data transmitted between your chatbot and the chat platforms. Botpress does not proxy the messages to a 3rd party service.
+:::note
+In Botpress, channels are installed and configured individually and locally, giving you complete control over the data transmitted between your chatbot and the chat platforms. Botpress does not proxy the messages to a 3rd party service.
+:::
 
 Behind the scenes, Botpress implements a queuing mechanism that processes ingoing and outgoing messages sequentially. If a message fails to be processed or sent for some reason, Botpress will retry the message processing sequence before raising an error to the developer and chatbot administrator.
 
@@ -79,7 +81,9 @@ This interface allows you to pre-define how the chatbot responds to a user in te
 #### Decision Engine
 This robust component decides whether to follow the next step as dictated by the flow editor or give an alternate response, for example, a FAQ from the QnA module or a warning for profane language.
 
-> **Upcoming**: The Botpress core team is currently working on adding statistical decisions to the Dialog Manager, which will allow you to create even more natural experiences while also simplifying development. For instance, if a user asks a question while interacting with a rules-based workflow, the chatbot will answer that question from the QnA module, then return to the workflow.
+:::note Upcoming
+The Botpress core team is currently working on adding statistical decisions to the Dialog Manager, which will allow you to create even more natural experiences while also simplifying development. For instance, if a user asks a question while interacting with a rules-based workflow, the chatbot will answer that question from the QnA module, then return to the workflow.
+:::
 
 ### Extension Points
 Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](../main/code).
@@ -150,9 +154,9 @@ As a developer, you can create your own [custom module](../advanced/custom-modul
 ## Event Engine Overview
 Below is a complete overview of the components implied in processing an event (ex: a message sent by a user). It is mostly informational, and you won't use most of these components directly. We have included it only to give you an insight into the bigger picture of the elements involved and how they interact.
 
-![Event engine](../assets/event_enginev2.2.png)
+![Event engine](/assets/event_enginev2.2.png)
 ## Hands On Deck
 
 Let's create our first chatbot with Botpress. We will name the bot Blitz, and it will act as a virtual support agent for the great team at Botpress! You can download the chatbot [here](https://dl.orangedox.com/new-bot).
 
-![Create A Chatbot](../assets/create-new.png).
+![Create A Chatbot](/assets/create-new.png).

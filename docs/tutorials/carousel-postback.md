@@ -17,7 +17,7 @@ We will then create a hook that will save this city code in the [memory](../main
 
 It's now time to create the bot. Use [this link](/docs/assets/bot_carouselexample_1573577470073.tgz) to download the exported bot. Create a new bot using this archive. Your bot should look like this:
 
-![Screenshot of the bot](assets/carousel-postback-bot.png)
+![Screenshot of the bot](/assets/carousel-postback-bot.png)
 
 As you can see, the bot wil first display a Carousel, then flow to a different node based on the value of `temp.cityClicked`. The current transitions do not work yet, let's see the hook.
 
@@ -68,4 +68,4 @@ Save the hook and open the emulator.
 Summon the bot by sending a quick hello message. The bot will display the carousel.
 Click on a button of the carousel. The bot's response will vary based on the button that was clicked:
 
-![Emulator](assets/carousel-postback-emulator.png)
+![Emulator](/assets/carousel-postback-emulator.png)

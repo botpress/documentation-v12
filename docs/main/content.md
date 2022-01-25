@@ -9,7 +9,9 @@ Botpress includes its own **Content Management System** (or **CMS**) to manage a
 
 A **Content Types** defines the structure of what the chatbot sends. It also dictates how your chatbot should render the content. It can be as straightforward or as complex as you want. For instance, a Content-Type could be a simple text or an image, or a carousel. 
 
-> **🌟 Tip**: As a general rule, the more domain-specific the Content Types are, the easier it is to manage the chatbot for non-technical people.
+:::tip
+As a general rule, the more domain-specific the Content Types are, the easier it is to manage the chatbot for non-technical people.
+:::
 
 Content Types are particular to the chatbots with which they are associated. Here are some typical examples:
 
@@ -42,18 +44,20 @@ Here's a Content Element example:
 
 All Content Elements of the same Content Type are stored within a single `.json` file under the `data/bots/{your-bot}/content-elements/` directory.
 
-> **Tip**: Remember that a Content Type tells **how** content gets rendered and a Content Element tells **what** to render.
+:::tip
+Remember that a Content Type tells **how** content gets rendered and a Content Element tells **what** to render.
+:::
 
 ## Adding Content
 You can add and edit content in two ways:
 
 ### Flow Editor
 You can add content while creating a node in the flow editor. Click the plus button, choose _say something_ click the file icon, choose a content type, then select _Add New_
-![Adding Content Via Flow Editor](../assets/add-content-flow.png)
+![Adding Content Via Flow Editor](/assets/add-content-flow.png)
 
 ### Content Interface
 In Botpress Studio Interface, you can add content to your chatbot. Navigate to the _Content_ tab and click the plus sign next to "Filter by Content-Type". You can also add a specific content type by clicking the _plus_ button, which appears when you hover over the content title
-![Adding Content Via Interface](../assets/adding-content.png)
+![Adding Content Via Interface](/assets/adding-content.png)
 The content interface is useful for the separation of concerns. You may want a non-technical collaborator to look through the content, editing it for grammar, and creating the desired tone for your chatbot.
 
 ## Translation
@@ -73,7 +77,7 @@ This button triggers an action, often used in cards. You can add two parameters 
 
 ### Audio
 Allows you to upload an mp3 audio file. The file will be playable within the chat.
-![Audio Content](../assets/audio-emulator.png)
+![Audio Content](/assets/audio-emulator.png)
 ### Card
 A card is a message with a title and an optional subtitle. It also contains an image and action buttons. Note that you first need to create the action button separately.
 ### Carousel
@@ -99,4 +103,4 @@ The dropdown displays a list of options to the user. It includes a message to th
 
 Let's open our chatbot, Blitz, by clicking the name. We will be ushered to the Studio User Interface. The very first item in the left-hand menu is a link to the `Content` interface. In this interface, you can add, edit, and delete all the content types described above. I have added an example of each available content type. You can download the chatbot [here](https://dl.orangedox.com/content-blitz).
 
-![Adding Content](../assets/content-interface.png)
+![Adding Content](/assets/content-interface.png)

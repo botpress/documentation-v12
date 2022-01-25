@@ -5,12 +5,12 @@ title: Sending Messages in Bulk
 
 Automating bulk messaging is a widespread use case when communicating with a big audience. You may want to notify **all** chatbot users of an upcoming event. Sending a message from the HITL interface of your Botpress installation will likely be a lengthy, error-prone process. To help you out, we have created a broadcast module that takes care of this process. Let's take a closer look at this module.
 
-![Broadcasting Module Interface](../assets/broadcast.png)
+![Broadcasting Module Interface](/assets/broadcast.png)
 
 ## Creating a Broadcast
 To create a broadcast, click the `+ New Broadcast` button in the top right corner of the module ui. Botpress will present you with a window like the one below:
 
-![New Broadcast](../assets/new-broadcast.png)
+![New Broadcast](/assets/new-broadcast.png)
 
 ### Content
 This button allows you to pick content. Once you click it, you can either create a new content element or select an existing one. This is the content that Botpress will send to chatbot users during the broadcast.
@@ -33,7 +33,9 @@ You can apply filters to the broadcasts. Filters are small JavaScript functions 
 `channel` the channel on which the user is on
 The function needs to return a boolean or a Promise of a boolean.
 
-> Note: Starting your function with return is optional.
+:::note
+Starting your function with return is optional.
+:::
 
 #### Examples
 Send a message only to users on Facebook

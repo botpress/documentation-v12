@@ -5,7 +5,7 @@ title: Clustering
 
 ## Cluster Overview
 
-![High-Level Diagram](assets/bp-cluster.png)
+![High-Level Diagram](/assets/bp-cluster.png)
 
 ## Requirements
 
@@ -15,7 +15,7 @@ title: Clustering
 - Botpress license registered with a public address
 
 ## Interfaces Overview
-![HTTP Interfaces](assets/http-interfaces.png)
+![HTTP Interfaces](/assets/http-interfaces.png)
 
 ## Enable Redis
 
@@ -50,7 +50,10 @@ docker run -d \
 -e DATABASE_URL=postgres://login:password@host:port/database \
 botpress/server:$TAG
 ```
-> ❌ Do not use the `BP_REDIS_SCOPE` parameter as it can possibly lead to performance and/or data issues, thus stable operation is not guaranteed. Our team will not support implementations with the use of `BP_REDIS_SCOPE`.
+
+:::caution
+Do not use the `BP_REDIS_SCOPE` parameter as it can possibly lead to performance and/or data issues, thus stable operation is not guaranteed. Our team will not support implementations with the use of `BP_REDIS_SCOPE`.
+:::
 
 Once the first node starts, use the same command to start Botpress on the other nodes.
 
