@@ -3,27 +3,29 @@ id: azure-oauth2
 title: Setting up SSO with Azure AD OAuth2
 ---
 
-**Note**: This is a Botpress Pro feature
+------------------------
 
-**Note**: Azure OAuth2 only works for version 12.17.2 and later
+:::info
+Enterprise only
+:::
 
-## Step 1: Create a tenant
+:::note
+Azure OAuth2 only works for version 12.17.2 and later.
+:::
 
-Navigate to Azure Active Directory Page in your Azure Portal and create a new tenant
+## Step 1: Create a Tenant
 
-## Step 2: Register an application
+Navigate to Azure Active Directory Page in your Azure Portal and create a new tenant.
 
-In the page of your newly created tenant navigate to "App registrations".
+## Step 2: Register an Application
 
-![App Registrations](/assets/az_2_register_app.png)
+In the page of your newly created tenant navigate to **App registrations**.
 
-Create a new application and choose the appropriate configuration for your use case in "Supported account types", single and multi tenant options are supported, and keep the "Redirect URI" blank for now.
-
-![App Creation](/assets/az_2.1_app_creation.png)
+Create a new application and choose the appropriate configuration for your use case in **Supported account types**, single and multi tenant options are supported, and keep the **Redirect URL** blank for now.
 
 ## Step 3: Configure Botpress
 
-In your Botpress instance navigate to the code editor by going into any of your bots and add a new entry within `authStrategies` in the _botpress.config.json_ file, you may name the strategy whatever you want (keep the name URL safe) and fill in the entry in the following way:
+In your Botpress instance, navigate to the **Code Editor** in the Conversation Studio of the selected bot(s) and add a new entry within `authStrategies` in the `botpress.config.json` file. You may name the strategy whatever you want (keep the name URL safe) and fill in the entry in the following way:
 
 ```json
 "<your strategy name>": {
@@ -44,28 +46,27 @@ In your Botpress instance navigate to the code editor by going into any of your 
 }
 ```
 
-## Step 4: Create a client secret
+## Step 4: Create a Client Secret
 
-Next navigate to "Certificates & secrets" and create a new client secret, copy its value and paste in the `clientSecret` field of your created strategy in the _botpress.config.json_ file
+1. Navigate to **Certificates & secrets**. 
+1. Create a new client secret. 
+1. Copy its value.
+1. Paste it in the `clientSecret` field of your created strategy in the `botpress.config.json` file.
 
-![Secret creation](/assets/az_4_create_secret.png)
+## Step 5: Enable the Strategy in Botpress
 
-## Step 5: Enable the strategy in Botpress
+Under the **Pro** settings in the `botpress.config.json` file, add your strategy name to the `collaboratorsAuthStrategies` array.
 
-Under the `pro` settings in the _botpress.config.json_ file (should be around line 143), add your strategy name to the `collaboratorsAuthStrategies` array.
+Also make sure that the `externalAuth` object has `enabled` set to `true`.
 
-![Enable strategy](/assets/az_5_enable_strategy.png)
+## Step 6: Configure Callback URL in Azure
 
-Also make sure that the `externalAuth` object has `enabled` set to `true`:
+1. In your application in the Azure Active Directory portal, navigate to the **Authentication** page.
+1. Add a platform. 
+  1. Select **Web** for the platform type.
+  1. Set your callback url with the one you configured in the `botpress.config.json` file.
+  1. For the token type select **ID tokens**.
 
-![Enable external auth](/assets/az_5_enable_external_auth.png)
-
-## Step 6: Configure callback URL in Azure
-
-In your application in the Azure Active Directory portal, navigate to the "Authentication" page and add a platform. **Select "Web" for the platform type** and set your callback url with the one you configured in the _botpress.config.json_ file. **For the token type select "ID tokens".**
-
-![Configure callback in Azure](/assets/az_6_configure_callback.png)
-
-## Step 7: Restart the Botpress server
+## Step 7: Restart the Botpress Server
 
 A green cogwheel should appear in the bottom right of the Botpress UI, click it to restart the server.
