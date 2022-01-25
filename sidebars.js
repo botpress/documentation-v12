@@ -152,6 +152,7 @@ module.exports = {
         'advanced/custom-module',
         'infrastructure/development-pipeline',
         'advanced/content-type-action',
+        'advanced/monitoring',
         ],
       },
       ],
