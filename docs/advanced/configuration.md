@@ -17,7 +17,7 @@ To get more information about each individual options, check out the [comments o
 
 By default, Botpress will start an HTTP server on localhost, listening to port 3000. If the configured port is already in use, it will pick the next available one. You can change these by editing `httpServer.host` and `httpServer.port`.
 
-### Exposing your bot on the internet
+### Publishing your Bot
 
 When you are ready to expose your bot externally, you will need to change some of the server settings. The server doesn't support HTTPS connections, so you will need to set up a reverse proxy in front of it (for example: NGINX). In the main [repo](https://github.com/botpress/botpress), Botpress have created an example with a HTTPS with [docker-compose](https://github.com/botpress/botpress/blob/master/examples/docker-compose/docker-compose-community-nginx-https.yaml). You can start this example in your server (where botpress will run).
 
@@ -200,5 +200,6 @@ These variables can be used to disable some sensitive features destined to Super
 
 ## More Information
 
-- Check out the [database](../tutorials/database) page for details about `DATABASE_URL`
-- Check out the [cluster](../infrastructure/cluster) page for details about `CLUSTER_ENABLED` and `REDIS_URL`
+- Check out the [database](/docs/infrastructure/database) page for details about `DATABASE_URL`
+- Check out the [cluster](/docs/infrastructure/cluster) page for details about `CLUSTER_ENABLED` and `REDIS_URL`
+0

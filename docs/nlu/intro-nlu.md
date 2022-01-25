@@ -35,7 +35,7 @@ The language server provides additional information about words, which allows yo
 ## External NLU Providers
 Botpress NLU ships with a native NLU engine (Botpress Native NLU). The advantage of using Botpress NLU is that it is fast (both at training and evaluation time), secured (doesn't relay messages to external services), predictable (you can write unit tests, and the model resides on your computer or server), and free.
 
-If you want to use an external provider for some reason, you can do so by using [Hooks](code#hooks) and calling the external NLU provider via API. There's a detailed example [here](../nlu/3rd-party-NLU)
+If you want to use an external provider for some reason, you can do so by using hooks and calling the external NLU provider via API. There's a detailed example [here](../nlu/3rd-party-NLU)
 
 :::note
 We have dropped support [(see why)](https://github.com/botpress/botpress/pull/1170) for two-way synchronization as there were too many issues in doing (and maintaining) that. You'll have to maintain this yourself if you go this way. We're open to contributions for both implementation and maintenance of 3rd party NLU integrations.

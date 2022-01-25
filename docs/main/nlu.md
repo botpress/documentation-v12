@@ -345,17 +345,17 @@ slots : {
 
 ### Slot Filling
 
-Slot filling is the process of gathering information required by an intent. This information is defined as _slots_ as we mentioned in the above section. Previously, slot filling was made manually and would result in a lot of manipulation. Since 11.8 you can use the Slot skill to help with slot filling. Please refer to the [Slot Skill tutorial](../tutorials/skill-slot) for further details.
+Slot filling is the process of gathering information required by an intent. This information is defined as _slots_ as we mentioned in the above section. Previously, slot filling was made manually and would result in a lot of manipulation. Since 11.8 you can use the Slot skill to help with slot filling. Please refer to the [Slot Skill tutorial](/docs/nlu/skill-slot) for further details.
 
 ## Language Server
 
-The language server provides additional information about words, which allows your bot to understand words with a similar meaning even if you didn't specifically taught it about it. By default, your Botpress server will query one of our language server for that purpose. You can also choose to host your own server if you would like to keep everything on your premise. Head over to the [Hosting](../infrastructure/hosting#running-your-own-language-server) page for more details.
+The language server provides additional information about words, which allows your bot to understand words with a similar meaning even if you didn't specifically taught it about it. By default, your Botpress server will query one of our language server for that purpose. You can also choose to host your own server if you would like to keep everything on your premise. Head over to the [Hosting](/docs/infrastructure/hosting#running-your-own-language-server) page for more details.
 
 ## External NLU Providers
 
 Botpress NLU ships with a native NLU engine (Botpress Native NLU). The advantage of using Botpress NLU is that it is fast (both at training and evaluation time), secured (doesn't hit the cloud), predictable (you can write unit tests, the model resides on your computer) and free.
 
-If for some reason you want to use an external provider, you can do so by using [Hooks](code#hooks) and calling the external NLU provider via API. There's a detailed example [here](../tutorials/3rd-party-NLU)
+If for some reason you want to use an external provider, you can do so by using [Hooks](code#hooks) and calling the external NLU provider via API. There's a detailed example [here](/docs/nlu/3rd-party-NLU)
 
 :::note
 We have dropped support [(see why)](https://github.com/botpress/botpress/pull/1170) for two-way synchronization as there were too many issues in doing (and maintaining) that. You'll have to maintain this yourself if you go this way. We're open to contributions for both implementation and maintenance of 3rd party NLU integrations.

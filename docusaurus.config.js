@@ -52,7 +52,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'releases/migrate772',
+            docId: 'releases/migrate',
             position: 'left',
             label: 'Overview',
           },
@@ -82,27 +82,11 @@ const config = {
             items: [
               {
                 label: 'The Basics',
-                to: '/docs/overview/intro',
+                to: '/docs/releases/migrate',
               },
               {
-                label: 'Admin',
-                to: '/docs/admin/admin-intro',
-              },
-              {
-                label: 'Conversation Studio',
-                to: '/docs/conversation-studio/conversation-studio-intro',
-              },
-              {
-                label: 'Messaging',
-                to: '/docs/messaging/messaging-intro',
-              },
-              {
-                label: 'NLU',
-                to: '/docs/nlu/nlu-intro',
-              },
-              {
-                label: 'Business Apps',
-                to: '/docs/business-apps/analytics/engagement',
+                label: 'Features',
+                to: '/docs/features',
               },
             ],
           },

@@ -124,7 +124,7 @@ export default entryPoint
 
 ### onServerStarted
 
-This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). You can [read more about Database access here](/docs/create-module#database)
+This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). 
 
 Example:
 

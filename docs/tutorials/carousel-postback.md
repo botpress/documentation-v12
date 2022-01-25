@@ -15,8 +15,6 @@ In this example, we will send a custom payload using the Postback feature. When 
 
 We will then create a hook that will save this city code in the [memory](../main/memory). The bot will then flow to a particular node, depending on the value in memory.
 
-It's now time to create the bot. Use [this link](/docs/assets/bot_carouselexample_1573577470073.tgz) to download the exported bot. Create a new bot using this archive. Your bot should look like this:
-
 ![Screenshot of the bot](/assets/carousel-postback-bot.png)
 
 As you can see, the bot wil first display a Carousel, then flow to a different node based on the value of `temp.cityClicked`. The current transitions do not work yet, let's see the hook.

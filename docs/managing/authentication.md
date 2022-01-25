@@ -237,7 +237,7 @@ cat jwtRS256.key.pub // Your public key
 
 ### Authenticate the user
 
-Once you have generated the JWT token, Botpress must pass it down to the webchat. It will then be sent to Botpress with every message and event. Check out the [Connecting your bot with your existing backend](../tutorials/existing-backend) for more details. There are two different situations:
+Once you have generated the JWT token, Botpress must pass it down to the webchat. It will then be sent to Botpress with every message and event. Check out the [Connecting your bot with your existing backend](/docs/integrating/existing-backend) for more details. There are two different situations:
 
 1. The user is authenticated before the webchat is loaded.
 

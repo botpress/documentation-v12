@@ -168,7 +168,7 @@ This method is not considered best practice, but it does the job for quick demon
 
 ### Method 3: Combining Switch Case and Slot Skill
 
-The Slot Skill can be used in collaboration with the "Switch Case Method" when intent has one or more slots. For this example, let us add a `destination` slot 'to the `book-flight` intent. You can learn more about adding slots in the [entities](entities) topic 
+The Slot Skill can be used in collaboration with the "Switch Case Method" when intent has one or more slots. For this example, let us add a `destination` slot 'to the `book-flight` intent. You can learn more about adding slots in the [entities](/docs/nlu/entity-extraction)) topic 
 
 ![](/assets/intent-matching-slot-intents.png)
 

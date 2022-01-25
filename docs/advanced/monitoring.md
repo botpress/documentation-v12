@@ -82,8 +82,8 @@ Let's see an example of a rule, then we will break it apart
 
 This rule can be read like this:
 
-> Raise an alarm if the `average` value of `cpu.usage` is `equal or more than` `60` for `2 minutes`.
-> When the incident is resolved, `wait at least one minute` before triggering another alert for the same reason
+1. Raise an alarm if the `average` value of `cpu.usage` is `equal or more than` `60` for `2 minutes`.
+1. When the incident is resolved, `wait at least one minute` before triggering another alert for the same reason
 
 We use a simple "rolling window" method to calculate results. If your timeframe is 2 minutes and you collect data each 10 seconds, then there will be 12 different "ticks" that will be evaluated each 10 seconds with your chosen aggregation. The value is then compared with your configured threshold.
 

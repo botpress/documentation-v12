@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/overview/intro">
+            to="/docs/releases/migrate">
             Start Now with Botpress ⏱️
           </Link>
         </div>
