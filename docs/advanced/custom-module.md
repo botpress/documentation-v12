@@ -8,7 +8,7 @@ title: Custom Module
 To help you get started, two templates are available: [Module Templates](https://github.com/botpress/botpress/tree/master/examples/module-templates).
 
 1. Copy / Paste the template of your choice in `modules/`
-1. In your `botpress.config.json`, [enable the module](../main/module#enabling-or-disabling-modules)
+1. In your `botpress.config.json`, enable the module.
 
 ## Module Structure
 
@@ -61,9 +61,9 @@ To regenerate the `config.schema.json` file for your module, you need to run `ya
 
 Once your module is ready to be deployed, from your module's directory, run `yarn build && yarn package`. This will generate a `.tgz` archive containing your compiled module.
 
-### Overriding webpack options
+### Overriding Webpack Options
 
-It is possible to override webpack parameters by adding a "webpack" property to the `package.json` file of your module. When you override a property, you also remove the default settings that we've set, so we recommend adding them back when overriding. For example, if you'd like to add an additional external file:
+It is possible to override webpack parameters by adding a "webpack" property to the `package.json` file of your module. When you override a property, you also remove the default settings that we've set, so we recommend adding them back when overriding. For example, if you want to add an additional external file:
 
 ```js
 "webpack": {
@@ -79,7 +79,7 @@ It is possible to override webpack parameters by adding a "webpack" property to 
 }
 ```
 
-### Copying extra files
+### Copying Extra Files
 
 When you package your modules, only the files in the 'dist' folder are included in the zip, plus production-optimized node_modules.
 
@@ -124,8 +124,7 @@ export default entryPoint
 
 ### onServerStarted
 
-This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). 
-
+This method is called as soon as the bot is starting up. The server is not available at that time, and calls to other API will fail. This is usually used to set up database connection, which you can access via Knex (`bp.database`). You can read more about Database access here
 Example:
 
 ```js
@@ -208,7 +207,7 @@ const botTemplates: sdk.BotTemplate[] = [
 ]
 ```
 
-### definition
+### Definition
 
 The definition is used by Botpress to setup your module.
 
@@ -222,7 +221,7 @@ All modules are isolated and receives their own instance of `bp`
 The only way to communicate with modules (or between them) is by using the API endpoint.
 All modules are isolated and receives their own instance of `bp`
 
-### Consuming API externally or from another module
+### Consuming API Externally or From Another Module
 
 The Botpress SDK exposes a method to get the axios headers for a request. It will automatically sets the base URL for the request, and will set the required headers to communicate with the specific bot. This method is `bp.http.getAxiosConfigForBot('bot123'): Promise<AxiosRequestConfig>`
 
@@ -238,7 +237,7 @@ extractNluContent: async () => {
 }
 ```
 
-### Consuming API from your module's views
+### Consuming API From Your Module's Views
 
 When a user is using your module's interface, a bot is already selected so you just need to call `bp.axios`. It is always passed down to your react components as a property.
 
@@ -246,7 +245,7 @@ When a user is using your module's interface, a bot is already selected so you j
 const result = await this.props.bp.axios.get('/mod/my-module/query')
 ```
 
-### Creating an API endpoint
+### Creating an API Endpoint
 
 Modules are global, as is the API, so they must be able to manage multiple bots. We recommend setting up the API route in the `onServerReady` method of your entry point.
 
@@ -322,15 +321,15 @@ export default class Database {
 
 Database migration isn't available at the moment, it should be added in a future iteration
 
-### Knex extension
+### Knex Extension
 
 We extended Knex functionality with common features that makes development easier, by handling internally differences between different databases. When accessing `bp.database`, you have access to all the usual Knex commands, plus the following ones
 
-#### Check if using SQlite
+#### Check if Using SQlite
 
 The method `bp.database.isLite` returns true if the database is SQLite
 
-#### Table creation
+#### Table Creation
 
 Here is a simple example to create your module's table if it is missing:
 
@@ -350,7 +349,7 @@ bp.database
   })
 ```
 
-#### Insert and retrieve
+#### Insert and Retrieve
 
 Inserts the row in the database and returns the inserted row
 
@@ -370,7 +369,7 @@ const someObject = (await bp.database.insertAndRetrieve)(
 )
 ```
 
-#### Date helper
+#### Date Helper
 
 ## Views
 
@@ -389,11 +388,11 @@ Skill components must be exported by this view (more on this below)
 
 The lite view doesn't include any heavy dependency. Common use case is to add a custom, lightweight component on the web chat. This type of view was added to keep the size of the webchat bundle small so it loads faster, especially on mobile phones.
 
-### Sharing components between modules
+### Sharing Components Between Modules
 
 It is now a lot easier to expose components for other modules or to use other module's components. Here is a quick example on how the webchat is able to display a component from a specific module:
 
-#### Display a custom component dynamically
+#### Display a Custom Component Dynamically
 
 When components are loaded this way, they are loaded and displayed immediately where the tag is placed.
 
@@ -405,7 +404,7 @@ const InjectedModuleView = this.props.bp.getModuleInjector()
 <InjectedModuleView moduleName={moduleName} componentName={componentName} lite={true} extraProps={props} />
 ```
 
-#### Load a module's components in memory
+#### Load a Module's Components in Memory
 
 By loading components this way, they aren't displayed immediately on the page.
 They are accessible by using `window.botpress['moduleName']['componentName']`
@@ -419,7 +418,7 @@ this.props.bp.loadModuleView(moduleName, true)
 
 There are a couple of steps required to create a new skill. Basically, a skill consist of a GUI to input values and a flow generator to create the interactions.
 
-### 1. Create your visual component
+### 1. Create Your Visual Component
 
 The first step is to create the GUI that will be displayed to the user. You can create your component in the file `views/full/index.jsx`, or you can create it in a separate file, just make sure to export your skill component.
 
@@ -435,7 +434,7 @@ export class MyCustomSkill extends React.Component {
 }
 ```
 
-### 2. Creating the flow generator
+### 2. Creating the Flow Generator
 
 The flow generator will create all the transitions and conditions based on the data that was feeded by the GUI. That method will be called by the Studio when the user has finished inputting all his data. Your method will receive a `data` object. and must return a partial flow.
 
@@ -470,7 +469,7 @@ const createTransitions = data => {
 export default { generateFlow }
 ```
 
-### 3. Connecting those components
+### 3. Connecting Those Components
 
 Once your view and the flow generator is ready, you need to inform Botpress about your skill.
 This is how you would register it.
@@ -495,11 +494,12 @@ const entryPoint: sdk.ModuleEntryPoint = {
 
 ## Register Actions
 
-Modules can register new actions that will be available on the flow editor. Please check out the [Custom Code](../main/code) section for more information about Actions.
+Modules can register new actions that will be available on the flow editor.
+
 Those actions must be deployed to the `data/global/actions` folder to be recognized by Botpress. Here is how to do that:
 
 1. Create a folder named `actions` in `src`
-1. Add your javascript files in the folder
+1. Add your JavaScript files in the folder
 1. When you build your module, your files will be copied in the `dist` folder
 1. At every startup, action files are copied in `data/global/actions/$MY_MODULE/`
 
@@ -511,7 +511,7 @@ If your action requires external dependencies, you must add them on your module'
 Many dependencies are already included with Botpress and do not need to be added to your package (ex: lodash, axios, etc.).
 :::
 
-## module-builder Docker image
+## module-builder Docker Image
 
 We provide a Docker image that can be used to compile your custom module. This is useful in CI/CD situations, where your pipeline will checkout your Custom Module's source code, and the Docker container will spit out a compiled `.tgz` file.
 

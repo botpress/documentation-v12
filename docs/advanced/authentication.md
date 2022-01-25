@@ -3,70 +3,31 @@ id: authentication
 title: Authentication Methods
 ---
 
-:::note
-There are three different types of authenticated users:
+--------------------
 
-- **Collaborators**: these users are able to access the Admin and to manage and edit bots based on their roles.
-- **Chat Users**: these users are only able to talk with bots and they can see the list of bots if they log on the Admin.
-- **External User**: this method of authentication expects that you handle user authentication yourself and provide a JWT token to identify the user.
+:::info
+Enterprise only
 :::
 
-There are 4 different types of authentication strategies currently supported: Basic, SAML, OAuth2 and LDAP. You can also implement them in multiple different workspaces. No matter what authentication strategy you use, they are all stored in the database. 
+A standard authentication (called basic) method is delivered with the software, but you might want to modify it. You have 4 different types of authentication methods that you can configure for different workspaces: Basic, SAML, OAuth2, and LDAP. There are 3 different types of authenticated users:
 
-When you add a new strategy in the `botpress.config.json` file and you restart your instance, a new table called `strategy_STRATEGYID` is created. When you give access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
-
-If you have more than one authentication strategy, a menu is displayed so you can pick a strategy. You can skip the menu and bookmark a specific strategy by changing the page URL: `/admin/login/STRATEGYID`. You can access also a specific workspace by using `/admin/login?workspaceId=WORKSPACEID`
-
-You can find the definition for the various authentication strategies [here](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L326).
-
-## User Token Storage
-
-By default, tokens, which identifies the user on the admin panel and on the studio, are saved in the local storage.
-
-For additional security, we recommend enabling the storage of tokens in cookies. Enabling this feature requires an additional configuration. The CORS parameter of the HTTP Server must be configured to the external URL of your server as follows:
-
-```js
-httpServer: {
-  cors: {
-      enabled: true,
-      origin: "http://localhost:3001", // change to your hostname
-      credentials: true
-      // You can add additional parameters, you can read more about them here:
-      // https://expressjs.com/en/resources/middleware/cors.html
-    },
-}
-```
-
-You also must set `jwtToken.useCookieStorage` to `true` in the `botpress.config.json` file to make it work
-
-:::note
-You can fine-tune the settings for the cookie with `jwtToken.cookieOptions`. Please refer to the options of the Cookies module here: https://github.com/pillarjs/cookies#readme.
-
-```js
-jwtToken: {
-  useCookieStorage: true,
-  cookieOptions: {
-    secure: true // send only over HTTPS
-  }
-}
-```
-:::
+- **Collaborators**: Can access the Admin Dashboard, manage and edit bots base on their roles.
+- **Chat Users**: Can communicate with bots and see the bots list in the Admin Dashboard. 
+- **External User**: User authentication self-handled with a JWT token identifying the user.
 
 ## Basic
 
-Basic Authentication allows a user to log in with a simple username and password. The password is salted for additional security.
+The basic authentication allows a user to log in with a simple username and its password. Remember that super admins are able to reset any passwords when using this strategy.
 
-To create more accounts:
-1. Access the `Collaborators` tab in the Admin. 
-1. Choose the role.
-1. Enter the email of your collaborator who will receive a random password. 
-The user will need to pick a password after the first login.
+For more security, the password is auto-generated as a random (salt) password. The user has to choose another password at their first login.
 
-Super Admins are able to reset the password of any user using the basic authentication.
+:::note Be careful
 
-**Example:**
+Only the first user is allowed to register a new account. If you forgot your password and can't access your account, you can clear the list of users by emptying (or deleting) the table `strategy_default`.
 
-In your `botpress.config.json` file:
+:::
+
+To use the basic authentication, add the following code block in your `botpress.config.json` file (and modify it however you need):
 
 ```js
 {
@@ -83,25 +44,26 @@ In your `botpress.config.json` file:
 }
 ```
 
-### Additional Security
+:::info
 
-There are additional options that can be configured when using this authentication strategy. Please refer to the [configuration file for more information](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L350):
+There are additional options that can be configured when using this authentication strategy. Please refer to the [configuration file for more information](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L350) :
 
-- `maxLoginAttempt`: max number of tries allowed before locking out the user.
-- `lockoutDuration`: account will be disabled for this amount of time when `maxLoginAttempt` is reached.
-- `passwordExpiryDelay`: password will expire after this specified duration.
-- `passwordMinLength`: minimum length for the user's password.
-- `requireComplexPassword`: requires at least 1 character of 3 categories of characters.
+- `maxLoginAttempt`: Max number of tries allowed before locking out the user
+- `lockoutDuration`: Account will be disabled for this amount of time when `maxLoginAttempt` is reached
+- `passwordExpiryDelay`: Password will expire after this specified duration
+- `passwordMinLength`: Minimum length for the user's password
+- `requireComplexPassword`: Requires at least 1 character of 3 categories of characters
 
-### Forgot Your Password?
+:::
 
-Only the first user is allowed to register a new account. If you forgot your password and can't access your account, you will need to clear the list of users, then you will be able to re-create your account.
+## OAuth2
 
-To clear the list of users, empty (or delete) the table `strategy_default` (if you are using the default strategy).
+You can gather tokens via OAuth2. There are two types of tokens:
 
-### OAuth2
+- JWT token: contains all the user's information.
+- Special token: used to query the user's information.
 
-Some OAuth2 implementations return a JWT token containing all the user's information. Some others return a special token, which must then be used to query the user's information.
+To use the OAuth2 authentication, add the following code block in your `botpress.config.json` file (and modify it however you need):
 
 ```js
 {
@@ -143,27 +105,32 @@ Some OAuth2 implementations return a JWT token containing all the user's informa
 
 ## SAML
 
-You can link your SAML Identity Provider seamlessly with Botpress. When it is enabled, admins will be greeted with a `Sign in with SSO` button on the Admin. The first user to ever login to Botpress using the SSO provider will automatically have an account created and will be a Super Admin.
+You can link your SAML Identity Provider seamlessly with Botpress. When enabled, administrators are greeted with a `Sign in with SSO` button on the Admin. 
 
-When a user successfully log in, Botpress will create an internal account for that user. They will be added to the table `strategy_STRATEGYID`.
+:::caution
 
-There are 2 possible behaviors. You can either:
+The first user to login using the SSO provider becomes the super admin.
 
-- Allow any user that successfully logs on using your SAML IdP to create an account by setting `allowSelfSignup` to `true`;
-- Manage users manually (you need to add their emails in the Collaborators page) by setting `allowSelfSignup` to `false`.
+:::
 
-### Prerequisites
+You can either:
 
-- Botpress Pro enabled with a valid license key;
-- A SAML IdP (Identity Provider).
+- Allow any user to create an account. and set `allowSelfSignup` to `true`.
+- Manage users manually, and set `allowSelfSignup` to `false`
 
-### Quick Start
+To use the SAML authentication:
 
-1. Open `botpress.config.json` and set `pro.auth.strategy = 'saml'`.
+1. Open `botpress.config.json`.
+1. Set the `pro.auth.strategy = 'saml'` parameter to `saml`.
 2. Configure the available options. 
+
+:::note 
+
 The complete list of SAML options is [available here](https://github.com/bergie/passport-saml).
 
-**Example:**
+:::
+
+Here is a complete example:
 
 ```js
 "auth": {
@@ -186,22 +153,25 @@ The complete list of SAML options is [available here](https://github.com/bergie/
 
 ## LDAP
 
-### Prerequisite
+To use LDAP authentication:
 
-- Botpress Pro enabled with a valid license key;
-- Information to access the LDAP server.
+1. Open `botpress.config.json`.
+1. Set the `pro.auth.strategy = 'ldap'` to `ldap`. 
+2. Configure the available options. 
 
-### Quick Start
-
-1. Open `botpress.config.json` and set `pro.auth.strategy = 'ldap'`.
-2. Configure the available options.
 [Check the full configuration for more details](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts).
 
 ## Field Mapping
 
-The `fieldMapping` configuration allows you to match existing properties of your users with the one Botpress uses. These are the fields that you can define for users: `email`, `fullname` or `firstname` and `lastname`, `company`, `role`, and `location`.
+The `fieldMapping` configuration allows you to match your users existing properties Botpress'. You can modify the following properties: 
 
-Whenever a user successfully logs in using SAML or LDAP, his details will be updated in his Botpress profile.
+- `email`;
+- `fullname` (or `firstname` with `lastname`); 
+- `company`;
+- `role`;
+- `location`.
+
+For example:
 
 ```js
 {
@@ -215,32 +185,40 @@ Whenever a user successfully logs in using SAML or LDAP, his details will be upd
 }
 ```
 
+Whenever a user logs in using SAML or LDAP, their details are updated in his Botpress profile.
+
 ## User Authentication
 
-Using External Authentication, you can authenticate a user in your system, then validate his identity each time he sends a message to the bot. That information can be used in actions, hooks, and for transitions on the Flow Editor.
+When using External Authentication, you can authenticate a user, and validate their identity each time he sends a message to the bot. You can use this in actions, hooks, and for transitions on the **Flow Editor**.
+
+:::note
+
+To use this authentication, you need this:
+- A backend that will authenticate the user and generate the JWT token
+- The public key used by the backend. It can be added:
+  - directly in the `botpress.config.json` file (on the same line);
+  - in a file (remove the ` certificate` property, and Botpress will load the key from `data/global/end_users_auth.pub`).
+
+:::
 
 Here's a summary of the process:
 
-1. User authenticate on your platform.
-2. Your platform returns a JWT token to the user and configures the webchat.
+1. User authenticates on your platform.
+2. Your platform returns a JWT token to the user and configure the webchat.
 3. The token is sent to Botpress every time a message is sent.
 4. Botpress validates the token, decrypts the content, and makes it available through `event.credentials`.
 
-### Prerequisite
+To use the user authentication,
 
-- Botpress Pro must be enabled with a valid license;
-- A backend that will authenticate the user and generate the JWT token;
-- The public key used by the backend.
-
-### Quick Start
-
-1. Edit `data/global/botpress.config.json` and set `pro.externalAuth.enabled` to `true`.
+1. Edit `data/global/botpress.config.json`.
+1. Set `pro.externalAuth.enabled` to `true`.
 2. Configure the other variables for the JWT token (issuer, audience, algorithm, publicKey).
 3. Restart Botpress.
-4. Edit the code of the embedded webchat to send the generated JWT token.
-[Check the full configuration for more details](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts)
+4. Edit the code of the attached webchat to send the generated JWT token.
 
-**Example:**
+[Check the full configuration for more details](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts).
+
+For example:
 
 ```js
 "externalAuth": {
@@ -253,13 +231,9 @@ Here's a summary of the process:
 }
 ```
 
-### Configure the Public Key
+:::note 
 
-The public key can be added directly in the `botpress.config.json` file (on the same line). If you prefer to add the key in a file, remove the property `certificate`, and Botpress will load the key from `data/global/end_users_auth.pub`.
-
-### Create a New Key Pair
-
-The certificate must be in the PEM format. You can use the below commands to generate one:
+You can also create a new Key Pair, but the certificate must be in the PEM format. You can use the below commands to generate one.
 
 ```bash
 ssh-keygen -t rsa -b 4096 -m PEM -f jwtRS256.key
@@ -268,13 +242,17 @@ cat jwtRS256.key // Your private key
 cat jwtRS256.key.pub // Your public key
 ```
 
-## Authenticate the User
+:::
 
-Once you have generated the JWT token, it must be passed down to the web chat. It will then be sent to Botpress with every message and events. Check out the [Connecting your bot with your existing backend](/docs/integrating/existing-backend) for more details. There are two different situations:
+## Authenticate The User
 
-- The user is authenticated before the webchat is loaded.
+Once you have generated the JWT token, it must be passed down to the web chat. It will then be sent to Botpress with every message and events. Check out the [Connecting to an Existing Backend](/docs/conversation-studio/tutorials/existing-backend).
 
-Simply add the external token as an option to the `init` method:
+There are two different situations:
+
+1. The user is authenticated _before_ the webchat is loaded. 
+
+Add the external token as an option to the `init` method:
 
 ```js
 window.botpressWebChat.init({
@@ -284,7 +262,7 @@ window.botpressWebChat.init({
 })
 ```
 
-- The user is already discussing with the bot, then he is authenticated.
+2. The user _is already discussing_ with the bot, then they authenticate. 
 
 Use the `configure` method to change the option:
 
@@ -292,6 +270,55 @@ Use the `configure` method to change the option:
 window.botpressWebChat.configure({ externalAuthToken: 'my.jwt.token' })
 ```
 
-### Use the Authenticated Payload
+## How to Use The Authenticated Payload
 
-When a user is authenticated, the JWT token is automatically decoded. If the token is valid, all the data it contains will be available through the `event.credentials` property. This can be accessed inside Hooks and while using Actions.
+When a user is authenticated, the JWT token is automatically decoded. If the token is valid, all the data is available through the `event.credentials` property. You can access it with hooks, or while using actions.
+
+After adding a new authentication strategy, and restarting Botpress, a new `strategy_STRATEGYID` table is created. When you give access to a user for a specific workspace, an entry is created in the table `workspace_users` with his role.
+
+If you have more than one authentication strategy, a menu will be displayed to pick a strategy. You can skip the menu and bookmark a specific strategy by changing the page URL: `/admin/login/STRATEGYID`. You can also access a specific workspace by using `/admin/login?workspaceId=WORKSPACEID`
+
+:::note
+
+You can find the definition for the various authentication strategies [here](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts#L326).
+
+:::
+
+## Storage of The User Token
+
+:::info 
+
+By default, user tokens are stored in the local storage.
+
+:::
+
+We recommend enabling the storage of tokens in cookies, which requires an additional configuration. To enable this feature, set `jwtToken.useCookieStorage` to `true` in the `botpress.config.json` file. 
+
+You also have to configure the CORS parameter of the HTTP Server as followed:
+
+```js
+httpServer: {
+  cors: {
+      enabled: true,
+      origin: "http://localhost:3001", // change to your hostname
+      credentials: true
+      // You can add additional parameters, you can read more about them here:
+      // https://expressjs.com/en/resources/middleware/cors.html
+    },
+}
+```
+
+:::note
+
+It is possible to fine-tune the settings for the cookie with `jwtToken.cookieOptions`. Please refer to the options of the Cookies module here: https://github.com/pillarjs/cookies#readme
+
+```js
+jwtToken: {
+  useCookieStorage: true,
+  cookieOptions: {
+    secure: true // send only over HTTPS
+  }
+}
+```
+
+:::

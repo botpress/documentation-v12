@@ -11,7 +11,7 @@ title: Telegram
   - Create an HTTPS tunnel to your machine using Ngrok. [**Tutorial**](https://api.slack.com/tutorials/tunneling-with-ngrok)
   - Using Nginx and Let's Encrypt. [**Tutorial**](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 
-### Create a bot
+### Create a Bot
 
 To create a bot on Telegram, use Telegram's BotFather. The BotFather will ask you for a name and username, then generate an authorization token for your new bot.
 

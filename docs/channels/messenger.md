@@ -3,6 +3,8 @@ id: messenger
 title: Facebook Messenger
 ---
 
+------------------------
+
 ## Requirements
 
 Messenger requires you to have a Facebook App and a Facebook Page to connect your chatbot to their platform.
@@ -19,7 +21,7 @@ You require if you do not already have a Facebook page to link your chatbot. [Yo
 
 To link your chatbot to a pre-existing page, you must have an administrator or developer role.
 
-### HTTPS Endpoint to your chatbot
+### HTTPS Endpoint to Your Chatbot
 
 Facebook only integrates its apps and services to secured endpoints. Below are tutorials to help you create an HTTPS endpoint if you do not have one:
 
@@ -107,7 +109,7 @@ Your `bot.config.json` should look like this :
 }
 ```
 
-:::cautino
+:::caution
 One bot is connected to **one** facebook page.
 :::
 
