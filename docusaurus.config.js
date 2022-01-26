@@ -52,25 +52,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'releases/migrate',
+            docId: 'overview/what-is-botpress',
             position: 'left',
             label: 'Overview',
-          },
-          {
-            type: 'doc',
-            docId: 'features',
-            position: 'left',
-            label: 'Features',
-          },
-          {
-            href: 'https://botpress.com/reference/',
-            label: 'SDK',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/botpress/documentation.git',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },
