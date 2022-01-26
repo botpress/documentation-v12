@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: studio-interface
+title: Studio Interface
 ---
 
 --------------------

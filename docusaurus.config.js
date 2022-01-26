@@ -56,6 +56,12 @@ const config = {
             position: 'left',
             label: 'Overview',
           },
+          {
+            type: 'doc',
+            docId: 'building-chatbots/creating-a-new-bot',
+            position: 'left',
+            label: 'Building Chatbots',
+          },
         ],
       },
       footer: {

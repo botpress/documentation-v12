@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: built-in-actions
+title: Built-in Actions (All of Them)
 ---
 
 --------------------

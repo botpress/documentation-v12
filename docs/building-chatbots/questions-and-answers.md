@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: question-and-answers
+title: Questions and Answers
 ---
 
 --------------------

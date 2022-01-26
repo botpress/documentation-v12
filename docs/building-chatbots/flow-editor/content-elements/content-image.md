@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: content-image
+title: Content - Image
 ---
 
 --------------------

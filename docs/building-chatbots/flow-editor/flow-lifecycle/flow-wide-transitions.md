@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: flow-wide-transitions
+title: Flow-wide Transitions
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: nodes-lifecycle
+title: Nodes Lifecycle
 ---
 
 --------------------

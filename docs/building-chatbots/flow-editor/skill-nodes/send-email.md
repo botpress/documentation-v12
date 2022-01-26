@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: send-email
+title: Send Email
 ---
 
 --------------------

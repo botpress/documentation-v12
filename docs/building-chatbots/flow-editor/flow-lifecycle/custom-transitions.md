@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: custom-transitions
+title: Custom Transitions
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: creating-a-new-bot
+title: Creating a New Bot
 ---
 
 --------------------
