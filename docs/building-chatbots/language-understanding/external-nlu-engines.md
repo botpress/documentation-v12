@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: external-nlu-engines
+title: External NLU Engines
 ---
 
 --------------------

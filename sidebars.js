@@ -44,7 +44,7 @@ module.exports = {
         {
         type: 'category',
         collapsible: false,
-        label: 'GETTING STARTED',
+        label: 'Getting Started',
         items: [
           'building-chatbots/creating-a-new-bot',
           'building-chatbots/studio-interface',
@@ -53,7 +53,7 @@ module.exports = {
         {
         type: 'category',
         collapsible: false,
-        label: 'FLOW EDITOR',
+        label: 'Flow Editor',
         items: [
           {
             type: 'category',
@@ -102,5 +102,45 @@ module.exports = {
                   },
         ],
         },
+        {
+          type: 'category',
+          collapsible: false,
+          label: 'Language Understanding',
+          items: [
+            'building-chatbots/language-understanding/supported-languages',
+            {
+              type: 'category',
+              collapsible: true,
+              label: 'Questions & Answers',
+              items: [
+                'building-chatbots/language-understanding/questions-&-answers/rich-messages',
+                'building-chatbots/language-understanding/questions-&-answers/workflow-triggering',
+                'building-chatbots/language-understanding/questions-&-answers/bulk-import-export',
+                'building-chatbots/language-understanding/questions-&-answers/feedback',
+              ],
+              },
+              {
+                type: 'category',
+                collapsible: true,
+                label: 'Intents',
+                items: [
+                  'building-chatbots/language-understanding/intents/slots',
+                  'building-chatbots/language-understanding/intents/spell-checking', 
+                ],
+                },
+                {
+                  type: 'category',
+                  collapsible: true,
+                  label: 'Entities',
+                  items: [
+                    'building-chatbots/language-understanding/entities/system-entities',
+                    'building-chatbots/language-understanding/entities/list-entities',
+                    'building-chatbots/language-understanding/entities/pattern-entities',
+                ],
+                },
+                'building-chatbots/language-understanding/contexts',
+                'building-chatbots/language-understanding/external-nlu-engines',
+          ],
+          },
         ],
       };

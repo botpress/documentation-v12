@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: rich-messages
+title: Rich Messages
 ---
 
 --------------------

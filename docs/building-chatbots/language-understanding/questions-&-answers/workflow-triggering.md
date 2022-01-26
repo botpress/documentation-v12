@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: workflow-triggering
+title: Workflow Triggering
 ---
 
 --------------------

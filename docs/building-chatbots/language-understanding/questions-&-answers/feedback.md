@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: feedback
+title: Feedback (Thumbs up/down)
 ---
 
 --------------------

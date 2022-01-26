@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: system-entities
+title: System Entities
 ---
 
 --------------------

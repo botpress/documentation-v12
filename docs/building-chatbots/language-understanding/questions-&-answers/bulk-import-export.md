@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: bulk-import-export
+title: Bulk Import / Export
 ---
 
 --------------------

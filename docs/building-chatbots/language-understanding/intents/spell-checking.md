@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: spell-checking
+title: Spell Checking
 ---
 
 --------------------
