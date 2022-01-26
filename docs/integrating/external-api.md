@@ -33,7 +33,7 @@ return callApi()
 ```
 
 :::info
-What is the `session` variable? Learn how to [use Memory to store data](/docs/conversation-studio/tutorials/use-data).
+What is the `session` variable? Learn how to [use Memory to store data](/docs/main/memory).
 :::
 
 
@@ -44,7 +44,7 @@ Add an `onEnter` action instruction in your node and select the `callApi` action
 ![Action](/assets/tutorial-call-api-action.png)
 
 :::info
-What are `onEnter` instructions? Understand how the [node Lifecycle](/docs/conversation-studio/tutorials/create-conversations) works.
+What are `onEnter` instructions? Understand how the [node Lifecycle](/docs/main/emulator) works.
 :::
 
 ### Add a Text Content Element

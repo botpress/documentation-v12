@@ -16,7 +16,7 @@ title: Using the UiPath integration for Botpress
 You must enable the **UiPath** module to get started.
 
 :::note
-To install modules, check [this documentation](/docs/overview/tutorials/configuration#enable-or-disable-modules).
+To install modules, check [this documentation](/docs/advanced/configuration).
 :::
 
 ## Starting UiPath Jobs From Botpress

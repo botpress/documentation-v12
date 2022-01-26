@@ -246,7 +246,7 @@ cat jwtRS256.key.pub // Your public key
 
 ## Authenticate The User
 
-Once you have generated the JWT token, it must be passed down to the web chat. It will then be sent to Botpress with every message and events. Check out the [Connecting to an Existing Backend](/docs/conversation-studio/tutorials/existing-backend).
+Once you have generated the JWT token, it must be passed down to the web chat. It will then be sent to Botpress with every message and events. Check out the [Connecting to an Existing Backend](/docs/integrating/existing-backend).
 
 There are two different situations:
 
