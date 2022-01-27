@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: custom-css
+title: Custom CSS
 ---
 
 --------------------

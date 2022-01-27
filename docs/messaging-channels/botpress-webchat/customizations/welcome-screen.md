@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: welcome-screen
+title: Welcome Screen
 ---
 
 --------------------

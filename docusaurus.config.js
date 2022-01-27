@@ -62,6 +62,12 @@ const config = {
             position: 'left',
             label: 'Building Chatbots',
           },
+          {
+            type: 'doc',
+            docId: 'messaging-channels/supported-channels',
+            position: 'left',
+            label: 'Messaging Channels',
+          },
         ],
       },
       footer: {

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: slack
+title: Slack
 ---
 
 --------------------

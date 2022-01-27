@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: standalone-webchat
+title: Standalone Webchat
 ---
 
 --------------------

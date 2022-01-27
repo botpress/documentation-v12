@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: supported-channels
+title: Supported Channels
 ---
 
 --------------------
