@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: switching-languages
+title: Switching Languages
 ---
 
 --------------------

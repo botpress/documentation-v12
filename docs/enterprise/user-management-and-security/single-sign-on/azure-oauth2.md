@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: azure-oauth2
+title: Azure OAuth2
 ---
 
 --------------------

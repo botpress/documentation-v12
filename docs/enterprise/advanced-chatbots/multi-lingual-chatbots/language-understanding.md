@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: language-understanding
+title: Language Understanding
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: hitl
+title: HITL
 ---
 
 --------------------

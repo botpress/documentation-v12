@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: production-checklist
+title: Production Checklist
 ---
 
 --------------------

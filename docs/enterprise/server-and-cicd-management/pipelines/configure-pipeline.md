@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: configure-pipeline
+title: Configure Pipeline
 ---
 
 --------------------

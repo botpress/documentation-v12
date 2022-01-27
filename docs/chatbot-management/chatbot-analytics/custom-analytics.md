@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: custom-analytics
+title: Custom Analytics
 ---
 
 --------------------

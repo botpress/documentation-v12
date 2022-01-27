@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: sso-with-google-oauth2
+title: SSO with Google OAuth2
 ---
 
 --------------------

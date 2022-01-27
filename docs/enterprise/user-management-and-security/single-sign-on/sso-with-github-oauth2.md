@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: sso-with-github-oauth2
+title: SSO with GitHub OAuth2
 ---
 
 --------------------

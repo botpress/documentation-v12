@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: promote-through-pipeline
+title: Promote Through Pipeline
 ---
 
 --------------------

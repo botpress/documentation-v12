@@ -74,6 +74,18 @@ const config = {
             position: 'left',
             label: 'Going to Production',
           },
+          {
+            type: 'doc',
+            docId: 'chatbot-management/chatbot-analytics/built-in-analytics',
+            position: 'left',
+            label: 'Chatbot Management',
+          },
+          {
+            type: 'doc',
+            docId: 'enterprise/licensing/enterprise-licensing',
+            position: 'left',
+            label: 'Enterprise',
+          },
         ],
       },
       footer: {
