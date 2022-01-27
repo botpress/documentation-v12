@@ -1,6 +1,6 @@
 ---
 id: conversation-studio
-title: Botpress Features
+title: Conversation Studio
 ---
 
 --------------------

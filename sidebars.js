@@ -35,6 +35,7 @@ module.exports = {
             'overview/quickstart/conversation-studio',
           ],
           },
+          'overview/features',
         ],
         },
        ],
