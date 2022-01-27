@@ -72,11 +72,11 @@ const config = {
             items: [
               {
                 label: 'The Basics',
-                to: '/docs/releases/migrate',
+                to: '/docs/overview/what-is-botpress',
               },
               {
                 label: 'Features',
-                to: '/docs/features',
+                to: '/docs/overview/features',
               },
             ],
           },
