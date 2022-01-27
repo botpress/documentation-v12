@@ -213,7 +213,7 @@ module.exports = {
                   'building-chatbots/developers/database',
                   'building-chatbots/developers/file-system',
                   'building-chatbots/developers/custom-modules',
-                  'building-chatbots/developers/inter-bot-communication-delegationg',
+                  'building-chatbots/developers/inter-bot-communication-delegation',
                 ],
               },
         ],
