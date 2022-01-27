@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: read-only-production
+title: Read-only Production
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: multi-stage-environment
+title: Multi-Stage Environment
 ---
 
 --------------------

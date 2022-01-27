@@ -68,6 +68,12 @@ const config = {
             position: 'left',
             label: 'Messaging Channels',
           },
+          {
+            type: 'doc',
+            docId: 'going-to-production/deploy/linux',
+            position: 'left',
+            label: 'Going to Production',
+          },
         ],
       },
       footer: {
@@ -77,7 +83,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'The Basics',
+                label: 'Overview',
                 to: '/docs/overview/what-is-botpress',
               },
               {

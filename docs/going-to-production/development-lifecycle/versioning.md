@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: versioning
+title: Versioning
 ---
 
 --------------------

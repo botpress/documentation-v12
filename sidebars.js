@@ -217,4 +217,122 @@ module.exports = {
                 ],
               },
         ],
-      };
+        messagingchannelssidebar: [
+          {
+          type: 'category',
+          collapsible: false,
+          label: 'Overview',
+          items: [
+            'messaging-channels/supported-channels',
+            ],
+          },
+          {
+          type: 'category',
+          collapsible: false,
+          label: 'Botpress Webchat',
+          items: [
+            {
+            type: 'category',
+            collapsible: true,
+            label: 'Website Embedding',
+            items: [
+              'messaging-channels/botpress-webchat/website-embedding/website-interactions',
+              'messaging-channels/botpress-webchat/website-embedding/jwt-authentication',
+            ],
+            },
+            'messaging-channels/botpress-webchat/standalone-webchat',
+            {
+            type: 'category',
+            collapsible: true,
+            label: 'Customizations',
+            items: [
+              'messaging-channels/botpress-webchat/customizations/custom-widgets',
+              'messaging-channels/botpress-webchat/customizations/custom-css',
+              'messaging-channels/botpress-webchat/customizations/welcome-screen',
+              ],
+            },
+          ],
+        },
+            {
+            type: 'category',
+            collapsible: false,
+            label: 'Direct Integrations',
+            items: [
+              'messaging-channels/direct-integrations/facebook-messenger',
+              'messaging-channels/direct-integrations/microsoft-teams',
+              'messaging-channels/direct-integrations/slack',
+              'messaging-channels/direct-integrations/telegram',
+              ],
+            },
+        {
+          type: 'category',
+          collapsible: false,
+          label: 'Broker Integrations',
+          items: [
+            'messaging-channels/broker-integrations/twilio',
+            'messaging-channels/broker-integrations/vonage',
+            'messaging-channels/broker-integrations/smooch-sunshine-conversations',
+            ],
+          },
+        ],
+        goingtoproductionsidebar: [
+          {
+          type: 'category',
+          collapsible: false,
+          label: 'On-Premise Deployment',
+          items: [
+            {
+              type: 'category',
+              collapsible: true,
+              label: 'Deploy',
+              items: [
+                'going-to-production/deploy/linux',
+                'going-to-production/deploy/windows',
+                'going-to-production/deploy/aws',
+                'going-to-production/deploy/digitalocean',
+                'going-to-production/deploy/docker-compose',
+                'going-to-production/deploy/enterprise-scaling',
+            ],
+            },
+            {
+              type: 'category',
+              collapsible: true,
+              label: 'Hardware & Software Requirements',
+              items: [
+                'going-to-production/requirements/benchmarking',
+              ],
+            },
+            'going-to-production/environment-variables',
+            'going-to-production/updating',
+          ],
+        },
+            {
+            type: 'category',
+            collapsible: false,
+            label: 'Development Lifecycle',
+            items: [
+              {
+                type: 'category',
+                collapsible: true,
+                label: 'Environments',
+                items: [
+                  'going-to-production/development-lifecycle/environments/read-write-production',
+                  'going-to-production/development-lifecycle/environments/read-only-production',
+                  'going-to-production/development-lifecycle/environments/multi-stage-environment',
+                ],
+              },
+              'going-to-production/development-lifecycle/versioning',
+              'going-to-production/development-lifecycle/import-export',
+              ],
+            },
+        {
+          type: 'category',
+          collapsible: false,
+          label: 'Migrations',
+          items: [
+            'going-to-production/migrations/chatbot-migrations',
+            'going-to-production/migrations/environment-migrations',
+            ],
+          },
+        ], 
+        };

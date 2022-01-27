@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: smooch-sunshine-conversations
+title: Smooch (Sunshine Conversations)
 ---
 
 --------------------

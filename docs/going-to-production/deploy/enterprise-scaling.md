@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: enterprise-scaling
+title: Enterprise Scaling (Clustering)
 ---
 
 --------------------
