@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: inter-bot-communication-delegation
+title: Inter-bot Communication / Delegation
 ---
 
 --------------------

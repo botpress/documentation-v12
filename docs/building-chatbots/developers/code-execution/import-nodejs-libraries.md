@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: import-nodejs-libraries
+title: Import NodeJS Libraries
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: general-purpose-storage
+title: General-purpose Storage
 ---
 
 --------------------

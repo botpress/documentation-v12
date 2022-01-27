@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: user-memory
+title: User Memory
 ---
 
 --------------------

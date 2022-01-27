@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: flow-memory
+title: Flow Memory
 ---
 
 --------------------

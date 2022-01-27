@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: conversation-hooks
+title: Conversation Hooks
 ---
 
 --------------------

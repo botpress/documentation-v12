@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: custom-modules
+title: Custom Modules
 ---
 
 --------------------

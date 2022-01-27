@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: environment-variables
+title: Environment Variables
 ---
 
 --------------------

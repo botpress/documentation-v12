@@ -1,6 +1,6 @@
 ---
 id: code-sharing
-title: Botpress Features
+title: Code Sharing
 ---
 
 --------------------

@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: automated-testing
+title: Automated Testing
 ---
 
 --------------------

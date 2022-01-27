@@ -1,6 +1,6 @@
 ---
-id: features
-title: Botpress Features
+id: file-system
+title: File System
 ---
 
 --------------------
