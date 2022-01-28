@@ -5,8 +5,6 @@ title: The Call API Skill
 
 ---------------
 
-## Overview
-
 We developed the Call API skill to help you quickly call an API within your flow. You can then save and use the responses received from the external API in your chatbot's code and flows.
 
 ![From Flow Editor](/assets/call-api-skill-flow.png)
