@@ -51,5 +51,3 @@ For both database systems, if you have any custom assets, do these extra steps:
 ## Version 11 and earlier
 
 Even though Botpress Server has become much more stable, breaking changes still might occur. When they do, resolving them is often as simple as editing config files in the `/data` folder.
-
-See if your version is listed in the [migration guide](releases/migrate).

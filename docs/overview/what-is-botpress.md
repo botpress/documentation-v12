@@ -119,7 +119,7 @@ The Botpress core team is currently working on adding statistical decisions to t
 :::
 
 ### Extension Points
-Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](../main/code).
+Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](/docs/building-chatbots/flow-editor/actions/actions).
 
 **Actions** are called by the Dialog Manager (in the context of a conversation) to retrieve data, call external services, or implement custom reply logic.
 
@@ -182,7 +182,7 @@ A module is an extra component outside of the Botpress Core itself that you can 
 
 This modular architecture allows for maximum flexibility and freedom for developers. It also ensures that any customizations are applied without affecting the smooth running of the Botpress Core. 
 
-As a developer, you can create your own [custom module](../advanced/custom-module) to add extra functionalities to your chatbot.
+As a developer, you can create your own [custom module](/docs/building-chatbots/developers/custom-modules) to add extra functionalities to your chatbot.
 
 ## Event Engine Overview
 Below is a complete overview of the components implied in processing an event (ex: a message sent by a user). It is mostly informational, and you won't use most of these components directly. We have included it only to give you an insight into the bigger picture of the elements involved and how they interact.
