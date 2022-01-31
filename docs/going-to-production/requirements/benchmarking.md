@@ -5,54 +5,52 @@ title: Benchmarking
 
 --------------------
 
-You want to use Botpress to create the best chatbot ever? Then, take a look at the list below to know what the minimum (and sometimes maximum) hardware and software specification you need.
+## Hardware Requirements
 
-## Supported Browsers
+- Hard Drive: Recommended 64 GB of free space or above.
+- Memory (RAM): Recommended 4 GB or above.
 
-You can use your favorite browser. Remember that if you encounter a problem, you can contact us!
+## Benchmark Tool
 
-## Mimimum Hardware Requirements
+Run Botpress with the `bench` command from the command line. You can run this on the Pro binary downloaded from the website. Make sure to adjust the `--url` and `--botId` to match your botpress server url and your bot's ID. For more information on options, you can set for your test, run `./bp bench --help`
+![Performances Benchmark Tool](/assets/performances-benchmark.png)
 
-### Botpress
-- CPU: 1
-- RAM: 2GB
-- Optimal: 40 messages/second
-- Maximum: 60 messages/second
+### Example
+Below is an example of the output from a benchmark test run on a new install of Botpress on localhost.
 
-### PostgreSQL (database)
-- CPU: 2 
-- RAM: 4 GB
-- Minimum: 60 messages/second 
-- Maximum: 600-800 messages/second
+```bash
+$ ./bp bench --url http://0.0.0.0:3000/ --botId test -u 1000
+  Scenario: 1000 users sending 5 messages each
+  Configured SLA: 100% of requests must be under 1500ms
 
-## Messaging
+[18:09:50] Messages Sent: 11, Avg: 7456ms
+...
+[18:10:53] Messages Sent: 4843, Avg: 12410ms
 
-The volume of messages contained in a single session is highly variable. It depends mainly on the targeted product, the domain, and the customers. See the following examples:
+  Messages Sent: 5000 in 70.82s
+  Average MPS: 70.6
+  SLA Breached: true. 4767 messages were over configured SLA (95.34%)
 
-- Simple Q&A Bot:
-    - Example: Covid-19 information Bot
-    - #msg/session: 4-5 msgs/session
+  Request Latency:
+    min: 53 ms
+    avg: 12085 ms
+    max: 62517 ms
 
-- Complex contextual Bot:
-    - Example: Customer service Bot:
-    - #msg/session: 10-20 msgs/session
+  Codes:
+    Timeout: 2172
+    undefined: 429
+    ECONNRESET: 411
+    ECONNREFUSED: 1988
+```
 
-- Special Cases (Persistent Sessions):
-    - Example: Classroom bot with persistent session
-    - #msg/session: 1000-5000 msgs/session
-
-## Supported Operating Systems
-
-- Windows 10
-- Mac OS catalina or BigSur
-- Ubuntu 18.04 or 20.04
-- Debian 8.11
-- Red Hat 7.5
-- CentOS 7.5
-
-## Infrastructure Best Practices
-
-- Use at least 2 environments (development, staging, production…) to minimalize the impact on the end-user experience.
-- Create backups and continue maintenance of all components (especially the databases and storage components to mitigate and prevent data loss). 
-- Gradually execute maintenance and upgrades to ensure the system safety and its accuracy before exposing it to users (A/B, Canary deployments). For simpler implementations, predefine time ranges with low or null usage for the components maintenance. Don't forget to warn your users!
-- Allocate the least privileges and accesses possible. This ensures the environment security, prevents breaches, and preserves the data integrity.
+From the results:
+- It took 70.82 seconds to send 5000 messages to the chatbot.
+- 4767 messages took longer than 1500 ms to send to the chatbot.
+- The minimum time it took for a request to be processed was 53 ms (average was 12085 ms, and the maximum was 62517 ms)
+- Of the messages sent, the benchmark test received the following error codes
+    - Timeout: 2172
+    - undefined: 429
+    - ECONNRESET: 411
+    - ECONNREFUSED: 1988
+    
+You can also use [k6](https://k6.io/), a popular open-source load testing tool and SaaS for engineering teams.

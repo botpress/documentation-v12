@@ -119,7 +119,7 @@ The Botpress core team is currently working on adding statistical decisions to t
 :::
 
 ### Extension Points
-Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](/docs/building-chatbots/flow-editor/actions/actions).
+Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](/docs/building-chatbots/flow-editor/actions).
 
 **Actions** are called by the Dialog Manager (in the context of a conversation) to retrieve data, call external services, or implement custom reply logic.
 

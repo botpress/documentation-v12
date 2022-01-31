@@ -1,9 +1,9 @@
 ---
-id: web
+id: website-embedding
 title: Website Embedding
 ---
 
-----------------
+--------------------
 
 Integrating a chatbot to a website is relatively straightforward. As long as your chatbot is hosted on a physical or virtual server and is accessible via a URL, you can connect and integrate it to a website. Add the following script tag to the end of your `index.html` (or the default webpage, whichever it's named).
 
@@ -300,7 +300,7 @@ It is also possible to chain multiple custom components using the `wrapped` prop
 
 The keyboard allows you to add elements before or after the composer. Keyboard items can be buttons or any other type of valid component. Use `Keyboard.Prepend` to display it before the composer, and `Keyboard.Append` to display it after.
 
-"`js
+```js
 ...
 render(){
   // First of all, import the keyboard object
@@ -320,7 +320,7 @@ render(){
 }
 ```
 
-#### Using a Button Keyboard
+### Using a Button Keyboard
 
 There is a built-in hook that makes it easy to add buttons to any element. You can pass down an array of buttons or an array of array of buttons.
 
@@ -338,128 +338,175 @@ const payload = {
 
 [security sdk]: https://botpress.com/reference/modules/_botpress_sdk_.security.html#getmessagesignature
 
-## Customizing Web Chat Style
-The Botpress webchat interface which is displayed on your website is fully customisable. You can change any of the styling using CSS. This can be done in two steps. Firstly create your own cascading style sheet and name it anything you want. Thereafter paste your stylesheet in the `<botpress_dir>/data/assets/modules/channel-web` folder.
+You may wish to make your bot act proactively on your website in response to some action, such as making the bot speak first, suggesting they buy the product, or asking them for feedback on services they were using.
 
-Secondly, you need to reference your new style sheet to your integrated cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. Let us go through these steps in more detail.
+## Acting Proactively
 
-### Step 1: Styling (CSS)
+### Send an Event From the Webpage
 
-Paste the following CSS file in the `<botpress_dir>/data/assets/modules/channel-web` folder. Feel free to change the style here—original Botpress theme [can be found here](https://github.com/botpress/botpress/blob/master/modules/channel-web/assets/default.css).
-
-```css
-.bpw-from-bot .bpw-chat-bubble {
-  background-color: #ececec;
-}
-
-.bpw-chat-bubble:last-of-type {
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.bpw-chat-bubble:first-of-type {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.bpw-from-user .bpw-chat-bubble:last-of-type {
-  border-bottom-right-radius: 0px;
-}
-
-.bpw-from-bot .bpw-chat-bubble:last-of-type {
-  border-bottom-left-radius: 0px;
-}
-
-.bpw-from-user .bpw-chat-bubble {
-  background-color: #4278f3;
-  color: #ffffff;
-}
-
-.bpw-date-container .bpw-small-line {
-  border-bottom: none;
-}
-
-.bpw-date-container {
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.bpw-header-container {
-  background-color: #f8f8f8;
-  border-bottom: none;
-}
-
-.bpw-bot-avatar img,
-.bpw-bot-avatar svg {
-  border: none;
-  border-radius: 50%;
-}
-
-.bpw-composer {
-  padding: 10px;
-  background: none;
-  border: none;
-}
-
-.bpw-composer textarea {
-  background: #ececec;
-  border-radius: 20px;
-  font-size: 1.25rem;
-  overflow: hidden;
-}
-
-.send-btn {
-  position: absolute;
-  right: 30px;
-  bottom: 28px;
-  border: none;
-  border-radius: 5px;
-  background: #fff;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.send-btn:hover {
-  background: #d8d8d8;
-}
-```
-
-### Step 2: Loading CSS File
-
-Now, we need to instruct Botpress to use this custom CSS file for theming the webchat. For this, place the following code snippet in the `<botpress_dir>/data/global/hooks/after_bot_mount` folder. In our case, we used `01_create_shortlink.js` as the file name.
+First you need to open the webchat (either manually or programmatically) and then send an event from the webpage.
 
 ```js
-const chatOptions = {
-  hideWidget: true,
-  config: {
-    enableReset: true,
-    enableTranscriptDownload: true,
-    extraStylesheet: '/assets/modules/channel-web/chat.css'
+window.botpressWebChat.sendEvent({
+  type: 'proactive-trigger',
+  channel: 'web',
+  payload: {
+    text: 'fake message'
   }
-}
-
-const params = {
-  m: 'channel-web',
-  v: 'Fullscreen',
-  options: JSON.stringify(chatOptions)
-}
-
-setTimeout(() => {
-  try {
-    bp.http.deleteShortLink(botId)
-  } catch (e) {}
-
-  // Chatbot will be available at $EXTERNAL_URL/s/$BOT_NAME
-  bp.http.createShortLink(botId, `${process.EXTERNAL_URL}/lite/${botId}/`, params)
-}, 500)
+})
 ```
 
-Feel free to change the webchat config there; the critical line to keep is the `extraStylesheet` property.
+The property `type: 'proactive-trigger'` is used to identify the event so we can catch it and act on it later on.
 
-### Result
+### Catch the Event in a Hook
 
-Restart Botpress Server, and now your chatbot's default webchat will use your custom CSS theme! 
+This event will be dispatched to the bot so you need to add a handler for it. If this event is not handled, it will be interpreted as a user message.
 
-![WebChat Customization](/assets/webchat-customization.png)
+This snippet should be added to the `before_incoming_middleware` hook:
+
+```js
+// Catch the event sent from the webpage
+if (event.type === 'proactive-trigger') {
+  // You custom code
+}
+```
+
+:::tip
+Use `event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)` to tell the Dialog Engine to skip the event processing. This is useful when your event is not a user message.
+:::
+
+## Webchat Events
+
+There are currently 4 events that can be caught in your page:
+
+| name            | Description                                                                   |
+| --------------- | ----------------------------------------------------------------------------- |
+| `webchatLoaded` | Triggered when the webchat is loaded and ready to be opened                   |
+| `webchatOpened` | Triggered when the webchat button bubble is clicked                           |
+| `webchatClosed` | Triggered when the webchat close button is clicked                            |
+| `webchatReady`  | Triggered when the webchat is ready to accept events, like proactive triggers |
+
+## Common Use Cases
+
+### Send Message When the Webchat is Loaded
+
+It sends an event when the webchat is loaded and ready to be opened.
+
+Use this code in your `index.html`:
+
+```html
+<html>
+  <head>
+    <title>Embedded Webchat</title>
+    <script src="/assets/modules/channel-web/inject.js"></script>
+  </head>
+
+  <body>
+    This is an example of embedded webchat
+  </body>
+
+  <script>
+    // Initialize the chat widget
+    // Change the `botId` with the Id of the bot that should respond to the chat
+    window.botpressWebChat.init({
+      host: 'http://localhost:3000',
+      botId: 'welcome-bot'
+    })
+
+    window.addEventListener('message', function(event) {
+      if (event.data.name === 'webchatReady') {
+        window.botpressWebChat.sendEvent({
+          type: 'proactive-trigger',
+          channel: 'web',
+          payload: { text: 'fake message' }
+        })
+      }
+    })
+  </script>
+</html>
+```
+
+### Send Message When Opening Webchat
+
+It sends an event when the webchat button bubble is clicked
+
+Use this code in your `index.html`:
+
+```html
+<html>
+  <head>
+    <title>Embedded Webchat</title>
+    <script src="/assets/modules/channel-web/inject.js"></script>
+  </head>
+
+  <body>
+    This is an example of embedded webchat
+  </body>
+
+  <script>
+    // Initialize the chat widget
+    // Change the `botId` with the Id of the bot that should respond to the chat
+    window.botpressWebChat.init({
+      host: 'http://localhost:3000',
+      botId: 'welcome-bot'
+    })
+
+    window.addEventListener('message', function(event) {
+      if (event.data.name === 'webchatOpened') {
+        window.botpressWebChat.sendEvent({
+          type: 'proactive-trigger',
+          channel: 'web',
+          payload: { text: 'fake message' }
+        })
+      }
+    })
+  </script>
+</html>
+```
+
+### Send Custom Content on Proactive Event
+
+You can intercept a proactive trigger to send custom content. This could be used to send reminders, display a welcome message or ask for feedback.
+
+- Make sure that you've sent an event from your webpage (see the examples above).
+- Use this in your `before_incoming_middleware` hook:
+
+```js
+// Catch the event
+if (event.type === 'proactive-trigger') {
+  const eventDestination = {
+    channel: event.channel,
+    target: event.target,
+    botId: event.botId,
+    threadId: event.threadId
+  }
+
+  // Skip event processing
+  event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)
+
+  // Make the bot respond with custom content instead
+  bp.cms.renderElement('builtin_text', { text: "I'm so proactive!", typing: true }, eventDestination).then(payloads => {
+    bp.events.replyToEvent(event, payloads)
+  })
+}
+```
+
+Here we're using the [replyToEvent](https://botpress.com/reference/modules/_botpress_sdk_.events.html#replytoevent) function from the SDK to reply to the current event and [renderElement](https://botpress.com/reference/modules/_botpress_sdk_.cms.html#renderelement) to render our custom content.
+
+### Send Proactive Only to New Users
+
+When you want to respond only to new users, you have to check if their session is new. We can do that by looking at the session's last messages.
+
+- Make sure that you've sent an event from your webpage (see the examples above).
+- Use this code in your `before_incoming_middleware` hook:
+
+```js
+if (event.type === 'proactive-trigger') {
+  // We only want to trigger a proactive message when the session is new,
+  // otherwise the conversation will progress every time the page is refreshed.
+  if (event.state.session.lastMessages.length) {
+    // This will tell the dialog engine to skip the processing of this event.
+    event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)
+  }
+}
+```

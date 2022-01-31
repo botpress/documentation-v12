@@ -1,6 +1,6 @@
 ---
-id: intro-nlu
-title: Natural Language Understanding 
+id: language-understanding
+title: Language Understanding
 ---
 
 --------------------

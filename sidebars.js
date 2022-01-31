@@ -275,6 +275,14 @@ module.exports = {
             'messaging-channels/broker-integrations/smooch-sunshine-conversations',
             ],
           },
+          {
+            type: 'category',
+            collapsible: false,
+            label: 'Custom Channels',
+            items: [
+              'messaging-channels/custom-channels/converse-api',
+              ],
+            },
         ],
         goingToProductionSidebar: [
           {

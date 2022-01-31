@@ -1,13 +1,107 @@
 ---
-id: configuration
-title: Botpress Instance Configuration
+id: deploy
+title: Deploy
 ---
 
 --------------------
+Botpress has added flexibility for developers who want access to the core codebase. You can clone Botpress from the source repository on Github, allowing you to test code, modules, and components more dynamically. 
 
-This is the main `.json` file (automatically created) used to configure the Botpress server. Default values should be good when discovering Botpress, but in this page you will learn about the most common configuration you may need to change.
+## Compiling From Source
+You can build Botpress from the [source repository](https://github.com/botpress/botpress) in a few simple steps. Doing this is useful when you need to create custom modules and components.
 
-To get more information about each individual options, check out the [comments on the configuration schema](https://github.com/botpress/botpress/blob/master/packages/bp/src/core/config/botpress.config.ts)
+### Prerequisites
+
+Install node version 12.18.1 for [your operating system](https://nodejs.org/download/release/v12.18.1/). **Tip:** on windows, download and use the .msi installer 
+
+Install [Yarn package manager](https://yarnpkg.com/)
+
+### Installation
+While in the directory where you want to host your instance of Botpress, run the following commands in this sequence:
+
+- `git clone git@github.com:botpress/botpress.git && cd botpress`
+- `yarn cache clean` (proceed to the next step if this command fails)
+- `yarn`
+- `yarn build`
+- `yarn start`
+
+If you bumped into some errors during the execution of the `yarn build` command, you can try resetting your local repository:
+1. Go to the [Releases](https://github.com/botpress/botpress/releases) page.
+1. Click the commit associated with the latest release to open the commit page.
+1. Copy the full commit hash.
+1. Run this command with the copied commit hash: `git reset <copied hash>`.
+1. Run `yarn build` again. 
+
+> If you are in a hurry and cannot wait for a fix release, [clone the commit](https://coderwall.com/p/xyuoza/git-cloning-specific-commits) **(do not modify files one by one)**. 
+
+## Ubuntu Systems 
+You might run into issues while trying to build and start botpress via yarn on Rasberry Pi OS x64 or other Ubuntu Systems. Its ARM Architecture means none of the pre-built binaries will work. On trying to run the command `yarn start`, you might run into an error like the one below:
+
+```bash
+yarn start
+yarn run v1.22.10
+$ cd ./out/bp && cross-env NODE_PATH=./ cross-env BP_MODULES_PATH=./data/modules/:../../modules:../../internal-modules node index.js
+Error starting botpress
+Error: Could not require NativeExtension "crfsuite.node" for OS "linux debian_10".
+	...
+Could not require NativeExtension "crfsuite.node" for OS "linux debian_10".
+	...
+---STACK---
+Error: Could not require NativeExtension "crfsuite.node" for OS "linux debian_10".
+	...
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+``` 
+
+To avoid this error, you can build native extensions for Ubuntu using the docker file below:
+
+```dockerfile
+FROM ubuntu:18.04
+RUN apt update && apt install -y gnupg curl git build-essential cmake pkg-config
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+   apt install -y nodejs && \
+   npm install -g yarn node-pre-gyp
+RUN mkdir /build
+
+WORKDIR /build/node-fasttext
+RUN git clone https://github.com/botpress/node-fasttext.git .
+RUN git submodule update --init && sh linux-build.sh && npm install && npm run-script build
+
+WORKDIR /build/node-crfsuite
+RUN git clone https://github.com/botpress/node-crfsuite.git .
+RUN git submodule update --init && npm install && npm run-script build
+
+WORKDIR /build/node-svm
+RUN git clone https://github.com/botpress/node-svm.git .
+RUN git submodule update --init && npm install && npm run-script build
+
+WORKDIR /build/node-sentencepiece
+RUN git clone https://github.com/botpress/node-sentencepiece.git .
+RUN git submodule update --init && npm install && npm run-script build
+
+CMD ["bash"]
+```
+
+Replicate this docker file using your distribution (e.g., Raspbian) and use it. After that, find the file with extension `*.node` for all libraries. 
+
+To acess this file (with extension *.node), start a docker container with the image you just built.Thereafter, enter this container using the command
+`docker run -it --rm --name <YOUR_IMG_NAME> bp-bindings`
+Inside each of `/build/node-fasttext/*`,` /build/node-crfsuite/*`,` /build/node-svm/*` and `/build/node-sentencepiece/*` there should be a build/ or release/ directory where you’ll find a file with extension `*.node`.
+
+If you’re running botpress from sources, the correct location would either be : `build/native-extensions/linux/default or create` the directory `build/native-extensions/linux/<your-distribution>`. You can look at the file rewire.ts 2 if you want to see how the important processes occur.
+
+If you’re using the Botpress official binary, place the files in a directory named `bindings`.
+
+After following the instructions above, you're good to go.
+
+## Config File
+
+Botpress uses `JSON` files for most configurations. Environment variables can also set configuration. In this topic, you will learn about Botpress global configuration, individual chatbot configuration, module configuration, and environment variables.
+
+## Botpress Global Config
+
+The Botpress global config file is the main file used to configure the Botpress server. Your instance of Botpress creates this file automatically if it is missing. Default values should work well when using Botpress, but we will show you other configurations you may need to change on this page.
+
+To get more information about each option, check out the [comments on the configuration schema](https://github.com/botpress/botpress/blob/master/src/bp/core/config/botpress.config.ts)
 
 ## HTTP Server Configuration
 
@@ -106,7 +200,7 @@ Edit your `botpress.config.json` file and change your file to match the followin
 
 ## Advanced Logging
 
-In a production environment, you may want to persist additional logs such as full audit trail. You can enable more granular logs by using the [DEBUG environment variable](debug) and saving those extra logs to a separate file:
+In a production environment, you may want to persist additional logs such as full audit trail. You can enable more granular logs by using the [DEBUG environment variable](/docs/building-chatbots/testing-&-debugging/debugger)) and saving those extra logs to a separate file:
 
 ```sh
 # Linux & OSX
@@ -153,47 +247,6 @@ When you enable a module on Botpress, it is available globally, which means that
 When you run a module for the first time, the default configuration is created in `data/global/config/MODULE_NAME.json`. If you need a special configuration for your bot, from the Code Editor you can right click any global configuration, then **Duplicate to current bot**.
 
 Alternatively, you can manually create a `config` folder (such as `data/bots/BOT_ID/config/MODULE_NAME.json`) in the bot folder and copy the configuration file there.
-
-## Environment Variables
-
-Most of these variables can be set in the configuration file `data/global/botpress.config.json`. 
-
-Infrastructure configuration (such as the database, cluster mode, etc.) isn't available in the configuration file, since it'ss required before the config is loaded.
-
-Botpress supports `.env` files, so you don't have to set them every time you start the app. Save the file in the same folder as the executable.
-
-### Common Variables
-
-| Environment Variable   | Description                                                                         | Default            |
-| ---------------------- | ----------------------------------------------------------------------------------- | ------------------ |
-| `PORT`                 | Sets the port that Botpress will listen to.                                         | `3000`             |
-| `BP_HOST`              | The host to check for incoming connections.                                         | `localhost`        |
-| `EXTERNAL_URL`         | This is the external URL that users type in the address bar to talk with the bot.   | `http://HOST:PORT` |
-| `DATABASE_URL`         | Full connection string to connect to the DB. For Postgres, start with `postgres://`.| -                  |
-| `BP_PRODUCTION`        | Sets Botpress in production mode. This has the same effect as starting it with `-p`.| `false`            |
-| `BPFS_STORAGE`         | Storage destination used by BPFS to read and write files (global and bots).         | `disk`             |
-| `PRO_ENABLED`          | Enables the pro version of Botpress, the license key will be required.              | `false`            |
-| `BP_LICENSE_KEY`       | Your license key (can also be specified in `botpress.config.json`).                 | -                  |
-| `CLUSTER_ENABLED`      | Enables multi-node support using Redis.                                             | `false`            |
-| `REDIS_URL`            | The connection string to connect to your Redis instance.                            | -                  |
-| `AUTO_MIGRATE`         | Automatically migrates bots up to the running Botpress version.                     | -                  | 
-| `DEBUG`                | Namespaces to [debug](#advanced-logging).                                           | -                  |
-
-### Runtime and Modules
-
-| Environment Variable        | Description                                                                                 | Default   |
-| --------------------------- | ------------------------------------------------------------------------------------------- | --------- |
-| `VERBOSITY_LEVEL`           | Botpress will be more chatty when processing requests. This has the same effects as `-v`.   |           |
-| `BP_DECISION_MIN_CONFIENCE` | Sets the minimum threshold required for the Decision Engine to elect a suggestion.          | `0.5`     |
-| `FAST_TEXT_VERBOSITY`       | Define the level of verbosity that FastText will use when training models.                  | `0`       |
-| `FAST_TEXT_CLEANUP_MS`      | The model will be kept in memory until it receives no messages to process for that duration.| `60000`   |
-| `REVERSE_PROXY`             | When enabled, it uses "x-forwarded-for" to fetch the user IP instead of remoteAddress.      | `false`   |
-
-It is also possible to use environment variables to override module configuration. The pattern is `BP_MODULE_%MODULE_NAME%_%OPTION_PATH%`, all in upper case. For example, to define the `languageSources` option of the module `nlu`, you would use `BP_MODULE_NLU_LANGUAGESOURCES`. 
-
-:::tip
-You can list the available environment variables for each module by enabling the `DEBUG=bp:configuration:modules:*` flag.
-:::
 
 ### Security
 
