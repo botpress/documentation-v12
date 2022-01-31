@@ -19,7 +19,7 @@ await bp.dialog.jumpTo(sessionId, event, 'main.flow.json', 'target-node')
 
 As can be seen in the above example, the `jumpTo` method takes 4 arguments:
 
-- the session id
-- the event
-- the target flow name
-- the target node name (optional - by default it is flow.startNode)
+- the session id;
+- the event;
+- the target flow name;
+- the target node name (optional - by default it is flow.startNode).

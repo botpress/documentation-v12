@@ -5,7 +5,7 @@ title: Inter-bot Communication / Delegation
 
 --------------------
 
-In this tutorial, you will learn how a chatbot could "delegate" questions or tasks to other bots. We call this concept "inter-bot" communication.
+A chatbot can "delegate" questions or tasks to other bots. We call this concept "inter-bot" communication.
 
 The code for this example is available in the [examples](https://github.com/botpress/botpress/tree/master/examples/interbot) directory of our GitHub repository (update `workspaces.json` with the three bots if you copied them).
 
@@ -17,7 +17,7 @@ The code for this example is available in the [examples](https://github.com/botp
 
 ## Step 1 – Creating the bots
 
-The first thing you will need to do is create three bots: one "master" bot (the one that will delegate questions to other bots), and two "slave" bots (the ones who get asked questions by the master).
+The first thing you need to do is create three bots: one "master" bot (the one that will delegate questions to other bots), and two "slave" bots (the ones who get asked questions by the master).
 
 Head to the admin interface and create three bots names `master`, `sub1` and `sub2` respectively, all based on the "empty bot" template.
 
