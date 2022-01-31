@@ -1,6 +1,6 @@
 ---
-id: content
-title: Managing Content
+id: content-elements
+title: Content Elements
 ---
 
 --------------------
