@@ -15,23 +15,26 @@ The latest stable binaries are available for download [**here**](https://botpres
 
 To install Botpress, unzip the file you download somewhere on your computer. Make sure that your computer has at least:
 
-- Memory (RAM): Recommended 4 GB or above.
-- Hard Drive: Recommended 64 GB of free space or above.
-- A 64 bits architecture
+- Memory (RAM): Recommended 4 GB or above;
+- Hard Drive: Recommended 64 GB of free space or above;
+- A 64 bits architecture;
 - The right to read/write to the Botpress directory and subdirectories.
 
 ## Starting Botpress
 
 ### Executable
 
-To start Botpress, all you have to do is double click on the `bp` file in the directory you extracted Botpress.
+To start Botpress, all you have to do is double-click on the `bp` file in the directory you extracted Botpress.
 
 Alternatively, you can also start it from the terminal using the command:
 
 ```bash
 ./bp
 ```
-The first time you run Botpress, the built-in modules take some time to install. Thereafter, subsequent runs will be much faster.
+
+:::note
+The first time you run Botpress, the built-in modules take some time to install. The subsequent runs will be much faster.
+:::
 
 Once the modules are installed and loaded, you should end up with something similar to the console log below:
 

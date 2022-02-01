@@ -5,7 +5,8 @@ title: Building a Chatbot with Botpress
 
 --------------------
 
-### Creating a new chatbot
+### Create a New Chatbot
+
 In Botpress, each different chatbot belongs to a workspace. When you start Botpress for the first time, you'll have a default workspace created automatically for you.
 
 Let's create a new chatbot with the **Create bot> New Bot** button.
@@ -24,7 +25,8 @@ You may start from scratch with the "Empty Bot," or you can use one of the avail
 
 Once created, click on the chatbot's name to open the Studio interface and edit your chatbot.
 
-### Test your chatbot
+### Test your Chatbot
+
 There is a chat emulator built in the studio with which you can test your chatbot. You can open it from the <kbd>Emulator</kbd>button in the top right corner or press 'ctrl + E' while in the studio.
 
 The chat emulator represents what your visitors will face when they speak with your chatbot. You can reset the conversation by clicking the reset button or you can start a new conversation with the conversations button. 

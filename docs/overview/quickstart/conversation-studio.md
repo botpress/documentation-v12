@@ -5,12 +5,6 @@ title: Conversation Studio
 
 --------------------
 
-The Conversation Studio is one of the main intetrface of a Botpress Server installation. 
-
-:::info
-The other main interface is the [Admin Dashboard](/docs/overview/quickstart/admin-dashboard).
-:::
-
 The studio is the main interface you'll use to build and edit your chatbot. From here, among other things, you can:
 
 - Train an NLU model

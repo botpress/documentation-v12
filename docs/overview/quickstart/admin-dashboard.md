@@ -5,14 +5,6 @@ title: Admin Dashboard
 
 --------------------
 
-The Admin Dashboard is one of the main intetrface of a Botpress Server installation. 
-
-:::info
-The other main interface is the [Conversation Studio](/docs/overview/quickstart/conversation-studio).
-:::
-
-## Admin Dashboard
-
 The Admin Dashboard is where you manage and configure everything related to your Botpress Server installation. It is the one-stop-shop for all functionalities that affect all the chatbots on a Botpress Server instance.
 
 ### Features
