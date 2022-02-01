@@ -185,24 +185,17 @@ Valid for Enterprise License holders with multilingual bots, this action lets yo
 
 Botpress comes pre-packed with a translation engine that helps developers design a bot in one language while catering to users of all supported and configured languages.
 
-# Content type
+## Content Types
 
-Content types are the primary way to display content in the chat. You probably discovered the limitations of the content type flow element. 
-
-In this advanced guide, you will create a content type component in action. This method allows you to create a dynamic response in your chatbot.
-
-## Action
-
-All the following code samples can be copied and pasted in an action. You can find actionc in the **Code Editor** tab of you bot. 
+Content types are the primary way to display content in the chat.
 
 ### Audio
 
-The audio component can stream MP3 audio (`.mp3). You could use it to stream music from Spotify or YouTube. This component could also stream audio files stored on your server.
+The audio component can stream `MP3` audio (`.mp3`). You could use it to stream music from Spotify or YouTube. This component could also stream audio files stored on your server.
 
 ![Music image](/assets/music.jpg)
 
-
-**`Example`**
+**Example:**
 
 ```
 function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, temp, session } = event.state) {
@@ -416,7 +409,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
 
 ###  Image
 
-You can display images. You can usr a URL image or a [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
+You can display images. You can use a URL image or a [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
 
 ![Image of the content type image](/assets/image.jpg)
 

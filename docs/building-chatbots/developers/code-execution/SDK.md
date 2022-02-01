@@ -5,9 +5,9 @@ title: SDK
 
 --------------------
 
-To access the SFK reference page, follow this link: https://botpress.com/reference/.
+To access the SDK reference page, follow this link: https://botpress.com/reference/.
 
-## jump to
+## jumpTo
 
 The flow-editor allows you to visually design the flow of the conversation. However, it may be easier for you to jump to a specific conversation node programmatically, when a specific set of conditions is met.
 

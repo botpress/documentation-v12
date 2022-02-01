@@ -5,9 +5,8 @@ title: Flow-wide Transitions
 
 --------------------
 
-### Flow-wide On Receive
-
-You can define an onReceive instruction that will always be executed before every node's `onReceive`.
+## onReceive
+You can define an `onReceive` instruction that will always be executed before every node's `onReceive`.
 
 To define new **Flow-wide On Receive** actions:
 1. Navigate to the relevant flow.
@@ -19,7 +18,7 @@ You can also click the links at the top left corner of the flow editor.
 
 ![Flow Properties](/assets/flow_wide_onreceive.png)
 
-### Flow-wide onNext
+## onNext
 
 A Flow-wide onNext instruction allows you to override node transitions when the condition is successful.
 

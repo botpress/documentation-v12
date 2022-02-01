@@ -11,7 +11,7 @@ The carousel has the Postback feature, which allows you to send custom data to t
 
 ## Example
 
-When our chat user clicks on a button in the carousel, we send a payload with a city code (`mtl` or `nyc`).
+When our chat user clicks on a button in the carousel, we send a payload with a city code (`mtl` [Montréal] or `nyc` [New York City]).
 
 Then, we create a hook that saves this city code in the memory. The bot then flows to a particular node, depending on the value in memory.
 
@@ -21,7 +21,7 @@ As you can see, the bot first displays a carousel, then a different node based o
 
 1. Access the Conversation Studio of the selected bot.
 2. Click the **Code Editor** tab.
-3. Next to the **Hooks** tab, click the + button.
+3. Next to the **Hooks** tab, click the **+** button.
 4. In the dropdown menu, hover over **Event Hooks**, then click **After Incoming Middleware**.
 5. Type the name of your hook.
 :::note

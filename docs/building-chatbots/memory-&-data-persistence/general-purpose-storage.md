@@ -1,6 +1,6 @@
 ---
 id: general-purpose-storage
-title: General-purpose Storage
+title: General-Purpose Storage
 ---
 
 --------------------
