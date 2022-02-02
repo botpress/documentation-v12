@@ -13,11 +13,11 @@ Your Microsoft Account should have access to Azure and Teams. You can check out 
 
 ### Configure HTTPS Endpoint
 
-To connect to Microsoft Teams, an HTTPS endpoint is required. This is set in the `externalUrl` field in botpress.config.json. You can use the following methods to create this endpoint:
+To connect to Microsoft Teams, an HTTPS endpoint is required. This is set in the `externalUrl` field in `botpress.config.json`. You can use the following methods to create this endpoint:
 
-- Create an HTTPS tunnel to your machine using Ngrok. This tutorial works on pretty much any Operating System. [**Tutorial**](https://api.slack.com/tutorials/tunneling-with-ngrok)
-- Using Nginx and Let's Encrypt. This tutorial is based on the Linux Ubuntu 16.04 Operating System. [**Tutorial**](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
-- Use Serveo to create an HTTPS tunnel to your machine. [**Tutorial**](https://medium.com/automationmaster/how-to-forward-my-local-port-to-public-using-serveo-4979f352a3bf)
+- Create an HTTPS tunnel to your machine using Ngrok. This tutorial works on pretty much any Operating System ([Tutorial](https://api.slack.com/tutorials/tunneling-with-ngrok)).
+- Using Nginx and Let's Encrypt. This tutorial is based on the Linux Ubuntu 16.04 Operating System ([Tutorial](https://www.digitalocean.com/community/tutorials/)how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)).
+- Use Serveo to create an HTTPS tunnel to your machine ([**Tutorial**](https://medium.com/automationmaster/how-to-forward-my-local-port-to-public-using-serveo-4979f352a3bf)).
 
 :::note
 
@@ -35,19 +35,22 @@ These instructions will guide you through any steps required to be up and runnin
 
 ### Create Application & Generate Password
 
-1. Log on to your account on [Microsoft Azure](https://azure.microsoft.com)
+1. Log on to your account on [Microsoft Azure](https://azure.microsoft.com).
 
 2. In the Azure portal, open the [App registrations](https://portal.azure.com#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) page.
 
-3. Click on `New registration`, then choose a name for your application.
+3. Click **New registration**, then choose a name for your application.
 
-4. In the section `Supported account types`, choose `Accounts in any organizational directory and personal Microsoft accounts`, then click on `Register`.
+4. In the section **Supported account types**, choose **Accounts in any organizational directory and personal Microsoft accounts**, then click **Register**.
 
-5. Write down the value of `Application (client) ID`; we'll need it later for the channel configuration.
+5. Write down the value of `Application (client) ID`. We'll need it later for the channel configuration.
 
-6. Click on `Certificates & secrets`, then click on `New client secret`, then fill in the required fields.
+6. Click **Certificates & secrets**, then click **New client secret**, then fill in the required fields.
 
-7. Write down the value of the generated secret, **you can't access it later**
+7. Write down the value of the generated secret. 
+:::note
+You can't access it later.
+:::
 
 ### Create Your Bot
 
@@ -60,9 +63,9 @@ These instructions will guide you through any steps required to be up and runnin
 
 You can also fill the other fields as you wish, but they will not impact Botpress.
 
-2. Click on `Register`
+2. Click **Register**.
 
-3. On the next page (`Connect to channels`), under the section, `Add a featured channel`, click on `Configure Microsoft Teams Channel`, then click on `Save`. No other configuration is needed at this point.
+3. On the next page (**Connect to channels**), under the section, **Add a featured channel**, click **Configure Microsoft Teams Channel**, then click **Save**. No other configuration is needed at this point.
 
 ## Configuration
 
@@ -76,9 +79,9 @@ You can now continue to next [section](#setting-up-ms-teams-channel-from-an-alre
 
 3. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.teams` section write this configuration :
 
-- enabled: Set to `true`
-- appId: The appId you created in when creating your teams bot
-- appPassword: The app password you created when creating your teams bot
+- `enabled`: set to `true`
+- `appId`: the appId you created in when creating your teams bot
+- `appPassword`: the app password you created when creating your teams bot
 
   Your `bot.config.json` should look like this :
 
@@ -108,9 +111,9 @@ You can now continue to next [section](#setting-up-ms-teams-channel-from-an-alre
 
 1. Start Botpress, then you should see your Messaging Endpoint in the startup logs.
 
-2. Open the [Bot Framework](https://dev.botframework.com/bots) page, then click on the name of your bot.
+2. Open the [Bot Framework](https://dev.botframework.com/bots) page, then click the name of your bot.
 
-3. Click on the `Settings` tab, then scroll down to `Messaging endpoint`.
+3. Click the **Settings tab**, then scroll down to **Messaging endpoint**.
 
 4. Set the value of the endpoint that was displayed in the logs. If it is missing, it should looks like that:
 

@@ -13,11 +13,11 @@ Botpress Native NLU offers a handful of system entity extraction thanks to [Face
 
 Please check the Deployment section for instructions on hosting your Duckling server.
 
-### Example
+**Example:**
 
-|             User said             |    Type    | Value |  Unit   |
-| :-------------------------------: | :--------: | :---: | :-----: |
-| _"Add 5 lbs of sugar to my cart"_ | "quantity" |   5   | "pound" |
+|            User said            |    Type    |  Value  |  Unit   |
+| :-----------------------------: | :--------: | :-----: | :-----: |
+| `Add 5 lbs of sugar to my cart` | `quantity` |   `5`   | `pound` |
 
 ```js
 {

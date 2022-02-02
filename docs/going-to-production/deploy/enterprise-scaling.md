@@ -63,7 +63,7 @@ Once the first node starts, use the same command to start Botpress on the other 
 
 Botpress can connect to multiple Redis servers for better redundancy if one of the Redis servers goes down. To enable this, you must set the `REDIS_URL` variable to a host/port combinations list.
 
-Provide the list as a JSON object; see the example below for the correct format. 
+Provide the list as a `JSON` object. See the example below for the correct format. 
 
 ```bash
 PRO_ENABLED=true
@@ -80,7 +80,7 @@ DATABASE_URL=postgres://login:password@host:port/database \
 
 You can further configure your Redis Sentinel/Cluster using the `REDIS_OPTIONS` environment variable. Please consult the [ioredis documentation](https://github.com/luin/ioredis/blob/master/API.md) for the complete list of options.
 
-Example:
+**Example:**
 
 ```bash
 REDIS_OPTIONS={"password":"admin123", "connectTimeout": 20000}

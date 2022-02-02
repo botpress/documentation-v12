@@ -8,12 +8,16 @@ title: Docker Compose
 Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.
 
 :::note
-For an optimized Docker experience, download [Docker Desktop.](https://www.docker.com/products/docker-desktop)
+For an optimized Docker experience, download [Docker Desktop](https://www.docker.com/products/docker-desktop).
 :::
 
 ## Latest tags
 
-The latest tags are updated every time a new release is created. Each release has a tag associated with it. We are recommending to use fix tag for production.
+The latest tags are updated every time a new release is created. Each release has a tag associated with it. 
+
+:::tip
+Use the fix tag for production.
+:::
 
 ## Using Remote Duckling & Language Server
 
@@ -189,12 +193,11 @@ volumes:
 
 ### Restarting Botpress
 
-You can restart the server from Botpress UI. To achieve this, edit the `botpress.config.json` file from within The Code Editor module (located in the left sidebar). Botpress listens for changes to this config file.
+You can restart the server from Botpress UI. To achieve this, edit the `botpress.config.json` file from within the Code Editor module (located in the left sidebar). Botpress listens for changes to this config file.
 
 ![Restarting Botpress on Docker](/assets/docker-restart.png)
 
-After you have edited the botpress.config.json file, save it. You will now see an orange cog at the bottom right corner of the screen:
+After you have edited the `botpress.config.json` file, save it. You will now see an orange cog at the bottom right corner of the screen:
 
 ![Orange Restart Icon](/assets/restart-cog.png)
 
-Click that button to restart the server. You can then inspect the logs using docker logs your_container_id.

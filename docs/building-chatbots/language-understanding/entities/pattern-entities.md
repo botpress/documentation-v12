@@ -5,7 +5,6 @@ title: Pattern Entities
 
 --------------------
 
-
 Pattern or Regular Expression Extraction allows you to extract information presented in a format that can be described using Regular Expression (RegEx). Once you've created a pattern entity, Botpress Native NLU will perform a regex extraction on each incoming message and add it to `event.nlu.entities`.
 
 **Example:**
@@ -14,9 +13,9 @@ Given a Pattern Entity definition with `[A-Z]{3}-[0-9]{4}-[A-Z]{3}` as pattern:
 
 Extraction will go like this:
 
-|           User said           | Type  |     Value      |
-| :---------------------------: | :---: | :------------: |
-| _"Find product BHZ-1234-UYT"_ | "SKU" | "BHZ-1234-UYT" |
+|          User said          | Type  |     Value      |
+| :-------------------------: | :---: | :------------: |
+| `Find product BHZ-1234-UYT` | `SKU` | `BHZ-1234-UYT` |
 
 ```js
 { name: 'SKU',

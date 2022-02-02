@@ -7,7 +7,7 @@ title: Session Memory
 
 ## Dialog Memory
 
-The Dialog Memory is how your chatbot remembers things in the context of a conversation. The way you can store and retrieve data is by using actions inside the flows. There are four types of memory available: **user**, **session**, **temp** and **bot**. The value of type in the Set Variable user interface must be set to one of these four types.
+The Dialog Memory is how your chatbot remembers things in the context of a conversation. The way you can store and retrieve data is by using actions inside the flows. There are four types of memory available: **user**, **session**, **temp** and **bot**. The value of type in the **Set Variable** user interface must be set to one of these four types.
 
 You can consume a memory action just like any other action from the Botpress Flow Editor.
 

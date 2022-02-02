@@ -14,12 +14,14 @@ You can use your favorite browser. Remember that if you encounter a problem, you
 ## Mimimum Hardware Requirements
 
 ### Botpress
+
 - CPU: 1
 - RAM: 2GB
 - Optimal: 40 messages/second
 - Maximum: 60 messages/second
 
 ### PostgreSQL (database)
+
 - CPU: 2 
 - RAM: 4 GB
 - Minimum: 60 messages/second 

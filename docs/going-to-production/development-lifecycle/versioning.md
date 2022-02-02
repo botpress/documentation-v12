@@ -5,9 +5,7 @@ title: Versioning
 
 --------------------
 
-## Overview
-
-Once your bot is deployed, the good part is that you (and non-technical team members) **can still make changes to your bots from Botpress Studio**. This is one major advantage of using Botpress. This is made possible by our built-in versioning system.
+Once your bot is deployed, the good part is that you (and non-technical team members) can still make changes to your bots from Botpress Conversation Studio. This is one major advantage of using Botpress. This is made possible by our built-in versioning system.
 
 For your convenience Botpress provides the GUI tools to edit these files while in development. We also provide the same tools in production, but there's a caveat. Writing changes to the server's file system is not always possible, they could easily be lost due to ephemeral filesystems or they could be ignored when running in a cluster setup.
 

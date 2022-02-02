@@ -5,13 +5,16 @@ title: Custom CSS
 
 --------------------
 
-The Botpress webchat interface which is displayed on your website is fully customisable. You can change any of the styling using CSS. This can be done in two steps. Firstly create your own cascading style sheet and name it anything you want. Thereafter paste your stylesheet in the `<botpress_dir>/data/assets/modules/channel-web` folder.
+The Botpress webchat interface is fully customizable. You can change any of the styling using CSS. This can be done in two steps. 
 
-Secondly, you need to reference your new style sheet to your integrated cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. Let us go through these steps in more detail.
+1. Firstly create your own cascading style sheet and name it anything you want. Then, paste your stylesheet in the `<botpress_dir>/data/assets/modules/channel-web` folder.
+2. Secondly, you need to reference your new style sheet to your integrated cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. 
 
-### Step 1: Styling (CSS)
+Let us go through these steps in more detail.
 
-Paste the following CSS file in the `<botpress_dir>/data/assets/modules/channel-web` folder. Feel free to change the style here—original Botpress theme [can be found here](https://github.com/botpress/botpress/blob/master/modules/channel-web/assets/default.css).
+### Step 1 - Styling (CSS)
+
+Paste the following CSS file in the `<botpress_dir>/data/assets/modules/channel-web` folder. Feel free to change the style here. The original Botpress theme [can be found here](https://github.com/botpress/botpress/blob/master/modules/channel-web/assets/default.css).
 
 ```css
 .bpw-from-bot .bpw-chat-bubble {
@@ -92,7 +95,7 @@ Paste the following CSS file in the `<botpress_dir>/data/assets/modules/channel-
 }
 ```
 
-### Step 2: Loading CSS File
+### Step 2 - Loading CSS File
 
 Now, we need to instruct Botpress to use this custom CSS file for theming the webchat. For this, place the following code snippet in the `<botpress_dir>/data/global/hooks/after_bot_mount` folder. In our case, we used `01_create_shortlink.js` as the file name.
 
@@ -122,7 +125,7 @@ setTimeout(() => {
 }, 500)
 ```
 
-Feel free to change the webchat config there; the critical line to keep is the `extraStylesheet` property.
+Feel free to change the webchat config there. The critical line to keep is the `extraStylesheet` property.
 
 ### Result
 

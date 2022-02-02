@@ -13,15 +13,15 @@ Currently, only WhatsApp is supported on this channel.
 
 - An HTTPS Endpoint to your bot
 
-  - Set the externalUrl field in botpress.config.json
+  - Set the externalUrl field in ``botpress.config.json``
   - Create an HTTPS tunnel to your machine using Ngrok. Tutorial
   - Using Nginx and Let's Encrypt. Tutorial
 
 - [Create a Vonage Account](https://dashboard.nexmo.com/sign-up)
 - [Create a Vonage Application](https://dashboard.nexmo.com/applications/new)
   - Give it a name
-  - Under _Authentication_, click _Generate public and private key_ (this will download a file called `private.key`. You will need this file later on.)
-  - Click _Generate new application_
+  - Under `Authentication`, click **Generate public and private key** (this will download a file called `private.key`. You will need this file later on.)
+  - Click **Generate new application**
 
 ## Steps
 
@@ -36,15 +36,15 @@ Currently, only WhatsApp is supported on this channel.
 
 1. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.vonage` section write this configuration:
 
-- `enabled`: Set to true;
-- `apiKey`: Paste your API key;
-- `apiSecret`: Paste your API Secret;
-- `signatureSecret`: Paste your Signature secret;
-- `applicationId`: Paste your Application ID;
-- `privateKey`: Paste the content of the `private.key` file that was generated when you created your Vonage Application;
+- `enabled`: set to `true`;
+- `apiKey`: paste your API key;
+- `apiSecret`: paste your API Secret;
+- `signatureSecret`: paste your Signature secret;
+- `applicationId`: paste your Application ID;
+- `privateKey`: paste the content of the `private.key` file that was generated when you created your Vonage Application;
   - Paste the full key value, including the `-----BEGIN PRIVATE KEY-----` and  `-----END PRIVATE KEY-----` lines;
   - Replace all line breaks with the newline character `\n`;
-- `useTestingApi (optional)`: Set to `true` if you want to use the _Sandbox_ instead of the _Live_ version of Vonage API (see [Setup a Messages Sandbox](#Setup%20a%20Messages%20Sandbox)).
+- `useTestingApi (optional)`: set to `true` if you want to use the `Sandbox` instead of the `Live` version of Vonage API (see [Setup a Messages Sandbox](#Setup%20a%20Messages%20Sandbox)).
 
   Your `bot.config.json` should look like this:
 
@@ -68,15 +68,16 @@ Currently, only WhatsApp is supported on this channel.
 }
 ```
 
-2. Restart Botpress
-3. You should see your webhook endpoint in the console on startup
+2. Restart Botpress.
+3. You should see your webhook endpoint in the console on startup.
 
 ### Setup a Messages Sandbox
 
 When wanting to test the integration with Vonage and WhatsApp, you need to enable a Sandbox where you can send test messages.
 
-1. In the left end side menu of [Vonage Dashboard](https://dashboard.nexmo.com/) select _Messages and Dispatch (beta)_ -> _Sandbox_
-2. Click on the channel you want to setup and follow the instructions detailed on the page.
+1. In the left end side menu of [Vonage Dashboard](https://dashboard.nexmo.com/) select **Messages and Dispatch (beta)**
+1. Click **Sandbox**.
+2. Click the channel you want to setup and follow the instructions detailed on the page.
 3. Under `Webhooks`, type the following URLs:
     
     *Inbound:* `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID>/vonage/inbound`
@@ -85,4 +86,10 @@ When wanting to test the integration with Vonage and WhatsApp, you need to enabl
 
 ## File Reception
 
-Vonage currently supports receiving `image` , `audio`, `video`, `file` , and `location`. **Please, keep in mind that the links coming from the Vonage API are only valid for 10 minutes**. An action (Storage - Store File Locally) is available in order to store the file locally.
+Vonage currently supports receiving `image` , `audio`, `video`, `file` , and `location`. 
+
+:::note
+Please, keep in mind that the links coming from the Vonage API are only valid for 10 minutes.
+:::
+
+An action (Storage - Store File Locally) is available in order to store the file locally.

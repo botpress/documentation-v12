@@ -13,13 +13,13 @@ When a user talks to a chatbot, Botpress tracks all variables and parameters ass
 
 ![How to Access Debugger](/assets/access-debugger.png)
 
-You can access these system parameters from the flow builder and within your code (including in actions). To do so, all you need to do to reference a parameter by prefixing the path shown in the emulator with “event.”.
+You can access these system parameters from the Flow Editor and within your code (including in actions). To do so, all you need to do to reference a parameter by prefixing the path shown in the emulator with `event.`.
 
-For example, the path shown in the debugger to the language parameter is nlu.language. You can reference that parameter by adding “event.” to the path shown in the debugger, e.g., `event.nlu.language`.
+For example, the path shown in the debugger to the language parameter is `nlu.language`. You can reference that parameter by adding `event.` to the path shown in the debugger, such as `event.nlu.language`.
 
 ![NLU Language Emulator](/assets/nlu-emulator.png)
 
-In the Flow Editor, you can access system parameters by bracketing them with two sets of curly brackets. For example, in a message, you could say:
+In the Flow Editor, you can access system parameters by bracketing them with two sets of curly brackets.
 
 :::note
 The user input language is `{{event.nlu.language}}`.
@@ -52,7 +52,7 @@ There are four different kinds of memories in Botpress; the difference between t
 
 ## Common Use Case
 
-Most of the time, you will rely on the `user` and `temp` type of memory. The temp memory is only alive for the duration of a flow.
+Most of the time, you will rely on the `user` and `temp` type of memory. The `temp` memory is only alive for the duration of a flow.
 
 ## Setting and Accessing Variables
 
