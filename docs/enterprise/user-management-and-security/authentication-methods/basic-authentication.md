@@ -5,8 +5,6 @@ title: Basic Authentication
 
 --------------------
 
-## Basic Authentication
-
 Basic Authentication allows a user to log in with a simple username/password. The password is salted for added security.
 
 To create more accounts, visit the `Collaborators` tab on the Admin UI. Choose the role and enter the email of your collaborator, then you will receive a random password. The user will change this password after the first login.
@@ -14,7 +12,7 @@ To create more accounts, visit the `Collaborators` tab on the Admin UI. Choose t
 Super Admins can reset the password of any user from the Action menu in the collaborators' interface.
 ![RBAC](/assets/password-change.png)
 
-### Configuration Example
+## Configuration Example
 
 In your `botpress.config.json` file:
 

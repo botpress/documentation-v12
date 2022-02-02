@@ -5,27 +5,26 @@ title: Alerting
 
 --------------------
 
-## Alerting Service
-
 The alerting service will trigger an alarm when your configured threshold are exceeded.
 
 ### Prerequisite
 
-- Botpress Pro must be enabled with a valid license key
-- Redis Server must be running (minimum: version 2.8)
-- Monitoring must be enabled
+- Botpress Pro must be enabled with a valid license key;
+- Redis Server must be running (minimum: version 2.8);
+- Monitoring must be enabled.
 
 ### Quick Start
 
-1. Edit `botpress.config.json` and set `pro.alerting.enabled` to `true`
-2. Add at least one Incident Rule (more on that below) in `pro.alerting.rules`
-3. Restart Botpress
+1. Edit `botpress.config.json` and set `pro.alerting.enabled` to `true`.
+2. Add at least one Incident Rule (more on that below) in `pro.alerting.rules`.
+3. Restart Botpress.
 ![Alerting Interface](/assets/alerting.png)
+
 ### Incident Rules
 
-This is where you will define your thresholds
+This is where you will define your thresholds.
 
-Let's see an example of a rule, then we will break it apart
+Let's see an example of a rule, then we will break it apart:
 
 ```js
 {
@@ -50,30 +49,30 @@ We use a simple "rolling window" method to calculate results. If your timeframe 
 
 | Field                | Description                                                      |
 | -------------------- | ---------------------------------------------------------------- |
-| cpu.usage            | Average % of CPU usage                                           |
-| mem.usage            | Average % of Memory usage                                        |
-| mem.free             | Amount of free memory (in KB)                                    |
-| requests.count       | Number of HTTP requests processed                                |
-| requests.latency_avg | Average latency of HTTP requests                                 |
-| requests.latency_sum | The sum of the latency of all HTTP requests                      |
-| eventsIn.count       | Number of incoming events (when users sends messages to the bot) |
-| eventsOut.count      | Number of outgoing events (anything the bot sends back to users) |
-| warnings.count       | Number of warnings                                               |
-| errors.count         | Number of errors                                                 |
+| `cpu.usage`            | Average % of CPU usage                                           |
+| `mem.usage`            | Average % of Memory usage                                        |
+| `mem.free`             | Amount of free memory (in KB)                                    |
+| `requests.count`       | Number of HTTP requests processed                                |
+| `requests.latency_avg` | Average latency of HTTP requests                                 |
+| `requests.latency_sum` | The sum of the latency of all HTTP requests                      |
+| `eventsIn.count`       | Number of incoming events (when users sends messages to the bot) |
+| `eventsOut.count`      | Number of outgoing events (anything the bot sends back to users) |
+| `warnings.count`       | Number of warnings                                               |
+| `errors.count`         | Number of errors                                                 |
 
 #### Aggregation
 
-- avg: Average
-- sum: Sum
-- min: Minimum
-- max: Maximum
-- last: The last value received from the monitoring service
-- count: The number of "ticks" in the timeframe
+- `avg`: Average
+- `sum`: Sum
+- `min`: Minimum
+- `max`: Maximum
+- `last`: The last value received from the monitoring service
+- `count`: The number of "ticks" in the timeframe
 
 #### Operands
 
-- equalOrLessThan: Equal or less than =<
-- equalOrMoreThan: Equal or more than =>
+- `equalOrLessThan`: Equal or less than =<
+- `equalOrMoreThan`: Equal or more than =>
 
 #### Cooldown
 

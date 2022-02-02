@@ -9,17 +9,17 @@ title: Azure OAuth2
 Azure OAuth2 only works for version 12.17.2 and later.
 :::
 
-## Step 1: Create a Tenant
+## Step 1 - Create a Tenant
 
 Navigate to Azure Active Directory Page in your Azure Portal and create a new tenant.
 
-## Step 2: Register an Application
+## Step 2 - Register an Application
 
 In the page of your newly created tenant navigate to **App registrations**.
 
 Create a new application and choose the appropriate configuration for your use case in **Supported account types**, single and multi tenant options are supported, and keep the **Redirect URL** blank for now.
 
-## Step 3: Configure Botpress
+## Step 3 - Configure Botpress
 
 In your Botpress instance, navigate to the **Code Editor** in the Conversation Studio of the selected bot(s) and add a new entry within `authStrategies` in the `botpress.config.json` file. You may name the strategy whatever you want (keep the name URL safe) and fill in the entry in the following way:
 
@@ -42,20 +42,20 @@ In your Botpress instance, navigate to the **Code Editor** in the Conversation S
 }
 ```
 
-## Step 4: Create a Client Secret
+## Step 4 - Create a Client Secret
 
 1. Navigate to **Certificates & secrets**. 
 1. Create a new client secret. 
 1. Copy its value.
 1. Paste it in the `clientSecret` field of your created strategy in the `botpress.config.json` file.
 
-## Step 5: Enable the Strategy in Botpress
+## Step 5 - Enable the Strategy in Botpress
 
 Under the **Pro** settings in the `botpress.config.json` file, add your strategy name to the `collaboratorsAuthStrategies` array.
 
 Also make sure that the `externalAuth` object has `enabled` set to `true`.
 
-## Step 6: Configure Callback URL in Azure
+## Step 6 - Configure Callback URL in Azure
 
 1. In your application in the Azure Active Directory portal, navigate to the **Authentication** page.
 1. Add a platform. 
@@ -63,6 +63,6 @@ Also make sure that the `externalAuth` object has `enabled` set to `true`.
   1. Set your callback url with the one you configured in the `botpress.config.json` file.
   1. For the token type select **ID tokens**.
 
-## Step 7: Restart the Botpress Server
+## Step 7 - Restart the Botpress Server
 
 A green cogwheel should appear in the bottom right of the Botpress UI, click it to restart the server.

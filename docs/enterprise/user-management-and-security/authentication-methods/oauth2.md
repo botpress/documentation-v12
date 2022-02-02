@@ -5,8 +5,6 @@ title: OAuth2
 
 --------------------
 
-## OAuth2
-
 Some OAuth2 implementations return a JWT token containing all the user's information, while some other returns a unique token, which Botpress must then use to query the user's information.
 
 ```js

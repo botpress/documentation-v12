@@ -7,9 +7,6 @@ title: Collaborators
 
 **RBAC** (Role-Based Access Control) allows you to control what your collaborators can access.
 
-By default, Botpress ships with three roles in addition to the administrator: developer, content editor, and agent.
-
-![Extra Roles](/assets/rbac-roles.png)
 ![Add Colloborators](/assets/roles.png)
 
 :::note
