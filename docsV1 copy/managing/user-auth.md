@@ -144,7 +144,7 @@ Notice that we pass `channel` & `userId` as query parameters to set them in the 
 Your chatbot can now use the read Twitter Authentication properties in the users' attributes. Depending on your business logic, when you need to authenticate a user to Twitter, you only have to check if the user's attributes contain the `twitter` property. If the user has not yet set this property, suggest to your user to authenticate to Twitter. You could achieve this by displaying a built-in card element with an `OpenUrl` action. Set your authentication route as the url value : `http://yourbot.host/api/v1/bots/${botId}/mod/twitter-auth/aut
 
 :::tip
-Define a [shortlink](/docs/tutorials/shortlinks) for your auth chatbot module route to make it easy to use in your flow or content.
+Define a [shortlink](/tutorials/shortlinks) for your auth chatbot module route to make it easy to use in your flow or content.
 :::
 
 ### Recap

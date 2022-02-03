@@ -15,7 +15,7 @@ Although a typical pipeline would have three stages (e.g., _Development_, _Stagi
 
 ## Prerequisite
 
-Pipelines are a Botpress Enterprise feature, so make sure you're running the enterprise edition with a valid license key. If you don't have a license key or don't know how to activate it, please follow [this guide](/docs/pro/licensing).
+Pipelines are a Botpress Enterprise feature, so make sure you're running the enterprise edition with a valid license key. If you don't have a license key or don't know how to activate it, please follow [this guide](/pro/licensing).
 
 ## Concepts
 

@@ -8,7 +8,7 @@ title: Entity Extraction
 Entities are intent parameters. They represent a concept such as a colour, a date, a time, or a weight. Entity extraction helps you extract and normalize desired entities if they are present in a user phrase or message to the chatbot. 
 
 :::note
-The following example comes from the [Intent Classification](/docs/nlu/intent-matching) page.
+The following example comes from the [Intent Classification](/nlu/intent-matching) page.
 :::
 
 **Example:**

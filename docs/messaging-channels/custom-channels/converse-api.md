@@ -25,7 +25,7 @@ All APIs respond to every request with an HTTP status indicating whether the req
 
 ### Memory
 
-We use [memory](/docs/building-chatbots/memory-&-data-persistence/flow-memory) to save the response given by the API we are calling. By default, Botpress will save the response in `temp.response`, but you can use the memory of your choice according to the use-case.
+We use [memory](/building-chatbots/memory-&-data-persistence/flow-memory) to save the response given by the API we are calling. By default, Botpress will save the response in `temp.response`, but you can use the memory of your choice according to the use-case.
 
 The saved response object looks like this:
 
@@ -42,7 +42,7 @@ When a response returns a status code `400` and above, the request will fail and
 
 ## Templating
 
-Botpress supports templating in the `body` and the `headers` to access variables stored in [memory](/docs/building-chatbots/memory-&-data-persistence/flow-memory). All `bot`, `user`, `session`, `temp`, and `event` memory types are accessible via templating.
+Botpress supports templating in the `body` and the `headers` to access variables stored in [memory](/building-chatbots/memory-&-data-persistence/flow-memory). All `bot`, `user`, `session`, `temp`, and `event` memory types are accessible via templating.
 
 ## Debug API
 

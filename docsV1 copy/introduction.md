@@ -13,12 +13,12 @@ Botpress is an open-source platform for developers to build high-quality digital
 
 At its core, Botpress is a tool to simplify building chatbots for developers. The platform puts together the boilerplate code and infrastructure you need to get a chatbot up and running and gives a complete dev-friendly platform that ships with all the tools you need to build, deploy, and manage production-grade chatbots in record time. The platform includes:
 
-- Built-in [Natural Language Processing](/docs/nlu/intro-nlu) tasks such as [intent classification](/docs/nlu/intent-matching), spell checking, [entity extraction](/docs/nlu/entity-extraction), and [slot tagging](/docs/nlu/skill-slot), and many others;
+- Built-in [Natural Language Processing](/nlu/intro-nlu) tasks such as [intent classification](/nlu/intent-matching), spell checking, [entity extraction](/nlu/entity-extraction), and [slot tagging](/nlu/skill-slot), and many others;
 - A visual Conversation Studio to design multi-turn conversations and workflows;
-- An [emulator](/docs/main/emulator) & a [debugger](/docs/advanced/debug) to simulate conversations and debug your chatbot;
-- Support for popular messaging channels like [Slack](/docs/channels/slack), [Telegram](/docs/channels/telegram), [Microsoft Teams](/docs/channels/teams), [Facebook Messenger](/docs/channels/messenger), and an [embeddable web chat](/docs/channels/web);
+- An [emulator](/main/emulator) & a [debugger](/advanced/debug) to simulate conversations and debug your chatbot;
+- Support for popular messaging channels like [Slack](/channels/slack), [Telegram](/channels/telegram), [Microsoft Teams](/channels/teams), [Facebook Messenger](/channels/messenger), and an [embeddable web chat](/channels/web);
 - An SDK and Code Editor to extend the capabilities;
-- Post-deployment tools like analytics dashboards, [human handoff](/docs/managing/hitlnext), and more...
+- Post-deployment tools like analytics dashboards, [human handoff](/managing/hitlnext), and more...
 
 ## With Botpress, You Can...
 
@@ -40,7 +40,7 @@ That means that they want help! And Botpress is precisely what they need.
 
 This section includes all the information you need to get started with Botpress.
 
-- [The hardware and software requirements to use Botpress](/docs/requirements)
-- [How to install Botpress on your computer](/docs/installation)
-- [How to upgrade your version to a newer one](/docs/updating)
-- [All the features included in Botpress](/docs/features)
+- [The hardware and software requirements to use Botpress](/requirements)
+- [How to install Botpress on your computer](/installation)
+- [How to upgrade your version to a newer one](/updating)
+- [All the features included in Botpress](/features)

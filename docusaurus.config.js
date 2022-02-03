@@ -126,11 +126,11 @@ const config = {
             items: [
               {
                 label: 'Overview',
-                to: '/docs/overview/what-is-botpress',
+                to: '/overview/what-is-botpress',
               },
               {
                 label: 'Features',
-                to: '/docs/overview/features',
+                to: '/overview/features',
               },
             ],
           },

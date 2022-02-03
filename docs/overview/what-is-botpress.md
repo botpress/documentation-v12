@@ -11,12 +11,12 @@ Botpress is an open-source platform for developers to build high-quality digital
 
 At its core, Botpress is a tool to simplify building chatbots for developers. The platform puts together the boilerplate code and infrastructure you need to get a chatbot up and running and gives a complete dev-friendly platform that ships with all the tools you need to build, deploy, and manage production-grade chatbots in record time. The platform includes:
 
-- Built-in [Natural Language Processing](/docs/building-chatbots/language-understanding/supported-languages) tasks such as [intent classification](/docs/building-chatbots/language-understanding/intents/slots), [spell checking](/docs/building-chatbots/language-understanding/intents/spell-checking), [entity extraction](/docs/building-chatbots/language-understanding/entities/system-entities), and many others;
-- A visual [Conversation Studio](/docs/overview/quickstart/conversation-studio) to design multi-turn conversations and workflows;
-- An [emulator](/docs/building-chatbots/testing-&-debugging/emulator) & a [debugger](/docs/building-chatbots/testing-&-debugging/debugger) to simulate conversations and debug your chatbot;
-- Support for popular messaging channels like [Slack](/docs/messaging-channels/direct-integrations/slack), [Telegram](/docs/messaging-channels/direct-integrations/telegram), [Microsoft Teams](/docs/messaging-channels/direct-integrations/microsoft-teams), [Facebook Messenger](/docs/messaging-channels/direct-integrations/facebook-messenger), and an [embeddable web chat](/docs/messaging-channels/botpress-webchat/website-embedding/website-interactions);
+- Built-in [Natural Language Processing](/building-chatbots/language-understanding/supported-languages) tasks such as [intent classification](/building-chatbots/language-understanding/intents/slots), [spell checking](/building-chatbots/language-understanding/intents/spell-checking), [entity extraction](/building-chatbots/language-understanding/entities/system-entities), and many others;
+- A visual [Conversation Studio](/overview/quickstart/conversation-studio) to design multi-turn conversations and workflows;
+- An [emulator](/building-chatbots/testing-&-debugging/emulator) & a [debugger](/building-chatbots/testing-&-debugging/debugger) to simulate conversations and debug your chatbot;
+- Support for popular messaging channels like [Slack](/messaging-channels/direct-integrations/slack), [Telegram](/messaging-channels/direct-integrations/telegram), [Microsoft Teams](/messaging-channels/direct-integrations/microsoft-teams), [Facebook Messenger](/messaging-channels/direct-integrations/facebook-messenger), and an [embeddable web chat](/messaging-channels/botpress-webchat/website-embedding/website-interactions);
 - An SDK and Code Editor to extend the capabilities;
-- [Post-deployment](/docs/going-to-production/deploy/linux) tools like [analytics](/docs/chatbot-management/chatbot-analytics/built-in-analytics), [human handoff](/docs/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
+- [Post-deployment](/going-to-production/deploy/linux) tools like [analytics](/chatbot-management/chatbot-analytics/built-in-analytics), [human handoff](/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
 
 ## With Botpress, You Can...
 
@@ -127,7 +127,7 @@ The Botpress core team is currently working on adding statistical decisions to t
 
 ### Extension Points
 
-Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](/docs/building-chatbots/flow-editor/actions).
+Botpress allows for customization by injecting your self-written code. The two main ways to customize Botpress in this way are [by using **actions** and **hooks**](/building-chatbots/flow-editor/actions).
 
 **Actions** are called by the Dialog Manager (in the context of a conversation) to retrieve data, call external services, or implement custom reply logic.
 
@@ -193,7 +193,7 @@ A module is an extra component outside of the Botpress Core itself that you can 
 
 This modular architecture allows for maximum flexibility and freedom for developers. It also ensures that any customizations are applied without affecting the smooth running of the Botpress Core. 
 
-As a developer, you can create your own [custom module](/docs/building-chatbots/developers/custom-modules) to add extra functionalities to your chatbot.
+As a developer, you can create your own [custom module](/building-chatbots/developers/custom-modules) to add extra functionalities to your chatbot.
 
 ## Event Engine Overview
 Below is a complete overview of the components implied in processing an event (ex: a message sent by a user). It is mostly informational, and you won't use most of these components directly. We have included it only to give you an insight into the bigger picture of the elements involved and how they interact.

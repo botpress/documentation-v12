@@ -5,7 +5,7 @@ title: Modules
 
 --------------------
 
-Modules are a powerful way to extend the default functionalities of Botpress. They are very useful to encapsulate functionalities so you can reuse them elsewhere. Botpress comes with its own Modules, but you can also create your [custom modules](/docs/main/module) for your own needs.
+Modules are a powerful way to extend the default functionalities of Botpress. They are very useful to encapsulate functionalities so you can reuse them elsewhere. Botpress comes with its own Modules, but you can also create your [custom modules](/main/module) for your own needs.
 
 ## Features
 

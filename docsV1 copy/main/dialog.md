@@ -141,7 +141,7 @@ An **Action** is JavaScript code that is executed in a `Node.js` VM. It can be a
 - **Output:** an output Action that is used to make a chatbot output something.
 
 :::note
-To learn more on actions, please refer to the [Code Editor](/docs/main/code) section.
+To learn more on actions, please refer to the [Code Editor](/main/code) section.
 :::
 
 ## Skills
