@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const config = {
@@ -22,9 +20,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          // // Please change this to your repo.
+          // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: {
           showReadingTime: true,
@@ -42,6 +41,32 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        metadata: [{name: 'botpress, chatbot', content: 'documentation, docs'}],
+        algolia: {
+          apiKey: '570227d66d130d069630e7226c740158',
+          indexName: 'botpress'
+        },
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: true,
+          respectPrefersColorScheme: false,
+          switchConfig: {
+            darkIcon: '\u{1F319}',
+            darkIconStyle: {
+              marginLeft: '2px',
+            },
+            // Unicode icons such as '\u2600' will work
+            // Unicode with 5 chars require brackets: '\u{1F602}'
+            lightIcon: '\u{1F602}',
+            lightIconStyle: {
+              marginLeft: '1px',
+            },
+          },
+        },
+        tableOfContents: {
+          minHeadingLevel: 2,
+          maxHeadingLevel: 6,
+        },
       navbar: {
         title: '| Docs',
         logo: { 
@@ -49,6 +74,7 @@ const config = {
           src: 'img/bp-logo-black.svg',
           srcDark: 'img/bp-logo-white.png'
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -86,6 +112,10 @@ const config = {
             position: 'left',
             label: 'Enterprise',
           },
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -109,15 +139,11 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/botpress',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/getbotpress',
               },
             ],
           },
@@ -126,92 +152,14 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/botpress/botpress',
               },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
     }),
-};
-
-module.exports = {
-  themeConfig: {
-    metadata: [{name: 'botpress, chatbot', content: 'documentation, docs'}],
-    // This would become <meta name="keywords" content="cooking, blog"> in the generated HTML
-  },
-};
-
-module.exports = {
-  themeConfig: {
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
-      switchConfig: {
-        darkIcon: '\u{1F319}',
-        darkIconStyle: {
-          marginLeft: '2px',
-        },
-        // Unicode icons such as '\u2600' will work
-        // Unicode with 5 chars require brackets: '\u{1F602}'
-        lightIcon: '\u{1F602}',
-        lightIconStyle: {
-          marginLeft: '1px',
-        },
-      },
-    },
-  },
-};
-
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        {
-          type: 'docsVersion',
-          position: 'right',
-          to: '/path',
-          label: 'label',
-        },
-      ],
-    },
-  },
-};
-
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        {
-          type: 'search',
-          position: 'right',
-        },
-      ],
-    },
-  },
-};
-
-module.exports = {
-  themeConfig: {
-    navbar: {
-      hideOnScroll: true,
-    },
-  },
-};
-
-module.exports = {
-  themeConfig: {
-    tableOfContents: {
-      minHeadingLevel: 2,
-      maxHeadingLevel: 10,
-    },
-  },
 };
 
 module.exports = config;

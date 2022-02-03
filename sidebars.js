@@ -14,14 +14,13 @@
 module.exports = {
     overviewSidebar: [
       {
-      type: 'category',
-      collapsible: false,
-      label: 'Botpress Documentation',
-      items: [
-        {
         type: 'category',
         collapsible: false,
         label: 'Getting Started',
+        link: {
+          type:'doc',
+          id: "overview/getting-started"
+        },
         items: [
           'overview/what-is-botpress',
           {
@@ -37,8 +36,6 @@ module.exports = {
           },
           'overview/features',
         ],
-        },
-       ],
       },
     ],
     buildingChatbotsSiderbar: [
@@ -60,6 +57,10 @@ module.exports = {
             type: 'category',
             collapsible: true,
             label: 'Flow Lifecycle',
+            link: {
+              type: 'doc',
+              id: 'building-chatbots/flow-editor/flow-lifecycle/flow-lifecycle',
+            },
             items: [
               'building-chatbots/flow-editor/flow-lifecycle/nodes-lifecycle',
               'building-chatbots/flow-editor/flow-lifecycle/custom-transitions',
