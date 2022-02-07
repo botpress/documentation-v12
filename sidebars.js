@@ -186,6 +186,10 @@ module.exports = {
                 type: 'category',
                 collapsible: true,
                 label: 'Questions & Answers',
+                link: {
+                  type: 'doc',
+                  id: 'building-chatbots/qna/qna-item/qna-item',
+                },
                 items: [
                   'building-chatbots/qna/qna-item/question-variations',
                   'building-chatbots/qna/qna-item/answer-and-alternate',
@@ -253,6 +257,10 @@ module.exports = {
             type: 'category',
             collapsible: true,
             label: 'Website Embedding',
+            link: {
+              type: 'doc',
+              id: 'messaging-channels/botpress-webchat/website-embedding/website-embedding',
+            },
             items: [
               'messaging-channels/botpress-webchat/website-embedding/website-interactions',
               'messaging-channels/botpress-webchat/website-embedding/jwt-authentication',
@@ -469,7 +477,7 @@ module.exports = {
       },
           {
           type: 'category',
-          collapsible: false,
+          collapsible: true,
           label: 'Server and CICD Management',
           items: [
             'enterprise/server-and-cicd-management/production-checklist',
