@@ -1,5 +1,4 @@
 ---
 id: 'flow-lifecycle'
+title: 'Flow Lifecycle'
 ---
-
-# This is a page for categories 

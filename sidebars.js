@@ -71,6 +71,10 @@ module.exports = {
               type: 'category',
               collapsible: true,
               label: 'Content Elements',
+              link: {
+                type: 'doc',
+                id: 'building-chatbots/flow-editor/content-elements/content-elements',
+              },
               items: [
                 'building-chatbots/flow-editor/content-elements/content-text',
                 'building-chatbots/flow-editor/content-elements/content-image',
@@ -84,6 +88,10 @@ module.exports = {
                 type: 'category',
                 collapsible: true,
                 label: 'Actions',
+                link: {
+                  type: 'doc',
+                  id: 'building-chatbots/flow-editor/actions/actions',
+                },
                 items: [
                   'building-chatbots/flow-editor/actions/built-in-actions',
                   'building-chatbots/flow-editor/actions/custom-actions',
@@ -114,6 +122,10 @@ module.exports = {
               type: 'category',
               collapsible: true,
               label: 'Questions & Answers',
+              link: {
+                type: 'doc',
+                id: 'building-chatbots/language-understanding/questions-&-answers/questions-&-answers',
+              },
               items: [
                 'building-chatbots/language-understanding/questions-&-answers/rich-messages',
                 'building-chatbots/language-understanding/questions-&-answers/workflow-triggering',
@@ -195,6 +207,10 @@ module.exports = {
                   type: 'category',
                   collapsible: true,
                   label: 'Code Execution',
+                  link: {
+                    type: 'doc',
+                    id: 'building-chatbots/developers/code-execution/code-execution',
+                  },
                   items: [
                     'building-chatbots/developers/code-execution/sdk',
                     'building-chatbots/developers/code-execution/code-sharing',
@@ -295,6 +311,10 @@ module.exports = {
               type: 'category',
               collapsible: true,
               label: 'Deploy',
+              link: {
+                type: 'doc',
+                id: 'going-to-production/deploy/deploy',
+              },
               items: [
                 'going-to-production/deploy/linux',
                 'going-to-production/deploy/windows',
