@@ -11,8 +11,8 @@ A card is a message with a title and an optional subtitle that contains an image
 
 ## Add a Card in a Node
 
-1. In the Flow Editor, click the node where you want to add text.
-1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
+1. In the Flow Editor, click the node where you want to add your card.
+1. Choose where to put your card: **On Enter**, **On Receive**, or **Transitions**.
 1. Click the **+** button.
 1. Under **Message**, click the box.
     1. In the **Pick Content** dialog, under **Search In**, select **Card**.
@@ -33,15 +33,15 @@ A card is a message with a title and an optional subtitle that contains an image
 
 When adding a **Card** content, you can modify some options:
 
-#### Insert Variables
-
+:::tip
 When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+:::
 
 #### Title
 
 This is the most important information regarding your card. It will be displayed in bold and just under the selected image.
 
-:::tip
+:::tip Best Practice
 Your title should be short, precise, and relevant.
 :::
 

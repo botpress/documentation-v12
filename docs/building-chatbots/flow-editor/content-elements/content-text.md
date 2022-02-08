@@ -7,15 +7,15 @@ title: Content - Text
 
 The Text content is one of the most important piece of content that you will use. Those are the textual sentences that your chatbot sends to your user. 
 
-:::info
-HTML in the text content on the web channel is rendered correctly. You can include iFrames and construct miniature web pages (or web views) in your content without creating custom components.
-:::
-
 ![Text Example](/assets/text-example.png)
+
+:::info
+HTML in the text content is rendered correctly on the web channel. You can include iFrames and construct miniature web pages (or web views) in your content without creating custom components.
+:::
 
 ## Add a Text in a Node
 
-1. In the Flow Editor, click the node where you want to add text.
+1. In the Flow Editor, click the node where you want to add your text.
 1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
 1. Click the **+** button.
 1. Under **Message**, click the box.
@@ -38,9 +38,9 @@ HTML in the text content on the web channel is rendered correctly. You can inclu
 
 When adding a **Text** content, you can modify some options:
 
-### Insert Variables
-
-When hovering the box where you type your message, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+:::tip
+When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+:::
 
 ### Alternates
 

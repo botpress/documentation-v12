@@ -5,7 +5,7 @@ title: Content - Video
 
 --------------------
 
-The video content type presents a distinct message showing a video file with an optional title.
+The video content type presents a distinct message with a video file and an optional title.
 
 :::caution
 This content type is only supported in [Botpress Webchat](/messaging-channels/botpress-webchat/website-embedding) and [Vonage](/messaging-channels/broker-integrations/vonage).
@@ -24,13 +24,13 @@ The users can:
 
 ## Add a Video in a Node
 
-1. In the Flow Editor, click the node where you want to add text.
-1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
+1. In the Flow Editor, click the node where you want to add your video.
+1. Choose where to put your video: **On Enter**, **On Receive**, or **Transitions**.
 1. Click the **+** button.
 1. Under **Message**, click the box.
     1. In the **Pick Content** dialog, under **Search In**, select **Video**.
     1. You can either:
-        - Select an existing text in the list.
+        - Select an existing video in the list.
         :::info 
         This will bring you directly to step 5.
         :::
@@ -44,17 +44,13 @@ The users can:
 
 ## Options
 
-When adding a **Text** content, you can modify some options:
+When adding a **Video** content, you can modify some options:
 
-### Insert Variables
-
+:::tip
 When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+:::
 
 ### Video
-
-:::info
-This is obligatory.
-:::
 
 There are two ways to add a video:
 
@@ -70,6 +66,10 @@ When loading a video from a variable URL, you might need to use triple braces.
 ### Title
 
 This is a box where you can add a title to your video.
+
+:::tip Best Practice
+Your title should be short, precise, and relevant.
+:::
 
 ### Show Typing Indicators
 

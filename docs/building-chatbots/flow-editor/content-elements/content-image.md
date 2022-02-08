@@ -29,8 +29,8 @@ When loading an image from a variable URL, you might need to use triple braces.
 
 ## Add an Image in a Node
 
-1. In the Flow Editor, click the node where you want to add text.
-1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
+1. In the Flow Editor, click the node where you want to add your image.
+1. Choose where to put your image: **On Enter**, **On Receive**, or **Transitions**.
 1. Click the **+** button.
 1. Under **Message**, click the box.
     1. In the **Pick Content** dialog, under **Search In**, select **Image**.
@@ -51,11 +51,11 @@ When loading an image from a variable URL, you might need to use triple braces.
 
 When adding a **Image** content, you can modify some options:
 
-### Image
-
-:::info
-This is obligatory.
+:::tip
+When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
 :::
+
+### Image
 
 There are two ways to add an image:
 
@@ -66,13 +66,13 @@ There are two ways to add an image:
 Don't forget to take a look at the list of [supported formats](#supported-formats).
 :::
 
-### Insert Variables
-
-When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
-
 ### Title
 
 There is a box where you can add a title to your image. This title is displayed when you hover over the picture you just sent.
+
+:::tip Best Practice
+Your title should be short, precise, and relevant.
+:::
 
 ### Show Typing Indicators
 
