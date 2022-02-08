@@ -5,7 +5,9 @@ title: Content - Card
 
 --------------------
 
-A card is a message with a title and an optional subtitle. It also contains an image and action buttons. Note that you first need to create the action button separately.
+A card is a message with a title and an optional subtitle that contains an image and action buttons.
+
+![Card Example](/assets/card-example.png)
 
 ## Add a Card in a Node
 
@@ -28,8 +30,6 @@ A card is a message with a title and an optional subtitle. It also contains an i
 1. Click **Add Action (Alt+Enter)**.
 
 Your text is now displayed in green in the selected node.
-
-<img src="/assets/content-text-example.png" width="300" />
 
 ### Options
 
@@ -95,4 +95,4 @@ Make sure that the title is something relevant to the user.
 
 - **Say something:** when the user clicks the button, it will answer with a text.
 - **Open URL:** when the user clicks the button, they will be redirected to a website, opening a new window in their browser.
-- **Postback**: when the user clicks the button, the desired data (typed in the payload box) will be sent back to the server. For example, your button could be titled `Buy` with `idOfMyItem` as a payload.
+- **Postback**: when the user clicks the button, the desired data (typed in the payload box) will be sent back to the server. For example, your button could be titled `Buy` with `idOfMyItem` as a payload.                                                

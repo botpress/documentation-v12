@@ -7,6 +7,8 @@ title: Content - Image
 
 The image content allows you to integrate an image (a picture) in your chatbot conversation as a distinct message.
 
+![Image Example](/assets/image-example.png)
+
 ## Supported Formats
 
 Supported image formats are:
@@ -44,7 +46,6 @@ When loading an image from a variable URL, you might need to use triple braces.
         - The **[Show typing indicators](#show-typing-indicators)** radio button.
     1. Click **Submit**.
 1. Click **Add Action (Alt+Enter)**.
-
 
 ## Options
 

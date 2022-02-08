@@ -11,6 +11,8 @@ The Text content is one of the most important piece of content that you will use
 HTML in the text content on the web channel is rendered correctly. You can include iFrames and construct miniature web pages (or web views) in your content without creating custom components.
 :::
 
+![Text Example](/assets/text-example.png)
+
 ## Add a Text in a Node
 
 1. In the Flow Editor, click the node where you want to add text.
@@ -33,8 +35,6 @@ HTML in the text content on the web channel is rendered correctly. You can inclu
 1. Click **Add Action (Alt+Enter)**.
 
 Your text is now displayed in green in the selected node.
-
-<img src="/assets/content-text-example.png" width="300" />
 
 ## Options
 
