@@ -25,7 +25,7 @@ When loading an image from a variable URL, you might need to use triple braces.
 **Example:** `{{{temp.imageUrl}}}`
 :::
 
-## Add an Image
+## Add an Image in a Node
 
 1. In the Flow Editor, click the node where you want to add text.
 1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
@@ -48,11 +48,18 @@ When loading an image from a variable URL, you might need to use triple braces.
 
 ## Options
 
-When adding a **Text** content, you can modify some options:
+When adding a **Image** content, you can modify some options:
 
 ### Image
 
-Under **Image**, you can click the square with an up arrow. Then, you can choose which image you want to add there. 
+:::info
+This is obligatory.
+:::
+
+There are two ways to add an image:
+
+- Under **Image**, click the square with an up arrow. Then, you can choose which image you want to add there from your storage. 
+- Under **Image**, click the **Or enter URL** button at the bottom right of the square. A box will appear and you can type the URL of your image.
 
 :::note
 Don't forget to take a look at the list of [supported formats](#supported-formats).
