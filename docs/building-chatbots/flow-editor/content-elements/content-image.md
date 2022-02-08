@@ -5,8 +5,71 @@ title: Content - Image
 
 --------------------
 
-:::caution
-Sorry, but this page is under construction!
+The image content allows you to integrate an image (a picture) in your chatbot conversation as a distinct message.
+
+## Supported Formats
+
+Supported image formats are:
+
+- `.tiff`;
+- `.jpg`;
+- `.png`;
+- `.jpeg`;
+- `.gif`;
+- `.bmp`;
+- `.tif`.
+
+:::info
+When loading an image from a variable URL, you might need to use triple braces.
+
+**Example:** `{{{temp.imageUrl}}}`
 :::
 
-To show an image with an optional title in the chat window, you can use the _Image_ content element. Supported image formats are .tiff, .jpg, .png, .jpeg, .gif, .bmp, .tif. When loading an image from a variable url, you may need to use triple braces to unescape the url e.g.,, ```{{{temp.imageUrl}}}```.
+## Add an Image
+
+1. In the Flow Editor, click the node where you want to add text.
+1. Choose where to put your text: **On Enter**, **On Receive**, or **Transitions**.
+1. Click the **+** button.
+1. Under **Message**, click the box.
+    1. In the **Pick Content** dialog, under **Search In**, select **Image**.
+    1. You can either:
+        - Select an existing image in the list.
+        :::info 
+        This will bring you directly to step 5.
+        :::
+        - **Create new Image** by clicking the button.
+    1. A new window will be displayed where you can modify the following options:
+        - The **[Image](#image)** button.
+        - The **[Title](#title)** box.
+        - The **[Show typing indicators](#show-typing-indicators)** radio button.
+    1. Click **Submit**.
+1. Click **Add Action (Alt+Enter)**.
+
+
+## Options
+
+When adding a **Text** content, you can modify some options:
+
+### Image
+
+Under **Image**, you can click the square with an up arrow. Then, you can choose which image you want to add there. 
+
+:::note
+Don't forget to take a look at the list of [supported formats](#supported-formats).
+:::
+
+### Insert Variables
+
+When hovering the box where you type your message, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+
+### Title
+
+There is a box where you can add a title to your image. This title is displayed when you hover over the picture you just sent.
+
+### Show Typing Indicators
+
+:::note
+The radio button is checked by default. You can uncheck it.
+:::
+
+When your user is chatting with the chatbot, they will see the icon ![Type Indicators](/assets/type_indicators.png) (a bubble with three moving dots) while the chatbot is "typing" before receiving an answer.
