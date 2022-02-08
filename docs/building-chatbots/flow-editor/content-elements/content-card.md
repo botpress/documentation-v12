@@ -29,15 +29,13 @@ A card is a message with a title and an optional subtitle that contains an image
     1. Click **Submit**.
 1. Click **Add Action (Alt+Enter)**.
 
-Your text is now displayed in green in the selected node.
-
 ### Options
 
 When adding a **Card** content, you can modify some options:
 
 #### Insert Variables
 
-When hovering the box where you type your message, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
 
 #### Title
 
@@ -63,7 +61,7 @@ There are two ways to add an image:
 - Under **Image**, click the **Or enter URL** button at the bottom right of the square. A box will appear and you can type the URL of your image.
 
 :::note
-Don't forget to take a look at the list of [supported formats](#supported-formats).
+Don't forget to take a look at the list of [supported formats](building-chatbots/flow-editor/content-elements/content-image#supported-formats).
 :::
 
 ## Add an Action Button
@@ -95,4 +93,4 @@ Make sure that the title is something relevant to the user.
 
 - **Say something:** when the user clicks the button, it will answer with a text.
 - **Open URL:** when the user clicks the button, they will be redirected to a website, opening a new window in their browser.
-- **Postback**: when the user clicks the button, the desired data (typed in the payload box) will be sent back to the server. For example, your button could be titled `Buy` with `idOfMyItem` as a payload.                                                
+- **Postback**: when the user clicks the button, the desired data (typed in the payload box) will be sent back to the server. For example, your button could be titled `Buy` with `idOfMyItem` as a payload.

@@ -68,7 +68,7 @@ Don't forget to take a look at the list of [supported formats](#supported-format
 
 ### Insert Variables
 
-When hovering the box where you type your message, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
+When hovering a box where you can type, the `</>` symbol appears. This button helps you easily insert variables within your message. When you click it, it shows a list of variables that you can use such as `temp.`, `user.`, `session.`, or `event.`.
 
 ### Title
 
@@ -76,8 +76,6 @@ There is a box where you can add a title to your image. This title is displayed 
 
 ### Show Typing Indicators
 
-:::note
 The radio button is checked by default. You can uncheck it.
-:::
 
 When your user is chatting with the chatbot, they will see the icon ![Type Indicators](/assets/type_indicators.png) (a bubble with three moving dots) while the chatbot is "typing" before receiving an answer.

@@ -34,8 +34,6 @@ HTML in the text content on the web channel is rendered correctly. You can inclu
     1. Click **Submit**.
 1. Click **Add Action (Alt+Enter)**.
 
-Your text is now displayed in green in the selected node.
-
 ## Options
 
 When adding a **Text** content, you can modify some options:
@@ -58,9 +56,7 @@ Adding alternates is recommended since it makes your chatbot more user-friendly.
 
 ### Use Markdown
 
-:::note
 The radio button is checked by default. You can uncheck it.
-:::
 
 You can use [markdown](https://daringfireball.net/projects/markdown/syntax#overview), which is a markup syntax that allows you to easily add formatting and style to your text. 
 
@@ -70,8 +66,6 @@ Ensure that the target channel can render this text.
 
 ### Show Typing Indicators
 
-:::note
 The radio button is checked by default. You can uncheck it.
-:::
 
 When your user is chatting with the chatbot, they will see the icon ![Type Indicators](/assets/type_indicators.png) (a bubble with three moving dots) while the chatbot is "typing" before receiving an answer.
