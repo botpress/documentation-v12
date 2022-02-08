@@ -61,7 +61,7 @@ There are two ways to add an image:
 - Under **Image**, click the **Or enter URL** button at the bottom right of the square. A box will appear and you can type the URL of your image.
 
 :::note
-Don't forget to take a look at the list of [supported formats](building-chatbots/flow-editor/content-elements/content-image#supported-formats).
+Don't forget to take a look at the list of [supported formats](/building-chatbots/flow-editor/content-elements/content-image#supported-formats).
 :::
 
 ## Add an Action Button
