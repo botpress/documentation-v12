@@ -7,7 +7,7 @@ title: Supported Content Types
 
 ## Sending
 
-This is the list of content types we support sending to each channel
+This is the list of content types we support sending to each channel.
 
 |            | Messenger | Microsoft Teams | Slack | Telegram | Twilio | Vonage | Smooch |
 | ---------- | :-------: | :-------------: | :---: | :------: | :----: | :----: | :----: |
@@ -25,7 +25,7 @@ This is the list of content types we support sending to each channel
 
 ## Receiving
 
-This is the list of content-types we support receiving from each channel
+This is the list of content-types we support receiving from each channel.
 
 |               | Messenger | Microsoft Teams | Slack | Telegram | Twilio | Vonage | Smooch |
 | ------------- | :-------: | :-------------: | :---: | :------: | :----: | :----: | :----: |
