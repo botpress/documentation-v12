@@ -40,7 +40,12 @@ The landing page shows all your **Bots**. If you just created the account, there
     :::caution
     The **Bot Id** can't be modified. Your users can see it in the URL bar.
     :::
-    1. Under **Bot Template**, you can select an empty bot to start from scratch or an example such as the **Welcome Bot**.
+    1. Under **Bot Template**, you can select the bot you want to create:
+        - **Welcome Bot**: a chatbot that helps you start your Botpress journey.
+        - **Small Talk**: a chatbotbot that is essentially made of Q&As.
+        - **Empty Bot**: a brand-new chatbot that you start from scratch.
+        - **Learn Botpress Basics**: a complete chatbot that you can create while following [these instructions](https://botpress.com/mars-rover-tutorials) or analyze the content.
+        - **Weather Bot**: a chatbot that gives you the current weather in a given city.
     1. Click **Create Bot**.
 1. Now that your bot is created, you will be redirected to the **Bots** page.
 1. Click the name of your bot, and be creative!
