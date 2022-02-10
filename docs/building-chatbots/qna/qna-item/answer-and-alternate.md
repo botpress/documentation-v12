@@ -23,7 +23,7 @@ Press `enter` after typing your answer. It quickly adds a new alternative.
 
 The number of answers is not important. It could be 1 or 10, or even more, it won't make a difference for the Language Understanding. However, for the [questions](/building-chatbots/qna/qna-item/question-variations), you might want to add different utterrances to teach your chatbot that it doesn't have to precisely match the question asked.
 
-**Example:**
+## Alternate Examples
 
 When a user ask for the opening hours, you could add those alternate answers:
 
@@ -33,3 +33,17 @@ When a user ask for the opening hours, you could add those alternate answers:
 - `You can reach us from 8AM to 5PM every day of the week.`
 - `The store opens at 8AM and closes at 5PM every weekday.`
 - `We're opened from 8AM to 5PM on Monday, Tuesday, Wednesday, Thursday, and Friday. We're closed on the weekends.`
+
+## Tags
+
+### Can't Be Saved
+
+When hovering the tag, you can see what it means: leaving the question or the answer field empty will disable the question.
+
+### Incomplete
+
+When you have one question, only the exact match will trigger an answer from the chatbot.
+
+### X Q · X A
+
+The `X` represents the number of questions and answers that you have for this Q&A.
