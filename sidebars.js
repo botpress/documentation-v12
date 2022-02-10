@@ -246,6 +246,7 @@ module.exports = {
           label: 'Overview',
           items: [
             'messaging-channels/supported-channels',
+            'messaging-channels/supported-content-types'
             ],
           },
           {
