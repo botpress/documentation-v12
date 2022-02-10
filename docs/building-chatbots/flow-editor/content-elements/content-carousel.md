@@ -25,7 +25,7 @@ As you can see, the bot first displays a carousel, then a different node based o
 4. In the dropdown menu, hover over **Event Hooks**, then click **After Incoming Middleware**.
 5. Type the name of your hook.
 :::note
-Don't forget to add `,js` after the name you typed.
+Don't forget to add `.js` after the name you typed.
 :::
 6. Paste the following snippet inside your hook file:
 ```javascript
