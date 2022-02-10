@@ -19,7 +19,7 @@
   --ifm-background-color: #F5F6F8;
   --ifm-hover-overlay: #CAD7F5;
   --ifm-color-white: #F5F6F8;
-  --ifm-color-black: #1A1E22;
+  --ifm-color-black: #373b3f;
   --ifm-font-family: "Roobert-Regular";
   --ifm-font-family-monospace: "Roobert-Regular";
   --ifm-font-family-base: "Roobert-Regular";
@@ -127,9 +127,9 @@ html[data-theme='dark'] {
 }
 
 .markdown h1:first-child {
-  --ifm-h1-font-size: 2.5rem;
+  --ifm-h1-font-size: 2rem;
   margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );
-  color: #3276ea
+  color: var(--ifm-color-black)
 }
 
 
@@ -137,28 +137,28 @@ html[data-theme='dark'] {
   --ifm-h2-font-size: 1.5rem;
   margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
   margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
-  color: #165fdb;
+  color: var(--ifm-color-black);
 }
 
 .markdown > h3 {
-  --ifm-h3-font-size: 1.25rem;
+  --ifm-h2-font-size: 1.2rem;
   margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
-  color: #5990ee;
+  color: var(--ifm-color-black);
 }
 
 .markdown > h4 {
-  --ifm-h3-font-size: 1.25rem;
+  --ifm-h2-font-size: 1.1rem;
   margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
-  color: #4c87ed  ;
+  color: var(--ifm-color-black);
 }
 
 .markdown > h5 {
-  --ifm-h3-font-size: 1.25rem;
+  --ifm-h3-font-size: 1rem;
   margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
-  color: #7faaf2  ;
+  color: var(--ifm-color-black);
 }
 
 
@@ -203,21 +203,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-footer-title-color: var(--ifm-color-white);
 }
 
-.navbar__link--active {
-  background: #e3edfc;
-  color: #3276ea;
-  border: 1px solid #e3edfc;
-  border-radius: 10px;
-}
-
-.navbar__title {
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 1.70rem;
-}
-
 .alert {
   --ifm-code-background: var(--ifm-alert-background-color-highlight);
   --ifm-link-color: var(--ifm-alert-foreground-color);
@@ -243,6 +228,34 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-alert-foreground-color: var( --ifm-color-secondary-contrast-foreground );
   --ifm-alert-border-color: var(--ifm-color-secondary-dark);
 }
+/* 
+======================
+Navbar
+======================
+*/
+.navbar__link--active {
+  background: #e3edfc;
+  color: #3276ea;
+  border: 1px solid #e3edfc;
+  border-radius: 10px;
+}
+
+.navbar__title {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.1rem;
+}
+
+.navbar__title::before {
+  display: inline-block;
+  color: var(--ifm-color-black) !important;
+  margin-right: 8px;
+  content: "|";
+}
+
+
 /* 
 ======================= 
 Side bar section titles

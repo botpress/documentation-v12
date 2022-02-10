@@ -43,8 +43,8 @@ const config = {
         },
         colorMode: {
           defaultMode: 'light',
-          disableSwitch: true,
           respectPrefersColorScheme: false,
+          disableSwitch: true,
           switchConfig: {
             darkIcon: '\u{1F319}',
             darkIconStyle: {
@@ -63,7 +63,7 @@ const config = {
           maxHeadingLevel: 6,
         },
       navbar: {
-        title: '| Docs',
+        title: 'Docs',
         logo: { 
           alt: 'Botpress logo',
           src: 'img/bp-logo-black.svg',
@@ -108,9 +108,9 @@ const config = {
             label: 'Enterprise',
           },
           {
-            type: 'search',
-            position: 'right',
-          },
+            type:'search',
+            position:'right'
+          }
         ],
       },
       footer: {
