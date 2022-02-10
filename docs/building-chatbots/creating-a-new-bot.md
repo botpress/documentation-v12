@@ -10,7 +10,7 @@ Creating a chatbot with Botpress is very straight forward and can be done by tec
 You can build chatbots to:
 - book an event;
 - order something;
-- welcom your users;
+- welcome your users;
 - deflect support cases;
 - anything you have in mind. 
 

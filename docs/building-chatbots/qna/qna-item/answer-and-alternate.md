@@ -9,6 +9,7 @@ When you use the Q&A section, you can have a question (or more, which is recomme
 
 Alternate answers have a different structure, but their meaning stays the same.
 
+## Add Answers and Alternates
 
 1. In the [Conversation Studio](/overview/quickstart/conversation-studio), click the **Q&A** tab.
 1. If not done yet, [create a question](/building-chatbots/qna/qna-item/question-variations).
@@ -23,7 +24,7 @@ Press `enter` after typing your answer. It quickly adds a new alternative.
 
 The number of answers is not important. It could be 1 or 10, or even more, it won't make a difference for the Language Understanding. However, for the [questions](/building-chatbots/qna/qna-item/question-variations), you might want to add different utterrances to teach your chatbot that it doesn't have to precisely match the question asked.
 
-## Alternate Examples
+## Answers and Alternates Examples
 
 When a user ask for the opening hours, you could add those alternate answers:
 
@@ -36,13 +37,19 @@ When a user ask for the opening hours, you could add those alternate answers:
 
 ## Tags
 
+You can see some tags at the top right of the page.
+
 ### Can't Be Saved
 
-When hovering the tag, you can see what it means: leaving the question or the answer field empty will disable the question.
+When hovering the tag, you can see what is wrong: leaving the question or the answer field empty will disable the question.
+
+It disappears when the problem is solved.
 
 ### Incomplete
 
 When you have one question, only the exact match will trigger an answer from the chatbot.
+
+It disappears when the problem is solved.
 
 ### X Q · X A
 
