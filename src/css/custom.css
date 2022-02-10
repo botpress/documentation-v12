@@ -243,3 +243,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-alert-foreground-color: var( --ifm-color-secondary-contrast-foreground );
   --ifm-alert-border-color: var(--ifm-color-secondary-dark);
 }
+/* 
+======================= 
+Side bar section titles
+======================= 
+*/
+
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible:hover {
+  background: transparent;
+}
+
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link {
+  color: var(--ifm-color-black) !important;
+  font-weight: bolder;
+}
