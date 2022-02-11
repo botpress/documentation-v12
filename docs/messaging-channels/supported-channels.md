@@ -5,6 +5,22 @@ title: Supported Channels
 
 --------------------
 
+In this section, you can find  all the supported channels. 
+
+## Supported Channels
+
+| Channel | Official Website |
+| ------------- | ------------------- |
+| [Botpress Webchat]((messaging-channels/botpress-webchat/website-embedding/)) |           N/A        | 
+| [Facebook Messenger](messaging-channels/direct-integrations/facebook-messenger) | [Facebook for Developers website](https://developers.facebook.com/) |
+| [Microsoft Teams](messaging-channels/direct-integrations/microsoft-teams) | [Azure](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops) and [Teams](https://docs.microsoft.com/en-us/microsoftteams/) |
+| [Slack](messaging-channels/direct-integrations/slack) | [Slack - Apps Page](https://api.slack.com/apps) |
+| [Telegram](messaging-channels/direct-integrations/telegram) | [Telegram Developers website](https://core.telegram.org/bots) |
+| [Twilio](messaging-channels/broker-integrations/twilio) | [Twilio Docs](https://www.twilio.com/docs) |
+| [Vonage](messaging-channels/broker-integrations/vonage) | [Vonage - Start Coding](https://dashboard.nexmo.com/sign-up) |
+| [Smooch](messaging-channels/broker-integrations/smooch-sunshine-conversations) | [Sunshine Conversations - Smooch](https://www.zendesk.com/platform/conversations/) |
+
+
 ## FAQ
 
 ### How can I test a channel locally?
