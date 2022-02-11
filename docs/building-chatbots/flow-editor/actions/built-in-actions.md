@@ -104,7 +104,7 @@ return callApi()
 ```
 
 :::info
-What is the `session` variable? Learn how to [use Memory to store data](/main/memory).
+What is the `session` variable? Learn how to [use Memory to store data](/building-chatbots/memory-&-data-persistence/flow-memory).
 :::
 
 
@@ -115,7 +115,7 @@ Add an `onEnter` action instruction in your node and select the `callApi` action
 ![Action](/assets/tutorial-call-api-action.png)
 
 :::info
-What are `onEnter` instructions? Understand how the [node Lifecycle](/main/emulator) works.
+What are `onEnter` instructions? Understand how the [node Lifecycle](/building-chatbots/testing-&-debugging/emulator) works.
 :::
 
 ### Add a Text Content Element
