@@ -19,10 +19,9 @@ module.exports = {
         label: 'Getting Started',
         link: {
           type:'doc',
-          id: "overview/getting-started"
+          id: "overview/what-is-botpress"
         },
         items: [
-          'overview/what-is-botpress',
           {
           type: 'category',
           collapsible: true,
