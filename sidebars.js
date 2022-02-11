@@ -336,6 +336,10 @@ module.exports = {
               type: 'category',
               collapsible: true,
               label: 'Hardware & Software Requirements',
+              link: {
+                type: 'doc',
+                id: 'going-to-production/requirements/requirements',
+              },
               items: [
                 'going-to-production/requirements/benchmarking',
               ],

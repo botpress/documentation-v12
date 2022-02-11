@@ -124,8 +124,24 @@ const config = {
                 to: 'overview/what-is-botpress',
               },
               {
-                label: 'Features',
-                to: 'overview/features',
+                label: 'Building Chatbots',
+                to: 'building-chatbots/creating-a-new-bot',
+              },
+              {
+                label: 'Messaging Channels',
+                to: 'messaging-channels/supported-channels',
+              },
+              {
+                label: 'Going to Production',
+                to: 'going-to-production/deploy/linux',
+              },
+              {
+                label: 'Chatbot Management',
+                to: 'chatbot-management/chatbot-analytics/built-in-analytics',
+              },
+              {
+                label: 'Enterprise',
+                to: 'enterprise/licensing/enterprise-licensing',
               },
             ],
           },
