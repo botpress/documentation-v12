@@ -51,6 +51,6 @@ When you have one question, only the exact match will trigger an answer from the
 
 It disappears when the problem is solved.
 
-### X Q · X A
+### *X*Q · *X*A
 
 The `X` represents the number of questions and answers that you have for this Q&A.
