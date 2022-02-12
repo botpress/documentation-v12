@@ -7,7 +7,7 @@ const config = {
   tagline: "Making Machines Understand Humans",
   url: "https://botpress.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/BlackSymbol.svg",
   organizationName: "Botpress/documentation", // Usually your GitHub org/user name.
