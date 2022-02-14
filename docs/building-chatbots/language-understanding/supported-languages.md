@@ -11,6 +11,21 @@ Normally, you only have one language for your chatbot. However, you can add othe
 With the Enterprise License, you can easily work with the built-in translation functionality.
 :::
 
+## Supported Languages
+
+- Arabic
+- Dutch
+- English
+- French
+- German
+- Hebrew
+- Italian
+- Japenese
+- Polish
+- Portuguese
+- Russian
+- Spanish
+
 ## Add a Language
 
 1. In the Admin section, click **Bots**.
@@ -22,29 +37,10 @@ With the Enterprise License, you can easily work with the built-in translation f
 
 ![Bot Config](/assets/i18n-configs.png)
 
-### Switch Language
-
-1. At the bottom right, next to the name of your bot, click on the language flag.
-2. Select the desired language.
-
-![Switch Language](/assets/i18n-switch-lang.png)
-
-You'll see a "missing translation" notification on your content.
-
-![Missing Translation](/assets/i18n-missing-translation.png)
-
-### Translate Your Content
-
-1. Click the **Flow** tab.
-2. Edit the text in the **Inspector**.
-4. Write a translation (where your text is red with **(missing translation)** next to it).
-![Edit Content](/assets/i18n-edit-content.png)
-![Edited Content](/assets/i18n-edited-content.png)
-
 ## Change the Language
 
 Botpress use the browser language to detect the user language. This is stored in the `language` field of the user attributes. It is possible to change the language of a user by modifying this field as the following example shows:
-
+     
 ```js
 await bp.users.updateAttributes('web', 'someId', { language: 'fr' })
 ```
