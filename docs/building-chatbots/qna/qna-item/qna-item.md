@@ -50,7 +50,7 @@ Once you have created your contexts, you can create your QNAs and assign a conte
 
 ![QnA Category](/assets/faq-qna-category.png)
 
-# Add Contexts to your Flow
+## Add Contexts to your Flow
 
 The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 built-in actions (e.g., `appendContext`, `resetContext` and `removeContext`), under the NLU category in your actions list.
 

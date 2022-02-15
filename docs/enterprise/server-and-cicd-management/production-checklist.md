@@ -32,7 +32,7 @@ You should use a [Postgres database instead of a SQlite database](/building-chat
 
 ## Use the database BPFS storage
 
-When you set this option, all your bots and configuration files are stored in the database. Only those can be edited while making changes using the interface.
+When you [set this option](/building-chatbots/language-understanding/hosting), all your bots and configuration files are stored in the database. Only those can be edited while making changes using the interface.
 Multiple servers can then synchronously access the same latest data.
 
 **Environment variable:**
@@ -101,14 +101,14 @@ You must configure the CORS policy before.
 
 ## Host your own language server
 
-The default language server configured with Botpress is a public server with request limitations.
+The [default language server](/building-chatbots/language-understanding/hosting#language-server) configured with Botpress is a public server with request limitations.
 
 **Value in the botpress.config.json file:**
 - `nlu.json: languageSources`
 
 ## Securing your server with HTTPS
 
-Botpress doesn't handle certificates and HTTPS headers directly. You should instead use a NGINX server.
+Botpress doesn't handle certificates and HTTPS headers directly. You should instead use a [NGINX](/building-chatbots/language-understanding/hosting) server.
 
 ## Enable audit trail
 
@@ -156,7 +156,7 @@ We currently support [LDAP](/enterprise/user-management-and-security/authenticat
 
 ## Configure your Reverse Proxy and Load Balancing
 
-Check the documentation for more information
+Check the [documentation](/building-chatbots/language-understanding/hosting) for more information
 
 ## Generate a diagnostic report
 
