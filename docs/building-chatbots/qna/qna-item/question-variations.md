@@ -28,7 +28,9 @@ When a user ask for the opening hours, you could add those alternate questions:
 - `When are you opened?`
 - `I can't find the opening hours, can you help me?`
 - `Opening hours, please.`
-- `
+- `What are the opening hours?`
+- `Tell me when you're opened in the morning`
+- etc.
 
 ## Tags
 

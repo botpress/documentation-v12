@@ -17,11 +17,8 @@ module.exports = {
         type: 'category',
         collapsible: false,
         label: 'Getting Started',
-        link: {
-          type:'doc',
-          id: "overview/what-is-botpress"
-        },
         items: [
+          'overview/what-is-botpress',
           {
           type: 'category',
           collapsible: true,
@@ -392,14 +389,16 @@ module.exports = {
                 'chatbot-management/chatbot-analytics/custom-analytics',
             ],
             },
-            {
-              type: 'category',
-              collapsible: true,
-              label: 'Language Understanding',
-              items: [
-                'chatbot-management/language-understanding/misunderstood',
-              ],
-        },
+          ],
+          },
+          {
+          type: 'category',
+          collapsible: false,
+          label: 'Language Understanding',
+          items: [
+            'chatbot-management/language-understanding/misunderstood',
+          ],
+          },
             {
             type: 'category',
             collapsible: false,
@@ -426,25 +425,18 @@ module.exports = {
               ],
             },
         ], 
-        },
-      ],
       enterpriseSidebar: [
         {
         type: 'category',
         collapsible: false,
-        label: 'Enterprise',
+        label: 'Licensing',
         items: [
-          {
-            type: 'category',
-            collapsible: true,
-            label: 'Licensing',
-            items: [
-              'enterprise/licensing/enterprise-licensing',
+          'enterprise/licensing/enterprise-licensing',
           ],
           },
           {
             type: 'category',
-            collapsible: true,
+            collapsible: false,
             label: 'User Management and Security',
             items: [
               {
@@ -481,7 +473,7 @@ module.exports = {
       },
           {
           type: 'category',
-          collapsible: true,
+          collapsible: false,
           label: 'Server and CICD Management',
           items: [
             'enterprise/server-and-cicd-management/production-checklist',
@@ -517,7 +509,5 @@ module.exports = {
             ],
           },
       ], 
-      },
-    ],
-    };
+      };
 

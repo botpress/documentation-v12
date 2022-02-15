@@ -33,7 +33,7 @@ When a user ask for the opening hours, you could add those alternate answers:
 - `Our opening hours are from 8AM to 5PM on weekdays. `
 - `You can reach us from 8AM to 5PM every day of the week.`
 - `The store opens at 8AM and closes at 5PM every weekday.`
-- `We're opened from 8AM to 5PM on Monday, Tuesday, Wednesday, Thursday, and Friday. We're closed on the weekends.`
+- etc.
 
 ## Tags
 
