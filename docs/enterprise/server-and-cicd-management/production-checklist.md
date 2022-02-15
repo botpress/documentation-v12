@@ -136,30 +136,32 @@ You should enable the log output on the file system.
 
 ## Change Botpress base path
 
-By default, all requests are handled at the top zlevel of the external url. It is possible to change that path (for example to use http://localhost:3000/botpress). You can do that by updating your server's EXTERNAL_URL and adding the suffix at the end.
-
-/going-to-production/deploy/#going-to-production
+By default, all requests are handled at the top level of the external URL. You can change that path (for example to use http://localhost:3000/botpress) by updating your server's [`EXTERNAL_URL`](/going-to-production/deploy/#going-to-production) and adding the suffix at the end.
 
 ## Create custom roles and review permissions
 
-There is a default set of role and permissions when you create a workspace. It is recommended to review and update them.
+There is a default set of [role and permissions](/enterprise/user-management-and-security/role-based-access-control/roles) when you create a workspace. 
 
-/enterprise/user-management-and-security/role-based-access-control/roles
+:::tip Best Practice
+You should review and update them.
+:::
 
 ## Enable other authentication mechanism
-The default authentication method is a username/password, but you can enable additional authentication strategies to access Botpress. We currently support LDAP, SAML and OAUTH2.
 
-/enterprise/user-management-and-security/authentication-methods/basic-authentication
+The default authentication method is the [basic one](/enterprise/user-management-and-security/authentication-methods/basic-authentication). 
+
+:::note
+We currently support [LDAP](/enterprise/user-management-and-security/authentication-methods/ldap), [SAML](/enterprise/user-management-and-security/authentication-methods/saml), and [OAuth2](/enterprise/user-management-and-security/authentication-methods/oauth2).
+:::
 
 ## Configure your Reverse Proxy and Load Balancing
 
 Check the documentation for more information
 
-
 ## Generate a diagnostic report
 
-This tool will generate a report which can help diagnose problems. It will test the connectivity to various components, ensure that proper folders are writable, and will also include the various configuration files.
+This tool will generate a report (`diagnostic.txt`) after testing the connectivity to various components and ensuring that proper folders are writable. It will also include the configuration files.
 
-Passwords and secrets will be obfuscated
-
-Generate report button: creates a diagnostic.txt
+:::info
+Passwords and secrets will be obfuscated.
+:::
