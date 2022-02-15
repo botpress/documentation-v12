@@ -15,8 +15,8 @@ You can build Botpress from the [source repository](https://github.com/botpress/
 
 Install node version 12.18.1 for [your operating system](https://nodejs.org/download/release/v12.18.1/). 
 
-:::Tip
-On windows, download and use the `.msi` installer.
+:::tip
+On Windows, download and use the `.msi` installer.
 :::
 
 Install [Yarn package manager](https://yarnpkg.com/).
