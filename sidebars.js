@@ -150,6 +150,7 @@ module.exports = {
               },
               'building-chatbots/language-understanding/contexts',
               'building-chatbots/language-understanding/external-nlu-engines',
+              'building-chatbots/language-understanding/hosting',
             ],
           },
         {

@@ -94,7 +94,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "going-to-production/deploy/linux",
+            docId: "going-to-production/deploy/deploy",
             position: "left",
             label: "Going to Production",
           },
@@ -136,7 +136,7 @@ const config = {
               },
               {
                 label: "Going to Production",
-                to: "going-to-production/deploy/linux",
+                to: "going-to-production/deploy/deploy",
               },
               {
                 label: "Chatbot Management",
