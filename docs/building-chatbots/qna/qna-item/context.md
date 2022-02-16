@@ -5,12 +5,40 @@ title: Context
 
 --------------------
 
-## Create a context
+Contexts are simple single words that are related to a specific situation, circonstance, concept, etc.
 
-To create context, you have two options:
+:::tip Best Practice
+You should use contexts only for the questions and answers, not for replacing slot filling.
+:::
 
-- Create context specific to a bot, create or edit this file `data/bots/<your_bot>/config/qna.json`.
-- Create context specific to all bots, create or edit this file `data/global/config/qna.json`.
+## Step 1 - Create a context
+
+To create a context, you have two options:
+
+### In the Conversation Studio
+
+1. Click the **Q&A** tab.
+1. Click the **+** button at the top right of the page. 
+1. Under **Contexts**, type the context you want to add.
+
+:::note
+Don't forget to create your [questions](/building-chatbots/qna/qna-item/question-variations) and [answers](/building-chatbots/qna/qna-item/answer-and-alternate).
+:::
+
+### In the Config File
+
+:::tip Best Practice
+It's way easier to add a context directly in the Conversation Studio.
+:::
+
+- Create context specific to a bot, create (or edit) this file `data/bots/<your_bot>/config/qna.json`.
+- Create context specific to all bots, create (or edit) this file `data/global/config/qna.json`.
+
+## Step 2 - Append your Context
+
+To set a context, let's use the `appendContext` action and add our new context in the `contexts` field. You can use comma-separated values to pass multiple contexts.
+
+![Actions](/assets/faq-append-context.png)
 
 Then append the name of your new contexts to `qnaCategories` like so:
 
@@ -21,32 +49,3 @@ Then append the name of your new contexts to `qnaCategories` like so:
 }
 ```
 
-### From version 12.8 onwards
-
-Contexts listed in the dropdown menu are sourced from all your existing content (questions & NLU intents). The `qna.json` configuration file is no longer used to provide a list of contexts. To create a new context, open or add a Q&A, input the context in the **Contexts** field, then select **+ Create context**:
-
-![Category](/assets/faq-qna-new-context.png)
-
-When you create a new context this way, you need to save your changes for the context to be persisted. 
-
-## Add a QNA
-
-Once you have created your contexts, you can create your QNAs and assign a context to them. From the `category` menu, choose one of your contexts:
-
-![Category](/assets/faq-qna-category.png)
-
-## Add contexts to your flow
-
-The final step is to set the desired context at the appropriate time in your flow. To help you with this, we added 3 actions (i.e. `appendContext`, `resetContext` and `removeContext`). You will find these actions under the NLU category in your actions list.
-
-### Append Context
-
-To set a context, let's use the `appendContext` action and add our new context in the `contexts` field. You can use comma-separated values to pass multiple contexts.
-
-![Actions](/assets/faq-append-context.png)
-
-### TTL
-
-The TTL or Time-To-Live field is used to set a maximum number of interactions for this context to exists within a conversation.
-
-Take `Welcome Bot` for instance. Its contexts have a TTL of `10`. This means that someone can ask up to 10 questions about animals before the context is ignored. After the TTL expires, the bot will fallback to the `global` context.

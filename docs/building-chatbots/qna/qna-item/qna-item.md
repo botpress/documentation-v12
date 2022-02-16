@@ -5,7 +5,7 @@ title: QnA Item
 
 --------------------
 
-TQnA is specifically designed to simplify how to handle frequently asked questions. It adds more responsivness to your chatbot. You need to add at least ten different training phrases. Then you add at least one answer: plain text or any other content type. 
+QnA is specifically designed to simplify how to handle frequently asked questions. It adds more responsivness to your chatbot. You need to add at least ten different training phrases. Then you add at least one answer: plain text or any other content type. 
 
 :::note
 You can also redirect a user to a specific node and workflow as a response to the question.
