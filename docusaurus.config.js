@@ -21,6 +21,12 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebar/sidebar.js"),
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "Latest",
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -109,6 +115,25 @@ const config = {
             docId: "enterprise/licensing/enterprise-licensing",
             position: "left",
             label: "Enterprise",
+          },
+          {
+            type: "docsVersionDropdown",
+            position: "right",
+            dropdownItemsAfter: [
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/installation/",
+                label: "v12.26.7",
+              },
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/11.9.6/installation/",
+                label: "v11.9.6",
+              },
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/versions",
+                label: "(Older docs) 11.0 to v12.26",
+              },
+            ],
+            dropdownActiveClassDisabled: true,
           },
           {
             type: "search",
