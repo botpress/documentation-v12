@@ -6,7 +6,7 @@ const config = {
   title: "Botpress Documentation",
   tagline: "Making Machines Understand Humans",
   url: "https://botpress.com",
-  baseUrl: "/",
+  baseUrl: "/docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/BlackSymbol.svg",
