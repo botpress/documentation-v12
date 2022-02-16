@@ -1,9 +1,10 @@
 ---
 id: installation
 title: Installation
+slug: "/"
 ---
 
---------------------
+---
 
 Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch.
 
