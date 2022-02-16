@@ -13,10 +13,10 @@ module.exports = [
           "overview/quickstart/installation",
           "overview/quickstart/building-a-bot",
           "overview/quickstart/admin-dashboard",
-          "overview/quickstart/conversation-studio"
-        ]
+          "overview/quickstart/conversation-studio",
+        ],
       },
-      "overview/features"
-    ]
-  }
+      "overview/features",
+    ],
+  },
 ]
