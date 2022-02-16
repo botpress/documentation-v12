@@ -20,7 +20,7 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebar/sidebar.js"),
         },
         blog: {
           showReadingTime: true,
@@ -100,7 +100,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "chatbot-management/chatbot-analytics/built-in-analytics",
+            docId: "chatbot-management/language-understanding/misunderstood",
             position: "left",
             label: "Chatbot Management",
           },
@@ -174,6 +174,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
       },
     }),
-};
+}
 
-module.exports = config;
+module.exports = config
