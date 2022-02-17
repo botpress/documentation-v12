@@ -27,14 +27,12 @@ const draftPages = files
   .map((f) => {
     const data = fs.readFileSync(f)
     const content = fm(data.toString())
-    if (!content.body.match(/[a-z0-9]+/gi)) {
+    if (!content.body.match(/[a-z0-9]+/gi) || content.attributes.draft) {
       const localId = content.attributes.id
-      const lst = f.lastIndexOf("/")
       return f
         .slice(0, f.lastIndexOf("/") + 1)
         .concat(localId)
         .split("/docs/")[1]
-      // return strip tout ce qui est avant /docs/ et remplace le tout ce qui a apres le dernier / pour le local idt
     }
   })
   .filter((f) => !!f)
@@ -73,8 +71,6 @@ function filterDraftPages(sidebar) {
     })
     .filter((item) => !!item)
 }
-
-const daata = filterDraftPages(goingToProduction)
 
 module.exports = {
   overviewSidebar: filterDraftPages(overview),
