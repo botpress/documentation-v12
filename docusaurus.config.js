@@ -121,6 +121,11 @@ const config = {
             label: "Enterprise",
           },
           {
+            href: "https://botpress.com/reference/",
+            position: "right",
+            label: "SDK",
+          },
+          {
             type: "docsVersionDropdown",
             position: "right",
             dropdownItemsAfter: [

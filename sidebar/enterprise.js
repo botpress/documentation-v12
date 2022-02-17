@@ -23,6 +23,10 @@ module.exports = [
         type: "category",
         collapsible: true,
         label: "Authentication Methods",
+        link: {
+          type: "doc",
+          id: "enterprise/user-management-and-security/authentication-methods/authentication-methods"
+        },
         items: [
           "enterprise/user-management-and-security/authentication-methods/basic-authentication",
           "enterprise/user-management-and-security/authentication-methods/saml",
