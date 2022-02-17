@@ -1,10 +1,10 @@
 ---
 id: what-is-botpress
 title: What is Botpress?
-slug: '/'
+slug: "/"
 ---
 
---------------------
+---
 
 :::info Quick Definition
 Botpress is an open-source platform for developers to build high-quality digital assistants.
@@ -57,21 +57,21 @@ A chatbot is quite simple:
 1. It receives messages from Messaging **channels**.
 2. It **processes** these messages to understand, translate, or escalate underlying information.
 3. It **decides** how to respond to the user
-![High-Level Diagram](/assets/hld.png)
-The red dots are the developer extension points. These indicate where a chatbot developer can inject code to customize their chatbot.
+   ![High-Level Diagram](/assets/hld.png)
+   The red dots are the developer extension points. These indicate where a chatbot developer can inject code to customize their chatbot.
 
 ### Channels
 
 Think of a channel in the context of communication. Using this definition, we can describe a channel as any chat platform which connects your chatbot to the intended user, for example, Facebook Messenger. Botpress provides pre-built modules which allow your chatbot to send and receive messages from the following chat platforms:
- 
- - Website Embedded Chat
- - Facebook Messenger
- - Twilio
- - Slack
- - Telegram
- - Microsoft Teams
- - Sunshine Conversations
- - Vonage
+
+- Website Embedded Chat
+- Facebook Messenger
+- Twilio
+- Slack
+- Telegram
+- Microsoft Teams
+- Sunshine Conversations
+- Vonage
 
 :::note
 In Botpress, channels are installed and configured individually and locally, giving you complete control over the data transmitted between your chatbot and the chat platforms. Botpress does not proxy the messages to a 3rd party service.
@@ -104,7 +104,7 @@ Such an intervention is necessary and crucial as it is common for a chatbot to m
 
 #### Translation
 
-In most cases, a chatbot is built using a single language, for example, English. To reduce chatbot development times, Botpress offers multi-language support for users with a Pro license. This means that people who speak different languages can use the same chatbot employing in-built translation tools. 
+In most cases, a chatbot is built using a single language, for example, English. To reduce chatbot development times, Botpress offers multi-language support for users with a Pro license. This means that people who speak different languages can use the same chatbot employing in-built translation tools.
 
 ### Dialog Manager
 
@@ -163,7 +163,7 @@ botpress-server
 │ ├── modules <1> # assets related to activated modules
 │ ├── ui-admin <2> # # assets related to the main admin user interface
 │ ├── ui-studio # assets related to the studio user interface
-│ └── # etc... 
+│ └── # etc...
 │
 └── modules
 ├── nlu.tgz
@@ -177,26 +177,28 @@ After the Dialog Manager has decided how your chatbot should reply to a specific
 
 ### Content Element
 
-A Content Element is a structured object that holds information about what to say (for instance, the text phrase displayed to the user). 
+A Content Element is a structured object that holds information about what to say (for instance, the text phrase displayed to the user).
 
 ### Content Type
 
 A Content Type defines the nature of what the chatbot sends. Examples are a text message, an image, and a card.
 
 ### Content Renderer
+
 A Content Renderer is a function that transforms that structured object into a platform-specific message (for example, making some of the response text bold or italicized on Facebook Messenger).
 
 The purpose of a Content Renderer is to allow developers to specify how the same information should behave (i.e., be displayed) on different chat platforms.
 
 ## Modules
 
-A module is an extra component outside of the Botpress Core itself that you can install in your chatbot to add new features to Botpress. Every chatbot uses modules in a way since almost everything in Botpress is a module. 
+A module is an extra component outside of the Botpress Core itself that you can install in your chatbot to add new features to Botpress. Every chatbot uses modules in a way since almost everything in Botpress is a module.
 
-This modular architecture allows for maximum flexibility and freedom for developers. It also ensures that any customizations are applied without affecting the smooth running of the Botpress Core. 
+This modular architecture allows for maximum flexibility and freedom for developers. It also ensures that any customizations are applied without affecting the smooth running of the Botpress Core.
 
 As a developer, you can create your own [custom module](/building-chatbots/developers/custom-modules) to add extra functionalities to your chatbot.
 
 ## Event Engine Overview
+
 Below is a complete overview of the components implied in processing an event (ex: a message sent by a user). It is mostly informational, and you won't use most of these components directly. We have included it only to give you an insight into the bigger picture of the elements involved and how they interact.
 
 ![Event engine](/assets/event_enginev2.2.png)

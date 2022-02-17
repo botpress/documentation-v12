@@ -6,7 +6,7 @@ const config = {
   title: "Botpress Documentation",
   tagline: "Making Machines Understand Humans",
   url: "https://botpress.com",
-  baseUrl: "/",
+  baseUrl: process.env.BASE_URL || "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/BlackSymbol.svg",
@@ -20,13 +20,23 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebar/sidebar.js"),
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "Latest",
+            },
+          },
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        gtag: {
+          trackingID: 'GTM-5ZGHFCL',
+          anonymizeIP: false,
         },
       }),
     ],
@@ -100,7 +110,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "chatbot-management/chatbot-analytics/built-in-analytics",
+            docId: "chatbot-management/language-understanding/misunderstood",
             position: "left",
             label: "Chatbot Management",
           },
@@ -109,6 +119,25 @@ const config = {
             docId: "enterprise/licensing/enterprise-licensing",
             position: "left",
             label: "Enterprise",
+          },
+          {
+            type: "docsVersionDropdown",
+            position: "right",
+            dropdownItemsAfter: [
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/installation/",
+                label: "v12.26.7",
+              },
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/11.9.6/installation/",
+                label: "v11.9.6",
+              },
+              {
+                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/versions",
+                label: "(Older docs) 11.0 to v12.26",
+              },
+            ],
+            dropdownActiveClassDisabled: true,
           },
           {
             type: "search",
@@ -174,6 +203,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
       },
     }),
-};
+}
 
-module.exports = config;
+module.exports = config
