@@ -188,6 +188,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/getbotpress",
               },
+              {
+                label: "Forum",
+                href: "https://github.com/botpress/botpress/discussions",
+              },
             ],
           },
           {
