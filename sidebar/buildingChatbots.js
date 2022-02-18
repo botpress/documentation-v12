@@ -97,6 +97,10 @@ module.exports = [
         type: "category",
         collapsible: true,
         label: "Intents",
+        link: {
+          type: "doc",
+          id: "building-chatbots/language-understanding/intents/intents"
+        },
         items: [
           "building-chatbots/language-understanding/intents/slots",
           "building-chatbots/language-understanding/intents/spell-checking"
@@ -106,6 +110,10 @@ module.exports = [
         type: "category",
         collapsible: true,
         label: "Entities",
+        link: {
+          type: "doc",
+          id: "building-chatbots/language-understanding/entities/entities"
+        },
         items: [
           "building-chatbots/language-understanding/entities/system-entities",
           "building-chatbots/language-understanding/entities/list-entities",
