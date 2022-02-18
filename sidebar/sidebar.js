@@ -1,61 +1,45 @@
+const fs = require("fs")
+const path = require("path")
 const overview = require("./overview")
 const buildingChatbots = require("./buildingChatbots")
 const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
 const chatbotManagement = require("./chatbotManagement")
 const enterprise = require("./enterprise")
+const fm = require("front-matter")
 
-const draftPages = [
-  "qna-item/convert-to-intent",
-  "conversation-hooks",
-  "ci-cd-hooks",
-  "code-execution",
-  "website-interactions",
-  "website-embedding/jwt-authentication",
-  "botpress-webchat/standalone-webchat",
-  "welcome-screen",
-  "customizations",
-  "custom-widgets",
-  "environment-migrations",
-  "chatbot-migrations",
-  "import-export",
-  "read-write-production",
-  "read-only-production",
-  "multi-stage-environment",
-  "going-to-production/windows",
-  "linux",
-  "revisions-and-rollback",
-  "promote-through-pipeline",
-  "language-understanding/questions-&-answers/feedback",
-  "content-management",
-  "server-hooks",
-  "built-in-analytics",
-  "custom-analytics",
-  "integrations",
-  "import-nodejs-libraries",
-  "environment-variables",
-  "code-sharing",
-  "automated-testing",
-  "trigger-a-flow",
-  "rich-context-as-answer",
-  "enable-disable",
-  "language-understanding/contexts",
-  "workflow-triggering",
-  "rich-messages",
-  "language-understanding/questions-&-answeres/feedback",
-  "bulk-import-export",
-  "spell-checking",
-  "flow-editor/flow-lifecycle/",
-  "flow-lifecycle/custom-transitions",
-  "skill-nodes/single-choice",
-  "skill-nodes/auth-gate",
-  "skill-nodes/custom-skills",
-  "custom-content-elements",
-  "custom-actions",
-  "developers/file-system",
-  "multi-lingual-chatbots/language-understanding",
-  "/deploy/windows",
-]
+function readDirRecursive(dirPath) {
+  const dirEnts = fs.readdirSync(dirPath, { withFileTypes: true })
+  return dirEnts.flatMap((entry) => {
+    const filePath = path.join(dirPath, entry.name)
+    if (entry.isFile()) {
+      return [filePath]
+    } else {
+      return readDirRecursive(filePath)
+    }
+  })
+}
+
+const docsPath = path.join(__dirname, "../docs")
+const files = readDirRecursive(docsPath)
+
+const draftPages = files
+  .map((f) => {
+    const data = fs.readFileSync(f)
+    const content = fm(data.toString())
+    if (!content.body.match(/[a-z0-9]+/gi) || content.attributes.draft) {
+      const localId = content.attributes.id
+      return f
+        .slice(0, f.lastIndexOf("/") + 1)
+        .concat(localId)
+        .split("/docs/")[1]
+    }
+  })
+  .filter((f) => !!f)
+
+if (process.env.NODE_ENV !== "production") {
+  console.log("draft pages are", draftPages)
+}
 
 function isDraft(pageLink) {
   return draftPages.some((draft) => pageLink.includes(draft))
@@ -87,8 +71,6 @@ function filterDraftPages(sidebar) {
     })
     .filter((item) => !!item)
 }
-
-const daata = filterDraftPages(goingToProduction)
 
 module.exports = {
   overviewSidebar: filterDraftPages(overview),
