@@ -46,10 +46,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }],
-      algolia: {
-        apiKey: "570227d66d130d069630e7226c740158",
-        indexName: "botpress",
-      },
       prism: {
         theme: require("./src/utils/prism/lightTheme.js"),
         // additionalLanguages: ["bash", "javascript", "jsx", "tsx", "json"],
