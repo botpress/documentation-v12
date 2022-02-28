@@ -40,15 +40,15 @@ const config = {
         },
       }),
     ],
-  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }],
       algolia: {
-        apiKey: "570227d66d130d069630e7226c740158",
-        indexName: "botpress",
+        apiKey: process.env.ALGOLIA_API_KEY,
+        appId: process.env.ALGOLIA_APP_ID,
+        indexName: process.env.ALGOLIA_INDEX,
       },
       prism: {
         theme: require("./src/utils/prism/lightTheme.js"),
