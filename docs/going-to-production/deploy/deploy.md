@@ -13,7 +13,7 @@ You can build Botpress from the [source repository](https://github.com/botpress/
 
 ### Prerequisites
 
-Install node version 12.18.1 for [your operating system](https://nodejs.org/download/release/v12.18.1/). 
+Install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to manage node version
 
 :::tip
 On Windows, download and use the `.msi` installer.
@@ -25,10 +25,11 @@ Install [Yarn package manager](https://yarnpkg.com/).
 While in the directory where you want to host your instance of Botpress, run the following commands in this sequence:
 
 1. `git clone git@github.com:botpress/botpress.git && cd botpress`
-2. `yarn cache clean` (proceed to the next step if this command fails)
-3. `yarn`
-4. `yarn build`
-5. `yarn start`
+2. `nvm use`
+3. `yarn cache clean` (proceed to the next step if this command fails)
+4. `yarn`
+5. `yarn build`
+6. `yarn start`
 
 If you bumped into some errors during the execution of the `yarn build` command, you can try resetting your local repository:
 1. Go to the [Releases](https://github.com/botpress/botpress/releases) page.
