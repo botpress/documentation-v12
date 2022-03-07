@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const config = {
   title: "Botpress Documentation",
@@ -47,9 +46,10 @@ const config = {
     ({
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }],
       algolia: {
-        apiKey: process.env.ALGOLIA_API_KEY,
-        appId: process.env.ALGOLIA_APP_ID,
-        indexName: process.env.ALGOLIA_INDEX,
+        apiKey: process.env.ALGOLIA_API_KEY || "empty",
+        appId: process.env.ALGOLIA_APP_ID || "empty",
+        indexName: process.env.ALGOLIA_INDEX || "empty",
+        contextualSearch: false, //leave it as is. For some reason, activating this adds docusaurus tag facets, thus algolia returns 0 hits.
       },
       prism: {
         theme: require("./src/utils/prism/lightTheme.js"),
