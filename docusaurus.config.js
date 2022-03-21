@@ -27,7 +27,6 @@ const config = {
             },
           },
           editUrl: 'https://github.com/botpress/documentation/edit/main/docs',
-          // Equivalent to `docsUrl`.
         },
         blog: {
           showReadingTime: true,
@@ -51,7 +50,6 @@ const config = {
         apiKey: process.env.ALGOLIA_API_KEY || "empty",
         appId: process.env.ALGOLIA_APP_ID || "empty",
         indexName: process.env.ALGOLIA_INDEX || "empty",
-        contextualSearch: false, //leave it as is. For some reason, activating this adds docusaurus tag facets, thus algolia returns 0 hits.
       },
       prism: {
         theme: require("./src/utils/prism/lightTheme.js"),
