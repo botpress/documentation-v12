@@ -3,7 +3,7 @@ id: slack
 title: Slack
 ---
 
---------------------
+---
 
 ## Requirements
 
@@ -31,7 +31,7 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 
 2. Click **Create new app**, select **From scratch** then give it a name. Remember your App's name, you'll need it in a few minutes.
 
-3. Open the page **Features**, then select **Interactivity & Shortcuts** and turn the **Interactivity** switch to *On*.
+3. Open the page **Features**, then select **Interactivity & Shortcuts** and turn the **Interactivity** switch to _On_.
 
 4. Set the request URL to: `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID>/slack/interactive`.
 
@@ -42,7 +42,7 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 
 6. Open the page **Features**. Then, click **OAuth & Permissions** and add `chat:write` under the **Scope** > **Bot Token Scopes** section.
 
-7. Open the page Features**, then click **App Home** and under the **Show Tabs** section, check **Allow users to send Slash commands and messages from the messages tab**.
+7. Open the page Features**, then click **App Home** and under the **Show Tabs** section, check **Allow users to send Slash commands and messages from the messages tab\*\*.
 
 8. From the **Settings**, go to the **Basic Information**. Then, go to the **Install app** section, install the app by clicking the **Install to Workspace** button. On the next screen, click the **Allow** button.
 
@@ -80,6 +80,10 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 
 - Replace `EXTERNAL_URL` by the value of `externalUrl` in your `botpress.config.json`;
 - Replace `YOUR_BOT_ID` with your bot ID.
+
+:::caution
+If the slack endpoint is responding with `Cannot resolve challenge`. The configuration above is not set in the right place. The configuration need to be inside the **chatbot configuration**.
+:::
 
 13. Under **Subscribe to bot event**, add `message.im` and `message.channels` (you can also add other types of messages if you want).
 
