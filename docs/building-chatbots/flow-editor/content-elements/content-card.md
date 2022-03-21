@@ -3,31 +3,11 @@ id: content-card
 title: Content - Card
 ---
 
---------------------
+---
 
 A card is a message with a title and an optional subtitle that contains an image and action buttons.
 
 ![Card Example](/assets/card-example.png)
-
-## Add a Card in a Node
-
-1. In the Flow Editor, click the node where you want to add your card.
-1. Choose where to put your card: **On Enter**, **On Receive**, or **Transitions**.
-1. Click the **+** button.
-1. Under **Message**, click the box.
-    1. In the **Pick Content** dialog, under **Search In**, select **Card**.
-    1. You can either:
-        - Select an existing card in the list.
-        :::info 
-        This will bring you directly to step 5.
-        :::
-        - Click the **Create new Card** button.
-    1. A new window will be displayed where you can modify the following options:
-        - The **[Title](#title)** box.
-        - The **[Subtitle](#subtitle)** box.
-        - The **[Image](#image)** button.
-    1. Click **Submit**.
-1. Click **Add Action (Alt+Enter)**.
 
 ### Options
 
@@ -47,7 +27,7 @@ Your title should be short, precise, and relevant.
 
 #### Subtitle
 
-The subtitle gives extra information (that couldn't be in the title) about the card. 
+The subtitle gives extra information (that couldn't be in the title) about the card.
 
 :::tip
 The subtitle should be a complement for the title. It should add relevant information for the user.
@@ -57,7 +37,7 @@ The subtitle should be a complement for the title. It should add relevant inform
 
 There are two ways to add an image:
 
-- Under **Image**, click the square with an up arrow. Then, you can choose which image you want to add there from your storage. 
+- Under **Image**, click the square with an up arrow. Then, you can choose which image you want to add there from your storage.
 - Under **Image**, click the **Or enter URL** button at the bottom right of the square. A box will appear and you can type the URL of your image.
 
 :::note
@@ -69,12 +49,12 @@ Don't forget to take a look at the list of [supported formats](/building-chatbot
 An action button is a button that triggers an action.
 
 1. When creating your card, there is a **Add Action Button** button that you can click. This will open a new dialog box.
-    1. Under **[Title of the button](#title-of-the-button)**, type the name you want to give to your button.
-    1. Under **[action](#action)**, you can select either:
-        - **Say something**;
-        - **Open URL**;
-        - **Postback**.
-    1. The last box is about entering a text or the ID of a content element that you want to show in the conversation.
+   1. Under **[Title of the button](#title-of-the-button)**, type the name you want to give to your button.
+   1. Under **[action](#action)**, you can select either:
+      - **Say something**;
+      - **Open URL**;
+      - **Postback**.
+   1. The last box is about entering a text or the ID of a content element that you want to show in the conversation.
 1. Click **Submit**.
 
 ### Options

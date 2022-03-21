@@ -2,7 +2,7 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Getting Started",
+    label: "Overview",
     items: [
       "building-chatbots/creating-a-new-bot",
       "building-chatbots/studio-interface"

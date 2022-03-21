@@ -3,9 +3,10 @@ id: enterprise-licensing
 title: Enterprise Licensing
 ---
 
---------------------
+---
 
-The server license tab is meant to be used when you want to have a enterprise environment. This enables a lot of new [options and features(/overview/features/enterprise-specific-features)]. Don't forget that you also have all the other features of the free edition.
+<!--
+The server license tab is meant to be used when you want to have a enterprise environment. This enables a lot of new [options and features(/overview/features/enterprise-specific-features)]. Don't forget that you also have all the other features of the free edition. -->
 
 ## Obtain a License
 
@@ -20,7 +21,7 @@ When giving us you URL information to get your license key, don't forget that it
 1. In your Admin Dashboard, go to the **Server License** tab.
 1. Click **Enable Pro & Reboot Server**.
 1. Click **Enable** in the dialog box.
-    ...Wait for the server to reboot...
+   ...Wait for the server to reboot...
 1. Click **Enter license key**.
 1. Paste the license key that you were given.
 1. Click **Validate**.

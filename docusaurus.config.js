@@ -87,39 +87,20 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "overview/what-is-botpress",
+            docId: "tutorials/installation",
             position: "left",
-            label: "Overview",
+            label: "Lessons",
+          },         {
+            type: "doc",
+            docId: "going-to-production/deploy/docker-compose",
+            position: "left",
+            label: "How-to guide",
           },
           {
             type: "doc",
-            docId: "building-chatbots/creating-a-new-bot",
+            docId: "reference/messaging-api",
             position: "left",
-            label: "Building Chatbots",
-          },
-          {
-            type: "doc",
-            docId: "messaging-channels/supported-channels",
-            position: "left",
-            label: "Messaging Channels",
-          },
-          {
-            type: "doc",
-            docId: "going-to-production/deploy/deploy",
-            position: "left",
-            label: "Going to Production",
-          },
-          {
-            type: "doc",
-            docId: "chatbot-management/language-understanding/misunderstood",
-            position: "left",
-            label: "Chatbot Management",
-          },
-          {
-            type: "doc",
-            docId: "enterprise/licensing/enterprise-licensing",
-            position: "left",
-            label: "Enterprise",
+            label: "Reference",
           },
           {
             href: "https://botpress.com/reference/",
@@ -157,10 +138,6 @@ const config = {
           {
             title: "Docs",
             items: [
-              {
-                label: "Overview",
-                to: "overview/what-is-botpress",
-              },
               {
                 label: "Building Chatbots",
                 to: "building-chatbots/creating-a-new-bot",

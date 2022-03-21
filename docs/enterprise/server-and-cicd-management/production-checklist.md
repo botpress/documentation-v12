@@ -3,7 +3,7 @@ id: production-checklist
 title: Production Checklist
 ---
 
---------------------
+---
 
 This enterprise feature helps you visualize what you need to do before going to production. It lists all the important steps to do:
 
@@ -13,13 +13,16 @@ Once your server is correctly setup, we recommend disabling this page by setting
 
 ## Enable Botpress Professional
 
-The section about [enterprise licensing](/enterprise/licensing/enterprise-licensing) shows you how to obtain, add, and activate your license. Remember that the Botpress Professional version comes with a lot of [enterprise-specific features](/overview/features#enterprise-specific-features). 
+<!--
+The section about [enterprise licensing](/enterprise/licensing/enterprise-licensing) shows you how to obtain, add, and activate your license. Remember that the Botpress Professional version comes with a lot of [enterprise-specific features](/overview/features#enterprise-specific-features).  -->
 
 **Environment variables:**
+
 - `BP_CONFIG_PRO_ENABLED`
 - `BP_CONFIG_PRO_LICENSEKEY`
 
 **Values in the botpress.config.json file:**
+
 - `pro.enabled`
 - `pro.licenseKey`
 
@@ -28,6 +31,7 @@ The section about [enterprise licensing](/enterprise/licensing/enterprise-licens
 You should use a [Postgres database instead of a SQlite database](/building-chatbots/developers/database#how-to-switch-from-sqlite-to-postgressql). Postgres is more resilient and allows to run Botpress in [cluster mode](/going-to-production/deploy/enterprise-scaling) (using multiple servers).
 
 **Environment variable:**
+
 - `DATABASE_URL`
 
 ## Use the database BPFS storage
@@ -36,6 +40,7 @@ When you [set this option](/building-chatbots/language-understanding/hosting), a
 Multiple servers can then synchronously access the same latest data.
 
 **Environment variable:**
+
 - `BPFS_STORAGE`
 
 ## Run Botpress in production mode
@@ -48,21 +53,25 @@ When you run Botpress in production, these changes happen:
 - Using multiple servers (cluster mode) is enabled.
 
 **Environment variable:**
+
 - `BP_PRODUCTION`
 
 ## Configure the external server URL
 
-Using an external server URL may cause multiple issues in production, like resources not displaying correctly or links not working. 
+Using an external server URL may cause multiple issues in production, like resources not displaying correctly or links not working.
 
 :::note Notes
+
 - By default, Botpress starts an [HTTP server on localhost, listening to port 3000](/going-to-production/deploy/#http-server-configuration).
 - When using Botpress Professional, this value is also used to validate your license.
-:::
+  :::
 
 **Environment variable:**
+
 - `EXTERNAL_URL`
 
 **Value in the botpress.config.json file:**
+
 - `httpServer.externalUrl`
 
 ## Enable Redis support
@@ -70,19 +79,21 @@ Using an external server URL may cause multiple issues in production, like resou
 Redis allows you to run multiple Botpress servers using the same data. Only `REDIS_URL` and `CLUSTER_ENABLED` are required. Simply use the same URL for Redis and set the `BP_REDIS_SCOPE` environment variable to `prod` on your production environment and `staging` on your staging environment.
 
 **Environment variables:**
+
 - `REDIS_URL`
 - `CLUSTER_ENABLED`
 - `BP_REDIS_SCOPE`
 
 ## Restrict CORS to your own domain
 
-You can either disable CORS completely (set to `false`), or set an allowed origin. 
+You can either disable CORS completely (set to `false`), or set an allowed origin.
 
 :::info
 By default, Botpress allows any origin to reach the server.
 :::
 
 **Values in the botpress.config.json file:**
+
 - `httpServer.cors.enabled`
 - `httpServer.cors.origin`
 
@@ -95,6 +106,7 @@ You must configure the CORS policy before.
 :::
 
 **Values in the botpress.config.json file:**
+
 - `jwtToken.useCookieStorage`
 - `jwtToken.cookieOptions`
 - `httpServer.cors.credentials`
@@ -104,6 +116,7 @@ You must configure the CORS policy before.
 The [default language server](/building-chatbots/language-understanding/hosting#language-server) configured with Botpress is a public server with request limitations.
 
 **Value in the botpress.config.json file:**
+
 - `nlu.json: languageSources`
 
 ## Securing your server with HTTPS
@@ -121,17 +134,19 @@ When using polling as a primary or secondary socket transport, you must enable s
 See this documentation for more details: https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required.
 
 **Value in the botpress.config.json file:**
+
 - `httpServer.socketTransport`
 
 ## Output logs to the filesystem
 
-By default, Botpress does some minimal [logging](/going-to-production/deploy/#logs-configuration) to the database. 
+By default, Botpress does some minimal [logging](/going-to-production/deploy/#logs-configuration) to the database.
 
 :::tip Best Practice
 You should enable the log output on the file system.
 :::
 
 **Value in the botpress.config.json file:**
+
 - `logs.fileOutput.enabled`
 
 ## Change Botpress base path
@@ -140,7 +155,7 @@ By default, all requests are handled at the top level of the external URL. You c
 
 ## Create custom roles and review permissions
 
-There is a default set of [role and permissions](/enterprise/user-management-and-security/role-based-access-control/roles) when you create a workspace. 
+There is a default set of [role and permissions](/enterprise/user-management-and-security/role-based-access-control/roles) when you create a workspace.
 
 :::tip Best Practice
 You should review and update them.
@@ -148,7 +163,7 @@ You should review and update them.
 
 ## Enable other authentication mechanism
 
-The default authentication method is the [basic one](/enterprise/user-management-and-security/authentication-methods/basic-authentication). 
+The default authentication method is the [basic one](/enterprise/user-management-and-security/authentication-methods/basic-authentication).
 
 :::note
 We currently support [LDAP](/enterprise/user-management-and-security/authentication-methods/ldap), [SAML](/enterprise/user-management-and-security/authentication-methods/saml), and [OAuth2](/enterprise/user-management-and-security/authentication-methods/oauth2).

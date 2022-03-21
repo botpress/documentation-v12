@@ -1,11 +1,13 @@
 const fs = require("fs")
 const path = require("path")
-const overview = require("./overview")
 const buildingChatbots = require("./buildingChatbots")
 const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
 const chatbotManagement = require("./chatbotManagement")
 const enterprise = require("./enterprise")
+const tutorials = require("./tutorials")
+const how_to = require("./how-to")
+const reference = require("./reference")
 const fm = require("front-matter")
 
 function readDirRecursive(dirPath) {
@@ -73,10 +75,12 @@ function filterDraftPages(sidebar) {
 }
 
 module.exports = {
-  overviewSidebar: filterDraftPages(overview),
   buildingChatbotsSidebar: filterDraftPages(buildingChatbots),
   goingToProductionSidebar: filterDraftPages(goingToProduction),
   messagingSidebar: filterDraftPages(messaging),
   chatbotManagementSidebar: filterDraftPages(chatbotManagement),
   enterpriseSidebar: filterDraftPages(enterprise),
+  tutorials: filterDraftPages(tutorials),
+  how_to: filterDraftPages(how_to),
+  reference: filterDraftPages(reference)
 }
