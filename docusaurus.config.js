@@ -41,7 +41,6 @@ const config = {
       }),
     ],
   ],
-  themes: ["@docusaurus/theme-search-algolia"],
   themeConfig:
     ({
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }],
