@@ -43,7 +43,7 @@ const config = {
   ],
   themeConfig:
     ({
-      metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }],
+      metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }, {name:"docsearch:docusaurus_tag", content:"docs-default-current"}],
       algolia: {
         apiKey: process.env.ALGOLIA_API_KEY || "empty",
         appId: process.env.ALGOLIA_APP_ID || "empty",
