@@ -82,7 +82,7 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 - Replace `YOUR_BOT_ID` with your bot ID.
 
 :::caution
-If the slack endpoint is responding with `Cannot resolve challenge`. The configuration above step 9 is not set in the right place. The configuration need to be inside the **chatbot configuration**.
+If the slack endpoint is responding with `Cannot resolve challenge`. The configuration at step 9 is not set in the right place. The configuration need to be inside the **chatbot configuration**.
 :::
 
 13. Under **Subscribe to bot event**, add `message.im` and `message.channels` (you can also add other types of messages if you want).
