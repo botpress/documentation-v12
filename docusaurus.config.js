@@ -147,7 +147,7 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "overview/what-is-botpress",
+                to: "/",
               },
               {
                 label: "Building Chatbots",
