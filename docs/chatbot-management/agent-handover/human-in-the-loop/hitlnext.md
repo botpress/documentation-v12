@@ -32,7 +32,7 @@ A multi-agent setup needs an enterprise license.
 Turn on HITL-next on the module management page of your Botpress Admin.
 ![Enable Module](/assets/enable-module.png)
 
-You can also enable the module directly in your `botpress.config.json` file as shown [here](https://botpress.com/docs/main/module#enabling-or-disabling-modules).
+You can also enable the module directly in your `botpress.config.json` file as shown [here](/enterprise/user-management-and-security/role-based-access-control/collaborators).
 
 ## Agent Interface
 
