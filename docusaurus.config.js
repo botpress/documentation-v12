@@ -163,7 +163,7 @@ const config = {
               },
               {
                 label: "Chatbot Management",
-                to: "chatbot-management/chatbot-analytics/built-in-analytics",
+                to: "chatbot-management/language-understanding/misunderstood",
               },
               {
                 label: "Enterprise",
