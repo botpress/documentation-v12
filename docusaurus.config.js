@@ -147,7 +147,7 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "overview/what-is-botpress",
+                to: "/",
               },
               {
                 label: "Building Chatbots",
@@ -159,11 +159,11 @@ const config = {
               },
               {
                 label: "Going to Production",
-                to: "going-to-production/deploy/deploy",
+                to: "going-to-production/deploy",
               },
               {
                 label: "Chatbot Management",
-                to: "chatbot-management/chatbot-analytics/built-in-analytics",
+                to: "chatbot-management/language-understanding/misunderstood",
               },
               {
                 label: "Enterprise",
