@@ -159,7 +159,7 @@ const config = {
               },
               {
                 label: "Going to Production",
-                to: "going-to-production/deploy/deploy",
+                to: "going-to-production/deploy",
               },
               {
                 label: "Chatbot Management",
