@@ -50,6 +50,14 @@ const config = {
         indexName: process.env.ALGOLIA_INDEX || "empty",
         contextualSearch: false, //leave it as is. For some reason, activating this adds docusaurus tag facets, thus algolia returns 0 hits.
         searchPagePath: 'search',
+        custom_settings: {
+          attributesForFaceting: [
+            "language",
+            "version",
+            "type",
+            "docusaurus_tag"
+          ]
+        }
       },
       prism: {
         theme: require("./src/utils/prism/lightTheme.js"),
