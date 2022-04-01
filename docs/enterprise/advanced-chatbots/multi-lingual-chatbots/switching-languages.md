@@ -3,7 +3,7 @@ id: switching-languages
 title: Switching Languages
 ---
 
---------------------
+---
 
 Switching languages in your Botpress instance is very easy.
 
@@ -22,13 +22,13 @@ You'll see a `missing translation` notification on your content.
 
 1. Click the **Flow** tab.
 1. Find the node that you want to translate.
-2. Edit the text in the **Inspector**.
-:::tip
-You can click the info button ![info-button](/assets/info-button.png) and it pastes the message in the default language.
-::: 
-4. Write a translation (where your text is red with **(missing translation)** next to it).
+1. Edit the text in the **Inspector**.
+   :::tip
+   You can click the info button ![info-button](/assets/info-button.png) and it pastes the message in the default language.
+   :::
+1. Write a translation (where your text is red with **(missing translation)** next to it).
 
-You can now [manage your content](/enterprise/advanced-chatbots/multi-lingual-chatbots/content-management).
+You can now manage your content.
 
 :::info
 You can't create the original content in another language than the default one. You will have this message displayed:

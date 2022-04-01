@@ -12,12 +12,12 @@ Botpress is an open-source platform for developers to build high-quality digital
 
 At its core, Botpress is a tool to simplify building chatbots for developers. The platform puts together the boilerplate code and infrastructure you need to get a chatbot up and running and gives a complete dev-friendly platform that ships with all the tools you need to build, deploy, and manage production-grade chatbots in record time. The platform includes:
 
-- Built-in [Natural Language Processing](/building-chatbots/language-understanding/supported-languages) tasks such as [intent classification](/building-chatbots/language-understanding/intents/slots), [spell checking](/building-chatbots/language-understanding/intents/spell-checking), [entity extraction](/building-chatbots/language-understanding/entities/system-entities), and many others;
+- Built-in [Natural Language Processing](/building-chatbots/language-understanding/supported-languages) tasks such as [intent classification](/building-chatbots/language-understanding/intents/slots), spell checking, [entity extraction](/building-chatbots/language-understanding/entities/system-entities), and many others;
 - A visual [Conversation Studio](/overview/quickstart/conversation-studio) to design multi-turn conversations and workflows;
 - An [emulator](/building-chatbots/testing-&-debugging/emulator) & a [debugger](/building-chatbots/testing-&-debugging/debugger) to simulate conversations and debug your chatbot;
-- Support for popular messaging channels like [Slack](/messaging-channels/direct-integrations/slack), [Telegram](/messaging-channels/direct-integrations/telegram), [Microsoft Teams](/messaging-channels/direct-integrations/microsoft-teams), [Facebook Messenger](/messaging-channels/direct-integrations/facebook-messenger), and an [embeddable web chat](/messaging-channels/botpress-webchat/website-embedding/website-interactions);
+- Support for popular messaging channels like [Slack](/messaging-channels/direct-integrations/slack), [Telegram](/messaging-channels/direct-integrations/telegram), [Microsoft Teams](/messaging-channels/direct-integrations/microsoft-teams), [Facebook Messenger](/messaging-channels/direct-integrations/facebook-messenger), and an embeddable web chat;
 - An SDK and Code Editor to extend the capabilities;
-- [Post-deployment](/going-to-production/deploy/linux) tools like [analytics](/chatbot-management/chatbot-analytics/built-in-analytics), [human handoff](/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
+- [Post-deployment](/going-to-production/deploy/linux) tools like analytics, [human handoff](/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
 
 ## With Botpress, You Can...
 

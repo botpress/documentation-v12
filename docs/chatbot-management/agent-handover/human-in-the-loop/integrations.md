@@ -1,6 +1,0 @@
----
-id: integrations
-title: Integrations
----
-
---------------------
