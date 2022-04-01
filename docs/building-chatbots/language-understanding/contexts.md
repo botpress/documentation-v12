@@ -1,6 +1,0 @@
----
-id: contexts
-title: Contexts
----
-
---------------------
