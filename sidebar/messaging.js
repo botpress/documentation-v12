@@ -22,19 +22,14 @@ module.exports = [
           id: "messaging-channels/botpress-webchat/website-embedding/website-embedding"
         },
         items: [
-          "messaging-channels/botpress-webchat/website-embedding/website-interactions",
-          "messaging-channels/botpress-webchat/website-embedding/jwt-authentication"
         ]
       },
-      "messaging-channels/botpress-webchat/standalone-webchat",
       {
         type: "category",
         collapsible: true,
         label: "Customizations",
         items: [
-          "messaging-channels/botpress-webchat/customizations/custom-widgets",
           "messaging-channels/botpress-webchat/customizations/custom-css",
-          "messaging-channels/botpress-webchat/customizations/welcome-screen"
         ]
       }
     ]
