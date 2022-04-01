@@ -60,8 +60,6 @@ module.exports = [
         label: "Pipelines",
         items: [
           "enterprise/server-and-cicd-management/pipelines/configure-pipeline",
-          "enterprise/server-and-cicd-management/pipelines/promote-through-pipeline",
-          "enterprise/server-and-cicd-management/pipelines/revisions-and-rollback"
         ]
       }
     ]
@@ -76,8 +74,6 @@ module.exports = [
         collapsible: true,
         label: "Multi-lingual Chatbots",
         items: [
-          "enterprise/advanced-chatbots/multi-lingual-chatbots/language-understanding",
-          "enterprise/advanced-chatbots/multi-lingual-chatbots/content-management",
           "enterprise/advanced-chatbots/multi-lingual-chatbots/switching-languages"
         ]
       }

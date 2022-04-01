@@ -23,7 +23,6 @@ module.exports = [
         },
         items: [
           "building-chatbots/flow-editor/flow-lifecycle/nodes-lifecycle",
-          "building-chatbots/flow-editor/flow-lifecycle/custom-transitions",
           "building-chatbots/flow-editor/flow-lifecycle/flow-wide-transitions"
         ]
       },
@@ -54,7 +53,6 @@ module.exports = [
         },
         items: [
           "building-chatbots/flow-editor/actions/built-in-actions",
-          "building-chatbots/flow-editor/actions/custom-actions"
         ]
       },
       {
@@ -66,7 +64,6 @@ module.exports = [
           "building-chatbots/flow-editor/skill-nodes/api-call",
           "building-chatbots/flow-editor/skill-nodes/slot-filling",
           "building-chatbots/flow-editor/skill-nodes/send-email",
-          "building-chatbots/flow-editor/skill-nodes/auth-gate",
           "building-chatbots/flow-editor/skill-nodes/custom-skills"
         ]
       }
@@ -87,10 +84,6 @@ module.exports = [
           id: "building-chatbots/language-understanding/questions-&-answers/questions-&-answers"
         },
         items: [
-          "building-chatbots/language-understanding/questions-&-answers/rich-messages",
-          "building-chatbots/language-understanding/questions-&-answers/workflow-triggering",
-          "building-chatbots/language-understanding/questions-&-answers/bulk-import-export",
-          "building-chatbots/language-understanding/questions-&-answers/feedback"
         ]
       },
       {
@@ -103,7 +96,6 @@ module.exports = [
         },
         items: [
           "building-chatbots/language-understanding/intents/slots",
-          "building-chatbots/language-understanding/intents/spell-checking"
         ]
       },
       {
@@ -120,7 +112,6 @@ module.exports = [
           "building-chatbots/language-understanding/entities/pattern-entities"
         ]
       },
-      "building-chatbots/language-understanding/contexts",
       "building-chatbots/language-understanding/external-nlu-engines",
       "building-chatbots/language-understanding/hosting"
     ]
@@ -132,7 +123,6 @@ module.exports = [
     items: [
       "building-chatbots/testing-&-debugging/emulator",
       "building-chatbots/testing-&-debugging/debugger",
-      "building-chatbots/testing-&-debugging/automated-testing"
     ]
   },
   {
@@ -162,11 +152,7 @@ module.exports = [
         items: [
           "building-chatbots/qna/qna-item/question-variations",
           "building-chatbots/qna/qna-item/answer-and-alternate",
-          "building-chatbots/qna/qna-item/rich-context-as-answer",
           "building-chatbots/qna/qna-item/context",
-          "building-chatbots/qna/qna-item/trigger-a-flow",
-          "building-chatbots/qna/qna-item/enable-disable",
-          "building-chatbots/qna/qna-item/convert-to-intent"
         ]
       }
     ]
@@ -176,33 +162,7 @@ module.exports = [
     collapsible: false,
     label: "Developers",
     items: [
-      {
-        type: "category",
-        collapsible: true,
-        label: "Code Execution",
-        link: {
-          type: "doc",
-          id: "building-chatbots/developers/code-execution/code-execution"
-        },
-        items: [
-          "building-chatbots/developers/code-execution/sdk",
-          "building-chatbots/developers/code-execution/code-sharing",
-          "building-chatbots/developers/code-execution/import-nodejs-libraries",
-          "building-chatbots/developers/code-execution/environment-variables"
-        ]
-      },
-      {
-        type: "category",
-        collapsible: true,
-        label: "Hooks",
-        items: [
-          "building-chatbots/developers/hooks/conversation-hooks",
-          "building-chatbots/developers/hooks/server-hooks",
-          "building-chatbots/developers/hooks/ci-cd-hooks"
-        ]
-      },
       "building-chatbots/developers/database",
-      "building-chatbots/developers/file-system",
       "building-chatbots/developers/custom-modules",
       "building-chatbots/developers/inter-bot-communication-delegation"
     ]
