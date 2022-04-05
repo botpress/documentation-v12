@@ -8,7 +8,7 @@ title: Custom CSS
 The Botpress webchat interface is fully customizable. You can change any of the styling using CSS. This can be done in two steps. 
 
 1. Firstly create your own cascading style sheet and name it anything you want. Then, paste your stylesheet in the `<botpress_dir>/data/assets/modules/channel-web` folder.
-2. Secondly, you need to reference your new style sheet to your integrated cextrashatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. 
+2. Secondly, you need to reference your new style sheet to your integrated chatbot. You can easily do this by referencing your new stylesheet using the `extraStylesheet` property. 
 
 Let us go through these steps in more detail.
 
