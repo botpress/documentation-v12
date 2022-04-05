@@ -15,7 +15,7 @@ title: Telegram
 
 ### Create a Bot
 
-To create a bot on Telegram, use Telegram's BotFather. The BotFather will ask you for a name and username, then generate an authorization token for your new bot.
+To create a bot on Telegram, use Telegram's [BotFather](https://t.me/botfather). The BotFather will ask you for a name and username, then generate an authorization token for your new bot.
 
 The name of your bot is displayed in contact details and elsewhere.
 
