@@ -41,6 +41,7 @@ docker run -p 3000:3000 --rm -it ghcr.io/botpress/botpress/server:next
 2. Enter the chatbot name
 ![chatbot name](/assets/cloud/first-chatbot.jpg)
 3. Copy the **key** and the **secret** for the next step
+![Key from the studio](/assets/cloud/cloud-key.png)
 
 ## Create a chatbot in the studio
 
@@ -48,19 +49,27 @@ In the studio,
 
 1. `Create Bot` > `New Bot` > `Enable Botpress Cloud`
 2. Copy the keys from the botpress cloud.
+![Key from the studio](/assets/cloud/studio-key.png)
 3. Create a node text.
 4. Train your chatbot
+
+:::caution
+If the bot is not train the telegram part will not work.
+:::
 
 ## In the cloud platform, enable telegram
 
 1. Open the botfather on [telegram](https://t.me/botfather)
 2. Start the conversation
 3. Type `/newbot` and follow the instruction.
+![telegram /newbot](/assets/cloud/telegram.png)
 
 ## Deploy your chatbot
 
 1. Get the HTTP API from the botfather.
+![API Key Telegram](/assets/cloud/api-key-telegram.png)
 2. Copy the keys, in the bot token 
+![API Key Telegram in the studio](/assets/cloud/api-key-telegram-studio.png)
 3. Deploy your chatbot
 
 ## Conclusion
