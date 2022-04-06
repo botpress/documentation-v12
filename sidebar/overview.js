@@ -17,14 +17,6 @@ module.exports = [
         ],
       },
       "overview/features",
-      {
-        type: 'category',
-        label: '<h1>Cloud</h1>',
-        collapsible: true,
-        items: [
-          "overview/cloud/first-chatbot",
-        ]
-      }
     ],
   },
   {
