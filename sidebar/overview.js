@@ -24,7 +24,7 @@ module.exports = [
     label: 'Cloud',
     collapsible: true,
     items: [
-      "overview/cloud/first-chatbot",
+      "overview/cloud/try-the-beta",
     ]
   }
 ]
