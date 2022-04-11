@@ -8,7 +8,7 @@ title: Facebook Messenger
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import FacebookPremises from './facebook/on-premises.md'
+import FacebookCommunity from './facebook/community.md'
 import FacebookCloud from './facebook/cloud.md'
 
 ## Requirements
@@ -37,11 +37,11 @@ Facebook only integrates its apps and services to secured endpoints. Below are t
 
 ## Installation
 
-You have 2 ways to setup your Messenger endpoint. The commmunity and the cloud version.
+You have 2 ways to setup your Messenger channel. The commmunity and the cloud version.
 
   <Tabs>
   <TabItem value="community" label="Community" default>
-  <FacebookPremises/>
+  <FacebookCommunity/>
   </TabItem>
   <TabItem value="cloud" label="Cloud">
   <FacebookCloud/>
