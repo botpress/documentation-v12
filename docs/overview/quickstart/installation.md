@@ -5,13 +5,22 @@ title: Installation
 
 ---
 
-Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch.
+Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch and also have an App installer to install Botpress globally.
 
-## Download
+## Quick Install
 
-The latest stable binaries are available for download [**here**](https://botpress.com/download). Alternatively, you may find all the versions and nightly builds in our public [**S3 Bucket**](https://s3.amazonaws.com/botpress-binaries/index.html).
+Head over to the [**download page**](https://botpress.com/download) for the latest version, and download and install according to your OS.
+If you are using linux, you must use the `sudo snap install Botpress_VERSION_NUMBER.snap --force-dangerous` command. You can then load Botpress by searching for the app on your operating system.
+ 
 
-## Install
+## Alternative - Download Binaries
+
+Binaries are useful if you want to run Botpress with special parameters, or if you want to run it from a server, or lightweight environment.
+
+The latest stable binaries are available for download [**here**](https://botpress.com/download).  Alternatively, you may find all the versions and nightly builds in our public [**S3 Bucket**](https://s3.amazonaws.com/botpress-binaries/index.html).
+
+
+## Alternative - Install Binaries
 
 To install Botpress, unzip the file you download somewhere on your computer. Make sure that your computer has at least:
 
@@ -20,9 +29,7 @@ To install Botpress, unzip the file you download somewhere on your computer. Mak
 - A 64 bits architecture;
 - The right to read/write to the Botpress directory and subdirectories.
 
-## Starting Botpress
-
-### Executable
+## Alternative - Starting Botpress Binaries
 
 To start Botpress, all you have to do is double-click on the `bp` file in the directory you extracted Botpress.
 
@@ -100,7 +107,7 @@ $ ./bp
 06/02/2021 07:24:29.912 launcher NLU Server is ready at http://localhost:3200/
 ```
 
-### Commands
+### Alternative - Commands
 
 You may also start Botpress Server using the Command Line Interface (CLI). To see all the commands available, run `./bp --help`.
 
