@@ -25,3 +25,5 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 9. From the **Settings**, go to the **Basic Information**. Then, go to the **Install app** section, install the app by clicking the **Install to Workspace** button. On the next screen, click the **Allow** button.
 
 10. From the **Basic Information** tab. Copy the **Client ID** and **Client Secret** into the App ID and App Secret respectly.
+
+11. Save the change and start chatting with your chatbot
