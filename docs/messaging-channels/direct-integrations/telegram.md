@@ -27,15 +27,19 @@ The name of your bot is displayed in contact details and elsewhere.
 
 The Username is a short name to be used in mentions and t.me links. Usernames are 5-32 characters long and are case insensitive but may only include Latin characters, numbers, and underscores. Your bot's username must end in `bot`, such as `tetris_bot` or `TetrisBot`.
 
-## Installation
+## Setup {#cloud}
 
-You have 2 ways to setup your slack channel. The commmunity and the cloud version.
+### Generate an Authorization Token
+
+When you create a Telegram bot, Botfather will automatically generate a token. The token is a string that is required to authorize the bot and send requests to the Bot API. Keep your token secure and store it safely; anyone can use it to control your bot.
+
+If your existing token is compromised or you lost it for some reason, use the `/token` command to generate a new one.
 
   <Tabs>
-  <TabItem value="community" label="Community" default>
+  <TabItem value="community" label="Local deployment" default>
   <TelegramCommunity/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Cloud deployment (Beta)">
   <TelegramCloud/>
   </TabItem>
   </Tabs>

@@ -40,10 +40,10 @@ Facebook only integrates its apps and services to secured endpoints. Below are t
 You have 2 ways to setup your Messenger channel. The commmunity and the cloud version.
 
   <Tabs>
-  <TabItem value="community" label="Community" default>
+  <TabItem value="community" label="Local deployment" default>
   <FacebookCommunity/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Cloud deployment (beta)">
   <FacebookCloud/>
   </TabItem>
   </Tabs>

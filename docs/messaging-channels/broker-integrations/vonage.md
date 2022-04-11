@@ -20,10 +20,10 @@ Currently, only WhatsApp is supported on this channel.
 :::
 
   <Tabs>
-  <TabItem value="community" label="Community" default>
+  <TabItem value="community" label="Local deployment" default>
   <VonageCommunity/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Cloud deployment (beta)">
   <VonageCloud/>
   </TabItem>
   </Tabs>

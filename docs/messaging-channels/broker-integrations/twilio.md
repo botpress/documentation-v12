@@ -16,10 +16,10 @@ import TwilioCloud from './twilio/cloud.md'
 You have 2 ways to setup your smooch channel. The commmunity and the cloud version.
 
 <Tabs>
-<TabItem value="community" label="Community" default>
+<TabItem value="community" label="Local deployment" default>
 <TwilioCommunity/>
 </TabItem>
-<TabItem value="cloud" label="Cloud">
+<TabItem value="cloud" label="Cloud deployment (beta)">
 <TwilioCloud/>
 </TabItem>
 </Tabs>

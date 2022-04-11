@@ -30,10 +30,10 @@ To test on localhost, you can also use services like [pagekite](https://pagekite
 You have 2 ways to setup your slack channel. The commmunity and the cloud version.
 
   <Tabs>
-  <TabItem value="community" label="Community" default>
+  <TabItem value="community" label="Local deployment" default>
   <SlackCommunity/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Cloud deployment (beta)">
   <SlackCloud/>
   </TabItem>
   </Tabs>
