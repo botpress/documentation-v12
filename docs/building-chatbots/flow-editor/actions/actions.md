@@ -49,6 +49,15 @@ There is no way to add new ones during runtime programmatically.
 
 We use JavaDoc comments to display meaningful information (such as name, description, arguments, default values) on the dialog flow editor. It is possible to keep an action hidden in the flow editor by adding the flag `@hidden true` in the JavaDoc.
 
+## External Libraries
+
+:::danger Deprecated Warning 
+`Libraries` is deprecated and will be removed in Botpress 13.
+:::
+
+Code in actions should be kept relatively simple. You can set counters, format data, fetch data from an api using the included axios library.
+If you need to use npm modules / libraries or libraries from other programming languages, we recommend you either set up a server for that purpose, or use serverless functions and then call the api using Botpress Actions. Using Botpress for heavy javascript computation use cases like image / video processing may cause latency issues for your bot. 
+
 ## Disabling Actions
 
 Botpress will ignore files starting with a dot (`.`). This way, you can disable a hook or Action by merely prefixing the file's name with a dot.
