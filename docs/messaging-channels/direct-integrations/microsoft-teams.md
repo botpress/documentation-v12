@@ -37,11 +37,11 @@ Since the framework V4 is still in active development, some of these instruction
 
 ## Channel Configuration
 
-  <Tabs>
+<Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <TeamsLocal/>
+    <TeamsLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
-  <TeamsCloud/>
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
+    <TeamsCloud/>
   </TabItem>
-  </Tabs>
+</Tabs>

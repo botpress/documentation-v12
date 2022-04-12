@@ -37,11 +37,11 @@ If your existing token is compromised or you lost it for some reason, use the `/
 
 ## Channel Configuration
 
-  <Tabs>
+<Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <TelegramLocal/>
+    <TelegramLocal/>
   </TabItem>
   <TabItem value="cloud" label="Botpress Cloud (beta)">
-  <TelegramCloud/>
+    <TelegramCloud/>
   </TabItem>
-  </Tabs>
+</Tabs>

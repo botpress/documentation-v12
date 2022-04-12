@@ -33,11 +33,11 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 
 ### Connecting Your Bot to Slack
 
-  <Tabs>
-    <TabItem value="community" label="Local deployment" default>
+<Tabs>
+  <TabItem value="community" label="Local deployment" default>
     <SlackLocal/>
     </TabItem>
     <TabItem value="cloud" label="Botpress Cloud (beta)">
     <SlackCloud/>
-    </TabItem>
-  </Tabs>
+  </TabItem>  
+</Tabs>

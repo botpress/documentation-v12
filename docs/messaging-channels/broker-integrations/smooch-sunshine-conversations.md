@@ -43,11 +43,11 @@ import SmoochCloud from './smooch/cloud.md'
 
 ## Channel Configuration
 
-  <Tabs>
+<Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <SmoochLocal/>
+    <SmoochLocal/>
   </TabItem>
   <TabItem value="cloud" label="Botpress Cloud (beta)">
-  <SmoochCloud/>
+    <SmoochCloud/>
   </TabItem>
-  </Tabs>
+</Tabs>

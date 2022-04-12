@@ -24,10 +24,10 @@ import TwilioCloud from './twilio/cloud.md'
 ## Channel Configuration
 
 <Tabs>
-<TabItem value="community" label="Local deployment" default>
-<TwilioLocal/>
-</TabItem>
-<TabItem value="cloud" label="Botpress Cloud (beta)">
-<TwilioCloud/>
-</TabItem>
+  <TabItem value="community" label="Local deployment" default>
+    <TwilioLocal/>
+  </TabItem>
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
+    <TwilioCloud/>
+  </TabItem>
 </Tabs>

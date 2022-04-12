@@ -37,14 +37,14 @@ Facebook only integrates its apps and services to secured endpoints. Below are t
 
 ## Channel Configuration
 
-  <Tabs>
+<Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <FacebookLocal/>
+    <FacebookLocal/>
   </TabItem>
   <TabItem value="cloud" label="Botpress Cloud (beta)">
-  <FacebookCloud/>
+    <FacebookCloud/>
   </TabItem>
-  </Tabs>
+</Tabs>
 
 ## Content-type
 

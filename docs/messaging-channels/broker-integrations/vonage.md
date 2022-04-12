@@ -32,11 +32,11 @@ Currently, only WhatsApp is supported on this channel.
 
 ## Channel Configuration
 
-  <Tabs>
+<Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <VonageLocal/>
+    <VonageLocal/>
   </TabItem>
   <TabItem value="cloud" label="Botpress Cloud (beta)">
   <VonageCloud/>
   </TabItem>
-  </Tabs>
+</Tabs>
