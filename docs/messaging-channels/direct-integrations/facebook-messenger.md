@@ -9,7 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import FacebookLocal from './facebook/local.md'
-import FacebookCloud from './facebook/local.md'
+import FacebookCloud from './facebook/cloud.md'
 
 ## Requirements
 
@@ -35,9 +35,7 @@ Facebook only integrates its apps and services to secured endpoints. Below are t
 - Using Nginx and Let's Encrypt. This tutorial bases on the Linux Ubuntu 16.04 Operating System. [**Tutorial**](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04).
 - Create an HTTPS tunnel to your machine using Serveo ([Tutorial](https://medium.com/automationmaster/how-to-forward-my-local-port-to-public-using-serveo-4979f352a3bf)).
 
-## Installation
-
-You have 2 ways to setup your Messenger channel. The commmunity and the cloud version.
+## Channel Configuration
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
@@ -47,6 +45,8 @@ You have 2 ways to setup your Messenger channel. The commmunity and the cloud ve
   <FacebookCloud/>
   </TabItem>
   </Tabs>
+
+## Content-type
 
 ### Greeting Text
 

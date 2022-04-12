@@ -11,9 +11,7 @@ import TabItem from '@theme/TabItem';
 import TwilioLocal from './twilio/local.md'
 import TwilioCloud from './twilio/cloud.md'
 
-## Configuration
-
-You have 2 ways to setup your smooch channel. The commmunity and the cloud version.
+## Channel Configuration
 
 <Tabs>
 <TabItem value="community" label="Local deployment" default>

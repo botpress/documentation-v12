@@ -8,8 +8,6 @@
 
 - Create a Twilio account and create a phone number
 
-## Steps
-
 ### Get your API Credentials
 
 1. Go to you Twilio console dashboard.

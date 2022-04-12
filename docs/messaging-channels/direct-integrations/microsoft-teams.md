@@ -9,7 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import TeamsLocal from './teams/local.md'
-import TeamsCloud from './teams/local.md'
+import TeamsCloud from './teams/cloud.md'
 
 ## Requirements
 
@@ -34,3 +34,14 @@ To test on localhost, you can also use services like [pagekite](https://pagekite
 ### Before Getting Started...
 
 Since the framework V4 is still in active development, some of these instructions may be slightly different. If you ever get stuck, check the [Official Bot Framework documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-create).
+
+## Channel Configuration
+
+  <Tabs>
+  <TabItem value="community" label="Local deployment" default>
+  <TeamsLocal/>
+  </TabItem>
+  <TabItem value="cloud" label="Cloud deployment (beta)">
+  <TeamsCloud/>
+  </TabItem>
+  </Tabs>
