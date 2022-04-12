@@ -8,7 +8,7 @@ title: Vonage
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import VonageCommunity from './vonage/community.md'
+import VonageLocal from './vonage/local.md'
 import VonageCloud from './vonage/cloud.md'
 
 ## Configuration
@@ -21,7 +21,7 @@ Currently, only WhatsApp is supported on this channel.
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <VonageCommunity/>
+  <VonageLocal/>
   </TabItem>
   <TabItem value="cloud" label="Cloud deployment (beta)">
   <VonageCloud/>

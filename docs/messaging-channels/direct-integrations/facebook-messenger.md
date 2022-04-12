@@ -8,8 +8,8 @@ title: Facebook Messenger
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import FacebookCommunity from './facebook/community.md'
-import FacebookCloud from './facebook/cloud.md'
+import FacebookLocal from './facebook/local.md'
+import FacebookCloud from './facebook/local.md'
 
 ## Requirements
 
@@ -41,7 +41,7 @@ You have 2 ways to setup your Messenger channel. The commmunity and the cloud ve
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <FacebookCommunity/>
+  <FacebookLocal/>
   </TabItem>
   <TabItem value="cloud" label="Cloud deployment (beta)">
   <FacebookCloud/>

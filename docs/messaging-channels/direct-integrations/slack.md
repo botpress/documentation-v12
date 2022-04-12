@@ -8,7 +8,7 @@ title: Slack
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import SlackCommunity from './slack/community.md'
+import SlackLocal from './slack/local.md'
 import SlackCloud from './slack/cloud.md'
 
 ## Requirements
@@ -31,7 +31,7 @@ You have 2 ways to setup your slack channel. The commmunity and the cloud versio
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <SlackCommunity/>
+  <SlackLocal/>
   </TabItem>
   <TabItem value="cloud" label="Cloud deployment (beta)">
   <SlackCloud/>

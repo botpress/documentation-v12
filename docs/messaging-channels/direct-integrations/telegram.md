@@ -8,7 +8,7 @@ title: Telegram
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import TelegramCommunity from './telegram/community.md'
+import TelegramLocal from './telegram/local.md'
 import TelegramCloud from './telegram/cloud.md'
 
 ## Requirements
@@ -37,7 +37,7 @@ If your existing token is compromised or you lost it for some reason, use the `/
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <TelegramCommunity/>
+  <TelegramLocal/>
   </TabItem>
   <TabItem value="cloud" label="Cloud deployment (Beta)">
   <TelegramCloud/>

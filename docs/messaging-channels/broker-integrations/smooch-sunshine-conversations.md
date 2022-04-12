@@ -8,7 +8,7 @@ title: Smooch (Sunshine Conversations)
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import SmoochCommunity from './smooch/community.md'
+import SmoochLocal from './smooch/local.md'
 import SmoochCloud from './smooch/cloud.md'
 
 ## Configuration
@@ -17,9 +17,9 @@ You have 2 ways to setup your smooch channel. The commmunity and the cloud versi
 
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
-  <SmoochCommunity/>
+  <SmoochLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
+  <TabItem value="cloud" label="Cloud">
   <SmoochCloud/>
   </TabItem>
   </Tabs>
