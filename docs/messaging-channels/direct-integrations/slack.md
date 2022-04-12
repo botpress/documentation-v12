@@ -33,7 +33,7 @@ You have 2 ways to setup your slack channel. The commmunity and the cloud versio
   <TabItem value="community" label="Local deployment" default>
   <SlackLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
   <SlackCloud/>
   </TabItem>
   </Tabs>

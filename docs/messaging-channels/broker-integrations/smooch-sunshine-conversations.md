@@ -19,7 +19,7 @@ You have 2 ways to setup your smooch channel. The commmunity and the cloud versi
   <TabItem value="community" label="Local deployment" default>
   <SmoochLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Botpress Cloud (Beta)">
   <SmoochCloud/>
   </TabItem>
   </Tabs>

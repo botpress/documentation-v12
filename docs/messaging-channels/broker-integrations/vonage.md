@@ -23,7 +23,7 @@ Currently, only WhatsApp is supported on this channel.
   <TabItem value="community" label="Local deployment" default>
   <VonageLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
   <VonageCloud/>
   </TabItem>
   </Tabs>

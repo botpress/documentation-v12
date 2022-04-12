@@ -43,7 +43,7 @@ You have 2 ways to setup your Messenger channel. The commmunity and the cloud ve
   <TabItem value="community" label="Local deployment" default>
   <FacebookLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
   <FacebookCloud/>
   </TabItem>
   </Tabs>

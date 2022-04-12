@@ -19,7 +19,7 @@ You have 2 ways to setup your smooch channel. The commmunity and the cloud versi
 <TabItem value="community" label="Local deployment" default>
 <TwilioLocal/>
 </TabItem>
-<TabItem value="cloud" label="Cloud deployment (beta)">
+<TabItem value="cloud" label="Botpress Cloud (beta)">
 <TwilioCloud/>
 </TabItem>
 </Tabs>
