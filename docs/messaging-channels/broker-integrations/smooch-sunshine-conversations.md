@@ -47,7 +47,7 @@ import SmoochCloud from './smooch/cloud.md'
   <TabItem value="community" label="Local deployment" default>
   <SmoochLocal/>
   </TabItem>
-  <TabItem value="cloud" label="Cloud">
+  <TabItem value="cloud" label="Cloud deployment (beta)">
   <SmoochCloud/>
   </TabItem>
   </Tabs>
