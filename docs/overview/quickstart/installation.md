@@ -5,7 +5,7 @@ title: Installation
 
 ---
 
-Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch and also have an App installer to install Botpress globally.
+Getting started with Botpress is easy. We build and distribute binaries of the latest stable version and nightly builds of the Github master branch and also have a Desktop app.
 
 ## Quick Install
 
