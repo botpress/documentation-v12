@@ -1,7 +1,3 @@
-## Setup
-
-### Get App Secret & Verify Token
-
 #### App Secret
 
 1. Go to your Facebook App.

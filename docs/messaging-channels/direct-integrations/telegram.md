@@ -35,6 +35,8 @@ When you create a Telegram bot, Botfather will automatically generate a token. T
 
 If your existing token is compromised or you lost it for some reason, use the `/token` command to generate a new one.
 
+## Channel Configuration
+
   <Tabs>
   <TabItem value="community" label="Local deployment" default>
   <TelegramLocal/>

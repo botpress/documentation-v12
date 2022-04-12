@@ -1,5 +1,3 @@
-## Configuration
-
 1. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.telegram` section write this configuration :
 
 - `enabled`: set to `true`
@@ -22,4 +20,4 @@
 }
 ```
 
-2. Restart Botpress and talk to your Telegram bot. The webhook will be configured automatically to point to `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/telegram`.
+1. Restart Botpress and talk to your Telegram bot. The webhook will be configured automatically to point to `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/telegram`.

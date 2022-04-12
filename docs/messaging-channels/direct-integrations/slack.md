@@ -25,15 +25,19 @@ To connect to Slack, an HTTPS endpoint is required. Set the `externalUrl` field 
 To test on localhost, you can also use services like [pagekite](https://pagekite.net/) or [tunnelme](https://localtunnel.github.io/www/) to expose your server.
 :::
 
-## Installation
+## Setup
 
-You have 2 ways to setup your slack channel. The commmunity and the cloud version.
+### Create Your Bot
+
+First, you need a bot in Botpress. Take note of your bot's ID.
+
+### Connecting Your Bot to Slack
 
   <Tabs>
-  <TabItem value="community" label="Local deployment" default>
-  <SlackLocal/>
-  </TabItem>
-  <TabItem value="cloud" label="Cloud deployment (beta)">
-  <SlackCloud/>
-  </TabItem>
+    <TabItem value="community" label="Local deployment" default>
+    <SlackLocal/>
+    </TabItem>
+    <TabItem value="cloud" label="Cloud deployment (beta)">
+    <SlackCloud/>
+    </TabItem>  
   </Tabs>

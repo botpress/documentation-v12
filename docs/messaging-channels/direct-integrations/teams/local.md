@@ -1,7 +1,3 @@
-## Setup
-
-These instructions will guide you through any steps required to be up and running with that channel.
-
 ### Create Application & Generate Password
 
 1. Log on to your account on [Microsoft Azure](https://azure.microsoft.com).
