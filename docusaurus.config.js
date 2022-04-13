@@ -18,7 +18,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/",
+          routeBasePath: process.env.BASE_URL || "/",
           sidebarPath: require.resolve("./sidebar/sidebar.js"),
           lastVersion: "current",
           versions: {
