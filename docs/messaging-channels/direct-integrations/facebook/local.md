@@ -1,3 +1,27 @@
+## Requirements
+
+Messenger requires you to have a Facebook App and a Facebook Page to connect your chatbot to their platform.
+
+### Create a Facebook App
+
+To create a Facebook App, log in to your Facebook account and ensure you have admin rights for the Facebook page to which you want to connect your chatbot.
+
+After that, go to the [Facebook for Developers website](https://developers.facebook.com/), select **My Apps** from the top menu, and create a new app. For more details and assistance, visit the [Facebook developer documentation](https://developers.facebook.com/docs/development)
+
+### Create a Facebook Page
+
+You require if you do not already have a Facebook page to link your chatbot. [You can find details on how to create a new Facebook page here](https://www.facebook.com/pages/creation/).
+
+To link your chatbot to a pre-existing page, you must have an administrator or developer role.
+
+### HTTPS Endpoint to Your Chatbot
+
+Facebook only integrates its apps and services to secured endpoints. Below are tutorials to help you create an HTTPS endpoint if you do not have one:
+
+- Create an HTTPS tunnel to your machine using Ngrok ([Tutorial](https://api.slack.com/tutorials/tunneling-with-ngrok)).
+- Using Nginx and Let's Encrypt. This tutorial bases on the Linux Ubuntu 16.04 Operating System. [**Tutorial**](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04).
+- Create an HTTPS tunnel to your machine using Serveo ([Tutorial](https://medium.com/automationmaster/how-to-forward-my-local-port-to-public-using-serveo-4979f352a3bf)).
+
 #### App Secret
 
 1. Go to your Facebook App.

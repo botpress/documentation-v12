@@ -1,3 +1,19 @@
+## Requirements
+
+You will need a Facebook app and a Facebook page to connect you bot to messenger
+
+### Create a Facebook App
+
+To create a Facebook App, log in to your Facebook account and go to the [Facebook for Developers website](https://developers.facebook.com/). Select **My Apps** from the top menu, and create a new app. For more details and assistance, visit the [Facebook developer documentation](https://developers.facebook.com/docs/development)
+
+### Create a Facebook Page
+
+If you do not already have a Facebook page you will need to create one. [You can find details on how to create a new Facebook page here](https://www.facebook.com/pages/creation/)
+
+To link your chatbot to a pre-existing page, you must have an administrator or developer role
+
+## Channel Configuration
+
 ### API version
 
 The messenger channel is made to interact with version 12.0 of the Messenger API. It is not the default version so it must be changed in your app's settings

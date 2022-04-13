@@ -1,3 +1,5 @@
+## Requirements
+
 ### Create a Slack App
 
 You will need a Slack App to connect your bot to Slack
@@ -22,11 +24,10 @@ The bot token is used to authenticate requests made to the Slack API
 1. Add `chat:write` under the **Scope** > **Bot Token Scopes** section
 1. Click on **Install to Workspace** in the **OAuth Tokens for Your Workspace** section
 1. Copy paste the value in **Bot User OAuth Token** to the **Bot Token** channel configuration
-1. Click Save
 
-:::caution
-It is important you save your configuration before configuring the webhooks, otherwise Slack will be unable to validate the webhook url
-:::
+### Save Configuration
+
+Channel configuration is complete, you can now click **Save**. It is important you save your configuration before configuring the webhooks, otherwise Slack will be unable to validate the webhook url
 
 ## Webhook Configuration
 
