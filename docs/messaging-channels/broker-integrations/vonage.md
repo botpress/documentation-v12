@@ -15,28 +15,11 @@ import VonageCloud from './vonage/cloud.md'
 Currently, only WhatsApp is supported on this channel.
 :::
 
-## Prerequisite
-
-- An HTTPS Endpoint to your bot
-
-  - Set the externalUrl field in `botpress.config.json`
-  - Create an HTTPS tunnel to your machine using Ngrok. Tutorial
-  - Using Nginx and Let's Encrypt. Tutorial
-
-- [Create a Vonage Account](https://dashboard.nexmo.com/sign-up)
-- [Create a Vonage Application](https://dashboard.nexmo.com/applications/new)
-
-  - Give it a name
-  - Under `Authentication`, click **Generate public and private key** (this will download a file called `private.key`. You will need this file later on.)
-  - Click **Generate new application**
-
-## Channel Configuration
-
 <Tabs>
-  <TabItem value="community" label="Local deployment" default>
-    <VonageLocal/>
+  <TabItem value="cloud" label="Botpress Cloud (beta)" default>
+    <VonageCloud/>
   </TabItem>
-  <TabItem value="cloud" label="Botpress Cloud (beta)">
-  <VonageCloud/>
+  <TabItem value="community" label="Local deployment">
+    <VonageLocal/>
   </TabItem>
 </Tabs>

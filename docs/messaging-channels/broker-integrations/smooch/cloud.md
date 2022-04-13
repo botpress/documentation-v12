@@ -1,7 +1,15 @@
 ## Requirements
 
-- You will need a Smooch app with a channel configured before connecting Smooch to Botpress
-- You will need to use Botpress Cloud Beta. Instructions found [here](https://botpress.com/botpress-cloud-beta).
+You will need a Smooch app with a channel configured before connecting Smooch to Botpress
+
+### Smooch App
+
+1. On the Smooch [home page](https://app.smooch.io/), click on **Create new app.**
+1. Enter a name for your app and click **Create App**
+1. Connect a channel to your app (Telegram, Whatsapp, or any other listed channel)
+1. You should see a channel in the **Overview** section of your app
+
+## Configuration
 
 ### App Id
 

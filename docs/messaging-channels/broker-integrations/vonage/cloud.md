@@ -1,84 +1,33 @@
-## Prerequisite
+# Vonage
 
-- An HTTPS Endpoint to your bot
+## Requirements
 
-  - Set the externalUrl field in `botpress.config.json`
-  - Create an HTTPS tunnel to your machine using Ngrok. Tutorial
-  - Using Nginx and Let's Encrypt. Tutorial
+### Create Vonage Application
+
+You will need a Vonage Account and a Vonage Application to connect Vonage to Botpress
 
 - [Create a Vonage Account](https://dashboard.nexmo.com/sign-up)
 - [Create a Vonage Application](https://dashboard.nexmo.com/applications/new)
-  - Give it a name
-  - Under `Authentication`, click **Generate public and private key** (this will download a file called `private.key`. You will need this file later on.)
-  - Click **Generate new application**
 
-## Steps
+## Channel Configuration
 
-### Get your API credentials
+### API credentials
 
-1. Go to your [Account Settings](https://dashboard.nexmo.com/settings).
-2. Scroll down and copy your API key, API secret and Signature secret from the LIVE credentials section.
-3. Go to your applications and select your newly created application (https://dashboard.nexmo.com/applications/).
-4. Copy the Application ID.
+1. Go to your [API Settings](https://dashboard.nexmo.com/settings).
+1. Copy paste the API key to the **API Key** channel configuration
+1. Copy paste the API secret from the **Account credentials** section to the **API Secret** channel configuration
+1. Copy paste the signature secret from the **Signed webhooks** section to the **Signature Secret** channel configuration
 
-### Configure your bot
+### Save Configuration
 
-1. Edit `data/bots/<YOUR_BOT_ID>/bot.config.json`. In the `messaging.channels.vonage` section write this configuration:
+Channel configuration is complete, you can now click **Save**
 
-- `enabled`: set to `true`;
-- `apiKey`: paste your API key;
-- `apiSecret`: paste your API Secret;
-- `signatureSecret`: paste your Signature secret;
-- `applicationId`: paste your Application ID;
-- `privateKey`: paste the content of the `private.key` file that was generated when you created your Vonage Application;
-  - Paste the full key value, including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines;
-  - Replace all line breaks with the newline character `\n`;
-- `useTestingApi (optional)`: set to `true` if you want to use the `Sandbox` instead of the `Live` version of Vonage API (see [Setup a Messages Sandbox](#Setup%20a%20Messages%20Sandbox)).
+## Webhook Configuration
 
-  Your `bot.config.json` should look like this:
+### Sandbox
 
-```json
-{
-  // ... other data
-  "messaging": {
-    "channels": {
-      "vonage": {
-        "enabled": true,
-        "apiKey": "your_api_key",
-        "apiSecret": "your_api_secret",
-        "signatureSecret": "your_signature_secret",
-        "applicationId": "your_application_id",
-        "privateKey": "your_private_key",
-        "useTestingApi": false
-      }
-      // ... other channels can also be configured here
-    }
-  }
-}
-```
+You can use the Vonage sandbox to test you channel with Whatsapp
 
-2. Restart Botpress.
-3. You should see your webhook endpoint in the console on startup.
-
-### Setup a Messages Sandbox
-
-When wanting to test the integration with Vonage and WhatsApp, you need to enable a Sandbox where you can send test messages.
-
-1. In the left end side menu of [Vonage Dashboard](https://dashboard.nexmo.com/) select **Messages and Dispatch (beta)**
-1. Click **Sandbox**.
-1. Click the channel you want to setup and follow the instructions detailed on the page.
-1. Under `Webhooks`, type the following URLs:
-
-   _Inbound:_ `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID>/vonage/inbound`
-
-   _Status:_ `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID>/vonage/status`
-
-## File Reception
-
-Vonage currently supports receiving `image` , `audio`, `video`, `file` , and `location`.
-
-:::note
-Please, keep in mind that the links coming from the Vonage API are only valid for 10 minutes.
-:::
-
-An action (Storage - Store File Locally) is available in order to store the file locally.
+1. Check the **Use Testing API** box in your channel configuration
+1. Go to your [Sandbox Settings](https://dashboard.nexmo.com/messages/sandbox)
+1. Copy paste the webhook url provided in the channel configuration UI to the **Inbound** and **Status** fields in the **Webhooks** section

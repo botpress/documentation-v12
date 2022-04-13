@@ -1,3 +1,18 @@
+## Prerequisite
+
+- An HTTPS Endpoint to your bot
+
+  - Set the externalUrl field in `botpress.config.json`
+  - Create an HTTPS tunnel to your machine using Ngrok. Tutorial
+  - Using Nginx and Let's Encrypt. Tutorial
+
+- [Create a Vonage Account](https://dashboard.nexmo.com/sign-up)
+- [Create a Vonage Application](https://dashboard.nexmo.com/applications/new)
+
+  - Give it a name
+  - Under `Authentication`, click **Generate public and private key** (this will download a file called `private.key`. You will need this file later on.)
+  - Click **Generate new application**
+
 ### Get your API credentials
 
 1. Go to your [Account Settings](https://dashboard.nexmo.com/settings).

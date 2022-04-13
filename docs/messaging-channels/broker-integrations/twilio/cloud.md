@@ -1,3 +1,9 @@
+## Requirements
+
+Create a Twilio account and purchase a Twilio phone number
+
+## Channel Configuration
+
 ### Account SID and Auth Token
 
 1. Go to you Twilio [console dashboard](https://console.twilio.com/?frameUrl=/console)
