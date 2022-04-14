@@ -1,3 +1,9 @@
+## Requirements {#local}
+
+### Configure Microsoft Account
+
+Your Microsoft Account should have access to Azure and Teams. You can check out the [Azure](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops) and [Teams](https://docs.microsoft.com/en-us/microsoftteams/) documentation for information on how to make these connections.
+
 ### Configure HTTPS Endpoint
 
 To connect to Microsoft Teams, an HTTPS endpoint is required. This is set in the `externalUrl` field in `botpress.config.json`. You can use the following methods to create this endpoint:

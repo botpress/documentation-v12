@@ -12,10 +12,10 @@ import TelegramLocal from './telegram/local.md'
 import TelegramCloud from './telegram/cloud.md'
 
 <Tabs>
-  <TabItem value="cloud" label="Botpress Cloud (beta)" default>
-    <TelegramCloud/>
-  </TabItem>
-  <TabItem value="community" label="Local deployment">
+  <TabItem value="local" label="Local deployment">
     <TelegramLocal/>
+  </TabItem>
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
+    <TelegramCloud/>
   </TabItem>
 </Tabs>

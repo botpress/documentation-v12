@@ -12,10 +12,10 @@ import SlackLocal from './slack/local.md'
 import SlackCloud from './slack/cloud.md'
 
 <Tabs>
-    <TabItem value="cloud" label="Botpress Cloud (beta)" default>
+  <TabItem value="local" label="Local deployment">
+      <SlackLocal/>
+  </TabItem>
+    <TabItem value="cloud" label="Botpress Cloud (beta)">
       <SlackCloud/>
   </TabItem>  
-  <TabItem value="community" label="Local deployment">
-      <SlackLocal/>
-    </TabItem>
 </Tabs>

@@ -16,10 +16,10 @@ Currently, only WhatsApp is supported on this channel.
 :::
 
 <Tabs>
-  <TabItem value="cloud" label="Botpress Cloud (beta)" default>
-    <VonageCloud/>
-  </TabItem>
   <TabItem value="community" label="Local deployment">
     <VonageLocal/>
+  </TabItem>
+  <TabItem value="cloud" label="Botpress Cloud (beta)">
+    <VonageCloud/>
   </TabItem>
 </Tabs>
