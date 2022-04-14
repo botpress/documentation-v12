@@ -43,6 +43,10 @@ const config = {
   ],
   themeConfig:
     ({
+      announcementBar: {
+        id: 'announcementBar-2', // Increment on change
+        content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a>`,
+      },
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }, {name:"docsearch:docusaurus_tag", content:"docs-default-current"}],
       algolia: {
         apiKey: process.env.ALGOLIA_API_KEY || "empty",
