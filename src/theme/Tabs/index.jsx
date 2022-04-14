@@ -83,10 +83,11 @@ function TabsComponent(props) {
   const {tabGroupChoices, setTabGroupChoices} = useTabGroupChoice();
   const [selectedValue, setSelectedValue] = useState(defaultValue);
   useEffect(() => {
-    
     const params = new URLSearchParams(window.location.search)
-    if(params.get('deploy') == (null)) {
+
+    if (params.get('deploy') == null) {
       return setSelectedValue('local')
+      
     }
       
     setSelectedValue(params.get('deploy'))
