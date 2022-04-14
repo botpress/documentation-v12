@@ -45,7 +45,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a>`,
+        content: `🤖 If you like botpress, probably you will like the new <a target="_blank" rel="noopener noreferrer" href="https://github.com/botpress/botpress"> botpress cloud beta</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/getbotpress">Twitter</a>`,
       },
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }, {name:"docsearch:docusaurus_tag", content:"docs-default-current"}],
       algolia: {
