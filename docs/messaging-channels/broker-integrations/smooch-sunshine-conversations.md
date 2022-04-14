@@ -12,7 +12,7 @@ import SmoochLocal from './smooch/local.md'
 import SmoochCloud from './smooch/cloud.md'
 
 <Tabs>
-  <TabItem value="community" label="Local deployment">
+  <TabItem value="local" label="Local deployment">
     <SmoochLocal/>
   </TabItem>
   <TabItem value="cloud" label="Botpress Cloud (beta)">

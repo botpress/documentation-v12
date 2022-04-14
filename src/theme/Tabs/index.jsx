@@ -87,7 +87,6 @@ function TabsComponent(props) {
 
     if (params.get('deploy') == null) {
       return setSelectedValue('local')
-      
     }
       
     setSelectedValue(params.get('deploy'))
