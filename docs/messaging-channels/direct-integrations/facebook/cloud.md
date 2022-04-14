@@ -16,11 +16,11 @@ To link your chatbot to a pre-existing page, you must have an administrator or d
 
 ### API version
 
-The messenger channel is made to interact with version 12.0 of the Messenger API. It is not the default version so it must be changed in your app's settings
+The messenger channel is made to interact with version 12.0 and up of the Messenger API. It is not the default version so it must be changed in your app's settings
 
 1. Go to your Facebook App
 1. In the left sidebar, expand the **Settings** menu and select **Advanced**
-1. In the **Upgrade API version** section, select v12.0 as the API version
+1. In the **Upgrade API version** section, select v12.0 or an upper version as the API version
 1. Click on **Save changes**
 
 ### Add Messenger Product
