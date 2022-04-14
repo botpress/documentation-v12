@@ -3,16 +3,11 @@ id: try-the-beta
 title: Try the beta
 ---
 
---------------------
+---
 
 # Introduction
 
-Read the full pitch at [botpress.com](botpress.com), or read the following text to get started.
-
-Botpress cloud is out. This version is a little bit different from the open source version. The beta version will be focusing on the deployment part. In this version we have build a conveniant way to deploy a chatbot. The Frontend is the same but with extra feature. You can use the electron version or the latest docker release. 
-
-This new product is better in lot of way. It solve the time-to-production, in one click, you have a deployed chatbot that can work on various platform. It also solve, the collaboration between conversation designer. It come with all the tool for post-production (manage and improvement). Enought of talking, let's jump into the lesson. 
-
+Botpress Cloud is the only open-source chatbot deployment solution on the cloud and provides an easy one-click deployment feature. Our new platform will rapidly reduce the time and money spent on typical chatbot deployments. Plus, it’s entirely open-source, giving developers complete flexibility and zero vendor lock-in.
 
 ## Instruction
 
@@ -20,93 +15,103 @@ This new product is better in lot of way. It solve the time-to-production, in on
 
 1. Go on the botpress [cloud](https://app.botpress.dev)
 
-2. Create an account > Click **Sign Up**
+1. Create an account > Click **Sign Up**
 
 ![Sign Up](/assets/cloud/login.png)
 
-3. **Sign In** with your account
+1. Confirm your account in your email.
 
-### Download Botpress 12.27.0 Beta
+1. **Sign In** with your account
+
+:::info
+Botpress Cloud Beta supports Telegram, Messenger, Slack, SunCo, Teams, Twilio, Vonage, and web chat.
+:::
+
+### Download and install Botpress 12.27.0 Beta​
 
 1. Go to Botpress 12.27.0 [Beta Download](botpress.com/download)
-2. Click the download button for your operating system
+1. Click the download button for your operating system
+   1. On Linux: unzip the file, enter the folder and double click the bp file to start the script.
+   1. On Linux: unzip the file, enter the folder and double click the bp file to start the script.
 
 :::info
 
 Do you know, you can use docker to install the botpress studio on your computer
+
 ```
 docker run -p 3000:3000 --rm -it ghcr.io/botpress/botpress/server:next
 ```
+
 :::
 
 ### Create a chatbot on the cloud platform {#cloud-platform}
 
 :::caution
-In the following step, you will create a chatbot in the cloud and in the binary. We are doing this to link the application. 
+In the following step, you will create a chatbot in the cloud and in the binary. We are doing this to link the application.
 :::
 
 1. Click on **Select Chatbot** > **Create Chatbot**
 2. Enter the chatbot name
-![chatbot name](/assets/cloud/first-chatbot.jpg)
+   ![chatbot name](/assets/cloud/first-chatbot.jpg)
 3. Copy the **key** and the **secret** for the next step
-![Key from the studio](/assets/cloud/cloud-key.png)
-
+   ![Key from the studio](/assets/cloud/cloud-key.png)
 
 :::danger
-Make sure to hidden the secret and kept your your secret a secret
+Make sure to safely store the key and secret.
 :::
 
-### Create a chatbot in the studio
+### Create a Chatbot in the Downloaded Botpress app
 
-In the studio,  
+1. Open Botpress
+   1. On Linux: open the unzipped folder and double click the bp file. Once the application is ready, you should get a message asking you to go to localhost:3000.
+   1. On Mac and Windows: use your operating system to search for and open Botpress Beta.
+1. In the Botpress Administration Panel, click ‘Create Bot’ then ‘New Bot’ to open the bot creation panel.
+1. Give your bot a name and ID and then select ‘Enable Botpress Cloud’.
+1. Select ‘Learn Botpress’ as the template. Optionally, you can try selecting the ‘Empty Bot’ (see extra information below).
+1. Enter your key and secret from the Botpress Cloud step.
+   ![Key from the studio](/assets/cloud/studio-key.png)
+1. Click on the chatbot name you have created to open up the Botpress Studio.
+   :::info
+   If you want to add your own content, you can do that too. To do so, you need to add a node text to make sure your chatbot returns something later. Here’s how to do it:
 
-1. `Create Bot` > `New Bot` > `Enable Botpress Cloud`
-2. Copy the key and secret from the botpress cloud step.
-![Key from the studio](/assets/cloud/studio-key.png)
-3. Click on the chatbot name you have created
-4. Create a node text to say something
-    :::info
-    We add a node text to make sure your bot return something in telegram
-    :::
-    1. Right Click > Select Standard node
-    2. Click on the node > On Enter > `+` 
-    3. Say Something > Folder document > Text
-    4. Create New Text > Hello World > Submit
-5. Train your chatbot
-![Train chatbot](/assets/cloud/train-chatbot.png)
+   1. Right Click > Select Standard node
+   1. Click on the node > On Enter > `+`
+   1. Say Something > Folder document > Text
+   1. Create New Text > Hello World > Submit
+      :::
+
+1. Train your chatbot
+   ![Train chatbot](/assets/cloud/train-chatbot.png)
 
 :::caution
-If the bot is not train the telegram part will not work.
+Your chatbot must be trained in order to be deployed correctly.
 :::
 
-### In the cloud platform, enable telegram
+### In the cloud platform, set up a Telegram channel
 
 1. Open the botfather on [telegram](https://t.me/botfather)
-:::info
-The botfather is a chatbot to build chatbots on Telegram. This is soo inception of chatbot
-:::
-2. Start the conversation
-3. Type `/newbot` and follow the instruction.
-![telegram /newbot](/assets/cloud/telegram.png)
-4. Get the HTTP API token from the botfather.
-:::info
-You can click on the red text to copy the text into your clipboard
-:::
-![API Key Telegram](/assets/cloud/api-key-telegram.png)
-5. Copy the keys, in the bot token
+1. Start the conversation
+1. Type `/newbot` and follow the instruction.
+   ![telegram /newbot](/assets/cloud/telegram.png)
+1. Get the HTTP API token from the botfather.
+   :::info
+   You can click on the red text to copy the text into your clipboard
+   :::
+   ![API Key Telegram](/assets/cloud/api-key-telegram.png)
+1. Copy the keys, in the bot token
+   :::caution
+   The webhook part should be auto-populated. If it's not populated try Hard-refresh (SHIRT+(CTRL|COMMAND)+R) or restart from the [Create chatbot cloud](#cloud-platform)
+   :::
+   ![API Key Telegram in the studio](/assets/cloud/api-key-telegram-studio.png)
+1. In the studio, Click on the "Deploy your chatbot"
+   ![Deploy to Cloud](/assets/cloud/deploy-to-cloud.png)
+
 :::caution
-The webhook part should be auto-populated. If it's not populated try Hard-refresh (SHIRT+(CTRL|COMMAND)+R) or restart from the [Create chatbot cloud](#cloud-platform)
+When copying and pasting credentials, remember to remove trailing whitespaces (trailing whitespaces will cause the channel connection to fail).
 :::
-![API Key Telegram in the studio](/assets/cloud/api-key-telegram-studio.png)
-6. In the studio, Click on the "Deploy your chatbot"
-![Deploy to Cloud](/assets/cloud/deploy-to-cloud.png)
 
 ## Conclusion
 
-In this lesson, we cover the basic on botpress (Creating a node, Deploying a chatbot, Use a chatbot on a channel). We are really happy to release the botpress cloud version. 
+In this lesson, we cover the basic on botpress (Creating a node, Deploying a chatbot, Use a chatbot on a channel). We are really happy to release the botpress cloud version.
 
-If you are interested to learn more about botpress. You can dive in the following section 
-
-- Lesson
-- Guide
-- Reference
+If you are interested to learn more about botpress. You can ask question on the github discussion [forum](https://github.com/botpress/botpress/discussions)
