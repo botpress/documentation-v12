@@ -60,11 +60,6 @@ function TabsComponent(props) {
 
 
   const getDefaultValue = (defaultValueProp) => {
-    // const activateTab = window.location.search
-    // if (activateTab !== null) {
-    //   return children.find((child) => child.props.value === activateTab) ??
-    //   children[0]?.props.value;
-    // }
     return defaultValueProp === null
       ? defaultValueProp
       : defaultValueProp ??
@@ -88,6 +83,7 @@ function TabsComponent(props) {
   const {tabGroupChoices, setTabGroupChoices} = useTabGroupChoice();
   const [selectedValue, setSelectedValue] = useState(defaultValue);
   useEffect(() => {
+    
     const params = new URLSearchParams(window.location.search)
     if(params.get('deploy') == (null)) {
       return setSelectedValue('local')
