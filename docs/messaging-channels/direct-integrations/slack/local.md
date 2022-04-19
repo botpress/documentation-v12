@@ -88,3 +88,4 @@ If the slack endpoint is responding with `Cannot resolve challenge`. The configu
 16. Quit the Slack app and re-open it.
 
 17. In Slack, under the **Apps** section of the sidebar, click the **+ Add apps** button. In the search bar, type the name of your Slack App. Click on your Slack app in the search results. You can now chat with your Botpress bot in Slack.
+
