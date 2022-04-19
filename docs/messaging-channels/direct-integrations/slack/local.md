@@ -35,7 +35,8 @@ First, you need a bot in Botpress. Take note of your bot's ID.
 
 6. Open the page **Features**. Then, click **OAuth & Permissions** and add `chat:write` under the **Scope** > **Bot Token Scopes** section.
 
-7. Open the page Features**, then click **App Home** and under the **Show Tabs** section, check **Allow users to send Slash commands and messages from the messages tab\*\*.
+
+7. Open the page **Features**, then click **App Home** and under the **Show Tabs** section, check **Allow users to send Slash commands and messages from the messages tab**.
 
 8. From the **Settings**, go to the **Basic Information**. Then, go to the **Install app** section, install the app by clicking the **Install to Workspace** button. On the next screen, click the **Allow** button.
 
