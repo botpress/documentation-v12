@@ -5,18 +5,30 @@ title: Try the beta
 
 ---
 
-::: info
+:::info
+
+Due to the large interest in the Cloud beta, we've added a few constraints to ensure a smooth experience for all users:
+
+- 3 chatbots max per developer account
+- Cloud-native chatbots only, i.e., bots created on Botpress v12.27.0-beta and later. Existing chatbots should not be ported to the Cloud Beta due to differences in the Cloud SDK.
+- English language only chatbots
+- Small-to-moderate-sized chatbots only. Chatbots with an excess number of intents, flows, actions, etc., will get an error message on the beta."
+
 :::
 
 # Introduction
 
 Botpress Cloud is the only open-source chatbot deployment solution on the cloud and provides an easy one-click deployment feature. Our new platform will rapidly reduce the time and money spent on typical chatbot deployments. Plus, it’s entirely open-source, giving developers complete flexibility and zero vendor lock-in.
 
+:::info
+For more info about the pitch you can go [here](https://botpress.com/cloud-beta)
+:::
+
 ## Instruction
 
 ### Create an account on the botpress cloud
 
-1. Go on the botpress [cloud](https://app.botpress.dev)
+1. Go on the botpress [cloud](https://app.botpress.cloud)
 
 1. Create an account > Click **Sign Up**
 
@@ -28,6 +40,22 @@ Botpress Cloud is the only open-source chatbot deployment solution on the cloud 
 
 :::info
 Botpress Cloud Beta supports Telegram, Messenger, Slack, SunCo, Teams, Twilio, Vonage, and web chat.
+:::
+
+### Create a chatbot on the cloud platform {#cloud-platform}
+
+:::caution
+In the following step, you will create a chatbot in the cloud and in the binary. We are doing this to link the application.
+:::
+
+1. Click on **Select Chatbot** > **Create Chatbot**
+1. Enter the chatbot name
+   ![chatbot name](/assets/cloud/first-chatbot.jpg)
+1. Copy the **key** and the **secret** for the next step
+   ![Key from the studio](/assets/cloud/cloud-key.png)
+
+:::danger
+Make sure to safely store the key and secret.
 :::
 
 ### Download and install Botpress 12.27.0 Beta​
@@ -45,22 +73,6 @@ Do you know, you can use docker to install the botpress studio on your computer
 docker run -p 3000:3000 --rm -it ghcr.io/botpress/botpress/server:next
 ```
 
-:::
-
-### Create a chatbot on the cloud platform {#cloud-platform}
-
-:::caution
-In the following step, you will create a chatbot in the cloud and in the binary. We are doing this to link the application.
-:::
-
-1. Click on **Select Chatbot** > **Create Chatbot**
-2. Enter the chatbot name
-   ![chatbot name](/assets/cloud/first-chatbot.jpg)
-3. Copy the **key** and the **secret** for the next step
-   ![Key from the studio](/assets/cloud/cloud-key.png)
-
-:::danger
-Make sure to safely store the key and secret.
 :::
 
 ### Create a Chatbot in the Downloaded Botpress app
@@ -85,6 +97,7 @@ Make sure to safely store the key and secret.
 
 1. Train your chatbot
    ![Train chatbot](/assets/cloud/train-chatbot.png)
+1. Click on `Deploy to cloud` at the top Right
 
 :::caution
 Your chatbot must be trained in order to be deployed correctly.
@@ -106,8 +119,6 @@ Your chatbot must be trained in order to be deployed correctly.
    The webhook part should be auto-populated. If it's not populated try Hard-refresh (SHIRT+(CTRL|COMMAND)+R) or restart from the [Create chatbot cloud](#cloud-platform)
    :::
    ![API Key Telegram in the studio](/assets/cloud/api-key-telegram-studio.png)
-1. In the studio, Click on the "Deploy your chatbot"
-   ![Deploy to Cloud](/assets/cloud/deploy-to-cloud.png)
 
 :::caution
 When copying and pasting credentials, remember to remove trailing whitespaces (trailing whitespaces will cause the channel connection to fail).
