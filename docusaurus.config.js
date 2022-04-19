@@ -43,6 +43,12 @@ const config = {
   ],
   themeConfig:
     ({
+      announcementBar: {
+        id: 'announcementBar-2', // Increment on change
+        content: `⚡️ Botpress Cloud, our one-click deployment solution is finally here!  <a target="_blank" rel="noopener noreferrer" href="https://botpress.com/cloud-beta"> Get Started With Botpress Cloud</a>`,
+        backgroundColor: "#3276ea",
+        textColor: "#fff"
+      },
       metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }, {name:"docsearch:docusaurus_tag", content:"docs-default-current"}],
       algolia: {
         apiKey: process.env.ALGOLIA_API_KEY || "empty",
