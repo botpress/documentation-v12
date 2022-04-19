@@ -597,8 +597,8 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
         isDropdown: true,
         dropdownPlaceholder: true,
         choices: [
-          { title: 'Mc Donald', value: 'crap' },
-          { title: 'Burger king', value: 'crap' }
+          { title: 'Burger Place', value: 'Burger' },
+          { title: 'Salad Place', value: 'salad' }
         ],
         markdown: true,
         disableFreeText: true,
