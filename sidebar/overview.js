@@ -19,4 +19,12 @@ module.exports = [
       "overview/features",
     ],
   },
+  {
+    type: 'category',
+    label: 'Cloud',
+    collapsible: true,
+    items: [
+      "overview/cloud/try-the-beta",
+    ]
+  }
 ]
