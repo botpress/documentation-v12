@@ -6,6 +6,7 @@ const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
 const chatbotManagement = require("./chatbotManagement")
 const enterprise = require("./enterprise")
+const openbook = require("./openbook")
 const fm = require("front-matter")
 
 function readDirRecursive(dirPath) {
@@ -79,4 +80,5 @@ module.exports = {
   messagingSidebar: filterDraftPages(messaging),
   chatbotManagementSidebar: filterDraftPages(chatbotManagement),
   enterpriseSidebar: filterDraftPages(enterprise),
+  openbookSidebar: filterDraftPages(openbook),
 }

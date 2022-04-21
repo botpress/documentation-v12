@@ -114,6 +114,11 @@ const config = {
             docId: "enterprise/licensing/enterprise-licensing",
             position: "left",
             label: "Enterprise",
+          },          {
+            type: "doc",
+            docId: "openbook/what-is-openbook",
+            position: "left",
+            label: "OpenBook",
           },
           {
             href: "https://botpress.com/reference/",
