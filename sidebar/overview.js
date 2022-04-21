@@ -24,7 +24,7 @@ module.exports = [
     label: 'Cloud',
     collapsible: true,
     items: [
-      "overview/cloud/try-the-beta",
+      "overview/cloud/getting-started",
     ]
   }
 ]
