@@ -3,11 +3,11 @@ id: single-choice
 title: Single Choice
 ---
 
-The choice skill provides a way to select multiple choice in free text format or with button.
+The choice skill provides a way to select one choice of many in free text format or with buttons.
 
 ![choice](/assets/skills/choice-answer.png)
 
-## Creating Your Skill
+## Creating a Choice Skill
 
 1. From the Flow Editor view, click **Insert Skill**.
 1. Select **Choice**
@@ -16,32 +16,31 @@ The choice skill provides a way to select multiple choice in free text format or
    ![choice-generating](/assets/skills/choice-generating.png)
 
 :::note
-You can disabled free text if you are looking for a specific value
+You can disabled free text if you want your user to only be able to click buttons.
 :::
 
 ### Single Choice options
 
-### Message
+#### Message
 
-The message is the question you ask.
+The message is the question your bot will ask.
 
-### Choice
+#### Choice
 
 Create choice related to a question.
 
-#### Message
+##### Message
 
-Label for the choice
+Label for the choice. This is what is displayed on the button.
 
-#### Value
+##### Value
 
-Value to expect for the selected option
+Value to expect for the selected option, for yourself.
 
-:::info
-Intent can be use in the value. You can use a Intent in the following format
-`intent:INTENT_NAME`
+### Using Intent Detection for Advanced Choice Recognition
 
-Make sure your `INTENT_NAME` exist in the NLU > Intents menu. It's really useful for channel that doesn't support inline button.
-:::
+Intents can also be used as the value to be able to catch variations of answers, and are manage in the NLU page. This is really useful for channels that don't support inline buttons like text messaging, where people type similar, yet not exact answers. 
+
+You can accomplish this by adding `intent:INTENT_NAME` as a value to your choice skill. Then, make sure your `INTENT_NAME` exists in the NLU > Intents menu and has utterances. 
 
 ![intent](/assets/skills/intent.png)
