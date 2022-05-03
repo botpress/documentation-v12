@@ -45,7 +45,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `Introducing Botpress 🧠 <a target="_blank" rel="noopener noreferrer" href="learn.botpress.com"> Learning Center</a> 🧠 – A New Place to Master Botpress, Chatbots, and Conversational AI`,
+        content: `Introducing Botpress 🧠 <a target="_blank" rel="noopener noreferrer" href="https://learn.botpress.com"> Learning Center</a> 🧠 – A New Place to Master Botpress, Chatbots, and Conversational AI`,
         backgroundColor: "#3276ea",
         textColor: "#fff"
       },
