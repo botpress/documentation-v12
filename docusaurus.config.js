@@ -45,7 +45,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `⚡️ Botpress Cloud, our one-click deployment solution is finally here!  <a target="_blank" rel="noopener noreferrer" href="https://botpress.com/cloud-beta"> Get Started With Botpress Cloud</a>`,
+        content: `Introducing Botpress 🧠 <a target="_blank" rel="noopener noreferrer" href="learn.botpress.com"> Learning Center</a> 🧠 – A New Place to Master Botpress, Chatbots, and Conversational AI`,
         backgroundColor: "#3276ea",
         textColor: "#fff"
       },
