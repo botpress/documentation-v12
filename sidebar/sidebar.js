@@ -1,10 +1,6 @@
 const fs = require("fs")
 const path = require("path")
-const overview = require("./overview")
-const buildingChatbots = require("./buildingChatbots")
-const goingToProduction = require("./goingToProduction")
-const messaging = require("./messaging")
-const chatbotManagement = require("./chatbotManagement")
+const openSource = require("./open-source")
 const enterprise = require("./enterprise")
 const fm = require("front-matter")
 
@@ -73,10 +69,6 @@ function filterDraftPages(sidebar) {
 }
 
 module.exports = {
-  overviewSidebar: filterDraftPages(overview),
-  buildingChatbotsSidebar: filterDraftPages(buildingChatbots),
-  goingToProductionSidebar: filterDraftPages(goingToProduction),
-  messagingSidebar: filterDraftPages(messaging),
-  chatbotManagementSidebar: filterDraftPages(chatbotManagement),
+  openSourceSidebar: filterDraftPages(openSource),
   enterpriseSidebar: filterDraftPages(enterprise),
 }
