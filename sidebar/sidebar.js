@@ -2,6 +2,7 @@ const fs = require("fs")
 const path = require("path")
 const openSource = require("./open-source")
 const enterprise = require("./enterprise")
+const cloud = require("./cloud")
 const fm = require("front-matter")
 
 function readDirRecursive(dirPath) {
@@ -71,4 +72,5 @@ function filterDraftPages(sidebar) {
 module.exports = {
   openSourceSidebar: filterDraftPages(openSource),
   enterpriseSidebar: filterDraftPages(enterprise),
+  cloudSidebar: filterDraftPages(cloud)
 }

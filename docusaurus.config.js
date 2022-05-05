@@ -81,39 +81,21 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "overview/what-is-botpress",
+            docId: "open-source/overview/what-is-botpress",
             position: "left",
-            label: "Overview",
-          },
-          {
-            type: "doc",
-            docId: "building-chatbots/creating-a-new-bot",
-            position: "left",
-            label: "Building Chatbots",
-          },
-          {
-            type: "doc",
-            docId: "messaging-channels/supported-channels",
-            position: "left",
-            label: "Messaging Channels",
-          },
-          {
-            type: "doc",
-            docId: "going-to-production/deploy/deploy",
-            position: "left",
-            label: "Going to Production",
-          },
-          {
-            type: "doc",
-            docId: "chatbot-management/language-understanding/misunderstood",
-            position: "left",
-            label: "Chatbot Management",
+            label: "Open-Source",
           },
           {
             type: "doc",
             docId: "enterprise/licensing/enterprise-licensing",
             position: "left",
             label: "Enterprise",
+          },
+          {
+            type: "doc",
+            docId: "cloud/overview",
+            position: "left",
+            label: "Cloud",
           },
           {
             href: "https://botpress.com/reference/",
@@ -154,22 +136,6 @@ const config = {
               {
                 label: "Overview",
                 to: "/",
-              },
-              {
-                label: "Building Chatbots",
-                to: "building-chatbots/creating-a-new-bot",
-              },
-              {
-                label: "Messaging Channels",
-                to: "messaging-channels/supported-channels",
-              },
-              {
-                label: "Going to Production",
-                to: "going-to-production/deploy",
-              },
-              {
-                label: "Chatbot Management",
-                to: "chatbot-management/language-understanding/misunderstood",
               },
               {
                 label: "Enterprise",
