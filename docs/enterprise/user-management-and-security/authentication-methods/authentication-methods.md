@@ -30,10 +30,10 @@ Using External Authentication, it is possible to authenticate a user on your sys
 
 Here's a summary of the process:
 
-1. User authenticate on your platform
-2. Your platform returns a JWT token to the user and configure the webchat
+1. User authenticates on your platform
+2. Your platform returns a JWT token to the user and configures the webchat
 3. The token is sent to Botpress every time a message is sent
-4. Botpress validates the token, decrypt the content, and makes it available through `event.credentials`
+4. Botpress validates the token, decrypts the content, and makes it available through `event.credentials`
 
 ### Prerequisite
 
@@ -58,7 +58,6 @@ Here is an example configuration, [check the complete configuration for more det
   "algorithm": "HS256"
   "publicKey": "MIIDETCCAfmgAwIBAgIJIHQ75dJxjRuEMA0GCSqGSIb3DQEBCwUAMCYxJDAiBgNVBAMTG2JvdHByZXNzLXNhbWwtaWRwLmF1dGgwLmNvbTAeFw0xOTAxMTUxNTAzMDFaFw0zMjA5MjMxNTAzMDFaMCYxJDAiBgNVBAMTG2JvdHByZXNzLXNhbWwtaWRwLmF1dGgwLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMUHXzCG3c4iSyU1N1Nzu8LsEIQ8tj5SHG+VtHrhWyfdckq5nP2wy/u6Tt20pdOx+4zu1718x2xVPMwFN9M2uUSJaY6vIXfHofKyn1htuYYzOklLZmnrLX4Pm7YHE2SubAsuwg6e7/sgIZ06T",
   }
-}
 ```
 
 ### How to configure the Public Key
