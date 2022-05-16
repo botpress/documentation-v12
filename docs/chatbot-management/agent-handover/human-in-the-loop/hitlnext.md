@@ -97,7 +97,7 @@ Once the discussion with the user is over, an agent can hand back the control to
 
 ### User Profile
 
-When a handoff item is selected, user variables are displayed in the user profile section. You can set user variables in any workflow using the built-in `SetVariable` action with the `user` scope. For more details, head to the [variables docs](https://botpress.com/do/docs/conversation-studio/tutorials/use-data#variables).
+When a handoff item is selected, user variables are displayed in the user profile section. You can set user variables in any workflow using the built-in `SetVariable` action with the `user` scope. For more details, head to the [variables docs](https://botpress.com/docs/overview/quickstart/conversation-studio).
 
 The displayed user name is a user variable. Set `fullName` as a user variable for it to show up in the user profile.
 
