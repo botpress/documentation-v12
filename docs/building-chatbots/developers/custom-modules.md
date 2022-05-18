@@ -561,12 +561,11 @@ Many dependencies are already included with Botpress and do not need to be added
 
 We provide a Docker image that can be used to compile your custom module. This is useful in CI/CD situations, where your pipeline will checkout your Custom Module's source code, and the Docker container will spit out a compiled `.tgz` file.
 
-## Instructions
-
-In the instructions below, replace `vX_X_X` by the latest version of the Docker image available on Docker Hub:
+### Instructions
 
 ```
-docker run -v `pwd`/your-custom-module:/botpress/modules/your-custom-module botpress/module-builder:vX_X_X sh -c 'cd modules/your-custom-module && yarn && yarn build && yarn package'
+docker run -it --rm -v ${PWD}/modules/:/botpress/modules/ botpress/module-builder:v0_0_2 sh -c 'cd modules/YOUR_CUSTOM_MODULE && yarn && yarn build && yarn package'
+cd modules/YOUR_CUSTOM_MODULE
 ```
 
-The compiled module will be availble in the directory you mounted as a `your-custom-module.tgz` file.
+The compiled module will be available in the directory you mounted as a `YOUR_CUSTOM_MODULE.tgz` file.
