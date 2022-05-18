@@ -13,18 +13,25 @@ You can use your favorite browser. Remember that if you encounter a problem, you
 
 ## Mimimum Hardware Requirements
 
-### Botpress
+### Botpress Binary
 
 - CPU: 1
 - RAM: 2GB
 - Optimal: 40 messages/second
 - Maximum: 60 messages/second
 
+### Botpress from source
+
+- CPU: 2
+- RAM: 4GB
+- Optimal: 40 messages/second
+- Maximum: 60 messages/second
+
 ### PostgreSQL (database)
 
-- CPU: 2 
+- CPU: 2
 - RAM: 4 GB
-- Minimum: 60 messages/second 
+- Minimum: 60 messages/second
 - Maximum: 600-800 messages/second
 
 ## Messaging
