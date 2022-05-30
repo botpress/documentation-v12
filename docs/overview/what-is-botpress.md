@@ -17,7 +17,7 @@ At its core, Botpress is a tool to simplify building chatbots for developers. Th
 - An [emulator](/building-chatbots/testing-&-debugging/emulator) & a [debugger](/building-chatbots/testing-&-debugging/debugger) to simulate conversations and debug your chatbot;
 - Support for popular messaging channels like [Slack](/messaging-channels/direct-integrations/slack), [Telegram](/messaging-channels/direct-integrations/telegram), [Microsoft Teams](/messaging-channels/direct-integrations/microsoft-teams), [Facebook Messenger](/messaging-channels/direct-integrations/facebook-messenger), and an embeddable web chat;
 - An SDK and Code Editor to extend the capabilities;
-- [Post-deployment](/going-to-production/deploy/linux) tools like analytics, [human handoff](/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
+- Post-deployment tools like analytics, [human handoff](/chatbot-management/agent-handover/human-in-the-loop/hitlnext), and more...
 
 ## With Botpress, You Can...
 
@@ -136,8 +136,7 @@ Botpress allows for customization by injecting your self-written code. The two m
 
 #### File Structure
 
-```
-bash
+```bash
 botpress-server
 ├── bp / bp.exe
 │
