@@ -13,8 +13,6 @@ module.exports = [
           id: "going-to-production/deploy/deploy",
         },
         items: [
-          "going-to-production/deploy/linux",
-          "going-to-production/deploy/windows",
           "going-to-production/deploy/aws",
           "going-to-production/deploy/digitalocean",
           "going-to-production/deploy/docker-compose",
