@@ -9,16 +9,13 @@ Getting started with Botpress is easy. We build and distribute binaries of the l
 
 ## Quick Install
 
-Head over to the [**download page**](https://botpress.com/download) for the latest version, and download and install according to your OS.
-If you are using linux, you must use the `sudo snap install Botpress_VERSION_NUMBER.snap --force-dangerous` command. You can then load Botpress by searching for the app on your operating system.
- 
+Head over to the [**download page**](https://botpress.com/download) for the latest version, and download and install according to your OS. You can then load Botpress by searching for the app on your operating system.
 
 ## Alternative - Download Binaries
 
 Binaries are useful if you want to run Botpress with special parameters, or if you want to run it from a server, or lightweight environment.
 
-The latest stable binaries are available for download [**here**](https://botpress.com/download).  Alternatively, you may find all the versions and nightly builds in our public [**S3 Bucket**](https://s3.amazonaws.com/botpress-binaries/index.html).
-
+The latest stable binaries are available for download [**here**](https://botpress.com/download). Alternatively, you may find all the versions and nightly builds in our public [**S3 Bucket**](https://s3.amazonaws.com/botpress-binaries/index.html).
 
 ## Alternative - Install Binaries
 
@@ -105,6 +102,16 @@ $ ./bp
 06/02/2021 07:24:29.764 launcher models stored at "C:\BotpressBinary\botpress-v12_22_0-win-x64"
 06/02/2021 07:24:29.764 launcher batch size: allowing up to 1 predictions in one call to POST /predict
 06/02/2021 07:24:29.912 launcher NLU Server is ready at http://localhost:3200/
+```
+
+## Alternative - Starting Botpress Docker
+
+To install Botpress with docker you need to have docker installed on your computer. If you want to search for a [specific version of botpress](https://hub.docker.com/r/botpress/server/tags) you can search through the tag in the docker hub.
+
+In this example, I will use the `latest` tag. The `latest` is the most recent version of Botpress.
+
+```bash
+docker run -p 3000:3000 -it botpress/server:latest
 ```
 
 ### Alternative - Commands
