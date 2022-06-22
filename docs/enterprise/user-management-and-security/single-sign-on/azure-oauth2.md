@@ -17,7 +17,12 @@ Navigate to Azure Active Directory Page in your Azure Portal and create a new te
 
 In the page of your newly created tenant navigate to **App registrations**.
 
-Create a new application and choose the appropriate configuration for your use case in **Supported account types**, single and multi tenant options are supported, and keep the **Redirect URL** blank for now.
+Create a new application and choose the appropriate configuration for your use case in **Supported account types**. 
+Be careful at this step. If you don't select the right option, you will be unable to log in later.
+
+For testing, we recommend using "Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)" as it will allow you to login using non-microsoft credentials and is the most stable way to try it out. For the other options, you will have to configure your accounts in Azure AD directory and login using those accounts.
+
+Keep the **Redirect URL** blank for now.
 
 ## Step 3 - Configure Botpress
 
