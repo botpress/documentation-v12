@@ -5,7 +5,11 @@ title: HITL Next
 
 --------------------
 
-This revamped HITL works on **all existing and future channels**. It supports all features of its predecessor and a few more :
+:::caution
+This module is **not** compatible with the Converse API
+:::
+
+This revamped HITL works on **all existing and future channels (except the Converse API)**. It supports all features of its predecessor and a few more :
 
 - Multi-agents ( _enterprise edition only_ )
 - Human handoff from any workflow
