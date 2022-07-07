@@ -56,7 +56,7 @@ You can edit those variable in Botpress from the **Code Editor**.
     "port": "587",
     "auth": {
       "user": "<your-google-email-id>",
-      "pass": "google-app-password"
+      "pass": "<google-app-password>"
     },
     "secure": false,
     "requireTLS": true,
@@ -83,7 +83,7 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
     "port": "587",
     "auth": {
       "user": "<your-google-email-id>",
-      "pass": "google-app-password"
+      "pass": "<google-app-password>"
     },
     "secure": false,
     "requireTLS": true,
