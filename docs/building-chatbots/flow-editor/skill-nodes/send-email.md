@@ -52,9 +52,14 @@ You can edit those variable in Botpress from the **Code Editor**.
   "matchNumbers": true,
   "matchNLU": true,
   "transportConnectionString": {
-    "host": "192.168.100.200",
-    "port": "25",
+    "host": "smtp.gmail.com",
+    "port": "587",
+    "auth": {
+      "user": "<your-google-email-id>",
+      "pass": "<google-app-password>"
+    },
     "secure": false,
+    "requireTLS": true,
     "tls": {
       "rejectUnauthorized": false
     }
@@ -73,10 +78,15 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
 - **Object Format**
 
 ```
-  "transportConnectionString": {
-    "host": "192.168.100.200",
-    "port": "25",
+"transportConnectionString": {
+    "host": "smtp.gmail.com",
+    "port": "587",
+    "auth": {
+      "user": "<your-google-email-id>",
+      "pass": "<google-app-password>"
+    },
     "secure": false,
+    "requireTLS": true,
     "tls": {
       "rejectUnauthorized": false
     }
@@ -86,4 +96,5 @@ smtps://example@gmail.com:superPassword@smtp.gmail.com
 :::note Notes
 - Setting `"rejectUnauthorized": false` will prevent the Botpress server from rebooting every time an email fails to send. We recommend a fall-back strategy if this happens using the `on failure` transition.
 - If your email is protected with 2FA, it might not work.
+- for testing with smpt.gmail.com, the password used is an app password and not your gmail password. To generate an app password visit  https://myaccount.google.com/apppasswords
 :::
