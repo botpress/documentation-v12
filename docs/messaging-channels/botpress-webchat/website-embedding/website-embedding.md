@@ -28,7 +28,7 @@ After the import script above, you need to locate and use the chatbot by initial
 
 That's it! Once you add these changes and save them to your website, the bot will become available, and its button will appear on your site the next time you browse it.
 
-There is an example in the default botpress installation at `http://localhost:3000/assets/modules/channel-web/examples/embedded-webchat.html`.
+There is an example in the default botpress installation at [http://localhost:3000/assets/modules/channel-web/examples/embedded-webchat.html](http://localhost:3000/assets/modules/channel-web/examples/embedded-webchat.html)
 
 :::info
 If your botpress instance and your webchat instance is not on the same domain. You need to add a header to your botpress instance. You can check the [content-security-policy](https://content-security-policy.com/frame-ancestors/) documentation to enable a cross-origin for the injector.
