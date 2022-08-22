@@ -196,6 +196,17 @@ Below is a sample of the response given by our support bot at Botpress when it's
   }
 }
 ```
+## Disabling public Converse API endpoint
+
+For security and performance, you can disable the public Converse API endpoint, so that interactions without a token are not possible.
+
+To do so and keep only the debug API endpoint enabled, go in the Code Editor and add this configuration to the file `bot.config.json`
+
+```json
+  "converse": {
+    "enableUnsecuredEndpoint": false
+  }
+```
 
 ## Caveats
 
