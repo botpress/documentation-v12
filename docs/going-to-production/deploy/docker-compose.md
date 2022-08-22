@@ -94,7 +94,7 @@ docker run -d \
 -e BP_MODULE_NLU_DUCKLINGURL=http://localhost:8000 \
 -e BP_MODULE_NLU_LANGUAGESOURCES='[{ "endpoint": "http://localhost:3100" }]' \
 botpress/server:$TAG \
-su - botpress -c "./duckling & ./bp lang --langDir /botpress/data/embeddings & ./bp"
+su -p botpress -c "HOME=/home/botpress; PWD=/botpress; ./duckling & ./bp lang --langDir /botpress/data/embeddings & ./bp"
 ```
 
 **Offline Server**: Follow the Offline Server [instructions](#offline-servers) if you're running a server without Internet access.
@@ -109,7 +109,7 @@ docker run -d \
 -p 3100:3100 \
 -v botpress_data:/botpress/data \
 botpress/server:$TAG \
-su - botpress -c "./bp lang --langDir /botpress/data/embeddings"
+su -p botpress -c "HOME=/home/botpress; PWD=/botpress; ./bp lang --langDir /botpress/data/embeddings"
 ```
 
 2. Run Botpress Server and Duckling within the same container. Duckling's usage is very light here, so we can justify using it in the same container as Botpress Server.
@@ -121,7 +121,7 @@ docker run -d \
 -v botpress_data:/botpress/data \
 -e BP_MODULE_NLU_LANGUAGESOURCES='[{ "endpoint": "http://localhost:3100" }]' \
 botpress/server:$TAG \
-su - botpress -c "./duckling & ./bp"
+su -p botpress -c "HOME=/home/botpress; PWD=/botpress; ./duckling & ./bp"
 ```
 
 **Offline Server**: Follow the Offline Server [instructions](#offline-servers) if you're running a server without Internet access.
@@ -158,7 +158,7 @@ services:
 
   botpress_lang:
     image: botpress-lang
-    command: su - botpress -c "./duckling -p 8000 & ./bp lang --langDir /botpress/lang --port 3100"
+    command: su -p botpress -c "HOME=/home/botpress; PWD=/botpress; ./duckling -p 8000 & ./bp lang --langDir /botpress/lang --port 3100"
     expose:
       - 3100
       - 8000
