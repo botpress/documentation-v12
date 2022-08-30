@@ -98,7 +98,7 @@ Please note that `targetDir` and `sourceDir` uses relative paths.
 **Docker:**
 
 ```bash
-docker exec -it <container> su - botpress -c "./bp pull --url <url> --token <auth_token> --targetDir <remote_data_path>"
+docker exec -it <container> bash -c "./bp pull --url <url> --token <auth_token> --targetDir <remote_data_path>"
 ```
 
 #### Push
@@ -112,5 +112,5 @@ docker exec -it <container> su - botpress -c "./bp pull --url <url> --token <aut
 **Docker:**
 
 ```bash
-docker exec -it <container> su - botpress -c "./bp push --url <url> --token <auth_token> --sourceDir <local_data_path>"
+docker exec -it <container> bash -c "./bp push --url <url> --token <auth_token> --sourceDir <local_data_path>"
 ```
