@@ -577,7 +577,7 @@ function action(bp: typeof sdk, event: sdk.IO.IncomingEvent, args: any, { user, 
    *   {
    *     type: 'single-choice',
    *     text: 'Ort Cloud',
-   *     isDropdown: 'https://ia801901.us.archive.org/13/items/Home-Odyssey/Home-Odyssey-04OortCloud.mp3',
+   *     isDropdown: true,
    *     dropdownPlaceholder: true,
    *     choices: [{ title: 'title', value: 'value' }],
    *     markdown: true,
