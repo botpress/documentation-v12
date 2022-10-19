@@ -49,3 +49,10 @@
 2. Click on your registered phone number. If you don't have one, click **Buy a new number**.
 3. Scroll down to the messaging webhook section.
 4. Set 'A Message Comes In' to `<EXTERNAL_URL>/api/v1/messaging/webhooks/<YOUR_BOT_ID/twilio`.
+
+### Setting up WhatsApp sandbox
+1. Go to WhatsApp sandbox settings under messaging section and add the above twilio url in 'A Message Comes In"
+![twilio-botpress](https://user-images.githubusercontent.com/88099328/196814357-cf581d65-5c08-49dc-aa8b-2c4d9f5b9e1d.png)
+
+
+
