@@ -3,8 +3,6 @@ title: Quick Start
 slug: /
 ---
 
----
-
 ## Introduction
 
 ## Login/Create Account
