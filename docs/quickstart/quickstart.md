@@ -5,8 +5,6 @@ title: 🚀 Quickstart
 
 ---
 
-## Introduction
-
 ## Login/Create Account
 
 To use Botpress Cloud services, you need to log in to the cloud platform. From the cloud platform, you can find other valuable services like
@@ -17,12 +15,6 @@ To use Botpress Cloud services, you need to log in to the cloud platform. From t
 - Settings
 - Account Management
 - Collaboration
-
-:::info
-For more information on Administration:
-For more information on Collaboration:
-For more information on Managing your Account:
-:::
 
 ### Available Types of Login
 
@@ -62,22 +54,11 @@ Now that you are logged in to your account. Next, we should download the suitabl
 
 Click the Studio version that is suitable for your OS. The Studio will get downloaded. After it is downloaded, install it and start it.
 
-:::info
-For more information on Studio:
-For more information on Studio Download:
-For more information on Managing your Account:
-:::
-
 ## Creating your first bot
 
 ![image](https://user-images.githubusercontent.com/89806971/200173929-c6df34e5-6ed3-4058-b4ed-63e6fa4794a6.png)
 
 Click **"Create"**
-
-:::info
-For more information on Build your first bot:
-For more information on Bot Building Fundamentals:
-:::
 
 ## Bot Publishing
 
@@ -104,11 +85,6 @@ A pre-requisite to publishing is the **"Access Tokens"**, to get the access toke
 
 ![image](https://user-images.githubusercontent.com/89806971/200174539-69170bcc-7a62-4dc9-aefa-3e5283e6534a.png)
 
-:::info
-For more information on Publishing:
-For more information on Access Token:
-:::
-
 ## Embedding Your Bot
 
 After the bot is successfully deployed to the cloud, then you Embed it on your website. To achieve that:
@@ -125,11 +101,3 @@ After the bot is successfully deployed to the cloud, then you Embed it on your w
 5. Click on the **“copy script”** button and past it in your HTML
 
 ![image](https://user-images.githubusercontent.com/89806971/200174692-e565c52a-817c-46c3-991f-dd250b71011e.png)
-
-
-:::info
-For more information on Embedding:
-For more information on Messaging Channels:
-:::
-
-
