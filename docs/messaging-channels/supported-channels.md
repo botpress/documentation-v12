@@ -5,7 +5,6 @@ title: Supported Channels
 
 --------------------
 
-In this section, you can find  all the supported channels. 
 
 ![Messaging channels](/img/docs/channels.png "Messaging channels supported by botpress")
 

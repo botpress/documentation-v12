@@ -21,10 +21,11 @@ module.exports = [
   }, //,
   // {
   //   type: 'category',
-  //   label: 'Cloud',
+  //   label: 'Download studio',
   //   collapsible: true,
   //   items: [
-  //     "overview/cloud/getting-started",
+  //     "quickstart/quickstart",
   //   ]
-  // }
+  // },
+  
 ]
