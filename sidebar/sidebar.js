@@ -4,7 +4,7 @@ const quickstart = require("./quickstart")
 // const overview = require("./overview")
 // const buildingChatbots = require("./buildingChatbots")
 // const goingToProduction = require("./goingToProduction")
-// const messaging = require("./messaging")
+const messaging = require("./messaging")
 // const chatbotManagement = require("./chatbotManagement")
 // const enterprise = require("./enterprise")
 const fm = require("front-matter")
@@ -74,5 +74,5 @@ function filterDraftPages(sidebar) {
 }
 
 module.exports = {
-  quickstartSidebar: filterDraftPages(quickstart),
+  messagingSidebar: filterDraftPages(messaging),
 }
