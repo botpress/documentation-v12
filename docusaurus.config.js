@@ -83,12 +83,6 @@ const config = {
       items: [
         {
           type: "doc",
-          docId: "hello-cloud/hello-cloud",
-          position: "left",
-          label: "Hello Cloud",
-        },
-        {
-          type: "doc",
           docId: "quickstart/quickstart",
           position: "left",
           label: "Quickstart",

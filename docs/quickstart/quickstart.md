@@ -1,11 +1,11 @@
 ---
 title: 🚀 Quickstart
-
+slug: /
 ---
 
----
 
-## Introduction
+![Messaging channels](/img/docs/quickstart.png "Quickstart")
+
 
 ## Login/Create Account
 
@@ -18,11 +18,11 @@ To use Botpress Cloud services, you need to log in to the cloud platform. From t
 - Account Management
 - Collaboration
 
-:::info
+<!-- :::info
 For more information on Administration:
 For more information on Collaboration:
 For more information on Managing your Account:
-:::
+::: -->
 
 ### Available Types of Login
 
@@ -30,7 +30,7 @@ Botpress provides three types of login that you can use to log in to the Botpres
 
 Go to the [Botpress Cloud](https://app.botpress.cloud).
 
-![image](https://user-images.githubusercontent.com/89806971/200173871-95899120-77b4-4325-ae76-3550552bc500.png)
+![Login](/img/docs/login.png "login")
 
 
 From there, choose the suitable authentication provider.
@@ -47,7 +47,7 @@ You can securely access your account's resources by authenticating through GitHu
 
 1. Click **Sign Up**
 
-![image](https://user-images.githubusercontent.com/89806971/200173893-d33c6615-3aaa-49c7-952d-9c67a2827ee1.png)
+![Sign up](/img/docs/signup.png "signup")
 
 2. Confirm your account in your email.
 3. **Sign In** with your account
@@ -56,80 +56,69 @@ You can securely access your account's resources by authenticating through GitHu
 
 Experience the speed of using Botpress Studio, a continuously enhanced interface designed for all chatbot builder's needs.
 
-![image](https://user-images.githubusercontent.com/89806971/200173916-4474ee55-9d5c-490b-a44a-d52964deb53c.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89806971/200173916-4474ee55-9d5c-490b-a44a-d52964deb53c.png" />
+</p>
+
 
 Now that you are logged in to your account. Next, we should download the suitable Botpress Studio version.
 
 Click the Studio version that is suitable for your OS. The Studio will get downloaded. After it is downloaded, install it and start it.
 
-:::info
+<!-- :::info
 For more information on Studio:
 For more information on Studio Download:
 For more information on Managing your Account:
-:::
+::: -->
 
 ## Creating your first bot
 
-![image](https://user-images.githubusercontent.com/89806971/200173929-c6df34e5-6ed3-4058-b4ed-63e6fa4794a6.png)
-
+![Create a chatbot](/img/docs/create-chatbot.png "Create a chatbot")
 Click **"Create"**
 
-:::info
+<!-- :::info
 For more information on Build your first bot:
 For more information on Bot Building Fundamentals:
-:::
+::: -->
 
 ## Bot Publishing
 
 In your Studio, on the top right corner, click **"Publish"**
 
-![image](https://user-images.githubusercontent.com/89806971/200174430-a32ac84d-d81b-4924-b980-dc58a97f45c4.png)
+![PAT](/img/docs/pat.png)
 
 
 A pre-requisite to publishing is the **"Access Tokens"**, to get the access token:
 
 1. Go to the cloud platform
-2. On the left-hand-side navigation, click on your account name and choose **"Settings"**
+2. On the left-hand-side navigation, click on your account name and choose **"Settings"** <img src="/img/docs/profile.png" width="400"/>
 3. From there, click on **"Generate new token"**
-
-![image](https://user-images.githubusercontent.com/89806971/200174464-7fc5e8ec-b928-4fbb-9d84-b848a1a4dd37.png)
 
 4. Enter the needed information and save it
 5. Copy the generated key token
 
-![image](https://user-images.githubusercontent.com/89806971/200174528-ebbe18d7-b4bd-44ee-90bb-6e1620e8bff1.png)
+![Create a token](/img/docs/pat-created.png)
 
-6. Paste it in the Studio
-7. Then choose the workspace where you want to publish to
+1. Paste it in the Studio
 
-![image](https://user-images.githubusercontent.com/89806971/200174539-69170bcc-7a62-4dc9-aefa-3e5283e6534a.png)
-
-:::info
+<!-- :::info
 For more information on Publishing:
 For more information on Access Token:
-:::
+::: -->
 
-## Embedding Your Bot
+## Testing your Bot
 
-After the bot is successfully deployed to the cloud, then you Embed it on your website. To achieve that:
-1. Go to the cloud
-2. On the left click on your deployed chatbot
-3. In the top navigation menu, click “channels”
+After the bot is successfully deployed to the cloud, you can test it from the cloud dashboard. 
+1. Go to the [cloud dashboard](https://app.botpress.cloud)
+2. Select your deployed chatbot from `chatbots` tab
+3. In the top navigation menu, click `Chat`
 
-![image](https://user-images.githubusercontent.com/89806971/200174617-72eae66f-61b5-4c04-8829-8f770abb4c28.png)
 
-4. Click the **“Web Chat”** channel, 
-
-![image](https://user-images.githubusercontent.com/89806971/200174670-962b126d-2f72-4ef9-8bf1-a25889bfe39d.png)
-
-5. Click on the **“copy script”** button and past it in your HTML
-
-![image](https://user-images.githubusercontent.com/89806971/200174692-e565c52a-817c-46c3-991f-dd250b71011e.png)
-
+![Testing chatbot](/img/docs/testing-chatbot.png)
 
 :::info
-For more information on Embedding:
-For more information on Messaging Channels:
+Learn how to  [integrate different messaging channels](/messaging-channels/supported-channels)  with botpress cloud
 :::
 
 
