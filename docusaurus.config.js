@@ -83,9 +83,21 @@ const config = {
       items: [
         {
           type: "doc",
+          docId: "hello-cloud/hello-cloud",
+          position: "left",
+          label: "Hello Cloud",
+        },
+        {
+          type: "doc",
           docId: "quickstart/quickstart",
           position: "left",
-          label: "Overview",
+          label: "Quickstart",
+        },
+        {
+          type: "doc",
+          docId: "messaging-channels/supported-channels",
+          position: "left",
+          label: "Messaging Channels",
         },
         {
           type: "docsVersionDropdown",
