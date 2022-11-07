@@ -4,12 +4,9 @@ slug: /
 ---
 
 
-<<<<<<< HEAD
 ![Messaging channels](/img/docs/quickstart.png "Quickstart")
 
 
-=======
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
 ## Login/Create Account
 
 To use Botpress Cloud services, you need to log in to the cloud platform. From the cloud platform, you can find other valuable services like
@@ -21,15 +18,12 @@ To use Botpress Cloud services, you need to log in to the cloud platform. From t
 - Account Management
 - Collaboration
 
-<<<<<<< HEAD
 <!-- :::info
 For more information on Administration:
 For more information on Collaboration:
 For more information on Managing your Account:
 ::: -->
 
-=======
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
 ### Available Types of Login
 
 Botpress provides three types of login that you can use to log in to the Botpress Cloud.
@@ -72,28 +66,22 @@ Now that you are logged in to your account. Next, we should download the suitabl
 
 Click the Studio version that is suitable for your OS. The Studio will get downloaded. After it is downloaded, install it and start it.
 
-<<<<<<< HEAD
 <!-- :::info
 For more information on Studio:
 For more information on Studio Download:
 For more information on Managing your Account:
 ::: -->
 
-=======
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
 ## Creating your first bot
 
 ![Create a chatbot](/img/docs/create-chatbot.png "Create a chatbot")
 Click **"Create"**
 
-<<<<<<< HEAD
 <!-- :::info
 For more information on Build your first bot:
 For more information on Bot Building Fundamentals:
 ::: -->
 
-=======
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
 ## Bot Publishing
 
 In your Studio, on the top right corner, click **"Publish"**
@@ -114,25 +102,18 @@ A pre-requisite to publishing is the **"Access Tokens"**, to get the access toke
 
 1. Paste it in the Studio
 
-<<<<<<< HEAD
 <!-- :::info
 For more information on Publishing:
 For more information on Access Token:
 ::: -->
 
 ## Testing your Bot
-=======
-![image](https://user-images.githubusercontent.com/89806971/200174539-69170bcc-7a62-4dc9-aefa-3e5283e6534a.png)
-
-## Embedding Your Bot
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
 
 After the bot is successfully deployed to the cloud, you can test it from the cloud dashboard. 
 1. Go to the [cloud dashboard](https://app.botpress.cloud)
 2. Select your deployed chatbot from `chatbots` tab
 3. In the top navigation menu, click `Chat`
 
-<<<<<<< HEAD
 
 ![Testing chatbot](/img/docs/testing-chatbot.png)
 
@@ -141,14 +122,3 @@ Learn how to  [integrate different messaging channels](/messaging-channels/suppo
 :::
 
 
-=======
-![image](https://user-images.githubusercontent.com/89806971/200174617-72eae66f-61b5-4c04-8829-8f770abb4c28.png)
-
-4. Click the **“Web Chat”** channel, 
-
-![image](https://user-images.githubusercontent.com/89806971/200174670-962b126d-2f72-4ef9-8bf1-a25889bfe39d.png)
-
-5. Click on the **“copy script”** button and past it in your HTML
-
-![image](https://user-images.githubusercontent.com/89806971/200174692-e565c52a-817c-46c3-991f-dd250b71011e.png)
->>>>>>> 065b60212c255d71991b297e320b7ada71260c22
