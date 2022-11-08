@@ -4,6 +4,8 @@ title: Microsoft Teams
 ---
 
 
+![Messaging channels](/img/docs/teams-banner.png)
+
 ## Requirements
 
 ### Configure Microsoft Account

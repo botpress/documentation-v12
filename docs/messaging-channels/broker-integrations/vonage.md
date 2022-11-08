@@ -1,4 +1,9 @@
-# Vonage
+---
+id: vonage
+title: Vonage
+---
+
+![Messaging channels](/img/docs/vonage-banner.png)
 
 ## Requirements
 

@@ -3,6 +3,9 @@ id: telegram
 title: Telegram
 ---
 
+
+![Messaging channels](/img/docs/telegram-banner.png)
+
 ## Requirements
 
 ### Create a Bot

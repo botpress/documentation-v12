@@ -4,6 +4,8 @@ title: Facebook Messenger
 ---
 
 
+![Messaging channels](/img/docs/messenger-banner.png)
+
 ## Requirements
 
 You will need a Facebook app and a Facebook page to connect you bot to messenger

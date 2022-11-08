@@ -3,6 +3,8 @@ id: slack
 title: Slack
 ---
 
+
+![Messaging channels](/img/docs/slack-banner.png)
 ## Requirements
 
 ### Create a Slack App
