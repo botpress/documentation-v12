@@ -2,13 +2,8 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Analytics",
+    label: "Overview",
     items: ["analytics/analytics",{
-      type: 'link',
-      label: 'Selected Period', // The link label
-      href: '/analytics#selected-period', // The internal path
-    }]
-  },{
       type: 'link',
       label: 'Selected Period', // The link label
       href: '/analytics#selected-period', // The internal path
@@ -41,5 +36,6 @@ module.exports = [
       type: 'link',
       label: '6. Overall Dashboard', // The link label
       href: '/analytics#6-overall-dashboard', // The internal path
-    }
+    }]
+  },
 ]
