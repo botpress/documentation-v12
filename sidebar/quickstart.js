@@ -2,7 +2,7 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Overview",
+    label: " ",
     items: [
       "quickstart/quickstart",
       "quickstart/login",

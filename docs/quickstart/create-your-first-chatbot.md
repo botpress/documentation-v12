@@ -1,5 +1,5 @@
 ---
-title: 🤖 Create a bot on studio
+title: 3. Create a bot on studio
 slug: /quickstart/create-your-first-chatbot
 ---
 <!-- ![Create a chatbot](/img/docs/create-bot-banner.png "Create a chatbot") -->
