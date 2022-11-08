@@ -2,7 +2,7 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: " ",
+    label: "Analytics",
     items: [
       {
       type: 'link',
