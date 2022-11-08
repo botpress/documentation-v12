@@ -1,5 +1,12 @@
 module.exports = [
-  // Internal link
+  {
+    type: "category",
+    collapsible: false,
+    label: " ",
+    items: [
+      "analytics/analytics"
+    ],
+  }, 
     {
       type: 'link',
       label: 'Selected Period', // The link label
