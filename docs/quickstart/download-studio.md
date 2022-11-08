@@ -1,5 +1,5 @@
 ---
-title: ⬇️ Download studio
+title: 2. Download studio
 slug: /quickstart/download-studio
 ---
 Experience the speed of using Botpress Studio, a continuously enhanced interface designed for all chatbot builder's needs.

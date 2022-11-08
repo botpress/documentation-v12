@@ -1,5 +1,5 @@
 ---
-title: ✅ Testing your chatbot
+title: 5. Testing your chatbot
 slug: /quickstart/testing-your-chatbot
 ---
 

@@ -74,13 +74,14 @@ main li > a:hover {
   border-top: 1px solid #e6e6e6;
 }
 
+.theme-doc-sidebar-container > div{
+  position: fixed;
+}
+
 .footer__copyright {
   color: #aaaaaa;
 }
 
-.menu.thin-scrollbar{
-  position: fixed;
-}
 
 
 

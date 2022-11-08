@@ -1,5 +1,5 @@
 ---
-title: 🚀 Publishing your chatbot
+title: 4. Publishing your chatbot
 slug: /quickstart/publishing-your-chatbot
 ---
 

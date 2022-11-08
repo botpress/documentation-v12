@@ -1,5 +1,5 @@
 ---
-title: 🔥 Quickstart
+title: Introduction
 slug: /
 hide_title: true
 ---
