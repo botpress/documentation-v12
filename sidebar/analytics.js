@@ -3,7 +3,8 @@ module.exports = [
     type: "category",
     collapsible: false,
     label: "Analytics",
-    items: [{
+    items: ["analytics/analytics",
+    {
       type: 'link',
       label: 'Selected Period', // The link label
       href: '/analytics#selected-period', // The internal path
