@@ -99,7 +99,7 @@ const config = {
           dropdownItemsAfter: [
             {
               href: "https://botpress-12-docs.vercel.app",
-              label: "Botpress 12 (Latest)",
+              label: "v12 (Latest)",
             },
           ],
           dropdownActiveClassDisabled: true,
@@ -123,6 +123,10 @@ const config = {
             {
               label: "Messaging Channels",
               to: "messaging-channels/supported-channels",
+            },
+            {
+              label: "v12 Docs",
+              href: "https://botpress-12-docs.vercel.app",
             },
           ],
         },
