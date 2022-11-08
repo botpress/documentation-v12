@@ -74,10 +74,6 @@ main li > a:hover {
   border-top: 1px solid #e6e6e6;
 }
 
-.theme-doc-sidebar-container > div{
-  position: fixed;
-}
-
 .footer__copyright {
   color: #aaaaaa;
 }
@@ -330,10 +326,6 @@ Side bar section titles
 
 .menu__link:hover {
   color: var(--ifm-color-black);
-}
-
-.theme-doc-sidebar-container > div {
-  max-height: none !important;
 }
 
 .alert {
