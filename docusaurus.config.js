@@ -79,7 +79,7 @@ const config = {
         src: "img/bp-logo-black.svg",
         srcDark: "img/bp-logo-white.png",
       },
-      hideOnScroll: true,
+      hideOnScroll: false,
       items: [
         {
           type: "doc",

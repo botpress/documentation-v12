@@ -75,5 +75,5 @@ function filterDraftPages(sidebar) {
 
 module.exports = {
   messagingSidebar: filterDraftPages(messaging),
-  // quickstartSidebar: filterDraftPages(quickstart)
+  quickstartSidebar: filterDraftPages(quickstart)
 }

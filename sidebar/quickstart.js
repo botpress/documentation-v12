@@ -2,30 +2,14 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Quickstart",
+    label: "Overview",
     items: [
-      "quickstart/quickstart", //,
-      // {
-      //   type: "category",
-      //   collapsible: true,
-      //   label: "Quickstart",
-      //   items: [
-      //     "overview/quickstart/installation",
-      //     "overview/quickstart/building-a-bot",
-      //     "overview/quickstart/admin-dashboard",
-      //     "overview/quickstart/conversation-studio",
-      //   ],
-      // },
-      // "overview/features",
+      "quickstart/quickstart",
+      "quickstart/login",
+      "quickstart/download-studio",
+      "quickstart/create-your-first-chatbot",
+      "quickstart/publishing-your-chatbot",
+      "quickstart/testing-your-chatbot"
     ],
-  }, //,
-  // {
-  //   type: 'category',
-  //   label: 'Download studio',
-  //   collapsible: true,
-  //   items: [
-  //     "quickstart/quickstart",
-  //   ]
-  // },
-  
+  }, 
 ]
