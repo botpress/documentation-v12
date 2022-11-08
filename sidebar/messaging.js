@@ -8,7 +8,7 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Website Embedding",
+    label: "Webchat",
     items: ["messaging-channels/botpress-webchat/website-embedding/website-embedding"],
   },
   {

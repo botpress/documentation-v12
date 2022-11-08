@@ -5,8 +5,9 @@ title: Supported Channels
 
 --------------------
 
+Once you've published your chatbot, your next step might be to integrate it various messaging channels.
 
-![Messaging channels](/img/docs/channels.png "Messaging channels supported by botpress")
+![Messaging channels](/img/docs/messaging-banner.png)
 
 
 ## Supported Content types
