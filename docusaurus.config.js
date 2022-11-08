@@ -94,6 +94,12 @@ const config = {
           label: "Messaging Channels",
         },
         {
+          type: "doc",
+          docId: "analytics/analytics",
+          position: "left",
+          label: "Analytics",
+        },
+        {
           type: "docsVersionDropdown",
           position: "right",
           dropdownItemsAfter: [
@@ -123,6 +129,10 @@ const config = {
             {
               label: "Messaging Channels",
               to: "messaging-channels/supported-channels",
+            },
+            {
+              label: "Analytics",
+              to: "analytics/analytics",
             },
             {
               label: "v12 Docs",
