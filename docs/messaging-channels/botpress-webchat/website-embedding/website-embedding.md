@@ -3,8 +3,6 @@ id: website-embedding
 title: Website Embedding
 ---
 
----
-
 ![Messaging channels](/img/docs/webchat-banner.png)
 
 1. Make sure you've [published your chatbot](/quickstart/publishing-your-chatbot) to botpress cloud dashboard.
@@ -13,9 +11,7 @@ title: Website Embedding
 4. Moreover, click on the `Custom Configuration` tab if you want to customize the webchat configurations.
 
 ![Messaging channels](/img/docs/custom-config.png)
-
+<!-- 
 :::tip
-
-<a href="./botpress_chatbot.html" download>Download</a> the sample HTML and paste your ClientId in the script tag
-
-:::
+<a href="/img/botpress_chatbot.html" download>Download</a> the sample HTML and paste your ClientId in the script tag
+::: -->
