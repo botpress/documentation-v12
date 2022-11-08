@@ -2,8 +2,8 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Overview",
-    items: ["analytics/analytics",{
+    label: "Analytics",
+    items: [{
       type: 'link',
       label: 'Selected Period', // The link label
       href: '/analytics#selected-period', // The internal path
