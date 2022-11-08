@@ -2,6 +2,8 @@
 id: smooch-sunshine-conversations
 title: Smooch 
 ---
+
+![Messaging channels](/img/docs/smooch-banner.png)
 ## Requirements
 
 You will need a Smooch app with a channel configured before connecting Smooch to Botpress

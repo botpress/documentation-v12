@@ -3,6 +3,7 @@ id: twilio
 title: Twilio
 ---
 
+![Messaging channels](/img/docs/twilio-banner.png)
 
 ## Requirements
 
