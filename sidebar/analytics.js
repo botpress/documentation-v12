@@ -1,16 +1,14 @@
-const selectedPeriods = {
-      type: 'link',
-      label: 'Selected Period', // The link label
-      href: '/analytics#selected-period', // The internal path
-    }
-
 module.exports = [
   {
     type: "category",
     collapsible: false,
     label: " ",
     items: [
-      selectedPeriods
+      {
+      type: 'link',
+      label: 'Selected Period', // The link label
+      href: '/analytics#selected-period', // The internal path
+    }
     ],
   }, 
     {
