@@ -122,31 +122,15 @@ const config = {
       style: "light",
       links: [
         {
-          title: "Docs",
+          title: "Learn",
           items: [
             {
-              label: "Overview",
+              label: "Quickstart",
               to: "/",
-            },
-            {
-              label: "Building Chatbots",
-              to: "building-chatbots/creating-a-new-bot",
             },
             {
               label: "Messaging Channels",
               to: "messaging-channels/supported-channels",
-            },
-            {
-              label: "Going to Production",
-              to: "going-to-production/deploy",
-            },
-            {
-              label: "Chatbot Management",
-              to: "chatbot-management/language-understanding/misunderstood",
-            },
-            {
-              label: "Enterprise",
-              to: "enterprise/licensing/enterprise-licensing",
             },
           ],
         },
@@ -154,16 +138,16 @@ const config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/botpress",
+              label: "Forum",
+              href: "https://github.com/botpress/botpress/discussions",
+            },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/botpress/",
             },
             {
               label: "Twitter",
               href: "https://twitter.com/getbotpress",
-            },
-            {
-              label: "Forum",
-              href: "https://github.com/botpress/botpress/discussions",
             },
           ],
         },
@@ -171,8 +155,29 @@ const config = {
           title: "More",
           items: [
             {
+              label: "Blog",
+              href: "https://botpress.com/blog",
+            },
+            {
               label: "GitHub",
-              href: "https://github.com/botpress/botpress",
+              href: "https://github.com/botpress/",
+            },
+            {
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/botpress",
+            },
+          ],
+        },
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Privacy",
+              href: "https://botpress.com/privacy",
+            },
+            {
+              label: "Terms",
+              href: "https://botpress.com/company/terms",
             },
           ],
         },
