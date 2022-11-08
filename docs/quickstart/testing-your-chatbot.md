@@ -18,5 +18,5 @@ Hurray! 🎉 You've successfully created and published your bot on botpress clou
 
 
 :::info
-Learn how to  [integrate different messaging channels](/messaging-channels/supported-channels)  with botpress cloud
+Learn how to [integrate different messaging channels](/messaging-channels/supported-channels) with botpress cloud
 :::
