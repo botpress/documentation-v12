@@ -1,6 +1,6 @@
 ---
 id: smooch-sunshine-conversations
-title: Smooch 
+title: Sunshine Conversations
 ---
 
 ![Messaging channels](/img/docs/smooch-banner.png)
