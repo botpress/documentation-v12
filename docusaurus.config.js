@@ -23,7 +23,7 @@ const config = {
           lastVersion: "current",
           versions: {
             current: {
-              label: "Latest",
+              label: "Botpress Cloud",
             },
           },
           editUrl: "https://github.com/botpress/documentation/edit/main",
@@ -98,16 +98,8 @@ const config = {
           position: "right",
           dropdownItemsAfter: [
             {
-              href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/installation/",
-              label: "v12.26.7",
-            },
-            {
-              href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/11.9.6/installation/",
-              label: "v11.9.6",
-            },
-            {
-              href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/versions",
-              label: "(Older docs) 11.0 to v12.26",
+              href: "https://botpress-12-docs.vercel.app",
+              label: "Botpress 12 (Latest)",
             },
           ],
           dropdownActiveClassDisabled: true,
