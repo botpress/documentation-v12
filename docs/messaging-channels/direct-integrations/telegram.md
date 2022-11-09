@@ -24,8 +24,11 @@ When you create a Telegram bot, Botfather will automatically generate a token. T
 
 If your existing token is compromised or you lost it for some reason, use the `/token` command to generate a new one
 
-### Bot Token
 
-Copy paste your telegram bot token into the **Bot Token** channel configuration and click **Save**. Webhooks will be created automatically
+## Connecting with Botpress Cloud
 
-1. Copy paste your telegram bot token into the Bot Token channel configuration and click Save. Webhooks will be created automatically
+
+
+![Messaging channels](/img/docs/telegram-config.png)
+
+Copy paste your telegram bot token into the **Bot Token** channel configuration, enable the channel and click **Save**.
