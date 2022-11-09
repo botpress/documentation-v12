@@ -43,8 +43,8 @@ const config = {
   ],
   themeConfig: {
     announcementBar: {
-      id: "announcementBar-2", // Increment on change
-      content: `Introducing Botpress 🧠 <a target="_blank" rel="noopener noreferrer" href="https://learn.botpress.com"> Learning Center</a> 🧠 – A New Place to Master Botpress, Chatbots, and Conversational AI`,
+      id: "announcementBar-3", // Increment on change
+      content: `Welcome to the new <b>Botpress Cloud</b> documentation! If you are looking for the <b>v12</b> documentation, you can now find it <a target="_blank" rel="noopener noreferrer" href="https://v12.botpress.com/">here</a>.`,
       backgroundColor: "#3276ea",
       textColor: "#fff",
     },
@@ -104,7 +104,7 @@ const config = {
           position: "right",
           dropdownItemsAfter: [
             {
-              href: "https://botpress-12-docs.vercel.app",
+              href: "https://v12.botpress.com/",
               label: "v12 (Latest)",
             },
           ],
@@ -136,7 +136,7 @@ const config = {
             },
             {
               label: "v12 Docs",
-              href: "https://botpress-12-docs.vercel.app",
+              href: "https://v12.botpress.com/",
             },
           ],
         },
