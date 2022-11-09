@@ -19,7 +19,7 @@ This guide will help you build and deploy your chatbot to botpress cloud in 5 ea
 
 
 
-### Login
+### 1. Login & Signup
 
 To use Botpress Cloud services, you need to log in to the cloud platform. From the cloud platform, you can find other valuable services like
 
@@ -36,7 +36,7 @@ For more information on Collaboration:
 For more information on Managing your Account:
 ::: -->
 
-### Available Types of Login
+#### Available Types of Login
 
 ![Login](/img/docs/login.png "login")
 
@@ -46,7 +46,7 @@ Go to the [Botpress Cloud Dashboard](https://app.botpress.cloud).
 
 From there, choose the suitable authentication provider.
 
-### Sign Up using Email
+#### Sign Up using Email
 
 ![Sign up](/img/docs/signup.png "signup")
 
@@ -55,7 +55,7 @@ From there, choose the suitable authentication provider.
 3. Sign in with your credentials
 
 
-## Github
+#### Github
 You can securely access your account's resources by authenticating through GitHub.
 
 
@@ -63,18 +63,18 @@ You can securely access your account's resources by authenticating through GitHu
 
 Click on `Continue with GitHub` and authorize github permissions.
 
-## Google
+#### Google
 
 Signing up with Google means you can log in with your Google account, making it extra easy and secure to log in to Botpress Cloud.
 
-### Download Studio
+### 2. Download Studio
 
 Experience the speed of using Botpress Studio, a continuously enhanced interface designed for all chatbot builder's needs.
 
 ![Sign up](/img/docs/studio.png "signup")
 
 
-### Create chatbot
+### 3. Create a chatbot on studio
 
 Now that you are [logged in](/login-signup) in to your account. Next, we should download the suitable Botpress Studio version.
 
@@ -86,7 +86,7 @@ You can start with an Empty Bot or pick one from the templates provided by botpr
 
 Click on `Create` button and select the destination folder to save your bots locally.
 
-### Publishing chatbot
+### 4. Publishing chatbot
 
 ![PAT](/img/docs/pat.png)
 
@@ -100,7 +100,7 @@ On the bottom-left corner, click on your account name and click on `Settings`
 1. Now, click on `Generate new token`, give it a name and save it.
 2. Copy the generated key token and paste it in your studio.
 
-### Testing 
+### 5. Testing your chatbot
 
 After the bot is successfully published to the cloud, you can test it from the cloud dashboard. 
 
