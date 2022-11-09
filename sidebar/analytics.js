@@ -35,7 +35,7 @@ module.exports = [
     },
     {
       type: 'link',
-      label: '6. Overall Dashboard', // The link label
+      label: '6. Overall Graph', // The link label
       href: '/analytics#6-overall-dashboard', // The internal path
     }]
   },
