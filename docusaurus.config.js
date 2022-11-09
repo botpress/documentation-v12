@@ -99,6 +99,12 @@ const config = {
           position: "left",
           label: "Analytics",
         },
+                {
+          type: "doc",
+          docId: "misunderstood/misunderstood",
+          position: "left",
+          label: "Misunderstood",
+        },
         {
           type: "docsVersionDropdown",
           position: "right",
@@ -133,6 +139,10 @@ const config = {
             {
               label: "Analytics",
               to: "analytics/analytics",
+            },
+            {
+              label: "Misunderstood",
+              to: "misunderstood/misunderstood",
             },
             {
               label: "v12 Docs",
