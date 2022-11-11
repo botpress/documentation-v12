@@ -1,7 +1,8 @@
 const fs = require("fs")
 const path = require("path")
 const quickstart = require("./quickstart")
-// const overview = require("./overview")
+
+const actions_hooks= require("./actions_hooks")
 // const buildingChatbots = require("./buildingChatbots")
 // const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
@@ -79,5 +80,6 @@ module.exports = {
   misunderstoodSidebar: misunderstood,
   analyticsSidebar: analytics,
   messagingSidebar: filterDraftPages(messaging),
-  quickstartSidebar: quickstart
+  quickstartSidebar: quickstart,
+  actionshooksSidebar: actions_hooks
 }
