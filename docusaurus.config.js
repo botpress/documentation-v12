@@ -106,6 +106,12 @@ const config = {
           label: "Misunderstood",
         },
         {
+          type: "doc",
+          docId: "actions_hooks/actions",
+          position: "left",
+          label: "Actions & Hooks",
+        },
+        {
           type: "docsVersionDropdown",
           position: "right",
           dropdownItemsAfter: [
