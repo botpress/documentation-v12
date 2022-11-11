@@ -23,10 +23,10 @@ const config = {
           lastVersion: "current",
           versions: {
             current: {
-              label: "Latest",
+              label: "Botpress Cloud",
             },
           },
-          editUrl: 'https://github.com/botpress/documentation/edit/main',
+          editUrl: "https://github.com/botpress/documentation/edit/main",
         },
         blog: {
           showReadingTime: true,
@@ -41,172 +41,156 @@ const config = {
       }),
     ],
   ],
-  themeConfig:
-    ({
-      announcementBar: {
-        id: 'announcementBar-2', // Increment on change
-        content: `Introducing Botpress 🧠 <a target="_blank" rel="noopener noreferrer" href="https://learn.botpress.com"> Learning Center</a> 🧠 – A New Place to Master Botpress, Chatbots, and Conversational AI`,
-        backgroundColor: "#3276ea",
-        textColor: "#fff"
+  themeConfig: {
+    announcementBar: {
+      id: "announcementBar-3", // Increment on change
+      content: `Welcome to the new <b>Botpress Cloud</b> documentation! If you are looking for the <b>v12</b> documentation, you can now find it <a target="_blank" rel="noopener noreferrer" href="https://v12.botpress.com/">here</a>.`,
+      backgroundColor: "#3276ea",
+      textColor: "#fff",
+    },
+    metadata: [
+      { name: "botpress, chatbot", content: "documentation, docs" },
+      { name: "docsearch:docusaurus_tag", content: "docs-default-current" },
+    ],
+    algolia: {
+      apiKey: process.env.ALGOLIA_API_KEY || "empty",
+      appId: process.env.ALGOLIA_APP_ID || "empty",
+      indexName: process.env.ALGOLIA_INDEX || "empty",
+      contextualSearch: false, //leave it as is. For some reason, activating this adds docusaurus tag facets, thus algolia returns 0 hits.
+      searchPagePath: "search",
+    },
+    prism: {
+      theme: require("./src/utils/prism/lightTheme.js"),
+      // additionalLanguages: ["bash", "javascript", "jsx", "tsx", "json"],
+    },
+    colorMode: {
+      defaultMode: "light",
+      respectPrefersColorScheme: false,
+      disableSwitch: true,
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 6,
+    },
+    navbar: {
+      title: "Docs",
+      logo: {
+        alt: "Botpress logo",
+        src: "img/bp-logo-black.svg",
+        srcDark: "img/bp-logo-white.png",
       },
-      metadata: [{ name: "botpress, chatbot", content: "documentation, docs" }, {name:"docsearch:docusaurus_tag", content:"docs-default-current"}],
-      algolia: {
-        apiKey: process.env.ALGOLIA_API_KEY || "empty",
-        appId: process.env.ALGOLIA_APP_ID || "empty",
-        indexName: process.env.ALGOLIA_INDEX || "empty",
-        contextualSearch: false, //leave it as is. For some reason, activating this adds docusaurus tag facets, thus algolia returns 0 hits.
-        searchPagePath: 'search',
-      },
-      prism: {
-        theme: require("./src/utils/prism/lightTheme.js"),
-        // additionalLanguages: ["bash", "javascript", "jsx", "tsx", "json"],
-      },
-      colorMode: {
-        defaultMode: "light",
-        respectPrefersColorScheme: false,
-        disableSwitch: true
-      },
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 6,
-      },
-      navbar: {
-        title: "Docs",
-        logo: {
-          alt: "Botpress logo",
-          src: "img/bp-logo-black.svg",
-          srcDark: "img/bp-logo-white.png",
+      hideOnScroll: false,
+      items: [
+        {
+          type: "doc",
+          docId: "quickstart/quickstart",
+          position: "left",
+          label: "Quickstart",
         },
-        hideOnScroll: true,
-        items: [
-          {
-            type: "doc",
-            docId: "overview/what-is-botpress",
-            position: "left",
-            label: "Overview",
-          },
-          {
-            type: "doc",
-            docId: "building-chatbots/creating-a-new-bot",
-            position: "left",
-            label: "Building Chatbots",
-          },
-          {
-            type: "doc",
-            docId: "messaging-channels/supported-channels",
-            position: "left",
-            label: "Messaging Channels",
-          },
-          {
-            type: "doc",
-            docId: "going-to-production/deploy/deploy",
-            position: "left",
-            label: "Going to Production",
-          },
-          {
-            type: "doc",
-            docId: "chatbot-management/language-understanding/misunderstood",
-            position: "left",
-            label: "Chatbot Management",
-          },
-          {
-            type: "doc",
-            docId: "enterprise/licensing/enterprise-licensing",
-            position: "left",
-            label: "Enterprise",
-          },
-          {
-            href: "https://botpress.com/reference/",
-            position: "right",
-            label: "SDK",
-          },
-          {
-            type: "docsVersionDropdown",
-            position: "right",
-            dropdownItemsAfter: [
-              {
-                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/installation/",
-                label: "v12.26.7",
-              },
-              {
-                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/docs/11.9.6/installation/",
-                label: "v11.9.6",
-              },
-              {
-                href: "http://botpress-docs.s3-website-us-east-1.amazonaws.com/versions",
-                label: "(Older docs) 11.0 to v12.26",
-              },
-            ],
-            dropdownActiveClassDisabled: true,
-          },
-          {
-            type: "search",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "light",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Overview",
-                to: "/",
-              },
-              {
-                label: "Building Chatbots",
-                to: "building-chatbots/creating-a-new-bot",
-              },
-              {
-                label: "Messaging Channels",
-                to: "messaging-channels/supported-channels",
-              },
-              {
-                label: "Going to Production",
-                to: "going-to-production/deploy",
-              },
-              {
-                label: "Chatbot Management",
-                to: "chatbot-management/language-understanding/misunderstood",
-              },
-              {
-                label: "Enterprise",
-                to: "enterprise/licensing/enterprise-licensing",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/botpress",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/getbotpress",
-              },
-              {
-                label: "Forum",
-                href: "https://github.com/botpress/botpress/discussions",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/botpress/botpress",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
-      },
-    }),
+        {
+          type: "doc",
+          docId: "messaging-channels/supported-channels",
+          position: "left",
+          label: "Messaging Channels",
+        },
+        {
+          type: "doc",
+          docId: "analytics/analytics",
+          position: "left",
+          label: "Analytics",
+        },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
+          dropdownItemsAfter: [
+            {
+              href: "https://v12.botpress.com/",
+              label: "v12 (Latest)",
+            },
+          ],
+          dropdownActiveClassDisabled: true,
+        },
+        {
+          type: "search",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "light",
+      links: [
+        {
+          title: "Learn",
+          items: [
+            {
+              label: "Quickstart",
+              to: "/",
+            },
+            {
+              label: "Messaging Channels",
+              to: "messaging-channels/supported-channels",
+            },
+            {
+              label: "Analytics",
+              to: "analytics/analytics",
+            },
+            {
+              label: "v12 Docs",
+              href: "https://v12.botpress.com/",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Forum",
+              href: "https://github.com/botpress/botpress/discussions",
+            },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/botpress/",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/getbotpress",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Blog",
+              href: "https://botpress.com/blog",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/botpress/",
+            },
+            {
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/botpress",
+            },
+          ],
+        },
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Privacy",
+              href: "https://botpress.com/privacy",
+            },
+            {
+              label: "Terms",
+              href: "https://botpress.com/company/terms",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
+    },
+  },
 }
 
 module.exports = config

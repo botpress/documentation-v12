@@ -78,6 +78,9 @@ main li > a:hover {
   color: #aaaaaa;
 }
 
+
+
+
 .pagination-nav__label {
   font-size: var(--ifm-h3-font-size);
   font-weight: var(--ifm-heading-font-weight);
@@ -323,10 +326,6 @@ Side bar section titles
 
 .menu__link:hover {
   color: var(--ifm-color-black);
-}
-
-.theme-doc-sidebar-container > div {
-  max-height: none !important;
 }
 
 .alert {
