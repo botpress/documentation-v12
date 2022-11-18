@@ -38,3 +38,11 @@ Channel configuration is complete, you can now click **Save**
 1. Copy paste the webhook url provided in the channel configuration UI to the **Messaging endpoint** field
 1. Click **Register**
 1. On the next page (**Connect to channels**), under the section, **Add a featured channel**, click **Configure Microsoft Teams Channel**, then click **Save**
+
+## Connecting with Botpress Cloud
+
+![Messaging channels](/img/docs/teams-config.png)
+
+1. Paste your App ID and App Password and enable the channel.
+2. Click save and send message to your bot on teams.
+

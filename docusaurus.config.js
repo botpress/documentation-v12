@@ -138,7 +138,7 @@ const config = {
             },
             {
               label: "Analytics",
-              to: "analytics/analytics",
+              to: "analytics/",
             },
             {
               label: "Misunderstood",
