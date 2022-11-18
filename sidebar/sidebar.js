@@ -6,6 +6,7 @@ const quickstart = require("./quickstart")
 // const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
 const analytics = require("./analytics")
+const misunderstood = require("./misunderstood")
 // const chatbotManagement = require("./chatbotManagement")
 // const enterprise = require("./enterprise")
 const fm = require("front-matter")
@@ -75,6 +76,7 @@ function filterDraftPages(sidebar) {
 }
 
 module.exports = {
+  misunderstoodSidebar: misunderstood,
   analyticsSidebar: analytics,
   messagingSidebar: filterDraftPages(messaging),
   quickstartSidebar: quickstart
