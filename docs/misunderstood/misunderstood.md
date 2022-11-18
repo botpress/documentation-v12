@@ -23,6 +23,18 @@ When a user input is identified as a misunderstood then we can do one of two thi
 
 ![image](https://user-images.githubusercontent.com/89806971/200905807-5ea04e46-0550-41f5-9cb8-6fb610b9ac5d.png)
 
+### Automatic Utterance Clustering
+In order to make it easier for our builder (conversation designers, developers, etc.) we have added a new functionality in the misunderstood module, which is the automatic utterance clustering. When a builder click an utterance to take a decision about, the user statements are reordered to push all the matching/similar statements to the one the builder have chose. 
+
+So for example, below are the misunerstood statements:
+
+![image](https://user-images.githubusercontent.com/89806971/202796242-4398de57-db26-4ca9-ba5e-99d7cc44951b.png)
+
+We can see, food related statements are in the middle, when we select one of them, it is pushed up to the top along with other matching/similar statements:
+
+![image](https://user-images.githubusercontent.com/89806971/202796362-44de41c8-655c-435a-8b09-184d1d76c9cd.png)
+
+
 ### Amend
 You can amend your intent(s) or QnA(s) utternaces with what was not understood
 
