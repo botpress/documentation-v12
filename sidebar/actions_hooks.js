@@ -10,7 +10,6 @@ module.exports = [
       "actions_hooks/actions",
       "actions_hooks/hooks",
       "actions_hooks/libraries",
-      "actions_hooks/custom_modules",
     ],
   },
 ]
