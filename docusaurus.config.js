@@ -95,21 +95,15 @@ const config = {
         },
         {
           type: "doc",
-          docId: "analytics/analytics",
+          docId: "chatbot_management/overview",
           position: "left",
-          label: "Analytics",
-        },
-                {
-          type: "doc",
-          docId: "misunderstood/misunderstood",
-          position: "left",
-          label: "Misunderstood",
+          label: "Chatbot Management",
         },
         {
           type: "doc",
           docId: "actions_hooks/event_engine",
           position: "left",
-          label: "Actions & Hooks",
+          label: "Botpress Concepts",
         },
         {
           type: "docsVersionDropdown",

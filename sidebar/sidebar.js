@@ -6,8 +6,7 @@ const actions_hooks= require("./actions_hooks")
 // const buildingChatbots = require("./buildingChatbots")
 // const goingToProduction = require("./goingToProduction")
 const messaging = require("./messaging")
-const analytics = require("./analytics")
-const misunderstood = require("./misunderstood")
+const management = require("./management")
 // const chatbotManagement = require("./chatbotManagement")
 // const enterprise = require("./enterprise")
 const fm = require("front-matter")
@@ -77,8 +76,7 @@ function filterDraftPages(sidebar) {
 }
 
 module.exports = {
-  misunderstoodSidebar: misunderstood,
-  analyticsSidebar: analytics,
+  managementSidebar: management,
   messagingSidebar: filterDraftPages(messaging),
   quickstartSidebar: quickstart,
   actionshooksSidebar: actions_hooks
