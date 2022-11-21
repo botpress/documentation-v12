@@ -1,5 +1,5 @@
 ---
-title: About Misunderstood
+title: Misunderstood
 ---
 
 # ِAbout Misunderstood

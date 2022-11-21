@@ -1,5 +1,5 @@
 ---
-title: About Analytics
+title: Analytics
 ---
 
 # About Analytics
