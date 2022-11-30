@@ -8,7 +8,6 @@ Analytics is available only for an activated bot, it holds infromation about the
 ## Selected Period
 You can change the selected period to focus on specific period details. By default it is set for the past week, you are still able to change it.
 
-![Messaging channels](/img/docs/calendar.png)
 
 ## 1. Total Users
 The absolute total number of users during the selected period. Next to it an index that show the percentage of increase/decrease in the total users using the chatbot compared to previous priod(s).

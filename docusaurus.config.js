@@ -99,12 +99,12 @@ const config = {
           position: "left",
           label: "Chatbot Management",
         },
-        {
-          type: "doc",
-          docId: "actions_hooks/event_engine",
-          position: "left",
-          label: "Botpress Concepts",
-        },
+        // {
+        //   type: "doc",
+        //   docId: "actions_hooks/event_engine",
+        //   position: "left",
+        //   label: "Botpress Concepts",
+        // },
         {
           type: "docsVersionDropdown",
           position: "right",
