@@ -8,10 +8,9 @@ module.exports = [
       "chatbot_management/details",
       "messaging-channels/supported-channels",
       "chatbot_management/logs",
-      "chatbot_management/config_variables",
       "chatbot_management/analytics",
       "chatbot_management/misunderstood",
-      "chatbot_management/chat"
+      "chatbot_management/chat",
     ],
   },
 ]
