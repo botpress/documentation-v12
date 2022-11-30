@@ -1,7 +1,7 @@
 ---
 title: Chatbot Details
 ---
-# Chatbot Management
+# Chatbot Details
 
 ![Chatbot Details](/img/docs/chatbot_details.png)
 
