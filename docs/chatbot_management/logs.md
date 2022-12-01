@@ -4,7 +4,7 @@ title: Logs
 # Add Logs to your chatbot
 ![Chatbot logs](/img/docs/chatbot_log.png)
 
-# Steps to add logs to your actions.
+## Steps to add logs to your actions.
 ### Adding logger
 
 ![Chatbot Logs](/img/docs/chatbot_logs.png)
