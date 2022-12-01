@@ -1,5 +1,5 @@
 ---
-id: smooch-sunshine-conversations
+id: sunco
 title: Sunshine Conversations
 ---
 

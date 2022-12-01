@@ -9,7 +9,9 @@ module.exports = [
     type: "category",
     collapsible: false,
     label: "Webchat",
-    items: ["messaging-channels/botpress-webchat/website-embedding/website-embedding"],
+    items: [
+      "messaging-channels/botpress-webchat/website-embedding/website-embedding",
+    ],
   },
   {
     type: "category",
@@ -29,7 +31,7 @@ module.exports = [
     items: [
       "messaging-channels/broker-integrations/twilio",
       "messaging-channels/broker-integrations/vonage",
-      "messaging-channels/broker-integrations/smooch-sunshine-conversations",
+      "messaging-channels/broker-integrations/sunco",
     ],
   },
 ]
