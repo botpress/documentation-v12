@@ -37,13 +37,13 @@
   --ifm-link-hover-decoration: none;
 }
 
-main p > a,
-main li > a {
+main p>a,
+main li>a {
   color: #0265d2;
 }
 
-main p > a:hover,
-main li > a:hover {
+main p>a:hover,
+main li>a:hover {
   border-bottom: 1px solid #0265d2;
 }
 
@@ -93,8 +93,7 @@ main li > a:hover {
   flex-grow: 1;
   line-height: var(--ifm-heading-line-height);
   padding: var(--ifm-global-spacing);
-  transition: border-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
+  transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
 .pagination-nav__sublabel {
@@ -138,8 +137,7 @@ html[data-theme="dark"] {
   --ifm-background-surface-color: #242526;
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
   --ifm-color-content-secondary: rgba(255, 255, 255, 1);
-  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
-    hue-rotate(149deg) brightness(99%) contrast(95%);
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%);
   --ifm-code-background: rgb(51, 52, 55);
   --ifm-scrollbar-track-background-color: #444444;
   --ifm-scrollbar-thumb-background-color: #686868;
@@ -166,44 +164,34 @@ html[data-theme="dark"] {
 
 .markdown h1:first-child {
   --ifm-h1-font-size: 2rem;
-  margin-bottom: calc(
-    var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading)
-  );
+  margin-bottom: calc(var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading));
   color: var(--ifm-color-black);
 }
 
-.markdown > h2 {
+.markdown>h2 {
   --ifm-h2-font-size: 1.5rem;
-  margin-bottom: calc(
-    var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
-  );
+  margin-bottom: calc(var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
   margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
   color: var(--ifm-color-black);
 }
 
-.markdown > h3 {
-  --ifm-h2-font-size: 1.2rem;
-  margin-bottom: calc(
-    var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
-  );
+.markdown>h3 {
+  --ifm-h3-font-size: 1.2rem;
+  margin-bottom: calc(var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
   color: var(--ifm-color-black);
 }
 
-.markdown > h4 {
-  --ifm-h2-font-size: 1.1rem;
-  margin-bottom: calc(
-    var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
-  );
+.markdown>h4 {
+  --ifm-h4-font-size: 1.1rem;
+  margin-bottom: calc(var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
   color: var(--ifm-color-black);
 }
 
-.markdown > h5 {
-  --ifm-h3-font-size: 1rem;
-  margin-bottom: calc(
-    var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
-  );
+.markdown>h5 {
+  --ifm-h5-font-size: 1rem;
+  margin-bottom: calc(var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
   color: var(--ifm-color-black);
 }
@@ -220,12 +208,7 @@ html[data-theme="dark"] {
   font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
   line-height: 1.5;
-  padding: calc(
-      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
-    )
-    calc(
-      var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
-    );
+  padding: calc(var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)) calc(var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier));
   text-align: center;
   -webkit-user-select: none;
   user-select: none;
@@ -272,6 +255,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   --ifm-alert-foreground-color: var(--ifm-color-secondary-contrast-foreground);
   --ifm-alert-border-color: var(--ifm-color-secondary-dark);
 }
+
 /* 
 ======================
 Navbar
@@ -309,13 +293,11 @@ Side bar section titles
 ======================= 
 */
 
-.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible:hover {
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible:hover {
   background: transparent;
 }
 
-.theme-doc-sidebar-item-category-level-1
-  > .menu__list-item-collapsible
-  > .menu__link {
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link {
   color: var(--ifm-color-black) !important;
   font-weight: bolder;
 }
