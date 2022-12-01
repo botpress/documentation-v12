@@ -16,14 +16,14 @@ You will need a Slack App to connect your bot to Slack
 
 ## Channel Configuration
 
-## Signing Secret
+### Signing Secret
 
 The signing secret is used to verify webhook requests
 
 1. In the left sidebar, click on **Settings** > **Basic Information**
 2. Scroll down to **App Credentials** section. Copy paste the value of the signing secret to the **Signing Secret** channel configuration
 
-## Bot Token
+### Bot Token
 
 The bot token is used to authenticate requests made to the Slack API
 
