@@ -4,15 +4,15 @@ title: Logs
 # Add Logs to your chatbot
 ![Chatbot logs](/img/docs/chatbot_log.png)
 
-## Steps to add logs to your actions.
-#### Adding logger
+# Steps to add logs to your actions.
+### Adding logger
 
 ![Chatbot Logs](/img/docs/chatbot_logs.png)
 1. Create an action.
 2. Add bp.logger.info("Some text") inside your action and save it.
 
 
-#### Testing logs
+### Testing logs
 
 ![Chatbot Logs](/img/docs/chatbot_logs_2.png)
 
