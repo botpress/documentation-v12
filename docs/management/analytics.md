@@ -2,7 +2,7 @@
 title: Analytics
 ---
 
-![Messaging channels](/img/docs/chatbot_charts.png)
+![Analytics](/img/docs/chatbot_charts.png)
 Analytics is available only for an activated bot, it holds infromation about the usage and performance of your bot. Analytics tab is per bot and it shows a dashboard that holds graphs, numbers and indexes about for the selected period.
 
 ## Selected Period
