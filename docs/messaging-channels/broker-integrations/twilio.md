@@ -32,10 +32,3 @@ To receive messages from Twilio, you will need to setup a webhook
 1. Click on your phone number
 1. Scroll down the phone number settings page
 1. Copy paste the webhook url provided in the channel configuration UI to the **A Message Comes In** field
-
-
-## Connecting with Botpress Cloud
-
-![Messaging channels](/img/docs/twilio-config.png)
-
-1. Paste your Account SID, Auth Token, enable the channel and click on save.

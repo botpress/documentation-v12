@@ -95,9 +95,9 @@ const config = {
         },
         {
           type: "doc",
-          docId: "analytics/analytics",
+          docId: "chatbot_management/overview",
           position: "left",
-          label: "Analytics",
+          label: "Chatbot Management",
         },
         {
           type: "docsVersionDropdown",

@@ -14,14 +14,14 @@ Your Microsoft Account should have access to Azure and Teams. You can check out 
 
 ## Channel Configuration
 
-## Register App
+### Register App
 
 1. In the Azure portal, open the [App registrations](https://portal.azure.com#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) page
 1. Click **New registration**, then choose a name for your application
 1. In the section **Supported account types**, choose **Accounts in any organizational directory and personal Microsoft accounts**, then click **Register**
 1. Copy paste the value of `Application (client) ID` to the **App Id** channel configuration
 
-## App Password
+### App Password
 
 1. Click **Certificates & secrets**, then click **New client secret**, then fill in the required fields
 1. Copy paste the the value in the **Value** column to the **App Secret** channel configuration
@@ -38,11 +38,3 @@ Channel configuration is complete, you can now click **Save**
 1. Copy paste the webhook url provided in the channel configuration UI to the **Messaging endpoint** field
 1. Click **Register**
 1. On the next page (**Connect to channels**), under the section, **Add a featured channel**, click **Configure Microsoft Teams Channel**, then click **Save**
-
-## Connecting with Botpress Cloud
-
-![Messaging channels](/img/docs/teams-config.png)
-
-1. Paste your App ID and App Password and enable the channel.
-2. Click save and send message to your bot on teams.
-
