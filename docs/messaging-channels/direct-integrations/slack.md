@@ -16,14 +16,14 @@ You will need a Slack App to connect your bot to Slack
 
 ## Channel Configuration
 
-## Signing Secret
+### Signing Secret
 
 The signing secret is used to verify webhook requests
 
 1. In the left sidebar, click on **Settings** > **Basic Information**
 2. Scroll down to **App Credentials** section. Copy paste the value of the signing secret to the **Signing Secret** channel configuration
 
-## Bot Token
+### Bot Token
 
 The bot token is used to authenticate requests made to the Slack API
 
@@ -67,12 +67,3 @@ Your slack app needs to be added to your workspace to allow Slack users to commu
 1. In the left sidebar, click on **Features** > **App Home**
 1. Scroll down and tick **Allow users to send Slash commands and messages from the messages tab**
 1. In Slack, under the **Apps** section of the sidebar, click the **+ Add apps** button. In the search bar, type the name of your Slack app. Click on your Slack app in the search results. You can now chat with your Slack App
-
-
-
-## Connecting with Botpress Cloud
-
-![Messaging channels](/img/docs/slack-config.png)
-
-1. Paste your Signing Secret and Bot Token and enable the channel.
-2. Click save and send message to your bot on slack.

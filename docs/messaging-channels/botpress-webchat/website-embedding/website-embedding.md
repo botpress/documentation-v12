@@ -8,8 +8,6 @@ title: Website Embedding
 1. Make sure you've [published your chatbot](/quickstart/publishing-your-chatbot) to botpress cloud dashboard.
 2. Go to your published chatbot and select `Web Chat` option under `Channels` tab.
 3. Copy the Preconfigured URL script and paste it in the `<body></body>` tag of your HTML page.
-
-
 (Optional) Moreover, click on the `Custom Configuration` tab if you want to customize the webchat configurations.
 
 ![Messaging channels](/img/docs/custom-config.png)

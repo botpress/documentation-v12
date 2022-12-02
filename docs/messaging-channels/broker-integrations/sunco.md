@@ -1,5 +1,5 @@
 ---
-id: smooch-sunshine-conversations
+id: sunco
 title: Sunshine Conversations
 ---
 
@@ -43,11 +43,8 @@ The webhook secret is needed to validate webhooks requests. You get a webhook se
 1. Select `v2` as your webhook version
 1. Select **Conversation message** and **Postbacks** in the basic triggers
 1. Click **Create Webhook**. You will see the webhook you created in the table, and the secret in the last column
+1. Copy paste the webhook secret in the **Webhook Secret** channel configuration
 
-## Connecting with Botpress Cloud
+### Save Configuration
 
-![Messaging channels](/img/docs/sunco-config.png)
-
-1. Go to your deployed bot and go to channels tab. Select SunCo.
-2. Paste your App ID. Key ID, KEY Secret, Webhook Secret.
-3. Enable the channel and click on save.
+Channel configuration is complete, you can now click **Save**

@@ -36,10 +36,3 @@ You can use the Vonage sandbox to test you channel with Whatsapp
 1. Check the **Use Testing API** box in your channel configuration
 1. Go to your [Sandbox Settings](https://dashboard.nexmo.com/messages/sandbox)
 1. Copy paste the webhook url provided in the channel configuration UI to the **Inbound** and **Status** fields in the **Webhooks** section
-
-## Connecting with Botpress Cloud
-
-![Messaging channels](/img/docs/vonage-config.png)
-
-1. Paste your API Key, API Secret, Signature Secret.
-2. Enable the channel and click on save.
