@@ -1,7 +1,5 @@
 ---
 title: Overview
-slug: /management/overview
-hide_title: true
 ---
 
 # Chatbot Management

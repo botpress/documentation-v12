@@ -1,7 +1,7 @@
 ---
 title: Messaging Channels
 ---
-![Chatbot Details](/img/docs/chatbot_messenger.png)
+![Chatbot Messaging](/img/docs/chatbot_messenger.png)
 
 Integrate your chatbot with various messaging channels.
 

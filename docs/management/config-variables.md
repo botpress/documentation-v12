@@ -1,7 +1,7 @@
 ---
 title: Configuration Variables
 ---
-![Chatbot Details](/img/docs/chatbot_config.png)
+![Config Variables](/img/docs/chatbot_config.png)
 You can define configuration variables that will be accessible inside your Hooks and Actions. 
 
 :::caution
