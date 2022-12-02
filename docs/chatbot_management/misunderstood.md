@@ -26,22 +26,17 @@ In order to make it easier for our builder (conversation designers, developers, 
 
 So for example, below are the misunderstood statements:
 
-![Messaging channels](/img/docs/chatbot_miss.png)
+![Misunderstood](/img/docs/chatbot_miss.png)
 
 We can see, food related statements are in the middle, when we select one of them, it is pushed up to the top along with other matching/similar statements.
 
 ### Utterance operations:
 
-![Messaging channels](/img/docs/chatbot_miss3.png)
+![Misunderstood](/img/docs/chatbot_miss3.png)
 
-### Amend
-You can amend your intent(s) or QnA(s) utterances with what was not understood.
-
-### Ignore
-You can choose to ignore a statement, so it is not logged again as a misunderstood.
-
-### Revert
-And you can also **Revert** back to previous status.
+- **Amend**: You can amend your intent(s) or QnA(s) utterances with what was not understood.
+- **Ignore**: You can choose to ignore a statement, so it is not logged again as a misunderstood.
+- **Revert**: And you can also **Revert** back to previous status.
 
 ## Misunderstood Status
 
