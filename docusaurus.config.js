@@ -144,8 +144,8 @@ const config = {
           title: "Community",
           items: [
             {
-              label: "Forum",
-              href: "https://github.com/botpress/botpress/discussions",
+              label: "Botpress Community",
+              href: "https://community.botpress.com/",
             },
             {
               label: "LinkedIn",
