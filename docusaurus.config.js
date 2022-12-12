@@ -10,8 +10,15 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/BlackSymbol.svg",
   organizationName: "Botpress/documentation", // Usually your GitHub org/user name.
+  plugins: [
+    [
+      require.resolve('docusaurus-gtm-plugin'),
+      {
+        id: 'GTM-5ZGHFCL', // GTM Container ID
+      }
+    ]
+  ],
   projectName: "botpress/documentation", // Usually your repo name.
-
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -33,10 +40,6 @@ const config = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-        },
-        gtag: {
-          trackingID: "GTM-5ZGHFCL",
-          anonymizeIP: false,
         },
       }),
     ],
