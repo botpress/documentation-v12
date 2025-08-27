@@ -31,7 +31,7 @@ Channel configuration is complete, you can now click **Save**
 
 ### Sandbox
 
-You can use the Vonage sandbox to test you channel with Whatsapp
+You can use the Vonage sandbox to test you channel with WhatsApp
 
 1. Check the **Use Testing API** box in your channel configuration
 1. Go to your [Sandbox Settings](https://dashboard.nexmo.com/messages/sandbox)

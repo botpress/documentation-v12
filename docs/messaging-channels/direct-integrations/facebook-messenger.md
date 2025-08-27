@@ -23,7 +23,7 @@ To create a Facebook App, log in to your Facebook account and go to the [Faceboo
 
 If you do not already have a Facebook page you will need to create one. [You can find details on how to create a new Facebook page here](https://www.facebook.com/pages/creation/)
 
-To link your chatbot to a pre-existing page, you must have an administrator or developer role
+To link your chatbot to a preexisting page, you must have an administrator or developer role
 
 ## Channel Configuration
 
@@ -57,7 +57,7 @@ The page ID and access token are used to send messages to the Messenger API
 
 1. In the left sidebar, expand the **Messenger** menu and select **Settings**
 1. In the **Access Tokens** section, click **Add or remove Pages** and add you facebook page
-1. Copy the number under you page name and paste it in you **Page Id** channel configuration
+1. Copy the number under you page name and paste it in you **Page ID** channel configuration
 1. Click on **Generate token**. Copy this token and paste it in the **Access Token** channel configuration in cloud dashboard.
 
 ### Verify Token
@@ -68,16 +68,16 @@ You can generate any random alphanumerical string for this configuration. Paste 
 
 ### Save Configuration
 
-Channel configuration is complete, you can now click **Save**. It is important you save your configuration before configuring the webhook, otherwise Messenger will be unable to validate the webhook url.
+Channel configuration is complete, you can now click **Save**. It is important you save your configuration before configuring the webhook; otherwise, Messenger will be unable to validate the webhook url.
 
 ## Webhook Configuration
 
-To receive messages from Messenger, you will need to setup a webhook.
+To receive messages from Messenger, you will need to set up a webhook.
 
 1. Go to your Facebook App.
 1. In the left sidebar, expand the **Messenger** menu and select **Settings**
 1. In the **Webhooks** section, click **Add Callback URL**
 1. Copy paste the webhook url provided in the channel configuration UI from cloud dashboard.
 1. Copy paste the verify token you generated earlier.
-1. Click on **Verify and save**. Make sure your channel configuration was saved before doing this step, otherwise the webhook validation will fail.
+1. Click on **Verify and save**. Make sure your channel configuration was saved before doing this step; otherwise, the webhook validation will fail.
 1. Click on **Add subscriptions** and add `messages` and `messaging_postbacks` to your webhook.

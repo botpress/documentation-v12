@@ -8,7 +8,7 @@ slug: /quickstart/create-your-first-chatbot
 
 ![Create a chatbot](/img/docs/create-chatbot.png "Create a chatbot")
 
-You can start with an Empty Bot or pick one from the templates provided by botpress.
+You can start with an Empty Bot or pick one from the templates provided by Botpress.
 
 Click on `Create` button and select the destination folder to save your bots locally.
 

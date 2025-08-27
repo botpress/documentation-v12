@@ -22,7 +22,7 @@ Channel configuration is complete, you can now click **Save**
 
 ## Webhook Configuration
 
-To receive messages from Twilio, you will need to setup a webhook
+To receive messages from Twilio, you will need to set up a webhook
 
 1. Click on **Explore Products** in the left pannel
 1. Click on **Messaging**

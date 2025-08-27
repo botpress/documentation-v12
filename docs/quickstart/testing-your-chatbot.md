@@ -14,7 +14,7 @@ After the bot is successfully published to the cloud, you can test it from the c
 2. In the top navigation menu, click on `Chat`
 3. Chat with a Hi to test if bot responds back.
    
-Hurray! 🎉 You've successfully created and published your bot on botpress cloud.
+Hurray! 🎉 You've successfully created and published your bot on Botpress cloud.
 
 
 :::info

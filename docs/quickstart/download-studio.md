@@ -8,7 +8,7 @@ Experience the speed of using Botpress Studio, a continuously enhanced interface
 
 
 
-Now that you are [logged in](/login-signup) in to your account. Next, we should download the suitable Botpress Studio version.
+Now that you are [logged in](/login-signup) to your account. Next, we should download the suitable Botpress Studio version.
 
 Click the Studio version that is suitable for your OS. The Studio will get downloaded. After it is downloaded, install it and start it.
 

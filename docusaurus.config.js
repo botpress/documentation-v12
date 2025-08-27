@@ -47,7 +47,7 @@ const config = {
   themeConfig: {
     announcementBar: {
       id: "announcementBar-3", // Increment on change
-      content: `Welcome to the new <b>Botpress Cloud</b> documentation! If you are looking for the <b>v12</b> documentation, you can now find it <a target="_blank" rel="noopener noreferrer" href="https://v12.botpress.com/">here</a>.`,
+      content: `Welcome to the new <b>Botpress Cloud</b> documentation! For <b>v12</b>, see <a target="_blank" rel="noopener noreferrer" href="https://v12.botpress.com/">Botpress v12 Documentation</a>.`,
       backgroundColor: "#3276ea",
       textColor: "#fff",
     },

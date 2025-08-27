@@ -12,24 +12,24 @@ You will need a Smooch app with a channel configured before connecting Smooch to
 
 1. On the Smooch [home page](https://app.smooch.io/), click on **Create new app.**
 1. Enter a name for your app and click **Create App**
-1. Connect a channel to your app (Telegram, Whatsapp, or any other listed channel)
+1. Connect a channel to your app (Telegram, WhatsApp, or any other listed channel)
 1. You should see a channel in the **Overview** section of your app
 
 ## Configuration
 
-### App Id
+### App ID
 
 The smooch channel needs the app id to identify the smooch app when making API calls
 
 1. Go to the **Settings** section of your app
-1. You should see an **App Id** section if you scroll down. Copy paste this value to the **App Id** channel configuration
+1. You should see an **App ID** section if you scroll down. Copy paste this value to the **App ID** channel configuration
 
-### Key Id and Key Secret
+### Key ID and Key Secret
 
 The key id and secret are needed to authenticate API calls to Smooch
 
 1. At the bottom of to the **Settings** section of your app, click **Generate API key**
-1. Copy paste the id (the one that starts with `app_`) in the **Key Id** channel configuration
+1. Copy paste the id (the one that starts with `app_`) in the **Key ID** channel configuration
 1. Copy paste the secret in the **Key Secret** configuration
 
 ### Webhook Secret

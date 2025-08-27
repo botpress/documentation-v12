@@ -22,7 +22,7 @@ By consulting the misunderstood module, you guarantee that your bot is continuou
 
 ## Automatic Utterance Clustering
 
-In order to make it easier for our builder (conversation designers, developers, etc.) we have added a new functionality in the misunderstood module, which is the automatic utterance clustering. When a builder click an utterance to take a decision about, the user statements are reordered to push all the matching/similar statements to the one the builder have chose. 
+In order to make it easier for our builder (conversation designers, developers, etc.) we have added a new functionality in the misunderstood module, which is the automatic utterance clustering. When a builder click an utterance to take a decision about, the user statements are reordered to push all the matching/similar statements to the one chosen by the builder. 
 
 So for example, below are the misunderstood statements:
 

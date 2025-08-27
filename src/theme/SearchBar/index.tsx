@@ -6,17 +6,17 @@
  */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
-import React, {useState, useRef, useCallback, useMemo} from 'react';
-import {createPortal} from 'react-dom';
+import React, { useState, useRef, useCallback, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useHistory} from '@docusaurus/router';
-import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import { useHistory } from '@docusaurus/router';
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
-import {isRegexpStringMatch, useSearchPage} from '@docusaurus/theme-common';
-import {DocSearchButton, useDocSearchKeyboardEvents} from '@docsearch/react';
-import {useAlgoliaContextualFacetFilters} from '@docusaurus/theme-search-algolia/client';
-import {translate} from '@docusaurus/Translate';
+import { isRegexpStringMatch, useSearchPage } from '@docusaurus/theme-common';
+import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
+import { useAlgoliaContextualFacetFilters } from '@docusaurus/theme-search-algolia/client';
+import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 import type {
@@ -27,7 +27,7 @@ import type {
   InternalDocSearchHit,
   StoredDocSearchHit,
 } from '@docsearch/react/dist/esm/types';
-import type {AutocompleteState} from '@algolia/autocomplete-core';
+import type { AutocompleteState } from '@algolia/autocomplete-core';
 
 type DocSearchProps = Omit<
   DocSearchModalProps,
@@ -35,7 +35,7 @@ type DocSearchProps = Omit<
 > & {
   contextualSearch?: string
   externalUrlRegex?: string
-  baseUrl:string
+  baseUrl: string
 }
 
 let DocSearchModal: typeof DocSearchModalType | null = null;
@@ -55,8 +55,8 @@ type ResultsFooterProps = {
   onClose: () => void;
 };
 
-function ResultsFooter({state, onClose}: ResultsFooterProps) {
-  const {generateSearchPageLink} = useSearchPage();
+function ResultsFooter({ state, onClose }: ResultsFooterProps) {
+  const { generateSearchPageLink } = useSearchPage();
 
   return (
     <Link to={generateSearchPageLink(state.query)} onClick={onClose}>
@@ -82,7 +82,7 @@ function DocSearch({
   externalUrlRegex,
   ...props
 }: DocSearchProps) {
-  const {siteMetadata} = useDocusaurusContext();
+  const { siteMetadata } = useDocusaurusContext();
 
   const contextualSearchFacetFilters =
     useAlgoliaContextualFacetFilters() as FacetFilters;
@@ -92,9 +92,9 @@ function DocSearch({
 
   const facetFilters: FacetFilters = contextualSearch
     ? // Merge contextual search filters with config filters
-      mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters)
+    mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters)
     : // ... or use config facetFilters
-      configFacetFilters;
+    configFacetFilters;
 
   // we let user override default searchParameters if he wants to
   const searchParameters: DocSearchProps['searchParameters'] = {
@@ -102,7 +102,7 @@ function DocSearch({
     facetFilters,
   };
 
-  const {withBaseUrl} = useBaseUrlUtils();
+  const { withBaseUrl } = useBaseUrlUtils();
   const history = useHistory();
   const searchContainer = useRef<HTMLDivElement | null>(null);
   const searchButtonRef = useRef<HTMLButtonElement>(null);
@@ -122,7 +122,7 @@ function DocSearch({
       // @ts-ignore
       import('@docsearch/react/style'),
       import('./styles.css'),
-    ]).then(([{DocSearchModal: Modal}]) => {
+    ]).then(([{ DocSearchModal: Modal }]) => {
       DocSearchModal = Modal;
     });
   }, []);
@@ -154,7 +154,7 @@ function DocSearch({
   );
 
   const navigator = useRef({
-    navigate({itemUrl}: {itemUrl?: string}) {
+    navigate({ itemUrl }: { itemUrl?: string }) {
       // Algolia results could contain URL's from other domains which cannot
       // be served through history and should navigate with window.location
       if (isRegexpStringMatch(externalUrlRegex, itemUrl)) {
@@ -166,7 +166,7 @@ function DocSearch({
   }).current;
 
   // TODO remove this if we ever get rid of the /docs redirect on the docs
-  const customWithBaseUrl = (url:string) => {
+  const customWithBaseUrl = (url: string) => {
     const formatted = withBaseUrl(url)
     return props.baseUrl.includes('/docs') ? formatted : formatted.replace('/docs', '')
   }
@@ -175,7 +175,7 @@ function DocSearch({
     (items) =>
       items.map((item) => {
         item.url = item.url
-        // If Algolia contains a external domain, we should navigate without relative URL
+        // If Algolia contains an external domain, we should navigate without relative URL
         if (isRegexpStringMatch(externalUrlRegex, item.url)) {
           return item;
         }
@@ -274,13 +274,13 @@ function DocSearch({
 }
 
 function SearchBar(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext()
+  const { siteConfig } = useDocusaurusContext()
 
   const props = {
     ...(siteConfig.themeConfig.algolia as any),
     baseUrl: siteConfig.baseUrl
   } as DocSearchProps
-  return <DocSearch {...props}/>
+  return <DocSearch {...props} />
 }
 
 export default SearchBar

@@ -9,7 +9,7 @@ hide_title: true
 
 # 🔥 Quickstart
 
-This guide will help you build and deploy your chatbot to botpress cloud in 5 easy steps.
+This guide will help you build and deploy your chatbot to Botpress cloud in 5 easy steps.
 
 1. [Login/Sign Up to Botpress Cloud Dashboard](/quickstart/login-signup)
 2. [Downloading Botpress Studio](/quickstart/create-your-first-chatbot)
